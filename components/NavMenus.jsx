@@ -36,7 +36,7 @@ function NavMenus() {
         </li>
       </ul>
       <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
-        <div className="navmenu__digital navmenu__digital--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+        <div className="navmenu__digital navmenu__digital--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
           <Image
             src={lucyPic}
             alt="3d avatar 1"
@@ -46,7 +46,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__digital navmenu__digital--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+        <div className="navmenu__digital navmenu__digital--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
           <Image
             src={heelsPic}
             alt="3d heels"
@@ -56,7 +56,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__digital navmenu__digital--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+        <div className="navmenu__digital navmenu__digital--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
             src={marionPic}
             alt="3d avatar 2"
@@ -66,7 +66,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__physical navmenu__physical--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+        <div className="navmenu__physical navmenu__physical--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
           <Image
             src={hanselPic}
             alt="couple"
@@ -76,7 +76,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__physical navmenu__physical--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+        <div className="navmenu__physical navmenu__physical--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
           <Image
             src={coatPic}
             alt="coat"
@@ -86,7 +86,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__physical navmenu__physical--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+        <div className="navmenu__physical navmenu__physical--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
             src={fluxPic}
             alt="model window"
@@ -96,7 +96,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__about navmenu__about--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+        <div className="navmenu__about navmenu__about--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
           <Image
             src={lowHandsPic}
             alt="ronja with crossed arms"
@@ -106,7 +106,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__about navmenu__about--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+        <div className="navmenu__about navmenu__about--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
           <Image
             src={profilePic}
             alt="ronja profile"
@@ -116,7 +116,7 @@ function NavMenus() {
             }}
           />
         </div>
-        <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+        <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
             src={handOnChinPic}
             alt="ronja hand on chin"

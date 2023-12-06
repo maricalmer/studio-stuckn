@@ -59,7 +59,7 @@ function NavMenus() {
         <div className="navmenu__digital navmenu__digital--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
             src={marionPic}
-            alt="3d avatar 2"
+            alt="3d avatar earings"
             style={{
               width: '100%',
               height: 'auto',

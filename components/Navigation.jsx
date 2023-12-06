@@ -3,7 +3,7 @@ import React from "react";
 import NavButton from "@/components/NavButton";
 import NavMenus from "@/components/NavMenus";
 import NavList from "@/components/NavList";
-import NavBrand from "@/components/NavBrand";
+import StaticBrand from "@/components/StaticBrand";
 
 function Navigation() {
   return (
@@ -11,7 +11,7 @@ function Navigation() {
       <NavButton />
       <NavList />
       <NavMenus />
-      <NavBrand />
+      <StaticBrand opacity={"opacity-0"}/>
     </nav>
   );
 }

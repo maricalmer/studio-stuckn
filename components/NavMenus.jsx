@@ -1,0 +1,134 @@
+// NavMenus.jsx
+'use client';
+import React from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import heelsPic from '../public/img/heels.webp'
+import lucyPic from '../public/img/lucy.webp'
+import marionPic from '../public/img/marion.webp'
+import coatPic from '../public/img/coat.webp'
+import hanselPic from '../public/img/hansel.webp'
+import fluxPic from '../public/img/flux.webp'
+import lowHandsPic from '../public/img/low_hands.webp'
+import profilePic from '../public/img/profile.webp'
+import handOnChinPic from '../public/img/hand_on_chin.webp'
+
+function NavMenus() {
+
+  const handleHover = (e) => {
+    const navbar = e.currentTarget.parentNode.parentNode;
+    const className = e.currentTarget.textContent.toLowerCase();
+    navbar.classList.toggle(`navbar__bg--${className}`);
+  }
+  ;
+
+  return (
+    <>
+      <ul className="navmenu__container translate-y-[-150%] pl-[65%] pt-[120px] helvetica text-4xl transition-[transform] delay-300">
+        <li onMouseOver={(e)=> {handleHover(e)}} onMouseOut={(e)=> {handleHover(e)}} className="w-fit navmenu__item mb-1 cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2]">
+          <Link href="/digital">Digital</Link>
+        </li>
+        <li onMouseOver={(e)=> {handleHover(e)}} onMouseOut={(e)=> {handleHover(e)}} className="w-fit navmenu__item mb-1 cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2]">
+          <Link href="/physical">Physical</Link>
+        </li>
+        <li onMouseOver={(e)=> {handleHover(e)}} onMouseOut={(e)=> {handleHover(e)}} className="w-fit navmenu__item cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2] ">
+          <Link href="/about">About</Link>
+        </li>
+      </ul>
+      <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
+        <div className="navmenu__digital navmenu__digital--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+          <Image
+            src={lucyPic}
+            alt="3d avatar 1"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__digital navmenu__digital--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+          <Image
+            src={heelsPic}
+            alt="3d heels"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__digital navmenu__digital--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+          <Image
+            src={marionPic}
+            alt="3d avatar 2"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__physical navmenu__physical--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+          <Image
+            src={hanselPic}
+            alt="couple"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__physical navmenu__physical--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+          <Image
+            src={coatPic}
+            alt="coat"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__physical navmenu__physical--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+          <Image
+            src={fluxPic}
+            alt="model window"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__about navmenu__about--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-100" >
+          <Image
+            src={lowHandsPic}
+            alt="ronja with crossed arms"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__about navmenu__about--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
+          <Image
+            src={profilePic}
+            alt="ronja profile"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+        <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
+          <Image
+            src={handOnChinPic}
+            alt="ronja hand on chin"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default NavMenus;

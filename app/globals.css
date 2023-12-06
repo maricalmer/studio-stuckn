@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* here come the vars: */
+  --nav-cross-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(46, 36, 28, 1) 0%, rgba(47, 38, 66, 1) 20%, rgba(46, 36, 28, 1) 40%, rgba(72, 70, 46, 1) 60%, rgba(106, 132, 70, 1) 80%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#granim-canvas {
+  background: linear-gradient(180deg, rgba(46, 36, 28, 1) 0%, rgba(47, 38, 66, 1) 20%, rgba(46, 36, 28, 1) 40%, rgba(72, 70, 46, 1) 60%, rgba(106, 132, 70, 1) 80%);
+}
+.quella {
+  font-family: var(--quella);
+}
+.helvetica {
+  font-family: var(--helvetica);
+}
+.text-customxxl {
+  font-size: 250px;
+}
+
+.nav__cross::after {
+  bottom: 28px;
+  left: 0px;
+  width: 60px;
+  height: 4px;
+  /* background-color: #232620; */
+  background-color: var(--nav-cross-color);
+  /* background-color: transparent; */
+  position: absolute;
+  transition: transform .3s;
+  content: "";
+}
+
+.nav__cross::before {
+  height: 4px;
+  width: 60px;
+  /* background-color: #232620; */
+  background-color: var(--nav-cross-color);
+  /* background-color: transparent; */
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  transition: transform .3s;
+  content: "";
+}
+
+.navbar-active {
+  height: 100vh;
+  transition-delay: 0s;
+}
+.navbar-active .navmenu__container, .navbar-active .navlist__container, .navbar-active .navmenu__images {
+  transform: translateY(0%);
+
+}
+
+.navbar-active button {
+  background-color: black;
+}
+
+.navbar-active .navlist__item,
+.navbar-active .navmenu__item,
+.navbar-active .navbrand {
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.navbar-active .nav__cross::after {
+  bottom: 6px;
+  left: 7px;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  background-color: #A7BE81;
+}
+
+.navbar-active .nav__cross::before {
+  left: 10px;
+  top: 7px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  background-color: #A7BE81;
+}
+
+.navbar__bg--digital {
+  background-color: #B1B8BF;
+}
+
+.navbar__bg--digital .nav__cross::after,
+.navbar__bg--digital .nav__cross::before {
+  background-color: #B1B8BF;
+}
+
+.navbar__bg--digital .navmenu__item,
+.navbar__bg--digital .navbrand,
+.navbar__bg--digital .navlist__item {
+  color: #0A063E;
+}
+
+.navbar__bg--physical {
+  background-color: #A6A08F;
+}
+
+.navbar__bg--physical .nav__cross::after,
+.navbar__bg--physical .nav__cross::before {
+  background-color: #A6A08F;
+}
+
+.navbar__bg--physical .navmenu__item,
+.navbar__bg--physical .navbrand,
+.navbar__bg--physical .navlist__item {
+  color: #011E0F;
+}
+
+.navbar__bg--about {
+  background-color: #EFEBE6;
+}
+
+.navbar__bg--about .nav__cross::after,
+.navbar__bg--about .nav__cross::before {
+  background-color: #EFEBE6;
+}
+
+.navbar__bg--about .navmenu__item,
+.navbar__bg--about .navbrand,
+.navbar__bg--about .navlist__item {
+  color: #482D65;
+}
+
+.navbar__bg--digital .navmenu__digital, .navbar__bg--physical .navmenu__physical, .navbar__bg--about .navmenu__about {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-text {
+  margin-top: calc(100vh - 40vh);
+}

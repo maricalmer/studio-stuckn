@@ -1,16 +1,28 @@
 // Carousel.jsx
 'use client';
 import Image from 'next/image'
-import Link from 'next/link'
 import marionPic from '../public/img/marion_big.webp'
 import gangstaPic from '../public/img/gangsta.webp'
 import alienBagPic from '../public/img/alien_bag.webp'
 
+const handleClick = (event, direction) => {
+  const carousel = event.currentTarget.parentElement.parentElement;
+  let newScrollPosition;
+  direction == "left" ? newScrollPosition = carousel.scrollLeft - 400 : newScrollPosition = carousel.scrollLeft + 400;
+  carousel.scrollTo({left: newScrollPosition, behavior: "smooth"});
+};
+
 function Carousel(props) {
   return (
-    <div className="carousel h-[60vh] flex mt-20 ml-64 gap-3 overflow-scroll overscroll-contain pr-40 relative">
-      <svg width="120" height="66" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-[66px] w-[120px] sticky top-1/2 left-full mr-10">
-        <path d="M0.799996 28.6L92.8 28.6C89.8 24 83 9 83 4C83 2.4 84 0.799995 85.8 0.799995C87.6 0.799995 89.2 3.59999 90 4.8C96.2 14 105.4 23.8 115 29.4C116.2 30 119.2 31.4 119.2 33C119.2 34.6 116.2 36 115 36.6C105.4 42.2 96.2 52 90 61.2C89.2 62.4 87.6 65.2 85.8 65.2C84 65.2 83 63.6 83 62C83 57 89.8 42 92.8 37.4L0.799996 37.4L0.799996 28.6Z" fill="white"/>
+    <div className="carousel h-[60vh] flex mt-20 pl-64 gap-3 overflow-scroll overscroll-contain pr-40 relative">
+      <svg width="66" height="36" viewBox="0 0 66 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[66px] fixed left-0 ml-10 h-[inherit]">
+        <path onClick={e=>handleClick(e, "left")} d="M65.16 20.42L14.56 20.42C16.21 22.95 19.95 31.2 19.95 33.95C19.95 34.83 19.4 35.71 18.41 35.71C17.42 35.71 16.54 34.17 16.1 33.51C12.69 28.45 7.63 23.06 2.35 19.98C1.69 19.65 0.0400003 18.88 0.0400003 18C0.0400003 17.12 1.69 16.35 2.35 16.02C7.63 12.94 12.69 7.55 16.1 2.49C16.54 1.83 17.42 0.290001 18.41 0.290001C19.4 0.290001 19.95 1.17 19.95 2.05C19.95 4.8 16.21 13.05 14.56 15.58L65.16 15.58V20.42Z" fill="white" className="cursor-pointer"/>
+      </svg>
+      <svg width="66" height="36" viewBox="0 0 66 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[66px] fixed right-0 mr-10 h-[inherit]">
+        <path onClick={e=>handleClick(e, "right")} d="M0.839998 15.58L51.44 15.58C49.79 13.05 46.05 4.8 46.05 2.05C46.05 1.17 46.6 0.289997 47.59 0.289997C48.58 0.289997 49.46 1.83 49.9 2.49C53.31 7.55 58.37 12.94 63.65 16.02C64.31 16.35 65.96 17.12 65.96 18C65.96 18.88 64.31 19.65 63.65 19.98C58.37 23.06 53.31 28.45 49.9 33.51C49.46 34.17 48.58 35.71 47.59 35.71C46.6 35.71 46.05 34.83 46.05 33.95C46.05 31.2 49.79 22.95 51.44 20.42L0.839998 20.42V15.58Z" fill="white" className="cursor-pointer"/>
+      </svg>
+      <svg width="66" height="36" viewBox="0 0 66 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[66px] fixed right-0 mr-10 h-[inherit]">
+        <path onClick={e=>handleClick(e)} d="M0.839998 15.58L51.44 15.58C49.79 13.05 46.05 4.8 46.05 2.05C46.05 1.17 46.6 0.289997 47.59 0.289997C48.58 0.289997 49.46 1.83 49.9 2.49C53.31 7.55 58.37 12.94 63.65 16.02C64.31 16.35 65.96 17.12 65.96 18C65.96 18.88 64.31 19.65 63.65 19.98C58.37 23.06 53.31 28.45 49.9 33.51C49.46 34.17 48.58 35.71 47.59 35.71C46.6 35.71 46.05 34.83 46.05 33.95C46.05 31.2 49.79 22.95 51.44 20.42L0.839998 20.42V15.58Z" fill="white" className="cursor-pointer"/>
       </svg>
       <Image
         src={marionPic}

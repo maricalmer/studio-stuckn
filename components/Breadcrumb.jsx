@@ -1,46 +1,15 @@
 // Breadcrumb.jsx
 'use client';
 import React from "react";
-import Link from 'next/link'
+import BreadcrumbItem from "@/components/BreadcrumbItem";
 
-const buildActiveMenu = (menuItem) => {
-  return (
-    <li className={"opacity-0 navlist__item"}>
-      {menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}
-    </li>
-  )
-};
-
-const buildInactiveMenu = (menuItem) => {
-  return (
-    <li className="navlist__item hover:text-[#C9D1D2]">
-      <Link href={`/${menuItem.toLowerCase()}`}>{menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}</Link>
-    </li>
-  )
-};
-
-const buildBreadcrumb = (activeMenuItem) => {
-  const menus = ["Digital", "Physical", "About", "Home"];
-  for (let menu of menus) {
-    if
-  }
-};
-
-function Breadcrumb(props) {
+function Breadcrumb() {
   return (
     <ul className="navlist__container flex helvetica place-content-between w-[80%] pt-8 pl-14 leading-none">
-      <li className={`${props.active} navlist__item`}>
-        Digital
-      </li>
-      <li className="navlist__item hover:text-[#C9D1D2]">
-        <Link href="/physical">Physical</Link>
-      </li>
-      <li className="navlist__item hover:text-[#C9D1D2]">
-        <Link href="/about">About</Link>
-      </li>
-      <li className="navlist__item hover:text-[#C9D1D2]">
-        <Link href="/">Home</Link>
-      </li>
+      <BreadcrumbItem isActive={true} itemName={"Digital"} />
+      <BreadcrumbItem isActive={false} itemName={"Physical"} />
+      <BreadcrumbItem isActive={false} itemName={"About"} />
+      <BreadcrumbItem isActive={false} itemName={"Home"} />
     </ul>
   );
 }

@@ -10,9 +10,9 @@ import StaticBrand from "@/components/StaticBrand";
 export default function Digital() {
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
-      <Breadcrumb active={"text-[#C9D1D2]"} />
+      <Breadcrumb />
       <Carousel />
-      <StaticBrand opacity={"opacity-1"}/>
+      <StaticBrand opacity={"opacity-1"} />
     </div>
   )
 }

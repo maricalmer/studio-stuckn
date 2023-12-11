@@ -1,6 +1,7 @@
 // Carousel.jsx
 'use client';
 import Image from 'next/image'
+import Link from 'next/link'
 import marionPic from '../public/img/marion_big.webp'
 import gangstaPic from '../public/img/gangsta.webp'
 import alienBagPic from '../public/img/alien_bag.webp'
@@ -22,7 +23,7 @@ function Carousel(props) {
         <path onClick={e=>handleClick(e, "right")} d="M0.839998 15.58L51.44 15.58C49.79 13.05 46.05 4.8 46.05 2.05C46.05 1.17 46.6 0.289997 47.59 0.289997C48.58 0.289997 49.46 1.83 49.9 2.49C53.31 7.55 58.37 12.94 63.65 16.02C64.31 16.35 65.96 17.12 65.96 18C65.96 18.88 64.31 19.65 63.65 19.98C58.37 23.06 53.31 28.45 49.9 33.51C49.46 34.17 48.58 35.71 47.59 35.71C46.6 35.71 46.05 34.83 46.05 33.95C46.05 31.2 49.79 22.95 51.44 20.42L0.839998 20.42V15.58Z" fill="white" className="cursor-pointer"/>
       </svg>
       <div className="min-w-[275px] h-full "></div>
-      <div className="project-container min-w-fit h-full relative cursor-pointer transition-opacity ease-in-out">
+      <Link href="/etherea-part-one" className="project-container min-w-fit h-full relative cursor-pointer transition-opacity ease-in-out">
         <Image
           src={marionPic}
           alt="3d avatar earings"
@@ -34,7 +35,7 @@ function Carousel(props) {
           }}
         />
         <div className="project-title opacity-0 absolute bottom-0 quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">Etherea Part I</div>
-      </div>
+      </Link>
       <Image
         src={gangstaPic}
         alt="3d avatar gangsta pose"

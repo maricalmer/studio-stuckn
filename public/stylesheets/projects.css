@@ -23,7 +23,7 @@
   /* Firefox */
  }
 
- .project:hover {
+ .project-container:hover {
   opacity: 0.7;
  }
 

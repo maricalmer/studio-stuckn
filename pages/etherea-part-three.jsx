@@ -1,3 +1,3 @@
 export default function EthereaPartThree() {
-  return <div>etherea part two</div>
+  return <div>etherea part three</div>
 }

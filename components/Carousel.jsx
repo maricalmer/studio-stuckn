@@ -64,7 +64,7 @@ function Carousel(props) {
         />
         <div className="project-title opacity-0 absolute bottom-0 quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">Etherea Part III</div>
       </Link>
-      <Link href="/etherea-part-three" className="project-container min-w-fit h-full relative transition-opacity ease-in-out">
+      <Link href="/alien-accessories" className="project-container min-w-fit h-full relative transition-opacity ease-in-out">
         <Image
           src={alienBagPic}
           alt="3d alien bag with green background"

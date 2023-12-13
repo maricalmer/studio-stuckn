@@ -17,8 +17,8 @@ const CarouselItemWithLink = ({ src, alt, title, href }) => {
             height: '100%'
           }}
         />
+        <div className="carousel-item__title opacity-0 absolute bottom-0 quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
       </Link>
-      <div className="carousel-item__title opacity-0 absolute bottom-0 quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
     </>
   );
 };

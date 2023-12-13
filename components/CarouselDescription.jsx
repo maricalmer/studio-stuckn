@@ -3,7 +3,7 @@ import React from 'react';
 
 const CarouselDescription = ({ title, subtitle, description, credits }) => {
   return (
-    <div className="w-[200px] h-[60vh] fixed left-[100px]">
+    <div className="w-[220px] h-[60vh] fixed left-[100px]">
       <div className="quella text-4xl mt-5 relative z-20 p-3">{title}</div>
       <div className="helvetica text-sm mb-3 relative z-20 leading-4 px-3">{subtitle}</div>
       <div className="helvetica text-sm mb-3 relative z-20 leading-4 px-3">{description}</div>

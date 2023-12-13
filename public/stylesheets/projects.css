@@ -23,16 +23,10 @@
   /* Firefox */
  }
 
- .project-container:hover {
+ .carousel-item__link:hover {
   opacity: 0.9;
  }
 
- .project-container:hover .project-title {
+ .carousel-item__link:hover .carousel-item__title {
   opacity: 1;
- }
-
- .project::after {
-  content: "Test";
-  position: absolute;
-  top: 0;
  }

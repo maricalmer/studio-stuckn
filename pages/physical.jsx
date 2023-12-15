@@ -25,7 +25,6 @@ const images = [
   { src: minimalPic, alt: 'white coat', title: 'Excessive Minimal', href: '/excessive-minimal' },
   { src: pagePic, alt: 'mirror reflaction woman face', title: 'Page Magazine', href: '/page' },
   { src: escapismPic, alt: 'pants on legs', title: 'Escapism', href: '/escapism' }
-
 ];
 
 export default function Physical() {

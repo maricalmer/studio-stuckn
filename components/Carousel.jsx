@@ -3,6 +3,7 @@
 import CarouselItemWithLink from '@/components/CarouselItemWithLink'
 import CarouselItem from '@/components/CarouselItem'
 import CarouselDescription from '@/components/CarouselDescription'
+import CarouselCredits from '@/components/CarouselCredits'
 
 
 const handleClick = (event, direction) => {
@@ -33,6 +34,7 @@ function Carousel(props) {
               <CarouselItem src={img.src} alt={img.alt} key={index}/>
             ))}
             <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits}/>
+            {props.credits && <CarouselCredits credits={props.credits}/>}
           </>
         )
       }

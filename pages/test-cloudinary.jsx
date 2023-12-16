@@ -8,7 +8,8 @@ export default function TestCloudinary() {
       <CldImage
         width="1989"
         height="1120"
-        src="Alien_Bag_Front_View_Background_NEW_RESCam_front_001_purxqj.webp"
+        src="3d_blue_bag_front_big"
+        alt="3d bag"
       />
     </>
   )

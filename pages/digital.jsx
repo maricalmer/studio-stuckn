@@ -7,22 +7,22 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 
-import lucyPic from '../public/img/lucy_main.webp'
-import marionPic from '../public/img/marion_main.webp'
-import marionBootsPic from '../public/img/marion_boots_main.webp'
-import alienBagPic from '../public/img/alien_bag.webp'
+import redElfProfile from '../public/img/digital/3d_elf_red_profile.webp'
+import roseElfEarCropped from '../public/img/digital/3d_elf_rose_ear_cropped.webp'
+import purpleElfDetail from '../public/img/digital/3d_elf_purple_detail.webp'
+import blueBagFront from '../public/img/digital/3d_blue_bag_front.webp'
 
 const images = [
-  { src: lucyPic, alt: '3d avatar laying', title: 'Etherea Part I', href: '/etherea-part-one' },
-  { src: marionPic, alt: '3d avatar earings', title: 'Etherea Part II', href: '/etherea-part-two' },
-  { src: marionBootsPic, alt: '3d avatar boots', title: 'Etherea Part III', href: '/etherea-part-three' },
-  { src: alienBagPic, alt: '3d alien bag with green background', title: 'Alien Accessories', href: '/alien-accessories' },
+  { src: redElfProfile, alt: '3d avatar laying', title: 'Etherea Part I', href: '/etherea-part-one' },
+  { src: roseElfEarCropped, alt: '3d avatar earings', title: 'Etherea Part II', href: '/etherea-part-two' },
+  { src: purpleElfDetail, alt: '3d avatar boots', title: 'Etherea Part III', href: '/etherea-part-three' },
+  { src: blueBagFront, alt: '3d alien bag with green background', title: 'Alien Accessories', href: '/alien-accessories' },
 ];
 
 export default function Digital() {
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
-      <Breadcrumb />
+      <Breadcrumb activeItem="Digital"/>
       <Carousel images={images} />
       <StaticBrand opacity={"opacity-1"} />
     </div>

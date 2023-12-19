@@ -1,10 +1,11 @@
 'use client';
-import marionPic1 from '../public/img/marion_purple_carousel_1.webp'
-import marionPic2 from '../public/img/marion_purple_carousel_2.webp'
-import marionPic3 from '../public/img/marion_purple_carousel_3.webp'
-import marionPic4 from '../public/img/marion_purple_carousel_4.webp'
-import marionPic5 from '../public/img/marion_purple_carousel_5.webp'
-import marionPic6 from '../public/img/marion_purple_carousel_6.webp'
+import purpleElfDetail from '../public/img/digital/3d_elf_purple_detail.webp'
+import purpleElfFace from '../public/img/digital/etherea-part-three/3d_elf_purple_face.webp'
+import purpleElfBottom from '../public/img/digital/etherea-part-three/3d_elf_purple_bottom.webp'
+import purpleElfProfile from '../public/img/digital/etherea-part-three/3d_elf_purple_profile.webp'
+import purpleElfSide from '../public/img/digital/etherea-part-three/3d_elf_purple_side.webp'
+import grass from '../public/img/digital/etherea-part-three/3d_elf_purple_grass_detail.webp'
+import purpleElfFullBody from '../public/img/digital/etherea-part-three/3d_elf_purple_full_body.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
@@ -15,12 +16,13 @@ const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella
 const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
-  { src: marionPic1, alt: '3d boots' },
-  { src: marionPic2, alt: '3d avatar marion front face' },
-  { src: marionPic3, alt: '3d avatar marion bottom back' },
-  { src: marionPic4, alt: '3d avatar marion body side' },
-  { src: marionPic5, alt: '3d grass' },
-  { src: marionPic6, alt: '3d avatar marion body front' }
+  { src: purpleElfDetail, alt: '3d boots' },
+  { src: purpleElfFace, alt: '3d avatar marion front face' },
+  { src: purpleElfBottom, alt: '3d avatar marion bottom back' },
+  { src: purpleElfProfile, alt: '3d avatar marion profile face' },
+  { src: purpleElfSide, alt: '3d avatar marion body side' },
+  { src: grass, alt: '3d grass' },
+  { src: purpleElfFullBody, alt: '3d avatar marion body front' },
 ];
 
 const descriptionText = "Step into a realm where elven creatures awaken in the embrace of a misty atmosphere. Every element, from the modeled facial features and tailored knitwear collection to the unique jewelry and accessory sculptures, is a product that creates a world that unfolds from the depths of the imagination.";

@@ -1,10 +1,11 @@
 'use client';
-import marionPic1 from '../public/img/marion_red_carousel_1.webp'
-import marionPic2 from '../public/img/marion_red_carousel_2.webp'
-import marionPic3 from '../public/img/marion_red_carousel_3.webp'
-import marionPic4 from '../public/img/marion_red_carousel_4.webp'
-import marionPic5 from '../public/img/marion_red_carousel_5.webp'
-import marionPic6 from '../public/img/marion_red_carousel_6.webp'
+import roseElfEar from '../public/img/digital/etherea-part-two/3d_elf_rose_ear.webp'
+import roseElfBottom from '../public/img/digital/etherea-part-two/3d_elf_rose_bottom.webp'
+import tree from '../public/img/digital/etherea-part-two/3d_elf_rose_tree_detail.webp'
+import roseElfFace from '../public/img/digital/etherea-part-two/3d_elf_rose_face.webp'
+import roseElfSide from '../public/img/digital/etherea-part-two/3d_elf_rose_side.webp'
+import roseElfFront from '../public/img/digital/etherea-part-two/3d_elf_rose_front.webp'
+
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
@@ -15,12 +16,12 @@ const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella
 const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
-  { src: marionPic1, alt: '3d avatar marion face side' },
-  { src: marionPic2, alt: '3d avatar marion front body bottom' },
-  { src: marionPic3, alt: '3d tree' },
-  { src: marionPic4, alt: '3d avatar marion face side' },
-  { src: marionPic5, alt: '3d avatar marion side body' },
-  { src: marionPic6, alt: '3d avatar marion front body top' }
+  { src: roseElfEar, alt: '3d avatar marion face side' },
+  { src: roseElfBottom, alt: '3d avatar marion front body bottom' },
+  { src: tree, alt: '3d tree' },
+  { src: roseElfFace, alt: '3d avatar marion face side' },
+  { src: roseElfSide, alt: '3d avatar marion side body' },
+  { src: roseElfFront, alt: '3d avatar marion front body top' }
 ];
 
 const descriptionText = "Step into a realm where elven creatures awaken in the embrace of a misty atmosphere. Every element, from the modeled facial features and tailored knitwear collection to the unique jewelry and accessory sculptures, is a product that creates a world that unfolds from the depths of the imagination.";

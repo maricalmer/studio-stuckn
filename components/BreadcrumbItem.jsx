@@ -8,9 +8,9 @@ const formatUrl = (string) => {
 }
 
 function BreadcrumbItem(props) {
-  let { isActive, itemName } = props;
+  let { activeItem, itemName } = props;
 
-  if (isActive) {
+  if (activeItem === itemName) {
     return (
       <li className={"navlist__item text-[#C9D1D2]"}>
         {itemName}

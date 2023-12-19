@@ -1,9 +1,11 @@
 'use client';
-import lucyPic1 from '../public/img/lucy_carousel_1.webp'
-import lucyPic2 from '../public/img/lucy_carousel_2.webp'
-import lucyPic3 from '../public/img/lucy_carousel_3.webp'
-import lucyPic4 from '../public/img/lucy_carousel_4.webp'
-import lucyPic5 from '../public/img/lucy_carousel_5.webp'
+import redElfFrontZoom from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
+import redElfDress from '../public/img/digital/etherea-part-one/3d_elf_red_dress_detail.webp'
+import redElfProfile from '../public/img/digital/3d_elf_red_profile.webp'
+import redElfFace from '../public/img/digital/etherea-part-one/3d_elf_red_face_zoom.webp'
+import tree from '../public/img/digital/etherea-part-one/3d_elf_red_tree.webp'
+import redElfFront from '../public/img/digital/etherea-part-one/3d_elf_red_front.webp'
+
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
@@ -14,11 +16,13 @@ const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella
 const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
-  { src: lucyPic1, alt: '3d avatar lucy front face' },
-  { src: lucyPic2, alt: '3d avatar lucy side distance' },
-  { src: lucyPic3, alt: '3d avatar lucy face side' },
-  { src: lucyPic4, alt: '3d tree' },
-  { src: lucyPic5, alt: '3d avatar lucy front distance' }
+  { src: redElfFrontZoom, alt: '3d avatar lucy front face' },
+  { src: redElfDress, alt: '3d avatar lucy side distance' },
+  { src: redElfProfile, alt: '3d avatar lucy face side' },
+  { src: redElfFace, alt: '3d avatar lucy front distance' },
+  { src: tree, alt: '3d tree' },
+  { src: redElfFront, alt: '3d avatar lucy front distance' }
+
 ];
 
 const descriptionText = "Step into a realm where elven creatures awaken in the embrace of a misty atmosphere. Every element, from the modeled facial features and tailored knitwear collection to the unique jewelry and accessory sculptures, is a product that creates a world that unfolds from the depths of the imagination.";

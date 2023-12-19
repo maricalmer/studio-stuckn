@@ -30,7 +30,7 @@ const images = [
 export default function Physical() {
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
-      <Breadcrumb />
+      <Breadcrumb activeItem="Physical"/>
       <Carousel images={images} />
       <StaticBrand opacity={"opacity-1"} />
     </div>

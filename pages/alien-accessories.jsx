@@ -50,7 +50,7 @@ const description = { title: "Alien Accessories", subtitle: descriptionText, tex
 function AlienAccessories() {
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
-      <Breadcrumb />
+      <Breadcrumb textColor="text-black" />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />
     </div>

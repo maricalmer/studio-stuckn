@@ -31,7 +31,7 @@ const description = { title: "Etherea", subtitle: 'Part 2', text: descriptionTex
 function EthereaPartTwo() {
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
-      <Breadcrumb />
+      <Breadcrumb textColor="text-black" />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />
     </div>

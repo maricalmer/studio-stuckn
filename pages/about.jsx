@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import profilePic from '../public/img/low_hands.webp'
 
 import Breadcrumb from "@/components/Breadcrumb";
 import StaticBrand from "@/components/StaticBrand";
@@ -22,6 +24,15 @@ export default function About() {
         </ul>
         <div className="w-7/12 text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synoym Studio.Stuckn.</div>
         <div className="w-7/12 text-2xl">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
+        <Image
+            src={profilePic}
+            alt="ronja stuckn"
+            className="mt-8"
+            style={{
+              width: 'auto',
+              height: '30vh',
+            }}
+          />
       </div>
       <StaticBrand opacity={"opacity-1"} />
     </div>

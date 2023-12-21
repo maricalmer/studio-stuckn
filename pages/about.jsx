@@ -20,9 +20,9 @@ export default function About() {
   }, [])
 
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 bg-[#EFEBE6]`}>
       <Breadcrumb textColor="text-[#4A2E69]" activeItem="About"/>
-      <div className="ml-14 mt-14 helvetica text-[#4A2E69] relative h-[200vh]">
+      <div className="ml-14 mt-40 helvetica text-[#4A2E69] relative h-[200vh]">
         <h1 className="text-3xl">Say Hello</h1>
         <ul className="my-6">
           <li><Link href="mailto:info@mailgo.dev" className="text-2xl underline">Email</Link></li>
@@ -30,7 +30,7 @@ export default function About() {
           <li><a href="https://de.linkedin.com/in/ronja-stucken" target="_blank" className="text-2xl underline">LinkedIn</a></li>
         </ul>
         <div className="w-7/12 text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synoym Studio.Stuckn.</div>
-        <div className="w-7/12 text-2xl">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
+        <div className="w-7/12 text-2xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
         <AboutImage scrollValue={scrollValue} />
       </div>
       <StaticBrand opacity={"opacity-1"} />

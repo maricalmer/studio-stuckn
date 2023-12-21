@@ -1,21 +1,28 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import profilePic from '../public/img/low_hands.webp'
 
+import AboutImage from "@/components/AboutImage";
 import Breadcrumb from "@/components/Breadcrumb";
 import StaticBrand from "@/components/StaticBrand";
 
 import "../public/stylesheets/projects.css";
 import "../public/stylesheets/about.css";
 import localFont from 'next/font/local'
+import { useState, useEffect } from "react";
 const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
 const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 export default function About() {
+  const [ scrollValue, setScrollValue ] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', function() {
+      setScrollValue(window.scrollY);
+    })
+  }, [])
+
   return (
     <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
       <Breadcrumb textColor="text-[#4A2E69]" activeItem="About"/>
-      <div className="ml-14 mt-14 helvetica text-[#4A2E69]">
+      <div className="ml-14 mt-14 helvetica text-[#4A2E69] relative h-[200vh]">
         <h1 className="text-3xl">Say Hello</h1>
         <ul className="my-6">
           <li><Link href="mailto:info@mailgo.dev" className="text-2xl underline">Email</Link></li>
@@ -24,15 +31,7 @@ export default function About() {
         </ul>
         <div className="w-7/12 text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synoym Studio.Stuckn.</div>
         <div className="w-7/12 text-2xl">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
-        <Image
-            src={profilePic}
-            alt="ronja stuckn"
-            className="mt-8"
-            style={{
-              width: 'auto',
-              height: '30vh',
-            }}
-          />
+        <AboutImage scrollValue={scrollValue} />
       </div>
       <StaticBrand opacity={"opacity-1"} />
     </div>

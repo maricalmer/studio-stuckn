@@ -3,13 +3,11 @@ import Link from 'next/link'
 import AboutImage from "@/components/AboutImage";
 import Breadcrumb from "@/components/Breadcrumb";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
 import "../public/stylesheets/about.css";
-import localFont from 'next/font/local'
 import { useState, useEffect } from "react";
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 export default function About() {
   const [ scrollValue, setScrollValue ] = useState(0);
@@ -20,7 +18,7 @@ export default function About() {
   }, [])
 
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 bg-[#EFEBE6]`}>
+    <PageContainer backgroundColor={"bg-[#EFEBE6]"}>
       <Breadcrumb textColor="text-[#4A2E69]" activeItem="About"/>
       <div className="ml-14 mt-40 helvetica text-[#4A2E69] relative h-[200vh]">
         <h1 className="text-3xl">Say Hello</h1>
@@ -34,6 +32,6 @@ export default function About() {
         <AboutImage scrollValue={scrollValue} />
       </div>
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   )
 }

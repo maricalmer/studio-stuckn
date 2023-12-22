@@ -1,11 +1,9 @@
 import "../public/stylesheets/projects.css";
-import localFont from 'next/font/local'
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import redElfProfile from '../public/img/digital/3d_elf_red_profile.webp'
 import roseElfEarCropped from '../public/img/digital/3d_elf_rose_ear_cropped.webp'
@@ -21,10 +19,10 @@ const images = [
 
 export default function Digital() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full`}>
+    <PageContainer>
       <Breadcrumb textColor="text-black" activeItem="Digital"/>
       <Carousel images={images} />
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   )
 }

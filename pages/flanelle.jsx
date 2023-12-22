@@ -19,11 +19,9 @@ import pageLogo from '../public/img/page_logo.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
-import localFont from 'next/font/local'
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
   { src: flanellePic1, alt: 'couple seated front' },
@@ -51,11 +49,11 @@ const credits = {logo: pageLogo, alt: "Page Magazine logo", creditsPieces: ["Lon
 
 function Flanelle() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+    <PageContainer>
       <Breadcrumb />
       <Carousel images={images} description={description} credits={credits}/>
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   );
 }
 

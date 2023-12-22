@@ -19,11 +19,9 @@ import orangeSneakerDetail from '../public/img/digital/alien-accessories/3d_oran
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
-import localFont from 'next/font/local'
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
   { src: blackBootsProfile, alt: '3d black boots profile' },
@@ -49,11 +47,11 @@ const description = { title: "Alien Accessories", subtitle: descriptionText, tex
 
 function AlienAccessories() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full`}>
+    <PageContainer>
       <Breadcrumb textColor="text-black" />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   );
 }
 

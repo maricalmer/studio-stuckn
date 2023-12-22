@@ -10,11 +10,9 @@ import fluxPic8 from '../public/img/flux_carousel_8.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
-import localFont from 'next/font/local'
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
   { src: fluxPic1, alt: 'video on window' },
@@ -33,11 +31,11 @@ const description = { title: "In Constant Flux", subtitle: descriptionText, text
 
 function InConstantFlux() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full`}>
+    <PageContainer>
       <Breadcrumb />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   );
 }
 

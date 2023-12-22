@@ -9,11 +9,9 @@ import redElfFront from '../public/img/digital/etherea-part-one/3d_elf_red_front
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
-import localFont from 'next/font/local'
-const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--helvetica'})
 
 const images = [
   { src: redElfFrontZoom, alt: '3d avatar lucy front face' },
@@ -31,11 +29,11 @@ const description = { title: "Etherea", subtitle: 'Part 1', text: descriptionTex
 
 function EthereaPartOne() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+    <PageContainer>
       <Breadcrumb textColor="text-black" />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />
-    </div>
+    </PageContainer>
   );
 }
 

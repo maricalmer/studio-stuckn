@@ -33,7 +33,7 @@ const description = { title: "In Constant Flux", subtitle: descriptionText, text
 
 function InConstantFlux() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full`}>
       <Breadcrumb />
       <Carousel images={images} description={description} />
       <StaticBrand opacity={"opacity-1"} />

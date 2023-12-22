@@ -21,7 +21,7 @@ const images = [
 
 export default function Digital() {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full`}>
       <Breadcrumb textColor="text-black" activeItem="Digital"/>
       <Carousel images={images} />
       <StaticBrand opacity={"opacity-1"} />

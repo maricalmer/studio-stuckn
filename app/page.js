@@ -73,7 +73,6 @@ export default function Home() {
       <canvas id="granim-canvas" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
       <div className="h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
         <Canvas>
-          {/* <ambientLight intensity={0.03} /> */}
           <BagModel
             scale={0.1}
             position={[0, -2, 0]}

@@ -8,7 +8,7 @@ const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--
 
 const PageContainer = ({ children, backgroundColor }) => {
   return (
-    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 h-full ${backgroundColor}`}>
+    <div lang="en" className={`${quella.variable} ${helvetica.variable} absolute top-0 ${backgroundColor} h-fit`}>
       {children}
     </div>
   );

@@ -6,15 +6,18 @@ import profilePic from '../public/img/low_hands.webp'
 
 
 
-const handleImageSizing = (scrollValue) => {
-  const factor = 100;
-  if (scrollValue + factor < 250) {
-    return '250px';
-  } else if (scrollValue + factor > 400) {
-    return '400px';
-  } else {
-    return `${scrollValue + factor}px`;
-  }
+const handleImageSizing = (scrollValue, baseImgHeight) => {
+  console.log(baseImgHeight);
+  if (baseImgHeight) {
+    const factor = 2;
+    if (baseImgHeight + scrollValue / factor < baseImgHeight * 1.1) {
+      return baseImgHeight * 1.1;
+    } else if (baseImgHeight + scrollValue / factor > baseImgHeight * 2) {
+      return baseImgHeight * 2;
+    } else {
+      return baseImgHeight + scrollValue/factor
+    }
+  };
 };
 
 function AboutImage(props) {
@@ -22,10 +25,10 @@ function AboutImage(props) {
     <Image
       src={profilePic}
       alt="ronja stuckn"
-      className="sticky top-40 h-[250px]"
+      className="about-image sticky top-40 h-[30vh] min-h-[100px]"
       style={{
         width: 'auto',
-        height: `${handleImageSizing(props.scrollValue)}`,
+        height: `${handleImageSizing(props.scrollValue, props.baseImgHeight)}px`,
       }}
     />
   );

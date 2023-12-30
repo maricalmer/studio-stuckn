@@ -60,15 +60,21 @@ export default function About() {
       <PageContainer>
         <Breadcrumb textColor="text-[#4A2E69]" bgColor="bg-[#EFEBE6]" activeItem="About"/>
         <div className="ml-14 mt-24 helvetica text-[#4A2E69] relative h-[150vh]">
-          <h1 className="text-3xl">Say Hello</h1>
-          <ul className="my-6">
-            <li><Link href="mailto:info@mailgo.dev" className="text-xl 2xl:text-2xl underline">Email</Link></li>
-            <li className="my-2"><a href="https://www.instagram.com/studio.stuckn" target="_blank" className="text-xl 2xl:text-2xl underline">Instagram</a></li>
-            <li><a href="https://de.linkedin.com/in/ronja-stucken" target="_blank" className="text-xl 2xl:text-2xl underline">LinkedIn</a></li>
-          </ul>
-          <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.</div>
-          <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
-          <AboutImage scrollValue={scrollValue} baseImgHeight={baseImgHeight} />
+          <div className="flex flex-col h-[calc(100vh-72px)]">
+            <div className="grow">
+              <h1 className="text-3xl">Say Hello</h1>
+              <ul className="my-6">
+                <li><Link href="mailto:info@mailgo.dev" className="text-xl 2xl:text-2xl underline">Email</Link></li>
+                <li className="my-2"><a href="https://www.instagram.com/studio.stuckn" target="_blank" className="text-xl 2xl:text-2xl underline">Instagram</a></li>
+                <li><a href="https://de.linkedin.com/in/ronja-stucken" target="_blank" className="text-xl 2xl:text-2xl underline">LinkedIn</a></li>
+              </ul>
+              <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.</div>
+              <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
+            </div>
+            <div className="shrink-0">
+              <AboutImage scrollValue={scrollValue} baseImgHeight={baseImgHeight} />
+            </div>
+          </div>
         </div>
         <StaticBrand opacity={"opacity-1"} />
       </PageContainer>

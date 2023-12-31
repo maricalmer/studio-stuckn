@@ -11,8 +11,8 @@ const CarouselCredits = (props) => {
             alt={props.credits.alt}
             className='carousel-item'
             style={{
-              width: 'auto',
-              height: '10%'
+              width: '30%',
+              height: 'auto'
             }}
           />
           <div className="helvetica text-sm mt-4 mb-2">Fashion Credits</div>

@@ -15,7 +15,7 @@ import pagePic from '../public/img/physical/reflection_of_a_female_model_from_th
 import escapismPic from '../public/img/physical/model_in_wide_trousers_taking_big_step.webp'
 
 const images = [
-  { src: fluxPic, alt: 'male model sit on window', title: 'In Constant Flux', href: '/in-constant-flux' },
+  { src: fluxPic, alt: 'male model sits on window', title: 'In Constant Flux', href: '/in-constant-flux' },
   { src: flanellePic, alt: 'model from profile view with hat hiding the face', title: 'Flanelle Magazine', href: '/flanelle' },
   { src: marieClairePic, alt: 'model stands in front of field', title: 'MarieClaire Mag', href: '/marie-claire' },
   { src: seefashionPic, alt: 'detail shot of a green suit', title: 'Seefashion', href: '/seefashion' },

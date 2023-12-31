@@ -1,5 +1,5 @@
 'use client';
-import fluxPic1 from '../public/img/flux_carousel_1.webp'
+import fluxPic1 from '../public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp'
 import fluxPic2 from '../public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp'
 import fluxPic3 from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
 import fluxPic4 from '../public/img/physical/in-constant-flux/male_model_lean_on_window.webp'

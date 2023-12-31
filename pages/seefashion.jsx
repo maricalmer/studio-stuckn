@@ -1,5 +1,5 @@
 'use client';
-import seeFashion1 from '../public/img/flux_carousel_1.webp'
+import seeFashion1 from '../public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp'
 import seeFashion2 from '../public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp'
 import seeFashion3 from '../public/img/physical/seefashion/diverse_model_indress.webp'
 import seeFashion4 from '../public/img/physical/seefashion/diverse_model_looking_to_the_side.webp'

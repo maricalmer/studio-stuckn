@@ -59,8 +59,8 @@ export default function About() {
     <>
       <PageContainer>
         <Breadcrumb textColor="text-[#4A2E69]" bgColor="bg-[#EFEBE6]" activeItem="About"/>
-        <div className="ml-14 mt-24 helvetica text-[#4A2E69] relative h-[150vh]">
-          <div className="flex flex-col h-[calc(100vh-72px)]">
+        <div className="ml-14 mt-24 helvetica text-[#4A2E69] relative h-[200vh]">
+          <div className="flex flex-col h-[calc(100vh-6rem)]">
             <div className="grow">
               <h1 className="text-3xl">Say Hello</h1>
               <ul className="my-6">
@@ -71,7 +71,7 @@ export default function About() {
               <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl my-6">Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.</div>
               <div className="w-7/12 min-w-[600px] text-xl 2xl:text-2xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
             </div>
-            <div className="shrink-0">
+            <div className="shrink-0 sticky top-[4000px]">
               <AboutImage scrollValue={scrollValue} baseImgHeight={baseImgHeight} />
             </div>
           </div>

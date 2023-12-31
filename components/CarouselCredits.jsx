@@ -16,8 +16,8 @@ const CarouselCredits = (props) => {
             }}
           />
           <div className="helvetica text-sm mt-4 mb-2">Fashion Credits</div>
-          {props.credits.creditsPieces.map((credit, index) => (
-            <div key={index} className="helvetica text-xs">{index}. {credit}</div>
+          {Object.entries(props.credits.creditsPieces).map(([key, value]) => (
+            <div key={key} className="helvetica text-xs">{key}. {value}</div>
           ))}
         </div>
       </div>

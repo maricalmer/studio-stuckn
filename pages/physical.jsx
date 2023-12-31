@@ -17,7 +17,7 @@ import escapismPic from '../public/img/physical/model_in_wide_trousers_taking_bi
 const images = [
   { src: fluxPic, alt: 'male model sits on window', title: 'In Constant Flux', href: '/in-constant-flux' },
   { src: flanellePic, alt: 'model from profile view with hat hiding the face', title: 'Flanelle Magazine', href: '/flanelle' },
-  { src: marieClairePic, alt: 'model stands in front of field', title: 'MarieClaire Mag', href: '/marie-claire' },
+  { src: marieClairePic, alt: 'model stands in front of field', title: 'Marie Claire', href: '/marie-claire' },
   { src: seefashionPic, alt: 'detail shot of a green suit', title: 'Seefashion', href: '/seefashion' },
   { src: rebootPic, alt: 'female model bust shot', title: 'Reboot', href: '/reboot' },
   { src: minimalPic, alt: 'coat with belt detail view black and white', title: 'Excessive Minimal', href: '/excessive-minimal' },

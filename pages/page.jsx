@@ -1,6 +1,6 @@
 'use client';
 import pagePic1 from '../public/img/physical/page/female_model_standing_on_sand_dune.webp'
-import pagePic2 from '../public/img/physical/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp'
+import pagePic2 from '../public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp'
 import pagePic3 from '../public/img/physical/page/sand_dune_with_round_mirror.webp'
 import pagePic4 from '../public/img/physical/page/female_model_laying_in_sand.webp'
 import pagePic5 from '../public/img/physical/page/sand_patterns.webp'

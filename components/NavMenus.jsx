@@ -3,15 +3,16 @@
 import React from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import heelsPic from '../public/img/heels.webp'
-import lucyPic from '../public/img/lucy.webp'
-import marionPic from '../public/img/marion.webp'
-import coatPic from '../public/img/coat.webp'
-import hanselPic from '../public/img/hansel.webp'
-import fluxPic from '../public/img/flux.webp'
-import lowHandsPic from '../public/img/low_hands.webp'
-import profilePic from '../public/img/profile.webp'
-import handOnChinPic from '../public/img/hand_on_chin.webp'
+
+import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'
+import lucyPic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
+import marionPic from '../public/img/digital/etherea-part-two/marion.webp'
+import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
+import hanselPic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp'
+import fluxPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
+import lowHandsPic from '../public/img/about/low_hands.webp'
+import profilePic from '../public/img/about/profile.webp'
+import handOnChinPic from '../public/img/about/hand_on_chin.webp'
 
 function NavMenus() {
 

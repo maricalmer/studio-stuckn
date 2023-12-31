@@ -3,7 +3,7 @@ import flanellePic1 from '../public/img/physical/flanelle/2_models_posing_togeht
 import flanellePic2 from '../public/img/physical/flanelle/male_model_hold_glove_in_the_camera.webp'
 import flanellePic3 from '../public/img/physical/flanelle/female_model_looking_downinto_camera.webp'
 import flanellePic4 from '../public/img/physical/flanelle/male_model_grabbing_female_model.webp'
-import flanellePic5 from '../public/img/physical/model_from_profile_view_with_hat_hiding_the_face.webp'
+import flanellePic5 from '../public/img/physical/flanelle/model_from_profile_view_with_hat_hiding_the_face.webp'
 import flanellePic6 from '../public/img/physical/flanelle/female_model_with_sunglasses_laying_on_the_floor_one_leg_angled.webp'
 import flanellePic7 from '../public/img/physical/flanelle/detail_shot_of_print_top_laying_on_chair.webp'
 import flanellePic8 from '../public/img/physical/flanelle/model_wearing_a_hat_and_a_scarf.webp'

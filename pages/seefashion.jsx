@@ -7,7 +7,7 @@ import seeFashion5 from '../public/img/physical/seefashion/3_model_looking_into_
 import seeFashion6 from '../public/img/physical/seefashion/runway_shot_of_model_walking.webp'
 import seeFashion7 from '../public/img/physical/seefashion/diverse_model_in_dress_and_vest.webp'
 import seeFashion8 from '../public/img/physical/seefashion/runway_shot_of_2_models_walking.webp'
-import seeFashion9 from '../public/img/physical/detail_shot_of_a_green_suit.webp'
+import seeFashion9 from '../public/img/physical/seefashion/detail_shot_of_a_green_suit.webp'
 import seeFashion10 from '../public/img/physical/seefashion/4_model_full_body_shot.webp'
 import seeFashion11 from '../public/img/physical/seefashion/diverse_model_in_draped_top.webp'
 

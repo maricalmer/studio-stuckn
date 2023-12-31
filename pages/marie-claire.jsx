@@ -1,5 +1,5 @@
 'use client';
-import marieClairePic1 from '../public/img/physical/model_stands_infront_of_field.webp'
+import marieClairePic1 from '../public/img/physical/marie-claire/model_stands_infront_of_field.webp'
 import marieClairePic2 from '../public/img/physical/marie-claire/2hands_holding_flowes_towards_the_sky.webp'
 import marieClairePic3 from '../public/img/physical/marie-claire/model_in_flower_field.webp'
 import marieClairePic4 from '../public/img/physical/marie-claire/model_photographed_from_bottom_armes_on_her_back.webp'

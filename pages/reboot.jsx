@@ -4,7 +4,7 @@ import reboot2 from '../public/img/physical/reboot/male_model_looks_into_tilted_
 import reboot3 from '../public/img/physical/reboot/full_body_view_of_female_model_from_the_front.webp'
 import reboot4 from '../public/img/physical/reboot/female_and_male_face_close_up.webp'
 import reboot5 from '../public/img/physical/reboot/male_model_shown_from_the_back_infront_of_sunreflection.webp'
-import reboot6 from '../public/img/physical/female_model_bust_shot.webp'
+import reboot6 from '../public/img/physical/reboot/female_model_bust_shot.webp'
 import reboot7 from '../public/img/physical/reboot/male_model_in_motion.webp'
 import reboot8 from '../public/img/physical/reboot/male_model_full_body_half_profile.webp'
 import reboot9 from '../public/img/physical/reboot/male_model_bust_shot.webp'

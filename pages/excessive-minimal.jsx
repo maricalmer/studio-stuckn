@@ -1,5 +1,5 @@
 'use client';
-import minimal1 from '../public/img/physical/coat_with_belt_detail_view_black_and_white.webp'
+import minimal1 from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
 import minimal2 from '../public/img/physical/excessive-minimal/female_model_hiding_her_face_with_her_arms.webp'
 import minimal3 from '../public/img/physical/excessive-minimal/female_model_turning_in_motion_black_and_white.webp'
 import minimal4 from '../public/img/physical/excessive-minimal/view_on_sun_reflections_on_the_floor_and_model_making_a_big_step.webp'

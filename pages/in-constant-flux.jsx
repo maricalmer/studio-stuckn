@@ -1,7 +1,7 @@
 'use client';
 import fluxPic1 from '../public/img/flux_carousel_1.webp'
 import fluxPic2 from '../public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp'
-import fluxPic3 from '../public/img/physical/male_model_sit_on_window.webp'
+import fluxPic3 from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
 import fluxPic4 from '../public/img/physical/in-constant-flux/male_model_lean_on_window.webp'
 import fluxPic5 from '../public/img/physical/in-constant-flux/model_with_hands_on_chin_looking_up.webp'
 import fluxPic6 from '../public/img/physical/in-constant-flux/model_sitting_on_top_of_arm_chair.webp'

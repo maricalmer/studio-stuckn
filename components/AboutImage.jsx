@@ -7,7 +7,6 @@ import profilePic from '../public/img/about/low_hands.webp'
 
 
 const handleImageSizing = (scrollValue, baseImgHeight) => {
-  console.log(baseImgHeight);
   if (baseImgHeight) {
     const factor = 2;
     if (baseImgHeight + scrollValue / factor < baseImgHeight * 1.1) {
@@ -25,7 +24,7 @@ function AboutImage(props) {
     <Image
       src={profilePic}
       alt="ronja stuckn"
-      className="about-image h-[30vh] min-h-[100px] w-auto"
+      className="about-image h-[30vh] min-h-[100px] w-auto sticky top-[4rem] mt-8"
       style={{
         height: `${handleImageSizing(props.scrollValue, props.baseImgHeight)}px`,
       }}

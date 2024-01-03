@@ -96,12 +96,14 @@ export default function Home() {
           scrollValue={scrollValue}
           baseFontSize={baseFontSize}
         />
-        <div className="absolute top-[100vh]">marker</div>
         <p className="text-paragraph w-5/12 text-2xl helvetica mb-10 mx-14 mix-blend-difference">
-          The digital and physical worlds are no longer separate entities; they intertwine and dance in a seamless choreography of existence.
+          The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.
         </p>
         <p className="text-paragraph w-5/12 text-2xl helvetica mt-48 mb-10 mx-14 mix-blend-difference">
-          Reality is no longer limited to what we touch and see, but forms a new landscape in which the tangible and the virtual merge into one another.
+          The conventional boundaries of traditional design concepts are being challenged in the ever-expanding digital fashion world.
+        </p>
+        <p className="text-paragraph w-5/12 text-2xl helvetica mt-48 mb-10 mx-14 mix-blend-difference">
+          Studio.Stuckn embraces the limitless possibilities of digital design and enters an inspiring cosmos where creativity is defined by passion, technology and curiosity.
         </p>
         <div className="h-[100vh] flex items-center">
           <div className="overflow-hidden">

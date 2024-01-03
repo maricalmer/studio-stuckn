@@ -10,7 +10,8 @@ function BagModel({ position, scale, rotation, scrollYProgress }) {
   useFrame((state, delta) => {
     state.scene.rotation.set(0, Math.atan(scrollYProgress.current * Math.PI * 2) * 4, 0);
     state.scene.position.set(0, -2 * (scrollYProgress.current * 0.1), 0);
-    state.camera.position.set(1.7 + scrollYProgress.current * -0.5, 0.2 + scrollYProgress.current * 1.9, -0.7 + scrollYProgress.current * 1.1);
+    state.camera.position.set(1.7 + scrollYProgress.current * -0.5, -0.2 + scrollYProgress.current * 1.9, -0.7 + scrollYProgress.current * 1.1);
+                                                                  // ^^^ change angle
     state.camera.lookAt(0, 0, 0);
   });
   return (

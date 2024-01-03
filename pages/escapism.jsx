@@ -22,7 +22,7 @@ const images = [
 
 const subtitle = "A departure from the norm into a realm of timeless elegance and modern practicality.";
 const descriptionText = "Fashion & Styling Studio.Stuckn Photo Charlotte Hansel Assistant Max Zimmermann Models Zihern & Luca (TFM) Hair & makeup Vivi Totemist & Prinz Basil";
-const description = { title: "Escapism", subtitle: subtitle, text: descriptionText };
+const description = { title: "Escapism", subtitle: subtitle, text: descriptionText, previousProject: "page" };
 
 function Escapism() {
   return (

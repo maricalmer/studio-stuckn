@@ -37,7 +37,7 @@ function Carousel(props) {
             {props.images.map((img, index) => (
               <CarouselItem src={img.src} alt={img.alt} key={index}/>
             ))}
-            <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits}/>
+            <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>
             {props.credits && <CarouselCredits credits={props.credits}/>}
           </>
         )

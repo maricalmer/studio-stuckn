@@ -46,7 +46,7 @@ const images = [
 
 const subtitle = "Just as a computer may crash due to overload or software glitches, humans may face personal crises or challenges that necessitate a restart or reevaluation of their lives. The act of rebooting in the human context implies a deliberate and conscious effort to initiate change, discard outdated patterns, and embrace a revitalized version of oneself.";
 const descriptionText = "Fashion & Styling Studio.Stuckn Photo Jaap Bräutigam Models Lea Rösch & Ringo Lukas Makeup Ekaterina Igonina";
-const description = { title: "Reboot", subtitle: subtitle, text: descriptionText };
+const description = { title: "Reboot", subtitle: subtitle, text: descriptionText, previousProject: "seefashion", nextProject: "excessive-minimal" };
 
 function Reboot() {
   return (

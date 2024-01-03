@@ -25,7 +25,7 @@ const images = [
 
 const descriptionText = "Step into a realm where elven creatures awaken in the embrace of a misty atmosphere. Every element, from the modeled facial features and tailored knitwear collection to the unique jewelry and accessory sculptures, is a product that creates a world that unfolds from the depths of the imagination.";
 const creditsText = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.";
-const description = { title: "Etherea", subtitle: 'Part 1', text: descriptionText, credits: creditsText };
+const description = { title: "Etherea", subtitle: 'Part 1', text: descriptionText, credits: creditsText, nextProject: "etherea-part-two" };
 
 function EthereaPartOne() {
   return (

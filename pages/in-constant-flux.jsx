@@ -29,7 +29,7 @@ const images = [
 
 const descriptionText = "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.";
 const creditsText = "Fashion & Styling Studio.Stuckn Director Vigdís Erla Guttormsdóttir Film & Edit Vigdís Erla Guttormsdóttir Analog Photo Ronja Stucken & Vigdís Erla Guttormsdóttir Idea Ronja Stucken Music Kerr Wilson Model Julian Eide";
-const description = { title: "In Constant Flux", subtitle: descriptionText, text: creditsText, credits: "" };
+const description = { title: "In Constant Flux", subtitle: descriptionText, text: creditsText, nextProject: "flanelle" };
 
 function InConstantFlux() {
   return (

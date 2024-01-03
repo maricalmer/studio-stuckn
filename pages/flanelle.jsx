@@ -45,7 +45,7 @@ const images = [
 
 const descriptionText = "'Sunday Off, It's Raining Today' Print Issue No. 19 The Softness Edition";
 const creditsText = "Photo Charlotte Hansel Styling Mercedes Quirante Makeup Claudia Fisher Models (Izaio) Aura Ell & Lin Novak";
-const description = { title: "Flanelle Magazine", subtitle: descriptionText, text: creditsText, credits: "" };
+const description = { title: "Flanelle Magazine", subtitle: descriptionText, text: creditsText, previousProject: "in-constant-flux", nextProject: "marie-claire" };
 const credits = {logo: flanelleLogo, alt: "Flanelle Magazine logo", creditsPieces: {1: "Aura - Hat & Shorts Taskin Goec, Top & Longsleeve Studio.Stuckn Lin - Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec", 2: "Overall & Earrings Studio.Stuckn, Gloves Klara Pichler", 3: "Top Studio.Stuckn, Coat Elisabeth v.d. Thannen, Shirt Taskin Goec, Earrings Charlotte Hansel", 4: "Coat Elisabeth v.d. Thannen, Overall & Earrings Studio.Stuckn, Gloves Klara Pichler", 5: "Glasses & Headscarf Studio.Stuckn, Anorak Dress Alexandru Plesco, Heels Taskin Goec, Tights Stylist's own", 6: "Print jersey & Trousers Studio.Stuckn", 7: "Veil Klara Pichler", 8: "Silkscarf Studio.Stuckn", 9: "Overall Studio.Stuckn", 10: "Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec", 12: "Overall Studio.Stuckn, Gloves Klara Pichler, Earrings Charlotte Hansel, Shoes Fila"}};
 
 

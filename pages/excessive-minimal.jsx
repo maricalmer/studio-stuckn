@@ -34,7 +34,7 @@ const images = [
 
 const subtitle = "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.";
 const descriptionText = "Fashion & Styling Studio.Stuckn Photo Ruben Jacob Fees Model Stella Fath";
-const description = { title: "Excessive Minimal", subtitle: subtitle, text: descriptionText };
+const description = { title: "Excessive Minimal", subtitle: subtitle, text: descriptionText, previousProject: "reboot", nextProject: "page" };
 
 function ExcessiveMinimal() {
   return (

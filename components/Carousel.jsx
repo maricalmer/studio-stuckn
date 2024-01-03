@@ -9,7 +9,7 @@ import CarouselCredits from '@/components/CarouselCredits'
 const handleClick = (event, direction) => {
   const carousel = event.currentTarget.parentElement.parentElement;
   let newScrollPosition;
-  direction == "left" ? newScrollPosition = carousel.scrollLeft - 400 : newScrollPosition = carousel.scrollLeft + 400;
+  direction == "left" ? newScrollPosition = carousel.scrollLeft - 600 : newScrollPosition = carousel.scrollLeft + 600;
   carousel.scrollTo({left: newScrollPosition, behavior: "smooth"});
 };
 

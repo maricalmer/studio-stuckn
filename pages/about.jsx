@@ -59,7 +59,7 @@ export default function About() {
     <>
       <PageContainer>
         <Breadcrumb textColor="text-[#4A2E69]" bgColor="bg-[#EFEBE6]" activeItem="About"/>
-        <div className="ml-14 mt-24 helvetica text-[#4A2E69] relative h-[200vh]">
+        <div className="ml-14 mt-32 helvetica text-[#4A2E69] relative h-[200vh]">
           <h1 className="text-3xl">Say Hello</h1>
           <ul className="my-6">
             <li><Link href="mailto:info@mailgo.dev" className="text-xl 2xl:text-2xl underline">Email</Link></li>

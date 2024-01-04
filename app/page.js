@@ -105,40 +105,6 @@ export default function Home() {
         <p className="text-paragraph w-5/12 text-2xl helvetica mt-48 mb-10 mx-14 mix-blend-difference">
           Studio.Stuckn embraces the limitless possibilities of digital design and enters an inspiring cosmos where creativity is defined by passion, technology and curiosity.
         </p>
-        <div className="h-[100vh] flex items-center">
-          <div className="overflow-hidden">
-            <h2
-              className="text-5xl font-bold font-headline opacity-0"
-            >
-              H2 title
-            </h2>
-            <p
-              className="text-paragraph max-w-[307px] opacity-0"
-              ref={textRefThree}
-            >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-          </div>
-        </div>
-        <div className="h-[100vh] flex items-center">
-          <div className="overflow-hidden">
-            <h2
-              className="text-5xl font-bold font-headline opacity-0"
-            >
-              H2 title
-            </h2>
-            <p
-              className="text-paragraph max-w-[307px] opacity-0"
-              ref={textRefFour}
-            >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-          </div>
-        </div>
         <div className="h-[100vh] flex items-center"></div>
         <div className="mb-7 text-sm text-right mr-10 mix-blend-difference font-bold">© 2024 All Rights Reserved</div>
       </div>

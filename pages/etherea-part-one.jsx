@@ -23,9 +23,12 @@ const elements = [
 
 ];
 
-const descriptionText = "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.";
-const creditsText = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.";
-const description = { title: "Etherea", subtitle: 'Part 1', text: descriptionText, credits: creditsText, nextProject: "etherea-part-two" };
+const title = "Etherea";
+const subtitle = "Part 1";
+const details = "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.";
+const credits = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.";
+const nextProject = "etherea-part-two";
+const description = { title: title, subtitle: subtitle, details: details, credits: credits, nextProject: nextProject };
 
 function EthereaPartOne() {
   return (

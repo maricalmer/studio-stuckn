@@ -31,9 +31,12 @@ const elements = [
   { type: "image", src: seeFashionImg10, alt: 'diverse model in draped top' }
 ];
 
-const subtitle = "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream.";
-const descriptionText = "Runway video Fashion & Styling Studio.Stuckn Video Petandflo Location Cinegate Set photography Tiffany Chaves Backstage photography Tabi Charaf Hair & Makeup Mud Studio Berlin Models Viva Models In cooperation with Bluescope Berlin and Kathi Kaeppel Runway soundtrack Cleon";
-const description = { title: "See Fashion", subtitle: subtitle, text: descriptionText, previousProject: "marie-claire", nextProject: "reboot" };
+const title = "See Fashion";
+const details = "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream.";
+const credits = "Runway video Fashion & Styling Studio.Stuckn Video Petandflo Location Cinegate Set photography Tiffany Chaves Backstage photography Tabi Charaf Hair & Makeup Mud Studio Berlin Models Viva Models In cooperation with Bluescope Berlin and Kathi Kaeppel Runway soundtrack Cleon";
+const previousProject = "marie-claire";
+const nextProject = "reboot";
+const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 
 function Seefashion() {
   return (

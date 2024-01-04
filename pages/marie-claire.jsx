@@ -21,17 +21,20 @@ const elements = [
   { type: "image", src: marieClaireImg5, alt: 'model holding scarf floating in the wind' }
 ];
 
+const title = "Marie Claire Magazine";
 const subtitle = "'ВЗЯТИ ГОРУ'";
-const descriptionText = "Print Issue Marie Claire Ukraine, 09/2021";
-const creditsText = "Photo Christiane Baumgart Styling Chiara Bottin Makeup Adina Hensel Model (Spin) Irene Opoku Retouche Irene Velweiss";
-const description = { title: "Marie Claire Magazine", subtitle: subtitle, text: descriptionText, credits: creditsText, previousProject: "flanelle", nextProject: "seefashion" };
-const credits = {logo: marieClaireLogo, alt: "Marie Claire Magazine logo", creditsPieces: {1: "Shirt, Vest & Trousers Studio.Stuckn, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear", 2: "Shirt Studio.Stuckn", 3: "Coat Truongii, Bag Burberry, Top Alina Wotschel, Trousers Acne Studios, Earrings Stephanie Kahnau", 4: "Dress Karl Lagerfeld", 5: "Orange Blouse Soeur, Striped Blouse Sessùn, Scarf Hermés"}};
+const details = "Print Issue Marie Claire Ukraine, 09/2021";
+const credits = "Photo Christiane Baumgart Styling Chiara Bottin Makeup Adina Hensel Model (Spin) Irene Opoku Retouche Irene Velweiss";
+const previousProject = "flanelle";
+const nextProject = "seefashion";
+const description = { title: title, subtitle: subtitle, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
+const fashionCredits = {logo: marieClaireLogo, alt: "Marie Claire Magazine logo", creditsPieces: {1: "Shirt, Vest & Trousers Studio.Stuckn, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear", 2: "Shirt Studio.Stuckn", 3: "Coat Truongii, Bag Burberry, Top Alina Wotschel, Trousers Acne Studios, Earrings Stephanie Kahnau", 4: "Dress Karl Lagerfeld", 5: "Orange Blouse Soeur, Striped Blouse Sessùn, Scarf Hermés"}};
 
 function MarieClaire() {
   return (
     <PageContainer>
       <Breadcrumb />
-      <Carousel elements={elements} description={description} credits={credits}/>
+      <Carousel elements={elements} description={description} fashionCredits={fashionCredits}/>
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   );

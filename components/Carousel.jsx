@@ -4,7 +4,7 @@ import CarouselLink from '@/components/CarouselLink'
 import CarouselImage from '@/components/CarouselImage'
 import CarouselVideo from '@/components/CarouselVideo'
 import CarouselDescription from '@/components/CarouselDescription'
-import CarouselCredits from '@/components/CarouselCredits'
+import CarouselFashionCredits from '@/components/CarouselFashionCredits'
 
 
 const handleClick = (event, direction) => {
@@ -15,6 +15,7 @@ const handleClick = (event, direction) => {
 };
 
 function Carousel(props) {
+  console.log(props.fashionCredits)
   return (
     <div className="carousel h-[60vh] flex mt-36 gap-3 overflow-scroll overscroll-contain relative">
       <div className="h-full flex items-center">
@@ -40,7 +41,7 @@ function Carousel(props) {
         })
       }
       {props.description && <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>}
-      {props.credits && <CarouselCredits credits={props.credits}/>}
+      {props.fashionCredits && <CarouselFashionCredits fashionCredits={props.fashionCredits}/>}
       <div className="min-w-[310px] h-full "></div>
     </div>
   );

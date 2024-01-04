@@ -26,9 +26,11 @@ const elements = [
   { type: "image", src: fluxImg8, alt: 'male model laying on chair' }
 ];
 
-const descriptionText = "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.";
-const creditsText = "Fashion & Styling Studio.Stuckn Director Vigdís Erla Guttormsdóttir Film & Edit Vigdís Erla Guttormsdóttir Analog Photo Ronja Stucken & Vigdís Erla Guttormsdóttir Idea Ronja Stucken Music Kerr Wilson Model Julian Eide";
-const description = { title: "In Constant Flux", subtitle: descriptionText, text: creditsText, nextProject: "flanelle" };
+const title = "In Constant Flux";
+const details = "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.";
+const credits = "Fashion & Styling Studio.Stuckn Director Vigdís Erla Guttormsdóttir Film & Edit Vigdís Erla Guttormsdóttir Analog Photo Ronja Stucken & Vigdís Erla Guttormsdóttir Idea Ronja Stucken Music Kerr Wilson Model Julian Eide";
+const nextProject = "flanelle";
+const description = { title: title, details: details, credits: credits, nextProject: nextProject };
 
 function InConstantFlux() {
   return (

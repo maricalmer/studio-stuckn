@@ -32,9 +32,12 @@ const elements = [
   { type: "image", src: minimalImg11, alt: 'abstract projection on female model upper body' }
 ];
 
+const title = "Excessive Minimal";
 const subtitle = "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.";
-const descriptionText = "Fashion & Styling Studio.Stuckn Photo Ruben Jacob Fees Model Stella Fath";
-const description = { title: "Excessive Minimal", subtitle: subtitle, text: descriptionText, previousProject: "reboot", nextProject: "page" };
+const details = "Fashion & Styling Studio.Stuckn Photo Ruben Jacob Fees Model Stella Fath";
+const previousProject = "reboot";
+const nextProject = "page";
+const description = { title: title, subtitle: subtitle, details: details, previousProject: previousProject, nextProject: nextProject };
 
 function ExcessiveMinimal() {
   return (

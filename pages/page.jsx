@@ -33,17 +33,20 @@ const elements = [
   { type: "image", src: pageImg11, alt: 'stone dune with wires' }
 ];
 
-const descriptionText = "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021";
-const creditsText = "Photo Chiara Bonetti Photo Assistant Pietro Groff Styling Halla Farhat Hair & Makeup Christin Sperlich Set Design Sandro de Mauro Model (M4) Verna Reini";
-const description = { title: "Page Magazine", subtitle: descriptionText, text: creditsText, previousProject: "excessive-minimal", nextProject: "escapism" };
-const credits = {logo: pageLogo, alt: "Page Magazine logo", creditsPieces: {1: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 2: "Earrings, Leather Trousers Studio.Stuckn, Top Kuntz", 4: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 6: "Top Studio.Stuckn", 7: "Leather Trousers Studio.Stuckn, Vest, Glasses Stylist's own", 8: "Necklace & Earcuff NUW'D, Glasses Stylist's own", 10: "Leather Trousers Studio.Stuckn"}};
+const title = "Page Magazine";
+const details = "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021";
+const credits = "Photo Chiara Bonetti Photo Assistant Pietro Groff Styling Halla Farhat Hair & Makeup Christin Sperlich Set Design Sandro de Mauro Model (M4) Verna Reini";
+const previousProject = "excessive-minimal";
+const nextProject = "escapism";
+const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
+const fashionCredits = {logo: pageLogo, alt: "Page Magazine logo", creditsPieces: {1: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 2: "Earrings, Leather Trousers Studio.Stuckn, Top Kuntz", 4: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 6: "Top Studio.Stuckn", 7: "Leather Trousers Studio.Stuckn, Vest, Glasses Stylist's own", 8: "Necklace & Earcuff NUW'D, Glasses Stylist's own", 10: "Leather Trousers Studio.Stuckn"}};
 
 
 function Page() {
   return (
     <PageContainer>
       <Breadcrumb />
-      <Carousel elements={elements} description={description} credits={credits}/>
+      <Carousel elements={elements} description={description} fashionCredits={fashionCredits}/>
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   );

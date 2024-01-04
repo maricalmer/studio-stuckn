@@ -20,9 +20,11 @@ const elements = [
   { type: "image", src: escapismImg5, alt: 'model headshot from back view' }
 ];
 
-const subtitle = "A departure from the norm into a realm of timeless elegance and modern practicality.";
-const descriptionText = "Fashion & Styling Studio.Stuckn Photo Charlotte Hansel Assistant Max Zimmermann Models Zihern & Luca (TFM) Hair & makeup Vivi Totemist & Prinz Basil";
-const description = { title: "Escapism", subtitle: subtitle, text: descriptionText, previousProject: "page" };
+const title = "Escapism";
+const details = "A departure from the norm into a realm of timeless elegance and modern practicality.";
+const credits = "Fashion & Styling Studio.Stuckn Photo Charlotte Hansel Assistant Max Zimmermann Models Zihern & Luca (TFM) Hair & makeup Vivi Totemist & Prinz Basil";
+const previousProject = "page";
+const description = { title: title, details: details, credits: credits, previousProject: previousProject };
 
 function Escapism() {
   return (

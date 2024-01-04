@@ -22,9 +22,13 @@ const elements = [
   { type: "image", src: roseElfFront, alt: '3d avatar marion front body top' }
 ];
 
-const descriptionText = "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.";
-const creditsText = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.";
-const description = { title: "Etherea", subtitle: 'Part 2', text: descriptionText, credits: creditsText, previousProject: "etherea-part-one", nextProject: "etherea-part-three" };
+const title = "Etherea";
+const subtitle = "Part 2";
+const details = "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.";
+const credits = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.";
+const previousProject = "etherea-part-one";
+const nextProject = "etherea-part-three";
+const description = { title: title, subtitle: subtitle, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 
 function EthereaPartTwo() {
   return (

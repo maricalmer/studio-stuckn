@@ -13,13 +13,13 @@ import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
 
-const images = [
-  { src: roseElfEar, alt: '3d avatar marion face side' },
-  { src: roseElfBottom, alt: '3d avatar marion front body bottom' },
-  { src: tree, alt: '3d tree' },
-  { src: roseElfFace, alt: '3d avatar marion face side' },
-  { src: roseElfSide, alt: '3d avatar marion side body' },
-  { src: roseElfFront, alt: '3d avatar marion front body top' }
+const elements = [
+  { type: "image", src: roseElfEar, alt: '3d avatar marion face side' },
+  { type: "image", src: roseElfBottom, alt: '3d avatar marion front body bottom' },
+  { type: "image", src: tree, alt: '3d tree' },
+  { type: "image", src: roseElfFace, alt: '3d avatar marion face side' },
+  { type: "image", src: roseElfSide, alt: '3d avatar marion side body' },
+  { type: "image", src: roseElfFront, alt: '3d avatar marion front body top' }
 ];
 
 const descriptionText = "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.";
@@ -30,7 +30,7 @@ function EthereaPartTwo() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
-      <Carousel images={images} description={description} />
+      <Carousel elements={elements} description={description} />
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   );

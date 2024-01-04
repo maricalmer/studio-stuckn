@@ -13,13 +13,13 @@ import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
 
-const images = [
-  { src: redElfFrontZoom, alt: '3d avatar lucy front face' },
-  { src: redElfDress, alt: '3d avatar lucy side distance' },
-  { src: redElfProfile, alt: '3d avatar lucy face side' },
-  { src: redElfFace, alt: '3d avatar lucy front distance' },
-  { src: tree, alt: '3d tree' },
-  { src: redElfFront, alt: '3d avatar lucy front distance' }
+const elements = [
+  { type: "image", src: redElfFrontZoom, alt: '3d avatar lucy front face' },
+  { type: "image", src: redElfDress, alt: '3d avatar lucy side distance' },
+  { type: "image", src: redElfProfile, alt: '3d avatar lucy face side' },
+  { type: "image", src: redElfFace, alt: '3d avatar lucy front distance' },
+  { type: "image", src: tree, alt: '3d tree' },
+  { type: "image", src: redElfFront, alt: '3d avatar lucy front distance' }
 
 ];
 
@@ -31,7 +31,7 @@ function EthereaPartOne() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
-      <Carousel images={images} description={description} />
+      <Carousel elements={elements} description={description} />
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   );

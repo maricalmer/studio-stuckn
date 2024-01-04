@@ -1,7 +1,8 @@
 // Carousel.jsx
 'use client';
-import CarouselItemWithLink from '@/components/CarouselItemWithLink'
-import CarouselItem from '@/components/CarouselItem'
+import CarouselLink from '@/components/CarouselLink'
+import CarouselImage from '@/components/CarouselImage'
+import CarouselVideo from '@/components/CarouselVideo'
 import CarouselDescription from '@/components/CarouselDescription'
 import CarouselCredits from '@/components/CarouselCredits'
 
@@ -28,20 +29,18 @@ function Carousel(props) {
       </div>
       <div className="min-w-[310px] h-full "></div>
       {
-        'href' in props.images[0] ? (
-          props.images.map((img, index) => {
-            return(<CarouselItemWithLink src={img.src} alt={img.alt} title={img.title} href={img.href} key={index}/>)
-          })
-        ) : (
-          <>
-            {props.images.map((img, index) => (
-              <CarouselItem src={img.src} alt={img.alt} key={index}/>
-            ))}
-            <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>
-            {props.credits && <CarouselCredits credits={props.credits}/>}
-          </>
-        )
+        props.elements.map((element, index) => {
+          if (element.type === "link") {
+            return(<CarouselLink src={element.src} alt={element.alt} title={element.title} href={element.href} key={index}/>)
+          } else if (element.type === "video") {
+            return(<CarouselVideo src={element.src} title={element.title} key={index}/>)
+          } else {
+            return (<CarouselImage src={element.src} alt={element.alt} key={index}/>)
+          }
+        })
       }
+      {props.description && <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>}
+      {props.credits && <CarouselCredits credits={props.credits}/>}
       <div className="min-w-[310px] h-full "></div>
     </div>
   );

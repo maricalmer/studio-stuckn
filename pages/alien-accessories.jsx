@@ -23,22 +23,22 @@ import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
 
-const images = [
-  { src: blackBootsProfile, alt: '3d black boots profile' },
-  { src: greenBagProfile, alt: '3d black bag blue background' },
-  { src: whiteBagDetail, alt: '3d white bag white background' },
-  { src: silverBootsTop, alt: '3d silver boots' },
-  { src: silverBootsDetail, alt: '3d silver leather boots close up' },
-  { src: greenBagTop, alt: '3d black bag top' },
-  { src: blueBagFront, alt: '3d black bag top green background' },
-  { src: blackBootsBack, alt: '3d black boots back' },
-  { src: blueBagProfile, alt: '3d black bag profile' },
-  { src: orangeSneakerSide, alt: '3d black shoes side' },
-  { src: whiteBagFront, alt: '3d white bag orange background' },
-  { src: silverBootsFront, alt: '3d silver boots front' },
-  { src: greenBagSide, alt: '3d green bag open' },
-  { src: orangeSneakerTop, alt: '3d black shoes orange top' },
-  { src: orangeSneakerDetail, alt: '3d black shoes orange sole' }
+const elements = [
+  { type: "image", src: blackBootsProfile, alt: '3d black boots profile' },
+  { type: "image", src: greenBagProfile, alt: '3d black bag blue background' },
+  { type: "image", src: whiteBagDetail, alt: '3d white bag white background' },
+  { type: "image", src: silverBootsTop, alt: '3d silver boots' },
+  { type: "image", src: silverBootsDetail, alt: '3d silver leather boots close up' },
+  { type: "image", src: greenBagTop, alt: '3d black bag top' },
+  { type: "image", src: blueBagFront, alt: '3d black bag top green background' },
+  { type: "image", src: blackBootsBack, alt: '3d black boots back' },
+  { type: "image", src: blueBagProfile, alt: '3d black bag profile' },
+  { type: "image", src: orangeSneakerSide, alt: '3d black shoes side' },
+  { type: "image", src: whiteBagFront, alt: '3d white bag orange background' },
+  { type: "image", src: silverBootsFront, alt: '3d silver boots front' },
+  { type: "image", src: greenBagSide, alt: '3d green bag open' },
+  { type: "image", src: orangeSneakerTop, alt: '3d black shoes orange top' },
+  { type: "image", src: orangeSneakerDetail, alt: '3d black shoes orange sole' }
 ];
 
 const descriptionText = "In this collection of 3D fashion sculptures, organic curves are combined with geometric precision, redefining the conventional perception of shapes. The deliberate choice of materials with vibrant color tones paired with deep black and shiny surfaces gives the digital sculptures a special fascination and brings them to life. Let yourself be inspired to rethink reality and appreciate the extraordinary.";
@@ -49,7 +49,7 @@ function AlienAccessories() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
-      <Carousel images={images} description={description} />
+      <Carousel elements={elements} description={description} />
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   );

@@ -10,18 +10,19 @@ import roseElfEarCropped from '../public/img/digital/3d_elf_rose_ear_cropped.web
 import purpleElfDetail from '../public/img/digital/3d_elf_purple_detail.webp'
 import blueBagFront from '../public/img/digital/3d_blue_bag_front.webp'
 
-const images = [
-  { src: redElfProfile, alt: '3d avatar laying', title: 'Etherea Part I', href: '/etherea-part-one' },
-  { src: roseElfEarCropped, alt: '3d avatar earings', title: 'Etherea Part II', href: '/etherea-part-two' },
-  { src: purpleElfDetail, alt: '3d avatar boots', title: 'Etherea Part III', href: '/etherea-part-three' },
-  { src: blueBagFront, alt: '3d alien bag with green background', title: 'Alien Accessories', href: '/alien-accessories' },
+
+const elements = [
+  { type: "link", src: redElfProfile, alt: '3d avatar laying', title: 'Etherea Part I', href: '/etherea-part-one' },
+  { type: "link", src: roseElfEarCropped, alt: '3d avatar earings', title: 'Etherea Part II', href: '/etherea-part-two' },
+  { type: "link", src: purpleElfDetail, alt: '3d avatar boots', title: 'Etherea Part III', href: '/etherea-part-three' },
+  { type: "link", src: blueBagFront, alt: '3d alien bag with green background', title: 'Alien Accessories', href: '/alien-accessories' },
 ];
 
 export default function Digital() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" activeItem="Digital"/>
-      <Carousel images={images} />
+      <Carousel elements={elements} />
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   )

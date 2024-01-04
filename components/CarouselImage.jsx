@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const CarouselItem = ({ src, alt }) => {
+const CarouselImage = ({ src, alt }) => {
   return (
     <div className="min-w-fit h-full">
       <Image
@@ -19,4 +19,4 @@ const CarouselItem = ({ src, alt }) => {
   );
 };
 
-export default CarouselItem;
+export default CarouselImage;

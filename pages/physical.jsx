@@ -14,22 +14,22 @@ import minimalPic from '../public/img/physical/excessive-minimal/coat_with_belt_
 import pagePic from '../public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp'
 import escapismPic from '../public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp'
 
-const images = [
-  { src: fluxPic, alt: 'male model sits on window', title: 'In Constant Flux', href: '/in-constant-flux' },
-  { src: flanellePic, alt: 'model from profile view with hat hiding the face', title: 'Flanelle Magazine', href: '/flanelle' },
-  { src: marieClairePic, alt: 'model stands in front of field', title: 'Marie Claire Magazine', href: '/marie-claire' },
-  { src: seefashionPic, alt: 'detail shot of a green suit', title: 'Seefashion', href: '/seefashion' },
-  { src: rebootPic, alt: 'female model bust shot', title: 'Reboot', href: '/reboot' },
-  { src: minimalPic, alt: 'coat with belt detail view black and white', title: 'Excessive Minimal', href: '/excessive-minimal' },
-  { src: pagePic, alt: 'reflection of a female model from the bottom holding gemstone', title: 'Page Magazine', href: '/page' },
-  { src: escapismPic, alt: 'model in wide trousers taking big step', title: 'Escapism', href: '/escapism' }
+const elements = [
+  { type: "link", src: fluxPic, alt: 'male model sits on window', title: 'In Constant Flux', href: '/in-constant-flux' },
+  { type: "link", src: flanellePic, alt: 'model from profile view with hat hiding the face', title: 'Flanelle Magazine', href: '/flanelle' },
+  { type: "link", src: marieClairePic, alt: 'model stands in front of field', title: 'Marie Claire Magazine', href: '/marie-claire' },
+  { type: "link", src: seefashionPic, alt: 'detail shot of a green suit', title: 'Seefashion', href: '/seefashion' },
+  { type: "link", src: rebootPic, alt: 'female model bust shot', title: 'Reboot', href: '/reboot' },
+  { type: "link", src: minimalPic, alt: 'coat with belt detail view black and white', title: 'Excessive Minimal', href: '/excessive-minimal' },
+  { type: "link", src: pagePic, alt: 'reflection of a female model from the bottom holding gemstone', title: 'Page Magazine', href: '/page' },
+  { type: "link", src: escapismPic, alt: 'model in wide trousers taking big step', title: 'Escapism', href: '/escapism' }
 ];
 
 export default function Physical() {
   return (
     <PageContainer>
       <Breadcrumb activeItem="Physical"/>
-      <Carousel images={images} />
+      <Carousel elements={elements} />
       <StaticBrand opacity={"opacity-1"} />
     </PageContainer>
   )

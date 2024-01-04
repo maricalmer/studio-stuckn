@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'
 
-const CarouselItemWithLink = ({ src, alt, title, href }) => {
+const CarouselLink = ({ src, alt, title, href }) => {
   return (
     <>
       <Link href={`${href}`} className="carousel-item__link min-w-fit h-full relative transition-opacity ease-in-out">
@@ -23,4 +23,4 @@ const CarouselItemWithLink = ({ src, alt, title, href }) => {
   );
 };
 
-export default CarouselItemWithLink;
+export default CarouselLink;

@@ -149,7 +149,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-.brand-text {
-  margin-top: calc(100vh - 40vh);
-}

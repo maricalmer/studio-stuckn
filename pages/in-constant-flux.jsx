@@ -15,7 +15,7 @@ import PageContainer from "@/components/PageContainer";
 import "../public/stylesheets/projects.css";
 
 const elements = [
-  { type: "video", src: "https://www.youtube-nocookie.com/embed/hxwX9xJGz_4?si=ZkVKlG47pFwtBvZL", title: 'In Constant Flux by Ronja Stucken' },
+  { type: "video", src: "https://www.youtube-nocookie.com/embed/hxwX9xJGz_4?si=ZkVKlG47pFwtBvZL&rel=0", title: 'In Constant Flux by Ronja Stucken' },
   { type: "image", src: fluxImg1, alt: 'male model sits on couch next to flowers' },
   { type: "image", src: fluxImg2, alt: 'male model sits on window' },
   { type: "image", src: fluxImg3, alt: 'male model leans on window' },

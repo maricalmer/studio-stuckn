@@ -97,13 +97,13 @@ export default function Home() {
           scrollValue={scrollValue}
           baseFontSize={baseFontSize}
         />
-        <p className="text-paragraph w-5/12 text-2xl helvetica mb-10 mx-14 mix-blend-difference">
+        <p className="text-paragraph w-5/12 text-[2rem] helvetica mb-10 mx-14 mix-blend-difference">
           The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.
         </p>
-        <p className="text-paragraph w-5/12 text-2xl helvetica mt-28 mb-10 mx-14 mix-blend-difference">
+        <p className="text-paragraph w-5/12 text-[2rem] helvetica mt-28 mb-10 mx-14 mix-blend-difference">
           The conventional boundaries of traditional design concepts are being challenged in the ever-expanding digital fashion world.
         </p>
-        <p className="text-paragraph w-5/12 text-2xl helvetica mt-28 mb-10 mx-14 mix-blend-difference">
+        <p className="text-paragraph w-5/12 text-[2rem] helvetica mt-28 mb-10 mx-14 mix-blend-difference">
           Studio.Stuckn embraces the limitless possibilities of digital design and enters an inspiring cosmos where creativity is defined by passion, technology and curiosity.
         </p>
         <div className="h-[100vh] flex items-center"></div>

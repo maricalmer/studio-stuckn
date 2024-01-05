@@ -8,7 +8,7 @@ const handleArrowSizing = (scrollY) => {
 };
 
 const handleArrowDirection = (scrollYProgress) => {
-  return scrollYProgress === 1 ? 180 : 0;
+  return scrollYProgress > 0.85 ? 180 : 0;
 };
 
 function ScrollArrow({scrollY, scrollYProgress}) {

@@ -2,16 +2,16 @@
 'use client';
 import {React, useRef} from "react";
 
-const handleArrowSizing = (scrollValue) => {
+const handleArrowSizing = (scrollY) => {
   const factor = 2500;
-  return 1 - scrollValue/factor < 0.3 ? 0.3 : 1 - scrollValue/factor;
+  return 1 - scrollY/factor < 0.3 ? 0.3 : 1 - scrollY/factor;
 };
 
-const handleArrowDirection = (scrollValue) => {
-  // console.log(scrollValue);
+const handleArrowDirection = (scrollYProgress) => {
+  return scrollYProgress === 1 ? 180 : 0;
 };
 
-function ScrollArrow(scrollValue) {
+function ScrollArrow({scrollY, scrollYProgress}) {
   return (
     <>
       <svg width="66" height="120" viewBox="0 0 66 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="sticky top-1/2 left-full mr-10 mix-blend-difference">
@@ -19,8 +19,7 @@ function ScrollArrow(scrollValue) {
       </svg>
       <style jsx>{`
         svg {
-          transform: scale(${handleArrowSizing(scrollValue.scrollValue)});
-          transform: rotate(${handleArrowDirection(scrollValue.scrollValue)});
+          transform: scale(${handleArrowSizing(scrollY.current)}) rotate(${handleArrowDirection(scrollYProgress.current)}deg);
         }
       `}</style>
     </>

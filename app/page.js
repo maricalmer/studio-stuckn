@@ -90,7 +90,8 @@ export default function Home() {
           <rect width="60" height="28" fill="#A1BF79"/>
         </svg>
         <ScrollArrow
-          scrollValue={scrollValue}
+          scrollY={scrollY}
+          scrollYProgress={scrollYProgress}
         />
         <Brand
           scrollValue={scrollValue}

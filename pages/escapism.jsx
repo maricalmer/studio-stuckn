@@ -22,7 +22,7 @@ const elements = [
 
 const title = "Escapism";
 const details = "A departure from the norm into a realm of timeless elegance and modern practicality.";
-const credits = "Fashion & Styling Studio.Stuckn Photo Charlotte Hansel Assistant Max Zimmermann Models Zihern & Luca (TFM) Hair & makeup Vivi Totemist & Prinz Basil";
+const credits = [["Fashion & Styling", "Studio.Stuckn"], ["Photo", "Charlotte Hansel"], ["Assistant", "Max Zimmermann"], ["Models (TFM)", "Zihern & Luca"], ["Hair & makeup", "Vivi Totemist & Prinz Basil"]];
 const previousProject = "page";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject };
 

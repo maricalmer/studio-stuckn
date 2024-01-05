@@ -45,7 +45,7 @@ const elements = [
 
 const title = "Flanelle Magazine";
 const details = "'Sunday Off, It's Raining Today' Print Issue No. 19 The Softness Edition";
-const credits = "Photo Charlotte Hansel Styling Mercedes Quirante Makeup Claudia Fisher Models (Izaio) Aura Ell & Lin Novak";
+const credits = [["Photo", "Charlotte Hansel"], ["Styling", "Mercedes Quirante"], ["Makeup", "Claudia Fisher"], ["Models (Izaio)", "Aura Ell & Lin Novak"]];
 const previousProject = "in-constant-flux";
 const nextProject = "marie-claire";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };

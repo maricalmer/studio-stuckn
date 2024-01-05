@@ -15,7 +15,6 @@ const handleClick = (event, direction) => {
 };
 
 function Carousel(props) {
-  console.log(props.fashionCredits)
   return (
     <div className="carousel h-[60vh] flex mt-36 gap-3 overflow-scroll overscroll-contain relative">
       <div className="h-full flex items-center">
@@ -40,7 +39,7 @@ function Carousel(props) {
           }
         })
       }
-      {props.description && <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} description={props.description.text} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>}
+      {props.description && <CarouselDescription title={props.description.title} subtitle={props.description.subtitle} details={props.description.details} softwares={props.description.softwares} credits={props.description.credits} previousProject={props.description.previousProject} nextProject={props.description.nextProject}/>}
       {props.fashionCredits && <CarouselFashionCredits fashionCredits={props.fashionCredits}/>}
       <div className="min-w-[310px] h-full "></div>
     </div>

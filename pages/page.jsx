@@ -35,7 +35,7 @@ const elements = [
 
 const title = "Page Magazine";
 const details = "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021";
-const credits = "Photo Chiara Bonetti Photo Assistant Pietro Groff Styling Halla Farhat Hair & Makeup Christin Sperlich Set Design Sandro de Mauro Model (M4) Verna Reini";
+const credits = [["Photo", "Chiara Bonetti"], ["Photo Assistant", "Pietro Groff"], ["Styling", "Halla Farhat"], ["Hair & Makeup", "Christin Sperlich"], ["Set Design", "Sandro de Mauro"], ["Model (M4)", "Verna Reini"]];
 const previousProject = "excessive-minimal";
 const nextProject = "escapism";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };

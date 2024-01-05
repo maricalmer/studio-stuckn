@@ -43,9 +43,9 @@ const elements = [
 
 const title = "Alien Accessories";
 const details = "In this collection of 3D fashion sculptures, organic curves are combined with geometric precision, redefining the conventional perception of shapes. The deliberate choice of materials with vibrant color tones paired with deep black and shiny surfaces gives the digital sculptures a special fascination and brings them to life. Let yourself be inspired to rethink reality and appreciate the extraordinary.";
-const credits = "Using ZBrush, Blender, CLO3D, Substance Painter, and Photoshop.";
+const softwares = "Using ZBrush, Blender, CLO3D, Substance Painter, and Photoshop.";
 const previousProject = "etherea-part-three";
-const description = { title: title, details: details, credits: credits, previousProject: previousProject };
+const description = { title: title, details: details, softwares: softwares, previousProject: previousProject };
 
 function AlienAccessories() {
   return (

@@ -24,7 +24,7 @@ function AboutImage(props) {
     <Image
       src={profilePic}
       alt="ronja stuckn"
-      className="about-image h-[30vh] min-h-[100px] w-auto sticky top-[4rem] mt-12"
+      className="about-image h-[40vh] min-h-[100px] w-auto sticky top-[4rem] mt-12"
       style={{
         height: `${handleImageSizing(props.scrollValue, props.baseImgHeight)}px`,
       }}

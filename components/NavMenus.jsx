@@ -12,7 +12,7 @@ import hanselPic from '../public/img/physical/flanelle/2_models_posing_togehter_
 import fluxPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
 import lowHandsPic from '../public/img/about/low_hands.webp'
 import profilePic from '../public/img/about/profile.webp'
-import handOnChinPic from '../public/img/about/hand_on_chin.webp'
+import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp'
 
 function NavMenus() {
 
@@ -119,7 +119,7 @@ function NavMenus() {
         </div>
         <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
-            src={handOnChinPic}
+            src={elbowOnChairPic}
             alt="ronja hand on chin"
             style={{
               width: '100%',

@@ -46,7 +46,7 @@ const elements = [
 
 const title = "Reboot";
 const details = "Just as a computer may crash due to overload or software glitches, humans may face personal crises or challenges that necessitate a restart or reevaluation of their lives. The act of rebooting in the human context implies a deliberate and conscious effort to initiate change, discard outdated patterns, and embrace a revitalized version of oneself.";
-const credits = [["Fashion & Styling", "Studio.Stuckn"], ["Photo", "Jaap Bräutigam"], ["Models", "Lea Rösch & Ringo Lukas"], ["Makeup", "Ekaterina Igonina"]];
+const credits = [["All Fashion", "Studio.Stuckn"], ["Styling", "Studio.Stuckn"], ["Photo", "Jaap Bräutigam"], ["Models", "Lea Rösch & Ringo Lukas"], ["Makeup", "Ekaterina Igonina"]];
 const previousProject = "seefashion";
 const nextProject = "excessive-minimal";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };

@@ -34,7 +34,7 @@ const elements = [
 
 const title = "Excessive Minimal";
 const details = "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.";
-const credits = [["Fashion & Styling", "Studio.Stuckn"], ["Photo", "Ruben Jacob Fees"], ["Model", "Stella Fath"]];
+const credits = [["All Fashion", "Studio.Stuckn"], ["Styling", "Studio.Stuckn"], ["Photo", "Ruben Jacob Fees"], ["Model", "Stella Fath"]];
 const previousProject = "reboot";
 const nextProject = "page";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };

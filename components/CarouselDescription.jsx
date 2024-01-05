@@ -6,14 +6,14 @@ const CarouselDescription = ({ title, subtitle, details, softwares, credits, pre
   return (
     <div className="w-[220px] h-[60vh] fixed left-[100px]">
       <div className="quella text-4xl mt-5 relative z-20 p-3">{title}</div>
-      <div className="helvetica text-sm mb-3 relative z-20 leading-4 px-3">{subtitle}</div>
+      {subtitle && <div className={subtitle.cyrillic ? "helvetica text-sm mb-3 relative z-20 leading-4 px-3 font-bold" : "helvetica text-sm mb-3 relative z-20 leading-4 px-3"}>{subtitle.text}</div>}
       <div className="helvetica text-sm mb-3 relative z-20 leading-4 px-3">{details}</div>
-      <div className="helvetica text-sm relative z-20 leading-4 px-3">{softwares}</div>
+      {softwares && <div className="helvetica text-sm relative z-20 leading-4 px-3">{softwares}</div>}
       {credits && credits.map((credit, index) => {
         return(
-          <div className="helvetica relative z-20 leading-none px-3" key={index}>
-            <span className="text-xs">{credit[0]}</span>
-            <span className="text-sm ml-1">{credit[1]}</span>
+          <div className="helvetica relative leading-3 z-20 px-3" key={index}>
+            <span className="text-[0.6rem] leading-3">{credit[0]}</span>
+            <span className="text-xs ml-1 leading-3">{credit[1]}</span>
           </div>
         )
       })}

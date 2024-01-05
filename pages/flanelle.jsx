@@ -44,11 +44,12 @@ const elements = [
 ];
 
 const title = "Flanelle Magazine";
-const details = "'Sunday Off, It's Raining Today' Print Issue No. 19 The Softness Edition";
+const subtitle = {text: "'Sunday Off, It's Raining Today'", cyrillic: false};
+const details = "Print Issue No. 19 - The Softness Edition";
 const credits = [["Photo", "Charlotte Hansel"], ["Styling", "Mercedes Quirante"], ["Makeup", "Claudia Fisher"], ["Models (Izaio)", "Aura Ell & Lin Novak"]];
 const previousProject = "in-constant-flux";
 const nextProject = "marie-claire";
-const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
+const description = { title: title, subtitle: subtitle, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 const fashionCredits = {logo: flanelleLogo, alt: "Flanelle Magazine logo", creditsPieces: {1: "Aura - Hat & Shorts Taskin Goec, Top & Longsleeve Studio.Stuckn Lin - Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec", 2: "Overall & Earrings Studio.Stuckn, Gloves Klara Pichler", 3: "Top Studio.Stuckn, Coat Elisabeth v.d. Thannen, Shirt Taskin Goec, Earrings Charlotte Hansel", 4: "Coat Elisabeth v.d. Thannen, Overall & Earrings Studio.Stuckn, Gloves Klara Pichler", 5: "Glasses & Headscarf Studio.Stuckn, Anorak Dress Alexandru Plesco, Heels Taskin Goec, Tights Stylist's own", 6: "Print jersey & Trousers Studio.Stuckn", 7: "Veil Klara Pichler", 8: "Silkscarf Studio.Stuckn", 9: "Overall Studio.Stuckn", 10: "Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec", 12: "Overall Studio.Stuckn, Gloves Klara Pichler, Earrings Charlotte Hansel, Shoes Fila"}};
 
 

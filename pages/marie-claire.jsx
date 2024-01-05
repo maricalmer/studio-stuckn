@@ -22,7 +22,7 @@ const elements = [
 ];
 
 const title = "Marie Claire Magazine";
-const subtitle = "'ВЗЯТИ ГОРУ'";
+const subtitle = {text: 'ВЗЯТИ ГОРУ', cyrillic: true};
 const details = "Print Issue Marie Claire Ukraine, 09/2021";
 const credits = [["Photo", "Christiane Baumgart"], ["Styling", "Chiara Bottin"], ["Makeup", "Adina Hensel"], ["Model (Spin)", "Irene Opoku"], ["Retouche", "Irene Velweiss"]];
 const previousProject = "flanelle";

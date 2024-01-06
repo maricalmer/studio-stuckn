@@ -7,6 +7,9 @@ const helvetica = localFont({src: '../public/fonts/Helvetica.otf', variable: '--
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${quella.variable} ${helvetica.variable}`}>
+      <head>
+        <title>Studio.Stuckn</title>
+      </head>
       <body>
         <Navigation />
         {children}

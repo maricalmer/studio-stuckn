@@ -18,7 +18,7 @@ import PageContainer from "@/components/PageContainer";
 import "../public/stylesheets/projects.css";
 
 const elements = [
-  { type: "video", src: "https://www.youtube-nocookie.com/embed/DX26uejAMs4?si=1vpGJCE8qizqMnIV&rel=0", title: 'SeeFashion Runway by Ronja Stucken' },
+  { type: "video", src: "https://www.youtube-nocookie.com/embed/PUjRE7VW98g?si=VES49p1BIMXK0i3F&rel=0", title: 'SeeFashion Runway by Ronja Stucken' },
   { type: "image", src: seeFashionImg1, alt: 'model bust shot looking into the camera' },
   { type: "image", src: seeFashionImg2, alt: 'diverse model indress' },
   { type: "image", src: seeFashionImg3, alt: 'diverse model looking to the side' },

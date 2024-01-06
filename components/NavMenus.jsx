@@ -10,9 +10,9 @@ import marionPic from '../public/img/digital/etherea-part-two/marion.webp'
 import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
 import hanselPic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp'
 import fluxPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
+import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp'
 import lowHandsPic from '../public/img/about/low_hands.webp'
 import profilePic from '../public/img/about/profile.webp'
-import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp'
 
 function NavMenus() {
 
@@ -99,7 +99,7 @@ function NavMenus() {
         </div>
         <div className="navmenu__about navmenu__about--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
           <Image
-            src={lowHandsPic}
+            src={elbowOnChairPic}
             alt="ronja with crossed arms"
             style={{
               width: '100%',
@@ -119,7 +119,7 @@ function NavMenus() {
         </div>
         <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
           <Image
-            src={elbowOnChairPic}
+            src={lowHandsPic}
             alt="ronja hand on chin"
             style={{
               width: '100%',

@@ -16,7 +16,7 @@ const handleClick = (e) => {
 //
 function NavButton() {
   return (
-    <button onClick={(e)=> {handleClick(e)}} className="h-[60px] w-[60px] cursor-pointer hover:opacity-70 z-30 transition ease-linear delay-0 duration-300 absolute right-16 top-8">
+    <button onClick={(e)=> {handleClick(e)}} aria-label="menu button" className="h-[60px] w-[60px] cursor-pointer hover:opacity-70 z-30 transition ease-linear delay-0 duration-300 absolute right-16 top-8">
       <span className="nav__cross"></span>
     </button>
   );

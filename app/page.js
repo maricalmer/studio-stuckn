@@ -106,8 +106,12 @@ export default function Home() {
         <p className="text-paragraph w-5/12 text-[2rem] helvetica mt-28 mb-10 mx-14 mix-blend-difference">
           Studio.Stuckn embraces the limitless possibilities of digital design and enters an inspiring cosmos where creativity is defined by passion, technology and curiosity.
         </p>
-        <div className="h-[100vh] flex items-center"></div>
-        <div className="mb-7 text-sm text-right mr-10 mix-blend-difference font-bold">© 2024 All Rights Reserved</div>
+        <div className="h-[100vh] flex items-center align-baseline"></div>
+        <div className="flex align-baseline mx-10 pb-9 relative z-10">
+          <div className="text-sm text-right mr-1 mix-blend-difference font-bold">Website designed by Ronja Stucken & built by</div>
+          <a href="https://www.maricalmer.com" target="_blank" className="text-sm text-right mix-blend-difference font-bold underline cursor-pointer">maricalmer</a>
+          <div className="text-sm text-right mix-blend-difference font-bold grow">© 2024 All Rights Reserved</div>
+        </div>
       </div>
     </main>
   );

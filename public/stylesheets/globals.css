@@ -81,6 +81,7 @@ html, body {
 .navbar-active .navbrand {
   opacity: 1;
   transition-delay: .4s;
+  transform: translateY(-0px)
 }
 
 .navbar-active .nav__cross::after {

@@ -24,7 +24,7 @@ function AboutImage(props) {
     <Image
       src={profilePic}
       alt="picture of ronja stuckn"
-      className="about-image h-[40vh] min-h-[100px] w-auto sticky top-[8rem] mt-12"
+      className="about-image h-[180px] md:h-[40vh] min-h-[100px] w-auto sticky top-[8rem] mt-12"
       sizes="33vw"
       quality={100}
       priority={true}

@@ -11,7 +11,7 @@ function Navigation() {
       <NavButton />
       <NavList />
       <NavMenus />
-      <StaticBrand opacity={"opacity-0"}/>
+      <StaticBrand opacity={"opacity-0"} translate={"translate-y-[200px]"}/>
     </nav>
   );
 }

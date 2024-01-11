@@ -73,7 +73,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 600px)');
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
     const handleMediaQueryChange = (e) => {
       setIsBigScreen(e.matches);
     };

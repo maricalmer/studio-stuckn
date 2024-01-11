@@ -85,7 +85,7 @@ export default function Home() {
   }, [])
 
   const sizeBag = (property) => {
-    if (property == "position") {return isBigScreen ? [0, -2, 0] : [0, -2, -1.5]};
+    if (property == "position") {return isBigScreen ? [0, -2, 0] : [0, -2, -0.2]};
   };
 
 
@@ -124,7 +124,7 @@ export default function Home() {
             isBigScreen ? <Brand
             scrollValue={scrollValue}
             baseFontSize={baseFontSize}
-          /> : <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[80vh] rotate-[-90deg]"}/>
+          /> : <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[80vh] rotate-[-90deg]"} blend={"mix-blend-difference"}/>
           }
           <p className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
             The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.

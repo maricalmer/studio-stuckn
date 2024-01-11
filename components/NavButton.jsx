@@ -3,7 +3,6 @@
 import React from "react";
 
 const handleClick = (e) => {
-  console.log(e);
   const navbar = e.currentTarget.parentNode;
   navbar.classList.toggle("navbar-active");
   if (getComputedStyle(document.documentElement).getPropertyValue('--nav-cross-color') == "transparent") {

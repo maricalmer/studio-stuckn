@@ -11,22 +11,36 @@
 }
 
  /* Hide scrollbar for Chrome, Safari and Opera */
- .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
   display: none;
- }
+}
 
  /* Hide scrollbar for IE, Edge and Firefox */
- .carousel {
+.carousel {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
- }
+}
 
- .carousel-item__link:hover {
+.carousel-item__link:hover {
   opacity: 0.9;
- }
+}
 
- .carousel-item__link:hover .carousel-item__title {
+.carousel-item__link:hover .carousel-item__title {
   opacity: 1;
- }
+}
+
+.carousel-item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 767px) {
+  .carousel-item {
+    width: auto;
+    height: 100%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}

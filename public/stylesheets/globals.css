@@ -22,7 +22,7 @@ html, body {
   padding: 0;
   overscroll-behavior-y: none;
 }
-#granim-canvas {
+#homepage-background {
   background: linear-gradient(180deg, rgba(46, 36, 28, 1) 0%, rgba(47, 38, 66, 1) 20%, rgba(46, 36, 28, 1) 40%, rgba(72, 70, 46, 1) 70%, rgba(106, 132, 70, 1) 85%);
 }
 .quella {

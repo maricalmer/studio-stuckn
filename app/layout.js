@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import "../public/stylesheets/globals.css";
 import localFont from 'next/font/local'
 const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
       </head>
       <body>
-        <Navigation />
         {children}
       </body>
     </html>

@@ -4,7 +4,7 @@ import React from "react";
 
 function StaticBrand(props) {
   return (
-    <div className={`${props.opacity} ${props.translate} navbrand text-2xl md:text-7xl 2xl:text-8xl min-[1800px]:text-9xl quella border-solid border-b-2 ml-3 md:ml-9 pl-5 border-black leading-none w-11/12 fixed bottom-[10px] md:bottom-[35px] transition-[opacity] duration-200 ease`}>
+    <div className={`${props.opacity} ${props.transform} navbrand text-2xl md:text-7xl 2xl:text-8xl min-[1800px]:text-9xl quella border-solid border-b-2 ml-3 md:ml-9 pl-3 md:pl-5 border-black leading-none w-fit md:w-11/12 fixed top-[20px] md:top-auto md:bottom-[35px] transition-[opacity] duration-200 ease`}>
       <span className="tracking-tight">Stu</span>di<span className="tracking-tight">o.Stuckn</span>
     </div>
   );

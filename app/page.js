@@ -36,7 +36,9 @@ export default function Home() {
 
   useEffect(() => {
     const handleLoad = () => {
+      console.log("load event");
       const title = document.querySelector(".brand-text");
+      console.log(title);
       if (title) {
         const fontSize = parseInt(window.getComputedStyle(title).fontSize);
         setBaseFontSize(fontSize);
@@ -44,6 +46,7 @@ export default function Home() {
     };
 
     const handleMediaChange = (event, fontSizeValue) => {
+      console.log(event);
       if (event.matches) {
         setBaseFontSize(fontSizeValue);
       }
@@ -101,7 +104,7 @@ export default function Home() {
       }
       <main className="relative">
         <canvas id="homepage-background" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
-        <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
+        <div className="h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
           <Canvas>
             <BagModel
               scale={sizeBag("scale")}
@@ -119,18 +122,16 @@ export default function Home() {
           <svg width="60" height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="mix-blend-difference fixed right-4 md:right-16 top-12 md:top-16">
             <rect width="60" height="28" fill="#A1BF79"/>
           </svg>
-          {
-            isBigScreen && <ScrollArrow
+          <ScrollArrow
             scrollY={scrollY}
             scrollYProgress={scrollYProgress}
           />
-          }
-          {
-            isBigScreen ? <Brand
+          <Brand
             scrollValue={scrollValue}
             baseFontSize={baseFontSize}
-          /> : <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"} color={"mix-blend-difference"}/>
-          }
+          />
+          <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"} color={"mix-blend-difference md:hidden"}/>
+
           <p className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
             The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.
           </p>

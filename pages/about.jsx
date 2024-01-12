@@ -6,7 +6,6 @@ import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
 
 import "../public/stylesheets/projects.css";
-import "../public/stylesheets/about.css";
 import { useState, useEffect } from "react";
 
 export default function About() {

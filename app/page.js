@@ -84,9 +84,13 @@ export default function Home() {
     };
   }, [])
 
-  const sizeBag = (property) => {
-    // if (property == "position") {return isBigScreen ? [0, -2, 0] : [-3, -2, -0.2]};
-    if (property == "position") {return isBigScreen ? [0, -2, 0] : [-2, -2, -0.2]};
+  const sizeBag = (parameter) => {
+    if (parameter === "scale") {
+      return isBigScreen ? 0.1 : 0.06;
+    }
+    if (parameter === "position") {
+      return isBigScreen ? [0, -2, 0] : [0, -1, 0];
+    }
   };
 
 
@@ -100,7 +104,7 @@ export default function Home() {
         <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
           <Canvas>
             <BagModel
-              scale={0.1}
+              scale={sizeBag("scale")}
               position={sizeBag("position")}
               rotation={[0, 5, 0]}
               scrollY={scrollY}

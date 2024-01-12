@@ -86,7 +86,7 @@ export default function Home() {
 
   const sizeBag = (property) => {
     // if (property == "position") {return isBigScreen ? [0, -2, 0] : [-3, -2, -0.2]};
-    if (property == "position") {return isBigScreen ? [0, -2, 0] : [-2, -2.5, -0.2]};
+    if (property == "position") {return isBigScreen ? [0, -2, 0] : [-2, -2, -0.2]};
   };
 
 

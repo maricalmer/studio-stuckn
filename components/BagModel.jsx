@@ -17,14 +17,12 @@ function BagModel({ position, scale, rotation, scrollYProgress }) {
     state.camera.lookAt(0, 0, 0);
   });
   return (
-    <>
-      <primitive
-        object={scene}
-        scale={scale}
-        position={position}
-        rotation={rotation}
-      />
-    </>
+    <primitive
+      object={scene}
+      scale={scale}
+      position={position}
+      rotation={rotation}
+    />
   );
 }
 

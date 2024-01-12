@@ -6,7 +6,7 @@ import Link from 'next/link'
 const CarouselLink = ({ src, alt, title, href, index }) => {
   return (
     <>
-      <Link href={`${href}`} className="carousel-item__link w-full my-3 md:my-0 md:w-auto md:min-w-fit md:h-full relative transition-opacity ease-in-out">
+      <Link href={`${href}`} className="carousel-item__link block w-full h-fit my-3 md:my-0 md:w-auto md:min-w-fit md:h-full relative transition-opacity ease-in-out">
         <Image
           src={src}
           alt={alt}
@@ -16,7 +16,7 @@ const CarouselLink = ({ src, alt, title, href, index }) => {
           quality={100}
           priority={ index < 4 }
         />
-        <div className="carousel-item__title md:opacity-0 relative bottom-[125px] md:absolute md:bottom-0 quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
+        <div className="carousel-item__title md:opacity-0 absolute bottom-0 md:top-auto quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
       </Link>
     </>
   );

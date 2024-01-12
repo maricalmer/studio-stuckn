@@ -16,3 +16,12 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+//x different font size for mobile nav menus (use content flux)
+//x different y margins between pics (use project detail)
+//x uniform fashion credits
+//x add project credits
+//x brand in about page is gone (could be in the top)
+// homepage brand more up
+//x try to make the bag smaller mobile

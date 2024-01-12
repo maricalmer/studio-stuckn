@@ -85,7 +85,8 @@ export default function Home() {
   }, [])
 
   const sizeBag = (property) => {
-    if (property == "position") {return isBigScreen ? [0, -2, 0] : [0, -2, -0.2]};
+    // if (property == "position") {return isBigScreen ? [0, -2, 0] : [-3, -2, -0.2]};
+    if (property == "position") {return isBigScreen ? [0, -2, 0] : [-2, -2.5, -0.2]};
   };
 
 
@@ -96,7 +97,7 @@ export default function Home() {
       }
       <main className="relative">
         <canvas id="homepage-background" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
-        <div className="h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
+        <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
           <Canvas>
             <BagModel
               scale={0.1}
@@ -124,7 +125,7 @@ export default function Home() {
             isBigScreen ? <Brand
             scrollValue={scrollValue}
             baseFontSize={baseFontSize}
-          /> : <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[80vh] rotate-[-90deg]"} blend={"mix-blend-difference"}/>
+          /> : <StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[80vh] rotate-[-90deg]"} color={"mix-blend-difference"}/>
           }
           <p className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
             The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.

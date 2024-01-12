@@ -16,7 +16,7 @@ const CarouselLink = ({ src, alt, title, href, index }) => {
           quality={100}
           priority={ index < 4 }
         />
-        <div className="carousel-item__title md:opacity-0 absolute bottom-0 md:top-auto quella text-white pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
+        <div className="carousel-item__title md:opacity-0 absolute bottom-0 md:top-auto quella text-white pl-1 md:pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
       </Link>
     </>
   );

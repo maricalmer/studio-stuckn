@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const CarouselFashionCredits = (props) => {
   return (
-      <div className="relative md:min-w-[400px] h-[60vh] md:ml-4">
-        <div className="absolute bottom-0 pb-10 md:pb-0">
+      <div className="relative mt-20 md:mt-0 md:min-w-[400px] h-fit md:h-[60vh] md:ml-4">
+        <div className="md:absolute bottom-0 pb-10 md:pb-0">
           <Image
             src={props.fashionCredits.logo}
             alt={props.fashionCredits.alt}

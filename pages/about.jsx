@@ -69,7 +69,7 @@ export default function About() {
           <div className="w-full md:w-9/12 md:min-w-[600px] text-xl md:text-3xl 2xl:text-4xl min-[1800px]:text-5xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
           <AboutImage scrollValue={scrollValue} baseImgHeight={baseImgHeight} />
         </div>
-        <StaticBrand opacity={"opacity-1"} color={"text-[#4A2E69] md:text-[unset] md:mix-blend-soft-light"}/>
+        <StaticBrand opacity={"opacity-1"} color={"text-[#4A2E69] border-[#4A2E69] md:text-[unset] md:mix-blend-soft-light"}/>
       </PageContainer>
       <style jsx global>{`
         body {

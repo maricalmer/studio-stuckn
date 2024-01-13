@@ -25,3 +25,9 @@ export default function RootLayout({ children }) {
 //x brand in about page is gone (could be in the top)
 // homepage brand more up
 //x try to make the bag smaller mobile
+//x underline brand about page / mobile
+//x flanelle fashion credits / mobile
+// mobile nav menus aligned left (julia) + less Y margin + bigger font
+// smaller size glb
+// brand bottom border homepage / mobile
+// less margin top on say hello about page / mobile

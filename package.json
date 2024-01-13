@@ -16,7 +16,6 @@
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.1",
     "granim": "^2.0.0",
-    "gsap": "^3.12.2",
     "next": "13.4.19",
     "next-cloudinary": "^5.13.0",
     "postcss": "8.4.28",

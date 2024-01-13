@@ -30,7 +30,7 @@ export default function Physical() {
     <PageContainer>
       <Breadcrumb activeItem="Physical"/>
       <Carousel elements={elements} />
-      <StaticBrand opacity={"opacity-1"} />
+      <StaticBrand extraStyling={"opacity-1 border-black"} />
     </PageContainer>
   )
 }

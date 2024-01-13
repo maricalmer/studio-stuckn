@@ -47,7 +47,7 @@ function Page() {
     <PageContainer>
       <Breadcrumb />
       <Carousel elements={elements} description={description} fashionCredits={fashionCredits}/>
-      <StaticBrand opacity={"opacity-1"} />
+      <StaticBrand extraStyling={"opacity-1 border-black"} />
     </PageContainer>
   );
 }

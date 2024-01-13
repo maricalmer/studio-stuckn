@@ -23,7 +23,7 @@ export default function Digital() {
     <PageContainer>
       <Breadcrumb textColor="text-black" activeItem="Digital"/>
       <Carousel elements={elements} />
-      <StaticBrand opacity={"opacity-1"} />
+      <StaticBrand extraStyling={"opacity-1 border-black"} />
     </PageContainer>
   )
 }

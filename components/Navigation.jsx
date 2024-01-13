@@ -14,7 +14,7 @@ function Navigation(props) {
       {
         props.pictures ? <NavMenus /> : <NavMenusMobile />
       }
-      <StaticBrand opacity={"opacity-0"} transform={"md:translate-y-[200px]"}/>
+      <StaticBrand extraStyling={"opacity-0 md:translate-y-[200px] border-black"}/>
     </nav>
   );
 }

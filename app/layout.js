@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
 //x try to make the bag smaller mobile
 //x underline brand about page / mobile
 //x flanelle fashion credits / mobile
-// mobile nav menus aligned left (julia) + less Y margin + bigger font
+//x mobile nav menus aligned left (julia) + less Y margin + bigger font
 // smaller size glb
-// brand bottom border homepage / mobile
-// less margin top on say hello about page / mobile
+//x brand bottom border homepage / mobile
+//x less margin top on say hello about page / mobile

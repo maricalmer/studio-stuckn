@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 function BagModel({ position, scale, rotation, scrollYProgress }) {
   const { scene } = useGLTF("./3dmodel/grafitti_bag.glb");
-  useFrame((state, delta) => {
+  useFrame((state) => {
     state.scene.rotation.set(0, Math.atan(scrollYProgress.current * Math.PI * 2) * 4, 0);
     state.scene.position.set(0, -2 * (scrollYProgress.current * 0.1), 0);
     // state.camera.position.set(2.5 + scrollYProgress.current * 0.5, 1.5 + scrollYProgress.current * 0.5, -0.7 + scrollYProgress.current * 1.1);

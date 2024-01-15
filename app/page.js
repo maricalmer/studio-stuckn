@@ -7,8 +7,7 @@ import Brand from "@/components/Brand";
 import ScrollArrow from "@/components/ScrollArrow";
 import StaticBrand from "@/components/StaticBrand";
 
-import { skewRevealText } from "@/utils/gsap";
-import { useLayoutEffect, useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useScroll } from "framer-motion";
 
 export default function Home() {
@@ -16,17 +15,6 @@ export default function Home() {
   const [ baseFontSize, setBaseFontSize ] = useState(null);
   const { scrollYProgress, scrollY } = useScroll();
   const [ isBigScreen, setIsBigScreen ] = useState(false);
-  const textRef = useRef();
-  const textRefTwo = useRef();
-  const textRefThree = useRef();
-  const textRefFour = useRef();
-
-  useLayoutEffect(() => {
-    skewRevealText(textRef);
-    skewRevealText(textRefTwo);
-    skewRevealText(textRefThree);
-    skewRevealText(textRefFour);
-  }, []);
 
   useEffect(() => {
     window.addEventListener('scroll', function() {
@@ -35,21 +23,11 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    const handleLoad = () => {
-      const title = document.querySelector(".brand-text");
-      if (title) {
-        const fontSize = parseInt(window.getComputedStyle(title).fontSize);
-        setBaseFontSize(fontSize);
-      }
-    };
-
     const handleMediaChange = (event, fontSizeValue) => {
       if (event.matches) {
         setBaseFontSize(fontSizeValue);
       }
     };
-
-    window.addEventListener('onload', handleLoad());
 
     const smallScreenMediaQuery = window.matchMedia('(max-width:767px)');
     smallScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 80));
@@ -64,23 +42,43 @@ export default function Home() {
     extraLargeScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 160));
 
     return () => {
-      window.removeEventListener('load', handleLoad);
       smallScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 80));
       mediumScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 100));
       largeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 130));
       extraLargeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 160));
     };
-  }, []);
+  }, [baseFontSize]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)');
-    const handleMediaQueryChange = (e) => {
+    const handleMediaQuery = (e) => {
       setIsBigScreen(e.matches);
     };
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    mediaQuery.addEventListener('change', handleMediaQuery);
     setIsBigScreen(mediaQuery.matches);
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      mediaQuery.removeEventListener('change', handleMediaQuery);
+    };
+  }, [isBigScreen])
+
+  useEffect(() => {
+    console.log("useEffect");
+    const handleLoad = () => {
+      console.log("event");
+      const title = document.querySelector(".brand-text");
+      console.log(title);
+      if (title) {
+        const fontSize = parseInt(window.getComputedStyle(title).fontSize);
+        setBaseFontSize(fontSize);
+      }
+    }
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+    return () => {
+      window.removeEventListener('load', handleLoad);
     };
   }, [])
 

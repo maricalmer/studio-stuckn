@@ -54,7 +54,13 @@ export default function Home() {
         <canvas id="homepage-background" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
         <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
           <Canvas>
-
+            <BagModel
+              scale={sizeBag("scale")}
+              position={sizeBag("position")}
+              rotation={[0, 5, 0]}
+              scrollY={scrollY}
+              scrollYProgress={scrollYProgress}
+            />
           </Canvas>
         </div>
         <div className="relative text-[#a1bf79]">

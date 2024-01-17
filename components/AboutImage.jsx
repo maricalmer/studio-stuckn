@@ -1,11 +1,7 @@
 // AboutImage.jsx
 'use client';
-
 import Image from 'next/image'
 import profilePic from '../public/img/about/elbow_on_chair.webp'
-
-
-
 const handleImageSizing = (scrollValue, baseImgHeight) => {
   if (baseImgHeight) {
     const factor = 2;

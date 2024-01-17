@@ -1,4 +1,4 @@
-// CarouselItem.jsx
+// CarouselVideo.jsx
 import React from 'react';
 
 const CarouselVideo = ({ src, title }) => {

@@ -9,9 +9,9 @@ export default function RootLayout({ children }) {
       <head>
         <title>Studio.Stuckn</title>
         <meta name="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
-        <meta itemprop="name" content="Studio.Stuckn"></meta>
-        <meta itemprop="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
-        <meta itemprop="image" content="https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png"></meta>
+        <meta itemProp="name" content="Studio.Stuckn"></meta>
+        <meta itemProp="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
+        <meta itemProp="image" content="https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png"></meta>
         <meta property="og:url" content="https://www.studiostuckn.com"></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:title" content="Studio.Stuckn"></meta>

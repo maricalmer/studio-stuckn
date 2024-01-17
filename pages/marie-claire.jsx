@@ -5,12 +5,10 @@ import marieClaireImg3 from '../public/img/physical/marie-claire/model_in_flower
 import marieClaireImg4 from '../public/img/physical/marie-claire/model_photographed_from_bottom_armes_on_her_back.webp'
 import marieClaireImg5 from '../public/img/physical/marie-claire/model_holding_scarf_floating_in_the_wind.webp'
 import marieClaireLogo from '../public/img/physical/marie-claire/marie_claire_magazine_logo.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

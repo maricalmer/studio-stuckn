@@ -9,12 +9,10 @@ import seeFashionImg7 from '../public/img/physical/seefashion/runway_shot_of_2_m
 import seeFashionImg8 from '../public/img/physical/seefashion/detail_shot_of_a_green_suit.webp'
 import seeFashionImg9 from '../public/img/physical/seefashion/4_model_full_body_shot.webp'
 import seeFashionImg10 from '../public/img/physical/seefashion/diverse_model_in_draped_top.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

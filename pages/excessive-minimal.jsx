@@ -10,12 +10,10 @@ import minimalImg8 from '../public/img/physical/excessive-minimal/female_model_t
 import minimalImg9 from '../public/img/physical/excessive-minimal/female_model_wrapped_in_scarf_and_coat_black_and_white.webp'
 import minimalImg10 from '../public/img/physical/excessive-minimal/female_model_with_arms_above_her_head.webp'
 import minimalImg11 from '../public/img/physical/excessive-minimal/abstract_projection_on_female_model_upper_body.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

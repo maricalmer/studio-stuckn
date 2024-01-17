@@ -1,5 +1,4 @@
 'use client';
-
 import blackBootsProfileImg from '../public/img/digital/alien-accessories/3d_black_boots_profile.webp'
 import greenBagProfileImg from '../public/img/digital/alien-accessories/3d_green_bag_profile.webp'
 import whiteBagDetailImg from '../public/img/digital/alien-accessories/3d_white_bag_detail.webp'
@@ -15,12 +14,10 @@ import silverBootsFrontImg from '../public/img/digital/alien-accessories/3d_silv
 import greenBagSideImg from '../public/img/digital/alien-accessories/3d_green_bag_side.webp'
 import orangeSneakerTopImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_top.webp'
 import orangeSneakerDetailImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_detail.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

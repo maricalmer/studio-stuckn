@@ -16,7 +16,6 @@ import rebootImg14 from '../public/img/physical/reboot/full_body_view_of_female_
 import rebootImg15 from '../public/img/physical/reboot/male_model_full_body_view.webp'
 import rebootImg16 from '../public/img/physical/reboot/female_model_looks_into_tilted_camera.webp'
 import rebootImg17 from '../public/img/physical/reboot/female_model_photographed_from_the_side_profile.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";

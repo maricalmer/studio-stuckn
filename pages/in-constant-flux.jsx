@@ -11,7 +11,6 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

@@ -4,12 +4,10 @@ import escapismImg2 from '../public/img/physical/escapism/model_full_body_view_h
 import escapismImg3 from '../public/img/physical/escapism/female_model_infront_of_brown_wall_and_light_reflection.webp'
 import escapismImg4 from '../public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp'
 import escapismImg5 from '../public/img/physical/escapism/model_headshot_from_back_view.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

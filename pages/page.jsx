@@ -11,12 +11,10 @@ import pageImg9 from '../public/img/physical/page/sand_shapes_top_view.webp'
 import pageImg10 from '../public/img/physical/page/female_model_tilted_view_with_smoke_in_front.webp'
 import pageImg11 from '../public/img/physical/page/stone_dune_with_wires.webp'
 import pageLogo from '../public/img/physical/page/page_magazine_logo.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

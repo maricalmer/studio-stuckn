@@ -5,12 +5,10 @@ import redElfProfile from '../public/img/digital/3d_elf_red_profile.webp'
 import redElfFace from '../public/img/digital/etherea-part-one/3d_elf_red_face_zoom.webp'
 import tree from '../public/img/digital/etherea-part-one/3d_elf_red_tree.webp'
 import redElfFront from '../public/img/digital/etherea-part-one/3d_elf_red_front.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

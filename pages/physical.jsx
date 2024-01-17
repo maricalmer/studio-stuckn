@@ -1,10 +1,7 @@
-import "../public/stylesheets/projects.css";
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import fluxPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
 import flanellePic from '../public/img/physical/flanelle/model_from_profile_view_with_hat_hiding_the_face.webp'
 import marieClairePic from '../public/img/physical/marie-claire/model_stands_infront_of_field.webp'
@@ -13,6 +10,7 @@ import rebootPic from '../public/img/physical/reboot/female_model_bust_shot.webp
 import minimalPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
 import pagePic from '../public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp'
 import escapismPic from '../public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp'
+import "../public/stylesheets/projects.css";
 
 const elements = [
   { type: "link", src: fluxPic, alt: 'male model sits on window', title: 'In Constant Flux', href: '/in-constant-flux' },

@@ -16,12 +16,10 @@ import flanelleImg14 from '../public/img/physical/flanelle/male_model_holds_hand
 import flanelleImg15 from '../public/img/physical/flanelle/view_into_the_sky_with_sun_behind_clouds.webp'
 import flanelleImg16 from '../public/img/physical/flanelle/male_model_laying_on_floor.webp'
 import flanelleLogo from '../public/img/physical/flanelle/flanelle_magazine_logo.webp'
-
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
 import "../public/stylesheets/projects.css";
 
 const elements = [

@@ -49,9 +49,7 @@ export default function Home() {
 
   return (
     <>
-      {
-        isBigScreen ? <Navigation pictures={true}/> : <Navigation pictures={false}/>
-      }
+      <Navigation isBigScreen={isBigScreen}/>
       <main className="relative">
         <canvas id="homepage-background" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
         <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-right bg-no-repeat bg-cover bg-blend-normal z-0">

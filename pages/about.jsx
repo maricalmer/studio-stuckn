@@ -1,12 +1,10 @@
 import Link from 'next/link'
-
 import AboutImage from "@/components/AboutImage";
 import Breadcrumb from "@/components/Breadcrumb";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
-import "../public/stylesheets/projects.css";
 import { useState, useEffect } from "react";
+import "../public/stylesheets/projects.css";
 
 export default function About() {
   const [ scrollValue, setScrollValue ] = useState(0);
@@ -24,34 +22,7 @@ export default function About() {
       const imgHeight = parseInt(window.getComputedStyle(img).height);
       setBaseImgHeight(imgHeight);
     };
-
-    // const handleMediaChange = (event, imgHeightValue) => {
-    //   if (event.matches) {
-    //     setBaseImgHeight(imgHeightValue);
-    //   }
-    // };
-
     window.addEventListener('onload', handleLoad());
-
-    // const smallScreenMediaQuery = window.matchMedia('(max-width:767px)');
-    // smallScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 100));
-
-    // const mediumScreenMediaQuery = window.matchMedia('(min-width:768px) and (max-width:1023px)');
-    // mediumScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 200));
-
-    // const largeScreenMediaQuery = window.matchMedia('(min-width:1024px) and (max-width:1279px)');
-    // largeScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 300));
-
-    // const extraLargeScreenMediaQuery = window.matchMedia('(min-width:1280px)');
-    // extraLargeScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 400));
-
-    // return () => {
-    //   window.removeEventListener('load', handleLoad);
-    //   smallScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 100));
-    //   mediumScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 200));
-    //   largeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 300));
-    //   extraLargeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 400));
-    // };
   }, []);
 
   return (

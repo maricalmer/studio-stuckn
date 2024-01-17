@@ -1,6 +1,5 @@
 // Breadcrumb.jsx
 'use client';
-import React from "react";
 import BreadcrumbItem from "@/components/BreadcrumbItem";
 
 function Breadcrumb(props) {

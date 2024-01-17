@@ -1,9 +1,7 @@
 // NavMenus.jsx
 'use client';
-import React from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-
 import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'
 import lucyPic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
 import marionPic from '../public/img/digital/etherea-part-two/marion.webp'

@@ -1,6 +1,5 @@
 // StaticBrand.jsx
 'use client';
-import React from "react";
 
 function StaticBrand(props) {
   return (

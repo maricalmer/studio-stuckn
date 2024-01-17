@@ -28,7 +28,7 @@ function Carousel(props) {
           <path d="M0.839998 15.58L51.44 15.58C49.79 13.05 46.05 4.8 46.05 2.05C46.05 1.17 46.6 0.289997 47.59 0.289997C48.58 0.289997 49.46 1.83 49.9 2.49C53.31 7.55 58.37 12.94 63.65 16.02C64.31 16.35 65.96 17.12 65.96 18C65.96 18.88 64.31 19.65 63.65 19.98C58.37 23.06 53.31 28.45 49.9 33.51C49.46 34.17 48.58 35.71 47.59 35.71C46.6 35.71 46.05 34.83 46.05 33.95C46.05 31.2 49.79 22.95 51.44 20.42L0.839998 20.42V15.58Z" fill="white"/>
         </svg>
       </div>
-      <div className="hidden md:block md:min-w-[310px] h-full "></div>
+      <div className="hidden md:block md:min-w-[310px] h-full"></div>
       {
         props.elements.map((element, index) => {
           if (element.type === "link") {
@@ -41,7 +41,7 @@ function Carousel(props) {
         })
       }
       {props.fashionCredits && <CarouselFashionCredits fashionCredits={props.fashionCredits}/>}
-      <div className="min-w-[310px] h-full "></div>
+      <div className="min-w-[310px] h-full"></div>
     </div>
   );
 }

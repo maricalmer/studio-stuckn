@@ -1,6 +1,5 @@
 // NavButton.jsx
 'use client';
-import React from "react";
 
 const handleClick = (e) => {
   const navbar = e.currentTarget.parentNode;

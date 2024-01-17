@@ -1,5 +1,4 @@
 // CarouselImage.jsx
-import React from 'react';
 import Image from 'next/image';
 
 const CarouselImage = ({ src, alt, index }) => {

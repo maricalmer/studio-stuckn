@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 //x uniform fashion credits
 //x add project credits
 //x brand in about page is gone (could be in the top)
-// homepage brand more up
+//x homepage brand more up
 //x try to make the bag smaller mobile
 //x underline brand about page / mobile
 //x flanelle fashion credits / mobile

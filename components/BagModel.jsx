@@ -6,6 +6,7 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 function BagModel({ position, scale, rotation, scrollYProgress }) {
+  // console.log(scrollYProgress);
   const { scene } = useGLTF("./3dmodel/grafitti_bag.glb");
   useFrame((state) => {
     state.scene.rotation.set(0, Math.atan(scrollYProgress.current * Math.PI * 2) * 4, 0);

@@ -12,7 +12,6 @@ import { useScroll } from "framer-motion";
 
 export default function Home() {
   const [ scrollValue, setScrollValue ] = useState(0);
-  const [ baseFontSize, setBaseFontSize ] = useState(null);
   const { scrollYProgress, scrollY } = useScroll();
   const [ isBigScreen, setIsBigScreen ] = useState(false);
 
@@ -20,34 +19,12 @@ export default function Home() {
     window.addEventListener('scroll', function() {
       setScrollValue(window.scrollY);
     })
-  }, [])
-
-  useEffect(() => {
-    const handleMediaChange = (event, fontSizeValue) => {
-      if (event.matches) {
-        setBaseFontSize(fontSizeValue);
-      }
-    };
-
-    const smallScreenMediaQuery = window.matchMedia('(max-width:767px)');
-    smallScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 80));
-
-    const mediumScreenMediaQuery = window.matchMedia('(min-width:768px) and (max-width:1023px)');
-    mediumScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 100));
-
-    const largeScreenMediaQuery = window.matchMedia('(min-width:1024px) and (max-width:1279px)');
-    largeScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 130));
-
-    const extraLargeScreenMediaQuery = window.matchMedia('(min-width:1280px)');
-    extraLargeScreenMediaQuery.addEventListener('change', (event) => handleMediaChange(event, 160));
-
     return () => {
-      smallScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 80));
-      mediumScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 100));
-      largeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 130));
-      extraLargeScreenMediaQuery.removeEventListener('change', (event) => handleMediaChange(event, 160));
-    };
-  }, [baseFontSize]);
+      window.removeEventListener('scroll', function() {
+        setScrollValue(window.scrollY);
+      })
+    }
+  }, [])
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -61,27 +38,6 @@ export default function Home() {
     };
   }, [isBigScreen])
 
-  useEffect(() => {
-    console.log("useEffect");
-    const handleLoad = () => {
-      console.log("event");
-      const title = document.querySelector(".brand-text");
-      console.log(title);
-      if (title) {
-        const fontSize = parseInt(window.getComputedStyle(title).fontSize);
-        setBaseFontSize(fontSize);
-      }
-    }
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-    }
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
-  }, [])
-
   const sizeBag = (parameter) => {
     if (parameter === "scale") {
       return isBigScreen ? 0.1 : 0.06;
@@ -91,7 +47,6 @@ export default function Home() {
     }
   };
 
-
   return (
     <>
       {
@@ -99,7 +54,7 @@ export default function Home() {
       }
       <main className="relative">
         <canvas id="homepage-background" className="absolute block w-full h-full top-0 right-0 left-0 bottom-0"/>
-        <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-hero-gradient bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
+        <div className="min-h-full h-full w-full fixed top-0 left-0 lg:ml-64 bg-right bg-no-repeat bg-cover bg-blend-normal z-0">
           <Canvas>
             <BagModel
               scale={sizeBag("scale")}
@@ -117,18 +72,12 @@ export default function Home() {
           <svg width="60" height="28" viewBox="0 0 60 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="mix-blend-difference fixed right-4 md:right-16 top-12 md:top-16">
             <rect width="60" height="28" fill="#A1BF79"/>
           </svg>
-          {
-            isBigScreen && <ScrollArrow
+          <ScrollArrow
             scrollY={scrollY}
             scrollYProgress={scrollYProgress}
           />
-          }
-          {
-            isBigScreen ? <Brand
-            scrollValue={scrollValue}
-            baseFontSize={baseFontSize}
-          /> : <StaticBrand extraStyling={"opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"}/>
-          }
+          <Brand scrollY={scrollY}/>
+          <StaticBrand extraStyling={"md:hidden opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"}/>
           <p className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
             The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.
           </p>

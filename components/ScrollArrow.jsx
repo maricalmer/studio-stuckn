@@ -1,6 +1,5 @@
 // ScrollArrow.jsx
 'use client';
-import {React, useRef} from "react";
 
 const handleArrowSizing = (scrollY) => {
   const factor = 2500;

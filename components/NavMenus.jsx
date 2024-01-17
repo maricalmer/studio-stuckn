@@ -13,13 +13,11 @@ import lowHandsPic from '../public/img/about/low_hands.webp'
 import profilePic from '../public/img/about/profile.webp'
 
 function NavMenus() {
-
   const handleHover = (e) => {
     const navbar = e.currentTarget.parentNode.parentNode;
     const className = e.currentTarget.textContent.toLowerCase();
     navbar.classList.toggle(`navbar__bg--${className}`);
-  }
-  ;
+  };
 
   return (
     <>

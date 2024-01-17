@@ -6,7 +6,6 @@ import CarouselVideo from '@/components/CarouselVideo'
 import CarouselDescription from '@/components/CarouselDescription'
 import CarouselFashionCredits from '@/components/CarouselFashionCredits'
 
-
 const handleClick = (event, direction) => {
   const carousel = event.currentTarget.parentElement.parentElement;
   let newScrollPosition;

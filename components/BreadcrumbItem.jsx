@@ -1,6 +1,5 @@
 // BreadcrumbItem.jsx
 'use client';
-
 import Link from 'next/link'
 
 const formatUrl = (string) => {

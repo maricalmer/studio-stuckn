@@ -1,10 +1,7 @@
-// NavButton.jsx
-'use client';
-
 const handleClick = (e) => {
   const navbar = e.currentTarget.parentNode;
   navbar.classList.toggle("navbar-active");
-  if (getComputedStyle(document.documentElement).getPropertyValue('--nav-cross-color') == "transparent") {
+  if (getComputedStyle(document.documentElement).getPropertyValue('--nav-cross-color') === "transparent") {
     document.documentElement.style.setProperty('--nav-cross-color', "#232620");
   } else {
     setTimeout(() => {

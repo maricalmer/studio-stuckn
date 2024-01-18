@@ -58,7 +58,6 @@ export default function Home() {
               scale={sizeBag("scale")}
               position={sizeBag("position")}
               rotation={[0, 5, 0]}
-              scrollY={scrollY}
               scrollYProgress={scrollYProgress.current}
             />
           </Canvas>

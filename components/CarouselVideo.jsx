@@ -1,5 +1,3 @@
-// CarouselVideo.jsx
-
 const CarouselVideo = ({ src, title }) => {
   return (
     <iframe

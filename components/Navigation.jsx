@@ -1,4 +1,3 @@
-// Navigation.jsx
 import NavButton from "@/components/NavButton";
 import NavMenus from "@/components/NavMenus";
 import NavMenusMobile from "@/components/NavMenusMobile";
@@ -19,6 +18,3 @@ function Navigation(props) {
 }
 
 export default Navigation;
-
-
-<StaticBrand opacity={"opacity-1"} transform={"translate-x-[-70px] translate-y-[80vh] rotate-[-90deg]"}/>

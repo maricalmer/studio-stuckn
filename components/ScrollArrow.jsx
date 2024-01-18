@@ -15,7 +15,7 @@ function ScrollArrow({scrollY, scrollYProgress}) {
       </svg>
       <style jsx>{`
         svg {
-          transform: scale(${handleArrowSizing(scrollY.current)}) rotate(${handleArrowDirection(scrollYProgress.current)}deg);
+          transform: scale(${handleArrowSizing(scrollY)}) rotate(${handleArrowDirection(scrollYProgress)}deg);
         }
       `}</style>
     </>

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 function NavList() {
   return (
@@ -9,6 +9,6 @@ function NavList() {
       <li><Link href="mailto:info@mailgo.dev" className="navlist__item cursor-pointer hover:text-[#C9D1D2] opacity-0 transition-[opacity] duration-200 ease">studio@ronjastucken.com</Link></li>
     </ul>
   );
-}
+};
 
 export default NavList;

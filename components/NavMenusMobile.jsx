@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 function NavMenusMobile() {
   return (
@@ -14,6 +14,6 @@ function NavMenusMobile() {
       </li>
     </ul>
   );
-}
+};
 
 export default NavMenusMobile;

@@ -14,6 +14,6 @@ function Brand({scrollY}) {
       `}</style>
     </h1>
   );
-}
+};
 
 export default Brand;

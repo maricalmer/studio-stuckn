@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const CarouselDescription = ({ title, subtitle, details, softwares, credits, previousProject, nextProject }) => {
   return (
@@ -13,7 +13,7 @@ const CarouselDescription = ({ title, subtitle, details, softwares, credits, pre
             <span className="text-[0.6rem] leading-3">{credit[0]}</span>
             <span className="text-xs ml-1 leading-3">{credit[1]}</span>
           </div>
-        )
+        );
       })}
       <div className="hidden md:flex w-full justify-center absolute bottom-1">
         {previousProject && <Link href={`${previousProject}`} className="helvetica text-sm relative z-20 leading-4 md:mx-3 underline decoration-2">Previous</Link>}

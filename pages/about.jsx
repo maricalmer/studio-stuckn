@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from 'next/link';
 import AboutImage from "@/components/AboutImage";
 import Breadcrumb from "@/components/Breadcrumb";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
 import "../public/stylesheets/projects.css";
 
-export default function About() {
+function About() {
   const [ scrollValue, setScrollValue ] = useState(0);
   const [ baseImgHeight, setBaseImgHeight ] = useState(null);
 
@@ -14,7 +14,7 @@ export default function About() {
     window.addEventListener('scroll', function() {
       setScrollValue(window.scrollY);
     })
-  }, [])
+  }, []);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -48,5 +48,7 @@ export default function About() {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
+
+export default About;

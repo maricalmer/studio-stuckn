@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import profilePic from '../public/img/about/elbow_on_chair.webp'
+import Image from 'next/image';
+import profilePic from '../public/img/about/elbow_on_chair.webp';
 
 const handleImageSizing = (scrollValue, baseImgHeight) => {
   if (baseImgHeight) {
@@ -9,7 +9,7 @@ const handleImageSizing = (scrollValue, baseImgHeight) => {
     } else if (baseImgHeight + scrollValue / factor > baseImgHeight * 2) {
       return baseImgHeight * 2;
     } else {
-      return baseImgHeight + scrollValue/factor
+      return baseImgHeight + scrollValue/factor;
     }
   };
 };
@@ -29,6 +29,6 @@ function AboutImage({scrollValue, baseImgHeight}) {
       }}
     />
   );
-}
+};
 
 export default AboutImage;

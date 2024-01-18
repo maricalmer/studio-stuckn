@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 function NavImage({src, alt, extraStyling}) {
   return (
@@ -13,6 +13,6 @@ function NavImage({src, alt, extraStyling}) {
       />
     </div>
   );
-}
+};
 
 export default NavImage;

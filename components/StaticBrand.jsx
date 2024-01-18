@@ -4,6 +4,6 @@ function StaticBrand({extraStyling}) {
       <span className="tracking-tight">Stu</span>di<span className="tracking-tight">o.Stuckn</span>
     </div>
   );
-}
+};
 
 export default StaticBrand;

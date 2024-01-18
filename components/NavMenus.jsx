@@ -1,14 +1,14 @@
-import Link from 'next/link'
-import avatar1Pic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
-import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'
-import avatar2Pic from '../public/img/digital/etherea-part-two/marion.webp'
-import couplePic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp'
-import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
-import windowPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
-import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp'
-import profilePic from '../public/img/about/profile.webp'
-import lowHandsPic from '../public/img/about/low_hands.webp'
-import NavImage from '@/components/NavImage'
+import Link from 'next/link';
+import avatar1Pic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp';
+import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp';
+import avatar2Pic from '../public/img/digital/etherea-part-two/marion.webp';
+import couplePic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp';
+import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp';
+import windowPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp';
+import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp';
+import profilePic from '../public/img/about/profile.webp';
+import lowHandsPic from '../public/img/about/low_hands.webp';
+import NavImage from '@/components/NavImage';
 
 const elements = [
   { src: avatar1Pic, alt: '3d avatar short hair', extraStyling: "navmenu__digital max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
@@ -51,6 +51,6 @@ function NavMenus() {
       </div>
     </>
   );
-}
+};
 
 export default NavMenus;

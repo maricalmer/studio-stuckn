@@ -20,6 +20,6 @@ function ScrollArrow({scrollY, scrollYProgress}) {
       `}</style>
     </>
   );
-}
+};
 
 export default ScrollArrow;

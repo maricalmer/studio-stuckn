@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const formatUrl = (string) => {
   return string === "Home" ? "" : string.toLowerCase();
-}
+};
 
 function BreadcrumbItem({activeItem, itemName}) {
   if (activeItem === itemName) {
@@ -17,7 +17,7 @@ function BreadcrumbItem({activeItem, itemName}) {
         <Link href={`/${formatUrl(itemName)}`}>{itemName}</Link>
       </li>
     );
-  }
-}
+  };
+};
 
 export default BreadcrumbItem;

@@ -11,6 +11,6 @@ function Breadcrumb({textColor, bgColor, activeItem}) {
       </ul>
     </div>
   );
-}
+};
 
 export default Breadcrumb;

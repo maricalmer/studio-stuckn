@@ -2,21 +2,21 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-import blackBootsProfileImg from '../public/img/digital/alien-accessories/3d_black_boots_profile.webp'
-import greenBagProfileImg from '../public/img/digital/alien-accessories/3d_green_bag_profile.webp'
-import whiteBagDetailImg from '../public/img/digital/alien-accessories/3d_white_bag_detail.webp'
-import silverBootsTopImg from '../public/img/digital/alien-accessories/3d_silver_boots_top.webp'
-import silverBootsDetailImg from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'
-import greenBagTopImg from '../public/img/digital/alien-accessories/3d_green_bag_top.webp'
-import blueBagFrontImg from '../public/img/digital/3d_blue_bag_front.webp'
-import blackBootsBackImg from '../public/img/digital/alien-accessories/3d_black_boots_back.webp'
-import blueBagProfileImg from '../public/img/digital/alien-accessories/3d_blue_bag_profile.webp'
-import orangeSneakerSideImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_side.webp'
-import whiteBagFrontImg from '../public/img/digital/alien-accessories/3d_white_bag_front.webp'
-import silverBootsFrontImg from '../public/img/digital/alien-accessories/3d_silver_boots_front.webp'
-import greenBagSideImg from '../public/img/digital/alien-accessories/3d_green_bag_side.webp'
-import orangeSneakerTopImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_top.webp'
-import orangeSneakerDetailImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_detail.webp'
+import blackBootsProfileImg from '../public/img/digital/alien-accessories/3d_black_boots_profile.webp';
+import greenBagProfileImg from '../public/img/digital/alien-accessories/3d_green_bag_profile.webp';
+import whiteBagDetailImg from '../public/img/digital/alien-accessories/3d_white_bag_detail.webp';
+import silverBootsTopImg from '../public/img/digital/alien-accessories/3d_silver_boots_top.webp';
+import silverBootsDetailImg from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp';
+import greenBagTopImg from '../public/img/digital/alien-accessories/3d_green_bag_top.webp';
+import blueBagFrontImg from '../public/img/digital/3d_blue_bag_front.webp';
+import blackBootsBackImg from '../public/img/digital/alien-accessories/3d_black_boots_back.webp';
+import blueBagProfileImg from '../public/img/digital/alien-accessories/3d_blue_bag_profile.webp';
+import orangeSneakerSideImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_side.webp';
+import whiteBagFrontImg from '../public/img/digital/alien-accessories/3d_white_bag_front.webp';
+import silverBootsFrontImg from '../public/img/digital/alien-accessories/3d_silver_boots_front.webp';
+import greenBagSideImg from '../public/img/digital/alien-accessories/3d_green_bag_side.webp';
+import orangeSneakerTopImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_top.webp';
+import orangeSneakerDetailImg from '../public/img/digital/alien-accessories/3d_orange_sneaker_detail.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -51,6 +51,6 @@ function AlienAccessories() {
       <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
+};
 
 export default AlienAccessories;

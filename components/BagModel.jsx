@@ -18,6 +18,6 @@ function BagModel({ scale, position, rotation, scrollYProgress }) {
       rotation={rotation}
     />
   );
-}
+};
 
 export default BagModel;

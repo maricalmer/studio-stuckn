@@ -40,7 +40,7 @@ function Seefashion() {
   return (
     <PageContainer>
       <Breadcrumb />
-      <Carousel elements={elements} description={description}/>
+      <Carousel description={description} elements={elements} />
       <StaticBrand extraStyling={"opacity-1 border-black"} />
     </PageContainer>
   );

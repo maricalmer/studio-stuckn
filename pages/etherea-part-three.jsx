@@ -34,7 +34,7 @@ function EthereaPartThree() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
-      <Carousel elements={elements} description={description} />
+      <Carousel description={description} elements={elements} />
       <StaticBrand extraStyling={"opacity-1 border-black"} />
     </PageContainer>
   );

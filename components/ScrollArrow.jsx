@@ -7,7 +7,7 @@ const handleArrowDirection = (scrollYProgress) => {
   return scrollYProgress > 0.85 ? 180 : 0;
 };
 
-function ScrollArrow({scrollY, scrollYProgress}) {
+export default function ScrollArrow({scrollY, scrollYProgress}) {
   return (
     <>
       <svg width="66" height="120" viewBox="0 0 66 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden md:block sticky top-1/2 left-full mr-10 mix-blend-difference">
@@ -21,5 +21,3 @@ function ScrollArrow({scrollY, scrollYProgress}) {
     </>
   );
 };
-
-export default ScrollArrow;

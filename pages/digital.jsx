@@ -15,7 +15,7 @@ const elements = [
   { type: "link", src: blueBagFront, alt: '3d alien bag with green background', title: 'Alien Accessories', href: '/alien-accessories' }
 ];
 
-function Digital() {
+export default function Digital() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" activeItem="Digital" />
@@ -24,5 +24,3 @@ function Digital() {
     </PageContainer>
   );
 };
-
-export default Digital;

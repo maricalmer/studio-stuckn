@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const CarouselImage = ({ src, alt, index }) => {
+export default function CarouselImage({ src, alt, index }) {
   return (
     <div className="my-3 w-full md:my-0 md:w-auto md:min-w-fit md:h-full">
       <Image
@@ -15,5 +15,3 @@ const CarouselImage = ({ src, alt, index }) => {
     </div>
   );
 };
-
-export default CarouselImage;

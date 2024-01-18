@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const CarouselLink = ({ src, alt, title, href, index }) => {
+export default function CarouselLink({ src, alt, title, href, index }) {
   return (
     <Link href={`${href}`} className="carousel-item__link block w-full h-fit my-3 md:my-0 md:w-auto md:min-w-fit md:h-full relative transition-opacity ease-in-out">
       <Image
@@ -17,5 +17,3 @@ const CarouselLink = ({ src, alt, title, href, index }) => {
     </Link>
   );
 };
-
-export default CarouselLink;

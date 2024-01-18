@@ -11,7 +11,7 @@ const handleClick = (event, direction) => {
   carousel.scrollTo({left: newScrollPosition, behavior: "smooth"});
 };
 
-function Carousel({description, elements, fashionCredits}) {
+export default function Carousel({description, elements, fashionCredits}) {
   return (
     <div className="carousel md:h-[60vh] md:flex px-6 md:px-0 mt-36 gap-3 md:overflow-scroll md:overscroll-contain relative">
       {description && <CarouselDescription title={description.title} subtitle={description.subtitle} details={description.details} softwares={description.softwares} credits={description.credits} previousProject={description.previousProject} nextProject={description.nextProject}/>}
@@ -42,5 +42,3 @@ function Carousel({description, elements, fashionCredits}) {
     </div>
   );
 };
-
-export default Carousel;

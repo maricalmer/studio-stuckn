@@ -6,7 +6,7 @@ import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
 import "../public/stylesheets/projects.css";
 
-function About() {
+export default function About() {
   const [ scrollValue, setScrollValue ] = useState(0);
   const [ baseImgHeight, setBaseImgHeight ] = useState(null);
 
@@ -40,7 +40,7 @@ function About() {
           <div className="w-full md:w-9/12 md:min-w-[600px] text-xl md:text-3xl 2xl:text-4xl min-[1950px]:text-5xl mb-4">Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.</div>
           <AboutImage scrollValue={scrollValue} baseImgHeight={baseImgHeight} />
         </div>
-        <StaticBrand extraStyling={"opacity-1 text-[#4A2E69] border-[#4A2E69] md:text-[unset] md:mix-blend-soft-light"}/>
+        <StaticBrand extraStyling="opacity-1 text-[#4A2E69] border-[#4A2E69] md:text-[unset] md:mix-blend-soft-light"/>
       </PageContainer>
       <style jsx global>{`
         body {
@@ -50,5 +50,3 @@ function About() {
     </>
   );
 };
-
-export default About;

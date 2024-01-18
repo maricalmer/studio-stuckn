@@ -1,14 +1,12 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-
+import { useEffect, useState } from "react";
+import { useScroll } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import BagModel from "@/components/BagModel";
 import Brand from "@/components/Brand";
 import ScrollArrow from "@/components/ScrollArrow";
 import StaticBrand from "@/components/StaticBrand";
-
-import { useEffect, useState } from "react";
-import { useScroll } from "framer-motion";
 
 export default function Home() {
   const [ scrollValue, setScrollValue ] = useState(0);
@@ -18,8 +16,8 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener('scroll', function() {
       setScrollValue(window.scrollY);
-    })
-  }, [])
+    });
+  }, []);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -28,7 +26,7 @@ export default function Home() {
     };
     mediaQuery.addEventListener('change', handleMediaQuery);
     setIsBigScreen(mediaQuery.matches);
-  }, [isBigScreen])
+  }, [isBigScreen]);
 
   const sizeBag = (parameter) => {
     if (parameter === "scale") {
@@ -89,4 +87,4 @@ export default function Home() {
       </main>
     </>
   );
-}
+};

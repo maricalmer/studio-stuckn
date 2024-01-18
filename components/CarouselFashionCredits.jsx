@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const CarouselFashionCredits = ({fashionCredits}) => {
+export default function CarouselFashionCredits({fashionCredits}) {
   return (
       <div className="relative mt-20 md:mt-0 md:min-w-[400px] h-fit md:h-[60vh] md:ml-4">
         <div className="md:absolute bottom-0 pb-10 md:pb-0">
@@ -24,5 +24,3 @@ const CarouselFashionCredits = ({fashionCredits}) => {
       </div>
   );
 };
-
-export default CarouselFashionCredits;

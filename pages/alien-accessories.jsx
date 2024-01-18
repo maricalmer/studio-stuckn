@@ -43,7 +43,7 @@ const softwares = "Using ZBrush, Blender, CLO3D, Substance Painter, and Photosho
 const previousProject = "etherea-part-three";
 const description = { title: title, details: details, softwares: softwares, previousProject: previousProject };
 
-function AlienAccessories() {
+export default function AlienAccessories() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
@@ -52,5 +52,3 @@ function AlienAccessories() {
     </PageContainer>
   );
 };
-
-export default AlienAccessories;

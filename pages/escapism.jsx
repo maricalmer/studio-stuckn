@@ -1,13 +1,12 @@
-'use client';
-import escapismImg1 from '../public/img/physical/escapism/detail_view_of_a_lasercutted_garment.webp'
-import escapismImg2 from '../public/img/physical/escapism/model_full_body_view_hand_on_face.webp'
-import escapismImg3 from '../public/img/physical/escapism/female_model_infront_of_brown_wall_and_light_reflection.webp'
-import escapismImg4 from '../public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp'
-import escapismImg5 from '../public/img/physical/escapism/model_headshot_from_back_view.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import escapismImg1 from '../public/img/physical/escapism/detail_view_of_a_lasercutted_garment.webp';
+import escapismImg2 from '../public/img/physical/escapism/model_full_body_view_hand_on_face.webp';
+import escapismImg3 from '../public/img/physical/escapism/female_model_infront_of_brown_wall_and_light_reflection.webp';
+import escapismImg4 from '../public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp';
+import escapismImg5 from '../public/img/physical/escapism/model_headshot_from_back_view.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -24,14 +23,12 @@ const credits = [["All Fashion", "Studio.Stuckn"], ["Styling", "Studio.Stuckn"],
 const previousProject = "page";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject };
 
-function Escapism() {
+export default function Escapism() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default Escapism;
+};

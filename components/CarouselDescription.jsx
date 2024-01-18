@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const CarouselDescription = ({ title, subtitle, details, softwares, credits, previousProject, nextProject }) => {
+export default function CarouselDescription({ title, subtitle, details, softwares, credits, previousProject, nextProject }) {
   return (
     <div className="mb-8 md:w-[220px] h-fit md:h-[60vh] md:fixed left-[100px]">
       <div className="quella text-4xl mt-5 mb-5 relative z-20 md:p-3 md:mb-0">{title}</div>
@@ -23,5 +23,3 @@ const CarouselDescription = ({ title, subtitle, details, softwares, credits, pre
     </div>
   );
 };
-
-export default CarouselDescription;

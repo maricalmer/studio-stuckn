@@ -22,7 +22,7 @@ const elements = [
   { src: lowHandsPic, alt: 'ronja seats with low hands', extraStyling: "navmenu__about max-w-[21%] ml-[75%] bottom-[60px] delay-500"}
 ];
 
-function NavMenus() {
+export default function NavMenus() {
   const handleHover = (e) => {
     const navbar = e.currentTarget.parentNode.parentNode;
     const className = e.currentTarget.textContent.toLowerCase();
@@ -52,5 +52,3 @@ function NavMenus() {
     </>
   );
 };
-
-export default NavMenus;

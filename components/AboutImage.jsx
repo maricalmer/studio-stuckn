@@ -14,7 +14,7 @@ const handleImageSizing = (scrollValue, baseImgHeight) => {
   };
 };
 
-function AboutImage({scrollValue, baseImgHeight}) {
+export default function AboutImage({scrollValue, baseImgHeight}) {
   return (
     <Image
       src={profilePic}
@@ -30,5 +30,3 @@ function AboutImage({scrollValue, baseImgHeight}) {
     />
   );
 };
-
-export default AboutImage;

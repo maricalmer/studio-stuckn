@@ -1,14 +1,14 @@
 'use client';
+import Breadcrumb from "@/components/Breadcrumb";
+import Carousel from "@/components/Carousel";
+import StaticBrand from "@/components/StaticBrand";
+import PageContainer from "@/components/PageContainer";
 import redElfFrontZoom from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
 import redElfDress from '../public/img/digital/etherea-part-one/3d_elf_red_dress_detail.webp'
 import redElfProfile from '../public/img/digital/3d_elf_red_profile.webp'
 import redElfFace from '../public/img/digital/etherea-part-one/3d_elf_red_face_zoom.webp'
 import tree from '../public/img/digital/etherea-part-one/3d_elf_red_tree.webp'
 import redElfFront from '../public/img/digital/etherea-part-one/3d_elf_red_front.webp'
-import Breadcrumb from "@/components/Breadcrumb";
-import Carousel from "@/components/Carousel";
-import StaticBrand from "@/components/StaticBrand";
-import PageContainer from "@/components/PageContainer";
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -18,7 +18,6 @@ const elements = [
   { type: "image", src: redElfFace, alt: '3d avatar lucy front distance' },
   { type: "image", src: tree, alt: '3d tree' },
   { type: "image", src: redElfFront, alt: '3d avatar lucy front distance' }
-
 ];
 
 const title = "Etherea";
@@ -28,14 +27,12 @@ const softwares = "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ
 const nextProject = "etherea-part-two";
 const description = { title: title, subtitle: subtitle, details: details, softwares: softwares, nextProject: nextProject };
 
-function EthereaPartOne() {
+export default function EthereaPartOne() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default EthereaPartOne;
+};

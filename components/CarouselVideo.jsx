@@ -1,4 +1,4 @@
-const CarouselVideo = ({ src, title }) => {
+export default function CarouselVideo({ src, title }) {
   return (
     <iframe
       className="w-full md:w-auto md:h-full aspect-video focus:outline-none active:outline-none"
@@ -8,5 +8,3 @@ const CarouselVideo = ({ src, title }) => {
     </iframe>
   );
 };
-
-export default CarouselVideo;

@@ -4,7 +4,7 @@ const formatUrl = (string) => {
   return string === "Home" ? "" : string.toLowerCase();
 };
 
-function BreadcrumbItem({activeItem, itemName}) {
+export default function BreadcrumbItem({activeItem, itemName}) {
   if (activeItem === itemName) {
     return (
       <li className={"navlist__item text-[#C9D1D2] mt-2"}>
@@ -19,5 +19,3 @@ function BreadcrumbItem({activeItem, itemName}) {
     );
   };
 };
-
-export default BreadcrumbItem;

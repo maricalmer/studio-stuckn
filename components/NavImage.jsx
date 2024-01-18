@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function NavImage({src, alt, extraStyling}) {
+export default function NavImage({src, alt, extraStyling}) {
   return (
     <div className={`${extraStyling} absolute opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300]`} >
       <Image
@@ -14,5 +14,3 @@ function NavImage({src, alt, extraStyling}) {
     </div>
   );
 };
-
-export default NavImage;

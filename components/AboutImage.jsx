@@ -1,5 +1,3 @@
-// AboutImage.jsx
-'use client';
 import Image from 'next/image'
 import profilePic from '../public/img/about/elbow_on_chair.webp'
 

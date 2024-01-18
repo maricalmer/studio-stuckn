@@ -1,4 +1,3 @@
-// CarouselDescription.jsx
 import Link from 'next/link'
 
 const CarouselDescription = ({ title, subtitle, details, softwares, credits, previousProject, nextProject }) => {

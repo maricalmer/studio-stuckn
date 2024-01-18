@@ -1,16 +1,15 @@
-'use client';
-import fluxImg1 from '../public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp'
-import fluxImg2 from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
-import fluxImg3 from '../public/img/physical/in-constant-flux/male_model_lean_on_window.webp'
-import fluxImg4 from '../public/img/physical/in-constant-flux/model_with_hands_on_chin_looking_up.webp'
-import fluxImg5 from '../public/img/physical/in-constant-flux/model_sitting_on_top_of_arm_chair.webp'
-import fluxImg6 from '../public/img/physical/in-constant-flux/model_leaning_against_the_window.webp'
-import fluxImg7 from '../public/img/physical/in-constant-flux/model_sits_on_office_chair.webp'
-import fluxImg8 from '../public/img/physical/in-constant-flux/male_model_laying_on_chair.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import fluxImg1 from '../public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp';
+import fluxImg2 from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp';
+import fluxImg3 from '../public/img/physical/in-constant-flux/male_model_lean_on_window.webp';
+import fluxImg4 from '../public/img/physical/in-constant-flux/model_with_hands_on_chin_looking_up.webp';
+import fluxImg5 from '../public/img/physical/in-constant-flux/model_sitting_on_top_of_arm_chair.webp';
+import fluxImg6 from '../public/img/physical/in-constant-flux/model_leaning_against_the_window.webp';
+import fluxImg7 from '../public/img/physical/in-constant-flux/model_sits_on_office_chair.webp';
+import fluxImg8 from '../public/img/physical/in-constant-flux/male_model_laying_on_chair.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -31,14 +30,12 @@ const credits = [["All Fashion", "Studio.Stuckn"], ["Styling", "Studio.Stuckn"],
 const nextProject = "flanelle";
 const description = { title: title, details: details, credits: credits, nextProject: nextProject };
 
-function InConstantFlux() {
+export default function InConstantFlux() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default InConstantFlux;
+};

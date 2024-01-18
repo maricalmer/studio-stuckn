@@ -1,26 +1,24 @@
-'use client';
-import rebootImg1 from '../public/img/physical/reboot/female_model_hiding_head_in_front_of_arms.webp'
-import rebootImg2 from '../public/img/physical/reboot/male_model_looks_into_tilted_camera.webp'
-import rebootImg3 from '../public/img/physical/reboot/full_body_view_of_female_model_from_the_front.webp'
-import rebootImg4 from '../public/img/physical/reboot/female_and_male_face_close_up.webp'
-import rebootImg5 from '../public/img/physical/reboot/male_model_shown_from_the_back_infront_of_sunreflection.webp'
-import rebootImg6 from '../public/img/physical/reboot/female_model_bust_shot.webp'
-import rebootImg7 from '../public/img/physical/reboot/male_model_in_motion.webp'
-import rebootImg8 from '../public/img/physical/reboot/male_model_full_body_half_profile.webp'
-import rebootImg9 from '../public/img/physical/reboot/male_model_bust_shot.webp'
-import rebootImg10 from '../public/img/physical/reboot/female_model_from_half_profile_full_body.webp'
-import rebootImg11 from '../public/img/physical/reboot/2_models_shown_full_body_looking_into_camera.webp'
-import rebootImg12 from '../public/img/physical/reboot/male_model_turning_photographed_from_the_back.webp'
-import rebootImg13 from '../public/img/physical/reboot/detail_view_of_trousrs_on_male_model.webp'
-import rebootImg14 from '../public/img/physical/reboot/full_body_view_of_female_model_from_the_back.webp'
-import rebootImg15 from '../public/img/physical/reboot/male_model_full_body_view.webp'
-import rebootImg16 from '../public/img/physical/reboot/female_model_looks_into_tilted_camera.webp'
-import rebootImg17 from '../public/img/physical/reboot/female_model_photographed_from_the_side_profile.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
-
+import rebootImg1 from '../public/img/physical/reboot/female_model_hiding_head_in_front_of_arms.webp';
+import rebootImg2 from '../public/img/physical/reboot/male_model_looks_into_tilted_camera.webp';
+import rebootImg3 from '../public/img/physical/reboot/full_body_view_of_female_model_from_the_front.webp';
+import rebootImg4 from '../public/img/physical/reboot/female_and_male_face_close_up.webp';
+import rebootImg5 from '../public/img/physical/reboot/male_model_shown_from_the_back_infront_of_sunreflection.webp';
+import rebootImg6 from '../public/img/physical/reboot/female_model_bust_shot.webp';
+import rebootImg7 from '../public/img/physical/reboot/male_model_in_motion.webp';
+import rebootImg8 from '../public/img/physical/reboot/male_model_full_body_half_profile.webp';
+import rebootImg9 from '../public/img/physical/reboot/male_model_bust_shot.webp';
+import rebootImg10 from '../public/img/physical/reboot/female_model_from_half_profile_full_body.webp';
+import rebootImg11 from '../public/img/physical/reboot/2_models_shown_full_body_looking_into_camera.webp';
+import rebootImg12 from '../public/img/physical/reboot/male_model_turning_photographed_from_the_back.webp';
+import rebootImg13 from '../public/img/physical/reboot/detail_view_of_trousrs_on_male_model.webp';
+import rebootImg14 from '../public/img/physical/reboot/full_body_view_of_female_model_from_the_back.webp';
+import rebootImg15 from '../public/img/physical/reboot/male_model_full_body_view.webp';
+import rebootImg16 from '../public/img/physical/reboot/female_model_looks_into_tilted_camera.webp';
+import rebootImg17 from '../public/img/physical/reboot/female_model_photographed_from_the_side_profile.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -50,14 +48,12 @@ const previousProject = "seefashion";
 const nextProject = "excessive-minimal";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 
-function Reboot() {
+export default function Reboot() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default Reboot;
+};

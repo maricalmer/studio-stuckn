@@ -1,18 +1,17 @@
-'use client';
-import seeFashionImg1 from '../public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp'
-import seeFashionImg2 from '../public/img/physical/seefashion/diverse_model_indress.webp'
-import seeFashionImg3 from '../public/img/physical/seefashion/diverse_model_looking_to_the_side.webp'
-import seeFashionImg4 from '../public/img/physical/seefashion/3_model_looking_into_the_camera.webp'
-import seeFashionImg5 from '../public/img/physical/seefashion/runway_shot_of_model_walking.webp'
-import seeFashionImg6 from '../public/img/physical/seefashion/diverse_model_in_dress_and_vest.webp'
-import seeFashionImg7 from '../public/img/physical/seefashion/runway_shot_of_2_models_walking.webp'
-import seeFashionImg8 from '../public/img/physical/seefashion/detail_shot_of_a_green_suit.webp'
-import seeFashionImg9 from '../public/img/physical/seefashion/4_model_full_body_shot.webp'
-import seeFashionImg10 from '../public/img/physical/seefashion/diverse_model_in_draped_top.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import seeFashionImg1 from '../public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp';
+import seeFashionImg2 from '../public/img/physical/seefashion/diverse_model_indress.webp';
+import seeFashionImg3 from '../public/img/physical/seefashion/diverse_model_looking_to_the_side.webp';
+import seeFashionImg4 from '../public/img/physical/seefashion/3_model_looking_into_the_camera.webp';
+import seeFashionImg5 from '../public/img/physical/seefashion/runway_shot_of_model_walking.webp';
+import seeFashionImg6 from '../public/img/physical/seefashion/diverse_model_in_dress_and_vest.webp';
+import seeFashionImg7 from '../public/img/physical/seefashion/runway_shot_of_2_models_walking.webp';
+import seeFashionImg8 from '../public/img/physical/seefashion/detail_shot_of_a_green_suit.webp';
+import seeFashionImg9 from '../public/img/physical/seefashion/4_model_full_body_shot.webp';
+import seeFashionImg10 from '../public/img/physical/seefashion/diverse_model_in_draped_top.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -36,14 +35,12 @@ const previousProject = "marie-claire";
 const nextProject = "reboot";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 
-function Seefashion() {
+export default function Seefashion() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default Seefashion;
+};

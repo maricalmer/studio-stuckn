@@ -1,15 +1,14 @@
-'use client';
-import purpleElfDetail from '../public/img/digital/3d_elf_purple_detail.webp'
-import purpleElfFace from '../public/img/digital/etherea-part-three/3d_elf_purple_face.webp'
-import purpleElfBottom from '../public/img/digital/etherea-part-three/3d_elf_purple_bottom.webp'
-import purpleElfProfile from '../public/img/digital/etherea-part-three/3d_elf_purple_profile.webp'
-import purpleElfSide from '../public/img/digital/etherea-part-three/3d_elf_purple_side.webp'
-import grass from '../public/img/digital/etherea-part-three/3d_elf_purple_grass_detail.webp'
-import purpleElfFullBody from '../public/img/digital/etherea-part-three/3d_elf_purple_full_body.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import purpleElfDetail from '../public/img/digital/3d_elf_purple_detail.webp';
+import purpleElfFace from '../public/img/digital/etherea-part-three/3d_elf_purple_face.webp';
+import purpleElfBottom from '../public/img/digital/etherea-part-three/3d_elf_purple_bottom.webp';
+import purpleElfProfile from '../public/img/digital/etherea-part-three/3d_elf_purple_profile.webp';
+import purpleElfSide from '../public/img/digital/etherea-part-three/3d_elf_purple_side.webp';
+import grass from '../public/img/digital/etherea-part-three/3d_elf_purple_grass_detail.webp';
+import purpleElfFullBody from '../public/img/digital/etherea-part-three/3d_elf_purple_full_body.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -30,14 +29,12 @@ const previousProject = "etherea-part-two";
 const nextProject = "alien-accessories";
 const description = { title: title, subtitle: subtitle, details: details, softwares: softwares, previousProject: previousProject, nextProject: nextProject };
 
-function EthereaPartThree() {
+export default function EthereaPartThree() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default EthereaPartThree;
+};

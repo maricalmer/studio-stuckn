@@ -1,20 +1,19 @@
-'use client';
-import pageImg1 from '../public/img/physical/page/female_model_standing_on_sand_dune.webp'
-import pageImg2 from '../public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp'
-import pageImg3 from '../public/img/physical/page/sand_dune_with_round_mirror.webp'
-import pageImg4 from '../public/img/physical/page/female_model_laying_in_sand.webp'
-import pageImg5 from '../public/img/physical/page/sand_patterns.webp'
-import pageImg6 from '../public/img/physical/page/detail_view_of_hand_in_the_sand.webp'
-import pageImg7 from '../public/img/physical/page/female_model_standing_in_front_of_hill.webp'
-import pageImg8 from '../public/img/physical/page/female_model_with_yellow_glasses.webp'
-import pageImg9 from '../public/img/physical/page/sand_shapes_top_view.webp'
-import pageImg10 from '../public/img/physical/page/female_model_tilted_view_with_smoke_in_front.webp'
-import pageImg11 from '../public/img/physical/page/stone_dune_with_wires.webp'
-import pageLogo from '../public/img/physical/page/page_magazine_logo.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import pageImg1 from '../public/img/physical/page/female_model_standing_on_sand_dune.webp';
+import pageImg2 from '../public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp';
+import pageImg3 from '../public/img/physical/page/sand_dune_with_round_mirror.webp';
+import pageImg4 from '../public/img/physical/page/female_model_laying_in_sand.webp';
+import pageImg5 from '../public/img/physical/page/sand_patterns.webp';
+import pageImg6 from '../public/img/physical/page/detail_view_of_hand_in_the_sand.webp';
+import pageImg7 from '../public/img/physical/page/female_model_standing_in_front_of_hill.webp';
+import pageImg8 from '../public/img/physical/page/female_model_with_yellow_glasses.webp';
+import pageImg9 from '../public/img/physical/page/sand_shapes_top_view.webp';
+import pageImg10 from '../public/img/physical/page/female_model_tilted_view_with_smoke_in_front.webp';
+import pageImg11 from '../public/img/physical/page/stone_dune_with_wires.webp';
+import pageLogo from '../public/img/physical/page/page_magazine_logo.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -40,14 +39,12 @@ const description = { title: title, details: details, credits: credits, previous
 const fashionCredits = {logo: pageLogo, alt: "Page Magazine logo", creditsPieces: {1: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 2: "Earrings, Leather Trousers Studio.Stuckn, Top Kuntz", 4: "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo", 6: "Top Studio.Stuckn", 7: "Leather Trousers Studio.Stuckn, Vest, Glasses Stylist's own", 8: "Necklace & Earcuff NUW'D, Glasses Stylist's own", 10: "Leather Trousers Studio.Stuckn"}};
 
 
-function Page() {
+export default function Page() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} fashionCredits={fashionCredits}/>
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default Page;
+};

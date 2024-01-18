@@ -1,14 +1,13 @@
-'use client';
-import roseElfEar from '../public/img/digital/etherea-part-two/3d_elf_rose_ear.webp'
-import roseElfBottom from '../public/img/digital/etherea-part-two/3d_elf_rose_bottom.webp'
-import tree from '../public/img/digital/etherea-part-two/3d_elf_rose_tree_detail.webp'
-import roseElfFace from '../public/img/digital/etherea-part-two/3d_elf_rose_face.webp'
-import roseElfSide from '../public/img/digital/etherea-part-two/3d_elf_rose_side.webp'
-import roseElfFront from '../public/img/digital/etherea-part-two/3d_elf_rose_front.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import roseElfEar from '../public/img/digital/etherea-part-two/3d_elf_rose_ear.webp';
+import roseElfBottom from '../public/img/digital/etherea-part-two/3d_elf_rose_bottom.webp';
+import tree from '../public/img/digital/etherea-part-two/3d_elf_rose_tree_detail.webp';
+import roseElfFace from '../public/img/digital/etherea-part-two/3d_elf_rose_face.webp';
+import roseElfSide from '../public/img/digital/etherea-part-two/3d_elf_rose_side.webp';
+import roseElfFront from '../public/img/digital/etherea-part-two/3d_elf_rose_front.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -28,14 +27,12 @@ const previousProject = "etherea-part-one";
 const nextProject = "etherea-part-three";
 const description = { title: title, subtitle: subtitle, details: details, softwares: softwares, previousProject: previousProject, nextProject: nextProject };
 
-function EthereaPartTwo() {
+export default function EthereaPartTwo() {
   return (
     <PageContainer>
       <Breadcrumb textColor="text-black" />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default EthereaPartTwo;
+};

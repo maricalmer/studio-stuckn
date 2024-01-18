@@ -1,19 +1,18 @@
-'use client';
-import minimalImg1 from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
-import minimalImg2 from '../public/img/physical/excessive-minimal/female_model_hiding_her_face_with_her_arms.webp'
-import minimalImg3 from '../public/img/physical/excessive-minimal/female_model_turning_in_motion_black_and_white.webp'
-import minimalImg4 from '../public/img/physical/excessive-minimal/view_on_sun_reflections_on_the_floor_and_model_making_a_big_step.webp'
-import minimalImg5 from '../public/img/physical/excessive-minimal/female_model_standing_with_her_hands_in_pockets.webp'
-import minimalImg6 from '../public/img/physical/excessive-minimal/abstract_projection_on_female_model_on_the_floor.webp'
-import minimalImg7 from '../public/img/physical/excessive-minimal/female_model_leaning_on_wood_black_and_white.webp'
-import minimalImg8 from '../public/img/physical/excessive-minimal/female_model_tilted_camera_with_hand_on_hip.webp'
-import minimalImg9 from '../public/img/physical/excessive-minimal/female_model_wrapped_in_scarf_and_coat_black_and_white.webp'
-import minimalImg10 from '../public/img/physical/excessive-minimal/female_model_with_arms_above_her_head.webp'
-import minimalImg11 from '../public/img/physical/excessive-minimal/abstract_projection_on_female_model_upper_body.webp'
 import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import StaticBrand from "@/components/StaticBrand";
 import PageContainer from "@/components/PageContainer";
+import minimalImg1 from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp';
+import minimalImg2 from '../public/img/physical/excessive-minimal/female_model_hiding_her_face_with_her_arms.webp';
+import minimalImg3 from '../public/img/physical/excessive-minimal/female_model_turning_in_motion_black_and_white.webp';
+import minimalImg4 from '../public/img/physical/excessive-minimal/view_on_sun_reflections_on_the_floor_and_model_making_a_big_step.webp';
+import minimalImg5 from '../public/img/physical/excessive-minimal/female_model_standing_with_her_hands_in_pockets.webp';
+import minimalImg6 from '../public/img/physical/excessive-minimal/abstract_projection_on_female_model_on_the_floor.webp';
+import minimalImg7 from '../public/img/physical/excessive-minimal/female_model_leaning_on_wood_black_and_white.webp';
+import minimalImg8 from '../public/img/physical/excessive-minimal/female_model_tilted_camera_with_hand_on_hip.webp';
+import minimalImg9 from '../public/img/physical/excessive-minimal/female_model_wrapped_in_scarf_and_coat_black_and_white.webp';
+import minimalImg10 from '../public/img/physical/excessive-minimal/female_model_with_arms_above_her_head.webp';
+import minimalImg11 from '../public/img/physical/excessive-minimal/abstract_projection_on_female_model_upper_body.webp';
 import "../public/stylesheets/projects.css";
 
 const elements = [
@@ -37,14 +36,12 @@ const previousProject = "reboot";
 const nextProject = "page";
 const description = { title: title, details: details, credits: credits, previousProject: previousProject, nextProject: nextProject };
 
-function ExcessiveMinimal() {
+export default function ExcessiveMinimal() {
   return (
     <PageContainer>
       <Breadcrumb />
       <Carousel description={description} elements={elements} />
-      <StaticBrand extraStyling={"opacity-1 border-black"} />
+      <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );
-}
-
-export default ExcessiveMinimal;
+};

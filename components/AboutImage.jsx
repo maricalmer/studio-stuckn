@@ -14,7 +14,7 @@ const handleImageSizing = (scrollValue, baseImgHeight) => {
   };
 };
 
-function AboutImage(props) {
+function AboutImage({scrollValue, baseImgHeight}) {
   return (
     <Image
       src={profilePic}
@@ -25,7 +25,7 @@ function AboutImage(props) {
       priority={true}
       style={{
         width: 'auto',
-        height: `${handleImageSizing(props.scrollValue, props.baseImgHeight)}px`,
+        height: `${handleImageSizing(scrollValue, baseImgHeight)}px`,
       }}
     />
   );

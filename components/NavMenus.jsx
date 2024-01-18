@@ -11,15 +11,15 @@ import lowHandsPic from '../public/img/about/low_hands.webp'
 import NavImage from '@/components/NavImage'
 
 const elements = [
-  { src: avatar1Pic, alt: '3d avatar short hair', extraClass: "navmenu__digital max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
-  { src: heelsPic, alt: '3d sliver boots close shot', extraClass: "navmenu__digital max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
-  { src: avatar2Pic, alt: '3d avatar wearing earings', extraClass: "navmenu__digital max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
-  { src: couplePic, alt: 'front picture of couple', extraClass: "navmenu__physical max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
-  { src: coatPic, alt: 'white coat', extraClass: "navmenu__physical max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
-  { src: windowPic, alt: 'front picture of model seating at the window', extraClass: "navmenu__physical max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
-  { src: elbowOnChairPic, alt: 'ronja seats with elbow up', extraClass: "navmenu__about max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
-  { src: profilePic, alt: 'ronja seats with closed eyes', extraClass: "navmenu__about max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
-  { src: lowHandsPic, alt: 'ronja seats with low hands', extraClass: "navmenu__about max-w-[21%] ml-[75%] bottom-[60px] delay-500"}
+  { src: avatar1Pic, alt: '3d avatar short hair', extraStyling: "navmenu__digital max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: heelsPic, alt: '3d sliver boots close shot', extraStyling: "navmenu__digital max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: avatar2Pic, alt: '3d avatar wearing earings', extraStyling: "navmenu__digital max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
+  { src: couplePic, alt: 'front picture of couple', extraStyling: "navmenu__physical max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: coatPic, alt: 'white coat', extraStyling: "navmenu__physical max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: windowPic, alt: 'front picture of model seating at the window', extraStyling: "navmenu__physical max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
+  { src: elbowOnChairPic, alt: 'ronja seats with elbow up', extraStyling: "navmenu__about max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: profilePic, alt: 'ronja seats with closed eyes', extraStyling: "navmenu__about max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: lowHandsPic, alt: 'ronja seats with low hands', extraStyling: "navmenu__about max-w-[21%] ml-[75%] bottom-[60px] delay-500"}
 ];
 
 function NavMenus() {
@@ -45,7 +45,7 @@ function NavMenus() {
       <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
         {
           elements.map((element, index) => {
-            return (<NavImage src={element.src} alt={element.alt} extraClass={element.extraClass} key={index}/>)
+            return (<NavImage src={element.src} alt={element.alt} extraStyling={element.extraStyling} key={index}/>)
           })
         }
       </div>

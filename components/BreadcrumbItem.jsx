@@ -1,14 +1,10 @@
-// BreadcrumbItem.jsx
-'use client';
 import Link from 'next/link'
 
 const formatUrl = (string) => {
   return string === "Home" ? "" : string.toLowerCase();
 }
 
-function BreadcrumbItem(props) {
-  let { activeItem, itemName } = props;
-
+function BreadcrumbItem({activeItem, itemName}) {
   if (activeItem === itemName) {
     return (
       <li className={"navlist__item text-[#C9D1D2] mt-2"}>

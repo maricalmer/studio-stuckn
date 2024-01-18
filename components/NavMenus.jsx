@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import avatar1Pic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
 import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'

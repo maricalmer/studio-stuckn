@@ -29,9 +29,9 @@ function Carousel({description, elements, fashionCredits}) {
       {
         elements.map((element, index) => {
           if (element.type === "link") {
-            return(<CarouselLink src={element.src} alt={element.alt} title={element.title} href={element.href} index={index} key={index}/>)
+            return (<CarouselLink src={element.src} alt={element.alt} title={element.title} href={element.href} index={index} key={index}/>)
           } else if (element.type === "video") {
-            return(<CarouselVideo src={element.src} title={element.title} key={index}/>)
+            return (<CarouselVideo src={element.src} title={element.title} key={index}/>)
           } else {
             return (<CarouselImage src={element.src} alt={element.alt} index={index} key={index}/>)
           }

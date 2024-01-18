@@ -59,7 +59,7 @@ export default function Home() {
               position={sizeBag("position")}
               rotation={[0, 5, 0]}
               scrollY={scrollY}
-              scrollYProgress={scrollYProgress}
+              scrollYProgress={scrollYProgress.current}
             />
           </Canvas>
         </div>

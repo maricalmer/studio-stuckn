@@ -54,7 +54,7 @@ export default function Flanelle() {
   return (
     <PageContainer>
       <Breadcrumb />
-      <Carousel description={description} elements={elements} fashionCredits={fashionCredits}/>
+      <Carousel description={description} elements={elements} fashionCredits={fashionCredits} />
       <StaticBrand extraStyling="opacity-1 border-black" />
     </PageContainer>
   );

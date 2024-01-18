@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-function NavImage({src, alt, extraClass}) {
+function NavImage({src, alt, extraStyling}) {
   return (
-    <div className={`${extraClass} absolute opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300]`} >
+    <div className={`${extraStyling} absolute opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300]`} >
       <Image
         src={src}
         alt={alt}

@@ -14,11 +14,6 @@ export default function About() {
     window.addEventListener('scroll', function() {
       setScrollValue(window.scrollY);
     })
-    return () => {
-      window.removeEventListener('scroll', function() {
-        setScrollValue(window.scrollY);
-      })
-    }
   }, [])
 
   useEffect(() => {

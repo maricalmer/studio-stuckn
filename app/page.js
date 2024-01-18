@@ -19,11 +19,6 @@ export default function Home() {
     window.addEventListener('scroll', function() {
       setScrollValue(window.scrollY);
     })
-    return () => {
-      window.removeEventListener('scroll', function() {
-        setScrollValue(window.scrollY);
-      })
-    }
   }, [])
 
   useEffect(() => {
@@ -33,9 +28,6 @@ export default function Home() {
     };
     mediaQuery.addEventListener('change', handleMediaQuery);
     setIsBigScreen(mediaQuery.matches);
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQuery);
-    };
   }, [isBigScreen])
 
   const sizeBag = (parameter) => {

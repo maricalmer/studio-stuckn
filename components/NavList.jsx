@@ -1,5 +1,3 @@
-// NavList.jsx
-'use client';
 import Link from 'next/link'
 
 function NavList() {

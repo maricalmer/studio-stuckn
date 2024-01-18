@@ -73,7 +73,7 @@ export default function Home() {
             scrollY={scrollY}
             scrollYProgress={scrollYProgress}
           />
-          <Brand scrollY={scrollY}/>
+          <Brand scrollY={scrollY.current}/>
           <StaticBrand extraStyling={"md:hidden opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"}/>
           <p className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
             The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.

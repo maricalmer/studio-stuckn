@@ -1,16 +1,27 @@
-// NavMenus.jsx
-'use client';
 import Image from 'next/image'
 import Link from 'next/link'
+import avatar1Pic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
 import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp'
-import lucyPic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp'
-import marionPic from '../public/img/digital/etherea-part-two/marion.webp'
+import avatar2Pic from '../public/img/digital/etherea-part-two/marion.webp'
+import couplePic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp'
 import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp'
-import hanselPic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp'
-import fluxPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
+import windowPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp'
 import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp'
-import lowHandsPic from '../public/img/about/low_hands.webp'
 import profilePic from '../public/img/about/profile.webp'
+import lowHandsPic from '../public/img/about/low_hands.webp'
+import NavImage from '@/components/NavImage'
+
+const elements = [
+  { src: avatar1Pic, alt: '3d avatar short hair', extraClass: "navmenu__digital max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: heelsPic, alt: '3d sliver boots close shot', extraClass: "navmenu__digital max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: avatar2Pic, alt: '3d avatar wearing earings', extraClass: "navmenu__digital max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
+  { src: couplePic, alt: 'front picture of couple', extraClass: "navmenu__physical max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: coatPic, alt: 'white coat', extraClass: "navmenu__physical max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: windowPic, alt: 'front picture of model seating at the window', extraClass: "navmenu__physical max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
+  { src: elbowOnChairPic, alt: 'ronja seats with elbow up', extraClass: "navmenu__about max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+  { src: profilePic, alt: 'ronja seats with closed eyes', extraClass: "navmenu__about max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
+  { src: lowHandsPic, alt: 'ronja seats with low hands', extraClass: "navmenu__about max-w-[21%] ml-[75%] bottom-[60px] delay-500"}
+];
 
 function NavMenus() {
   const handleHover = (e) => {
@@ -33,96 +44,11 @@ function NavMenus() {
         </li>
       </ul>
       <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
-        <div className="navmenu__digital navmenu__digital--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
-          <Image
-            src={lucyPic}
-            alt="3d avatar 1"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__digital navmenu__digital--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
-          <Image
-            src={heelsPic}
-            alt="3d heels"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__digital navmenu__digital--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
-          <Image
-            src={marionPic}
-            alt="3d avatar earings"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__physical navmenu__physical--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
-          <Image
-            src={hanselPic}
-            alt="couple"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__physical navmenu__physical--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
-          <Image
-            src={coatPic}
-            alt="coat"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__physical navmenu__physical--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
-          <Image
-            src={fluxPic}
-            alt="model window"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__about navmenu__about--lucy max-w-[28%] ml-[8%] absolute bottom-[210px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-200" >
-          <Image
-            src={elbowOnChairPic}
-            alt="ronja with crossed arms"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__about navmenu__about--heels max-w-[21%] ml-[42%] absolute bottom-[15px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-300" >
-          <Image
-            src={profilePic}
-            alt="ronja profile"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className="navmenu__about navmenu__about--marion max-w-[21%] ml-[75%] absolute bottom-[60px] opacity-0 translate-y-[100px] transition-[opacity,transform] duration-[100,300] delay-500" >
-          <Image
-            src={lowHandsPic}
-            alt="ronja hand on chin"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
+        {
+          elements.map((element, index) => {
+            return (<NavImage src={element.src} alt={element.alt} extraClass={element.extraClass} key={index}/>)
+          })
+        }
       </div>
     </>
   );

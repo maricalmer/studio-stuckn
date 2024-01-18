@@ -1,6 +1,3 @@
-// ScrollArrow.jsx
-'use client';
-
 const handleArrowSizing = (scrollY) => {
   const factor = 2500;
   return 1 - scrollY/factor < 0.3 ? 0.3 : 1 - scrollY/factor;

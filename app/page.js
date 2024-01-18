@@ -70,8 +70,8 @@ export default function Home() {
             <rect width="60" height="28" fill="#A1BF79"/>
           </svg>
           <ScrollArrow
-            scrollY={scrollY}
-            scrollYProgress={scrollYProgress}
+            scrollY={scrollY.current}
+            scrollYProgress={scrollYProgress.current}
           />
           <Brand scrollY={scrollY.current}/>
           <StaticBrand extraStyling={"md:hidden opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]"}/>

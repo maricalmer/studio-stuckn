@@ -12,7 +12,7 @@ function Navigation(props) {
       {
         props.isBigScreen ? <NavMenus /> : <NavMenusMobile />
       }
-      <StaticBrand extraStyling={"opacity-0 md:translate-y-[200px] border-black"}/>
+      <StaticBrand extraStyling="opacity-0 md:translate-y-[200px] border-black"/>
     </nav>
   );
 }

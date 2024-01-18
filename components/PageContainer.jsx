@@ -1,5 +1,3 @@
-// PageContainer.jsx
-'use client';
 import localFont from 'next/font/local'
 
 const quella = localFont({src: '../public/fonts/Quella.otf', variable: '--quella'})

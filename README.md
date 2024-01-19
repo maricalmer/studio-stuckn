@@ -1,3 +1,80 @@
+### [studiostuckn.com](https://www.studiostuckn.com/), a portfolio website to showcase fashion projects
+
+## Static website
+
+Website developed with HTML, CSS, Javascript, React, Next.js, Three.js and Tailwind. Assets are bundled with Webpack. Application is run on Netlify.
+
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=white)
+![React](https://img.shields.io/badge/react-18-149eca?style=for-the-badge&logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/next.js-13-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Tailwind](https://img.shields.io/badge/tailwind-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+## JS Packages (non exhaustive)
+
+[![threejs](https://img.shields.io/badge/three-0.155.0-yellow.svg)](https://classic.yarnpkg.com/en/package/three)
+
+[![animejs](https://img.shields.io/badge/animejs-3.2.1-yellow.svg)](https://yarnpkg.com/package/animejs)
+[![@mui/x-date-pickers](https://img.shields.io/badge/@mui-6.2.0-yellow.svg)](https://yarnpkg.com/package/@mui/x-date-pickers)
+
+## APIs
+
+[![archive](https://img.shields.io/badge/Open--Meteo-archive-green.svg)](https://open-meteo.com/en/docs/historical-weather-api)
+[![geocoding](https://img.shields.io/badge/Open--Meteo-geocoding-green.svg)](https://open-meteo.com/en/docs/geocoding-api)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:maricalmer/maricalmer.github.io.git my-project
+```
+
+Go to the project directory and remove git logs
+
+```bash
+  cd my-project
+  rm -rf .git
+```
+
+Install dependencies
+
+```bash
+  bundle install
+  yarn install
+```
+
+Make sure you have ./node_modules/.bin in your $PATH:
+
+```bash
+  echo $PATH
+  # You should see `./node_modules/.bin` in the list
+```
+
+If it's not the case, add it:
+
+```bash
+  cd ~/code/dotfiles/<your_github_nickname>
+  echo 'export PATH="./bin:./node_modules/.bin:${PATH}"' >> zshrc
+  cd ~/code/<your_github_nickname>/my-project
+  source ~/.zshrc
+```
+
+Start the server
+
+```bash
+  yarn start
+```
+
+## Visit the page!
+
+[birth-weather](https://incredible-cascaron-139c6d.netlify.app/)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

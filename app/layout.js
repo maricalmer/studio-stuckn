@@ -1,8 +1,8 @@
 import "../public/stylesheets/globals.css";
 import localFont from 'next/font/local'
 
-const quella = localFont({src: '../public/fonts/Quella.woff2', variable: '--quella'})
-const helvetica = localFont({src: '../public/fonts/Helvetica.woff2', variable: '--helvetica'});
+const quella = localFont({src: '../public/fonts/Quella.woff', variable: '--quella'})
+const helvetica = localFont({src: '../public/fonts/Helvetica.woff', variable: '--helvetica'});
 
 export default function RootLayout({ children }) {
   return (

@@ -10,7 +10,7 @@ export default function CarouselImage({ src, alt, index }) {
         placeholder="blur"
         sizes="(max-width: 767px) 100vw, 33vw"
         quality={100}
-        priority={ index < 4 }
+        priority={ index < 3 }
       />
     </div>
   );

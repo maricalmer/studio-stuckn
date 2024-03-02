@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CarouselImage({ src, alt, index }) {
   return (
-    <div className="my-3 w-full md:my-0 md:w-auto md:min-w-fit md:h-full">
+    <div className="my-10 w-full md:my-0 md:w-auto md:min-w-fit md:h-full">
       <Image
         src={src}
         alt={alt}

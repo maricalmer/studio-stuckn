@@ -31,16 +31,9 @@
   opacity: 1;
 }
 
-.carousel-item {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 @media (min-width: 767px) {
   .carousel-item {
     width: auto;
     height: 100%;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
   }
 }

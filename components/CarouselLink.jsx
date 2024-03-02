@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function CarouselLink({ src, alt, title, href, index }) {
   return (
-    <Link href={`${href}`} className="carousel-item__link block w-full h-fit my-3 md:my-0 md:w-auto md:min-w-fit md:h-full relative transition-opacity ease-in-out">
+    <Link href={`${href}`} className="carousel-item__link block w-full h-fit my-10 md:my-0 md:w-auto md:min-w-fit md:h-full relative transition-opacity ease-in-out">
       <Image
         src={src}
         alt={alt}

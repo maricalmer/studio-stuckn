@@ -4,6 +4,10 @@ import CarouselVideo from '@/components/CarouselVideo';
 import CarouselDescription from '@/components/CarouselDescription';
 import CarouselFashionCredits from '@/components/CarouselFashionCredits';
 
+const handleWheel = (event) => {
+  event.currentTarget.scrollLeft += event.deltaY;
+}
+
 const handleClick = (event, direction) => {
   const carousel = event.currentTarget.parentElement.parentElement;
   let newScrollPosition;
@@ -13,7 +17,7 @@ const handleClick = (event, direction) => {
 
 export default function Carousel({description, elements, fashionCredits}) {
   return (
-    <div className="carousel md:h-[60vh] md:flex px-6 md:px-0 mt-36 gap-3 md:overflow-scroll md:overscroll-contain relative">
+    <div onWheel={e=>handleWheel(e)} className="carousel md:h-[60vh] md:flex px-6 md:px-0 mt-36 gap-3 md:overflow-scroll md:overscroll-contain relative">
       {description && <CarouselDescription title={description.title} subtitle={description.subtitle} details={description.details} softwares={description.softwares} credits={description.credits} previousProject={description.previousProject} nextProject={description.nextProject}/>}
       <div className="hidden md:flex h-full items-center">
         <svg onClick={e=>handleClick(e, "left")} width="66" height="36" viewBox="0 0 66 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[66px] fixed left-0 ml-3 z-10 cursor-pointer">

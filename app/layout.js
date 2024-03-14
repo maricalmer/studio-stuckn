@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${quella.variable} ${helvetica.variable}`}>
       <head>
-        <title>Studio.Stuckn</title>
+        <title>Studio.Stuckn, 3D artist based in Berlin</title>
         <meta name="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
         <meta itemProp="name" content="Studio.Stuckn"></meta>
         <meta itemProp="description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>

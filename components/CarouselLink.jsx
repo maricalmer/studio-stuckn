@@ -13,7 +13,7 @@ export default function CarouselLink({ src, alt, title, href, index }) {
         quality={100}
         priority={ index < 3 }
       />
-      <div className="carousel-item__title md:opacity-0 absolute bottom-0 md:top-auto quella text-white pl-1 md:pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</div>
+      <h2 className="carousel-item__title md:opacity-0 absolute bottom-0 md:top-auto quella text-white pl-1 md:pl-3 pb-3 text-4xl transition-opacity ease-in-out">{title}</h2>
     </Link>
   );
 };

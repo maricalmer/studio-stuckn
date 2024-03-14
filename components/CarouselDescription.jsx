@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function CarouselDescription({ title, subtitle, details, softwares, credits, previousProject, nextProject }) {
   return (
     <div className="mb-8 md:w-[220px] h-fit md:h-[60vh] md:fixed left-[100px]">
-      <div className="quella text-4xl mt-5 mb-5 relative z-20 md:p-3 md:mb-0">{title}</div>
+      <h2 className="quella text-4xl mt-5 mb-5 relative z-20 md:p-3 md:mb-0">{title}</h2>
       {subtitle && <div className={subtitle.cyrillic ? "helvetica text-sm mb-3 relative z-20 leading-4 md:px-3 font-bold" : "helvetica text-sm mb-3 relative z-20 leading-4 md:px-3"}>{subtitle.text}</div>}
       <div className="helvetica text-sm mb-3 relative z-20 leading-4 md:px-3">{details}</div>
       {softwares && <div className="helvetica text-sm relative z-20 leading-4 md:px-3">{softwares}</div>}

@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Studio.Stuckn"></meta>
         <meta name="twitter:description" content="Explore 3D artist Ronja Stucken's portfolio, showcasing expertise in digital fashion design, avatars, scene building, as well as proficiency in physical fashion design and pattern making."></meta>
         <meta name="twitter:image" content="https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png"></meta>
+        <meta name="google-site-verification" content="KSG4ALn4wQN7SBpS0FrUDlyIa7-nYg3vfHvPGznHx2k"></meta>
       </head>
       <body>
         {children}

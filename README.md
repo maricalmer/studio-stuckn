@@ -1,4 +1,4 @@
-### [studiostuckn.com](https://www.studiostuckn.com/), a portfolio website to showcase fashion projects
+### [ronjastucken.com](https://www.ronjastucken.com/), a portfolio website to showcase fashion projects
 
 ## Static website
 
@@ -67,7 +67,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Visit the page!
 
-[studiostuckn.com](https://www.studiostuckn.com/)
+[ronjastucken.com](https://www.ronjastucken.com/)
 
 ## License
 

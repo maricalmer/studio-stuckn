@@ -65,6 +65,15 @@ Start the server
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+## V1 with rotating model
+
+<div align="center">
+  <a href="https://github.com/maricalmer/studio-stuckn">
+    <img src="public/gif/bag.gif" max-width="100%" height="100%"/>
+  </a>
+</div>
+
 ## Visit the page!
 
 [ronjastucken.com](https://www.ronjastucken.com/)

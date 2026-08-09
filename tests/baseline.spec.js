@@ -136,6 +136,11 @@ async function settlePage(page, { loadAllImages = false } = {}) {
     // and any horizontal galleries triggers those requests before returning to
     // the initial position.
     await page.evaluate(async () => {
+      // Native lazy loading can otherwise leave the last image as its blur
+      // placeholder when a full-page screenshot starts. The baseline wants the
+      // finished page, so request every image eagerly for this test only.
+      for (const image of document.images) image.loading = "eager";
+
       const step = Math.max(window.innerHeight * 0.8, 400);
       for (
         let position = 0;
@@ -145,6 +150,11 @@ async function settlePage(page, { loadAllImages = false } = {}) {
         window.scrollTo(0, position);
         await new Promise((resolve) => setTimeout(resolve, 75));
       }
+
+      // The loop's last increment can stop just short of the current bottom.
+      // Visit it explicitly so the final lazy image enters the viewport.
+      window.scrollTo(0, document.documentElement.scrollHeight);
+      await new Promise((resolve) => setTimeout(resolve, 150));
 
       for (const scroller of document.querySelectorAll(".carousel")) {
         const horizontalStep = Math.max(scroller.clientWidth * 0.8, 300);
@@ -279,13 +289,18 @@ test.describe("image transfer baseline", () => {
       const timingByUrl = new Map(
         resourceTimings.map((timing) => [timing.url, timing]),
       );
-      const images = [...imageResponses.responses.values()].map((response) => ({
-        ...response,
-        initiatorType: timingByUrl.get(response.url)?.initiatorType || null,
-        transferSize: timingByUrl.get(response.url)?.transferSize ?? null,
-        encodedBodySize: timingByUrl.get(response.url)?.encodedBodySize ?? null,
-        decodedBodySize: timingByUrl.get(response.url)?.decodedBodySize ?? null,
-      }));
+      // Response arrival order varies with network and cache timing. Sorting by
+      // URL keeps committed reports stable when the measured values did not
+      // actually change.
+      const images = [...imageResponses.responses.values()]
+        .map((response) => ({
+          ...response,
+          initiatorType: timingByUrl.get(response.url)?.initiatorType || null,
+          transferSize: timingByUrl.get(response.url)?.transferSize ?? null,
+          encodedBodySize: timingByUrl.get(response.url)?.encodedBodySize ?? null,
+          decodedBodySize: timingByUrl.get(response.url)?.decodedBodySize ?? null,
+        }))
+        .sort((left, right) => left.url.localeCompare(right.url));
 
       results.push({ name, route, images });
     }

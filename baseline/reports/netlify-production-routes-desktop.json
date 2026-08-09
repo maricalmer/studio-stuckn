@@ -2,11 +2,11 @@
   {
     "route": "/",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width, initial-scale=1"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -14,11 +14,11 @@
   {
     "route": "/about",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/about",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/about",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -26,11 +26,11 @@
   {
     "route": "/alien-accessories",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/alien-accessories",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/alien-accessories",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -38,11 +38,11 @@
   {
     "route": "/digital",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/digital",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/digital",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -50,11 +50,11 @@
   {
     "route": "/escapism",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/escapism",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/escapism",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -62,11 +62,11 @@
   {
     "route": "/etherea-part-one",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/etherea-part-one",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-one",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -74,11 +74,11 @@
   {
     "route": "/etherea-part-three",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/etherea-part-three",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-three",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -86,11 +86,11 @@
   {
     "route": "/etherea-part-two",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/etherea-part-two",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-two",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -98,11 +98,11 @@
   {
     "route": "/excessive-minimal",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/excessive-minimal",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/excessive-minimal",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -110,11 +110,11 @@
   {
     "route": "/flanelle",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/flanelle",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/flanelle",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -122,11 +122,11 @@
   {
     "route": "/in-constant-flux",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/in-constant-flux",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/in-constant-flux",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -134,11 +134,11 @@
   {
     "route": "/marie-claire",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/marie-claire",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/marie-claire",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -146,11 +146,11 @@
   {
     "route": "/page",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/page",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/page",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -158,11 +158,11 @@
   {
     "route": "/physical",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/physical",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/physical",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -170,11 +170,11 @@
   {
     "route": "/reboot",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/reboot",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/reboot",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []
@@ -182,11 +182,11 @@
   {
     "route": "/seefashion",
     "status": 200,
-    "finalUrl": "https://www.ronjastucken.com/seefashion",
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/seefashion",
     "rendering": {
       "innerWidth": 1440,
       "documentWidth": 1440,
-      "viewportMeta": null
+      "viewportMeta": "width=device-width"
     },
     "consoleErrors": [],
     "pageErrors": []

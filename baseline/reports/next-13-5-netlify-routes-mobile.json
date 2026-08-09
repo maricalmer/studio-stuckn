@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width, initial-scale=1"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/about",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/alien-accessories",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/alien-accessories",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/digital",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/digital",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/escapism",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/escapism",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-one",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-one",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-three",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-three",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-two",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/etherea-part-two",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/excessive-minimal",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/excessive-minimal",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/flanelle",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/flanelle",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/in-constant-flux",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/in-constant-flux",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/marie-claire",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/marie-claire",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/page",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/page",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/physical",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/physical",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/reboot",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/reboot",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/seefashion",
+    "status": 200,
+    "finalUrl": "https://gleeful-dasik-21eb4f.netlify.app/seefashion",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  }
+]

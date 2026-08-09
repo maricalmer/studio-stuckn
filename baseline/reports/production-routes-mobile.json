@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/about",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/alien-accessories",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/alien-accessories",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/digital",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/digital",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/escapism",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/escapism",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-one",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/etherea-part-one",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-three",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/etherea-part-three",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-two",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/etherea-part-two",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/excessive-minimal",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/excessive-minimal",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/flanelle",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/flanelle",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/in-constant-flux",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/in-constant-flux",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/marie-claire",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/marie-claire",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/page",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/page",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/physical",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/physical",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/reboot",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/reboot",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/seefashion",
+    "status": 200,
+    "finalUrl": "https://www.ronjastucken.com/seefashion",
+    "rendering": {
+      "innerWidth": 980,
+      "documentWidth": 980,
+      "viewportMeta": null
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  }
+]

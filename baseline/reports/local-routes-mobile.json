@@ -1,0 +1,194 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width, initial-scale=1"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/about",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/alien-accessories",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/alien-accessories",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/digital",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/digital",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/escapism",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/escapism",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-one",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/etherea-part-one",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-three",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/etherea-part-three",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/etherea-part-two",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/etherea-part-two",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/excessive-minimal",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/excessive-minimal",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/flanelle",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/flanelle",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/in-constant-flux",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/in-constant-flux",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/marie-claire",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/marie-claire",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/page",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/page",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/physical",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/physical",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/reboot",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/reboot",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  {
+    "route": "/seefashion",
+    "status": 200,
+    "finalUrl": "http://127.0.0.1:3000/seefashion",
+    "rendering": {
+      "innerWidth": 390,
+      "documentWidth": 390,
+      "viewportMeta": "width=device-width"
+    },
+    "consoleErrors": [],
+    "pageErrors": []
+  }
+]

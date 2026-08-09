@@ -1,0 +1,10 @@
+[build]
+  # Keep Netlify aligned with the repository's npm-only package-manager policy.
+  # File-based settings override the site's older `yarn build` UI setting.
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # `.nvmrc` selects Node 24.18.0; pin npm independently because Netlify's
+  # bundled npm version can change when its build image changes.
+  NPM_VERSION = "11.16.0"

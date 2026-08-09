@@ -11,7 +11,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "baseline:test": "playwright test",
     "baseline:production": "BASE_URL=https://www.ronjastucken.com BASELINE_LABEL=production playwright test --update-snapshots"
   },
@@ -19,8 +20,6 @@
     "@react-three/drei": "10.7.8",
     "@react-three/fiber": "9.7.0",
     "autoprefixer": "10.4.15",
-    "eslint": "8.57.1",
-    "eslint-config-next": "15.5.23",
     "framer-motion": "11.18.2",
     "next": "15.5.23",
     "postcss": "8.4.28",
@@ -30,6 +29,9 @@
     "three": "0.159.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.1"
+    "@eslint/eslintrc": "3.3.6",
+    "@playwright/test": "^1.62.1",
+    "eslint": "9.39.4",
+    "eslint-config-next": "15.5.23"
   }
 }

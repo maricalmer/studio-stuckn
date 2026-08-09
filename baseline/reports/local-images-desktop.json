@@ -1,0 +1,472 @@
+[
+  {
+    "name": "home",
+    "route": "/",
+    "images": [
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_front_zoom.629c0488.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1500460,
+        "initiatorType": "img",
+        "transferSize": 1500760,
+        "encodedBodySize": 1500460,
+        "decodedBodySize": 1500460
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_silver_boots_detail.83eaf0f4.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1463548,
+        "initiatorType": "img",
+        "transferSize": 1463848,
+        "encodedBodySize": 1463548,
+        "decodedBodySize": 1463548
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/marion.b6b155e8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 30890,
+        "initiatorType": "img",
+        "transferSize": 31190,
+        "encodedBodySize": 30890,
+        "decodedBodySize": 30890
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/2_models_posing_togehter_sitting.d58049f5.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 851870,
+        "initiatorType": "img",
+        "transferSize": 852170,
+        "encodedBodySize": 851870,
+        "decodedBodySize": 851870
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/coat_with_belt_detail_view_black_and_white.0b2a4ca3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 474570,
+        "initiatorType": "img",
+        "transferSize": 474870,
+        "encodedBodySize": 474570,
+        "decodedBodySize": 474570
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_sit_on_window.b25b2c39.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1644642,
+        "initiatorType": "img",
+        "transferSize": 1644942,
+        "encodedBodySize": 1644642,
+        "decodedBodySize": 1644642
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/elbow_on_chair.226509ca.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1745514,
+        "initiatorType": "img",
+        "transferSize": 1745814,
+        "encodedBodySize": 1745514,
+        "decodedBodySize": 1745514
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/profile.2524255a.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1199668,
+        "initiatorType": "img",
+        "transferSize": 1199968,
+        "encodedBodySize": 1199668,
+        "decodedBodySize": 1199668
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/low_hands.1e9b5ee6.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1141108,
+        "initiatorType": "img",
+        "transferSize": 1141408,
+        "encodedBodySize": 1141108,
+        "decodedBodySize": 1141108
+      }
+    ]
+  },
+  {
+    "name": "digital",
+    "route": "/digital",
+    "images": [
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_profile.8327490f.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2313988,
+        "initiatorType": "link",
+        "transferSize": 2314288,
+        "encodedBodySize": 2313988,
+        "decodedBodySize": 2313988
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_rose_ear_cropped.4ac03e4b.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 950432,
+        "initiatorType": "link",
+        "transferSize": 950732,
+        "encodedBodySize": 950432,
+        "decodedBodySize": 950432
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_purple_detail.0c31b1de.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2380822,
+        "initiatorType": "link",
+        "transferSize": 2381122,
+        "encodedBodySize": 2380822,
+        "decodedBodySize": 2380822
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_blue_bag_front.2c3f303b.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1735018,
+        "initiatorType": "img",
+        "transferSize": 1735318,
+        "encodedBodySize": 1735018,
+        "decodedBodySize": 1735018
+      }
+    ]
+  },
+  {
+    "name": "physical",
+    "route": "/physical",
+    "images": [
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_sit_on_window.b25b2c39.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1644642,
+        "initiatorType": "img",
+        "transferSize": 0,
+        "encodedBodySize": 1644642,
+        "decodedBodySize": 1644642
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/model_stands_infront_of_field.fbf082da.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1322468,
+        "initiatorType": "link",
+        "transferSize": 1322768,
+        "encodedBodySize": 1322468,
+        "decodedBodySize": 1322468
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/model_from_profile_view_with_hat_hiding_the_face.6386d3a3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 840388,
+        "initiatorType": "link",
+        "transferSize": 840688,
+        "encodedBodySize": 840388,
+        "decodedBodySize": 840388
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/coat_with_belt_detail_view_black_and_white.0b2a4ca3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 474570,
+        "initiatorType": "img",
+        "transferSize": 0,
+        "encodedBodySize": 474570,
+        "decodedBodySize": 474570
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/female_model_bust_shot.65148bd1.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 681508,
+        "initiatorType": "img",
+        "transferSize": 681808,
+        "encodedBodySize": 681508,
+        "decodedBodySize": 681508
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/reflection_of_a_female_model_from_the_bottom_holding_gemstone.5ec51540.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 999768,
+        "initiatorType": "img",
+        "transferSize": 1000068,
+        "encodedBodySize": 999768,
+        "decodedBodySize": 999768
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/detail_shot_of_a_green_suit.143969d5.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 653644,
+        "initiatorType": "img",
+        "transferSize": 653944,
+        "encodedBodySize": 653644,
+        "decodedBodySize": 653644
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/model_in_wide_trousers_taking_big_step.e34aa47a.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 674672,
+        "initiatorType": "img",
+        "transferSize": 674972,
+        "encodedBodySize": 674672,
+        "decodedBodySize": 674672
+      }
+    ]
+  },
+  {
+    "name": "etherea-part-one",
+    "route": "/etherea-part-one",
+    "images": [
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_front_zoom.629c0488.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1500460,
+        "initiatorType": "img",
+        "transferSize": 0,
+        "encodedBodySize": 1500460,
+        "decodedBodySize": 1500460
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_profile.8327490f.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2313988,
+        "initiatorType": "link",
+        "transferSize": 0,
+        "encodedBodySize": 2313988,
+        "decodedBodySize": 2313988
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_dress_detail.cd878ab8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 3897316,
+        "initiatorType": "link",
+        "transferSize": 3897616,
+        "encodedBodySize": 3897316,
+        "decodedBodySize": 3897316
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_face_zoom.ddb62358.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1031364,
+        "initiatorType": "img",
+        "transferSize": 1031664,
+        "encodedBodySize": 1031364,
+        "decodedBodySize": 1031364
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_tree.7af2c482.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1437832,
+        "initiatorType": "img",
+        "transferSize": 1438132,
+        "encodedBodySize": 1437832,
+        "decodedBodySize": 1437832
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/3d_elf_red_front.9587d47a.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2818820,
+        "initiatorType": "img",
+        "transferSize": 2819120,
+        "encodedBodySize": 2818820,
+        "decodedBodySize": 2818820
+      }
+    ]
+  },
+  {
+    "name": "flanelle",
+    "route": "/flanelle",
+    "images": [
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/2_models_posing_togehter_sitting.d58049f5.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 851870,
+        "initiatorType": "img",
+        "transferSize": 0,
+        "encodedBodySize": 851870,
+        "decodedBodySize": 851870
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/model_from_profile_view_with_hat_hiding_the_face.6386d3a3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 840388,
+        "initiatorType": "link",
+        "transferSize": 0,
+        "encodedBodySize": 840388,
+        "decodedBodySize": 840388
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_hold_glove_in_the_camera.1a1fd63b.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 531104,
+        "initiatorType": "link",
+        "transferSize": 531404,
+        "encodedBodySize": 531104,
+        "decodedBodySize": 531104
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/female_model_looking_downinto_camera.a48e5be7.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 546698,
+        "initiatorType": "link",
+        "transferSize": 546998,
+        "encodedBodySize": 546698,
+        "decodedBodySize": 546698
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_grabbing_female_model.c43cb2c1.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 915598,
+        "initiatorType": "img",
+        "transferSize": 915898,
+        "encodedBodySize": 915598,
+        "decodedBodySize": 915598
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/female_model_with_sunglasses_laying_on_the_floor_one_leg_angled.90cffabb.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 678940,
+        "initiatorType": "img",
+        "transferSize": 679240,
+        "encodedBodySize": 678940,
+        "decodedBodySize": 678940
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/detail_shot_of_print_top_laying_on_chair.8ebb3526.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 994144,
+        "initiatorType": "img",
+        "transferSize": 994444,
+        "encodedBodySize": 994144,
+        "decodedBodySize": 994144
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/model_wearing_a_hat_and_a_scarf.31c19623.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 647398,
+        "initiatorType": "img",
+        "transferSize": 647698,
+        "encodedBodySize": 647398,
+        "decodedBodySize": 647398
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/2_models_laying_on_the_floor_looking_up.27f8c775.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1063990,
+        "initiatorType": "img",
+        "transferSize": 1064290,
+        "encodedBodySize": 1063990,
+        "decodedBodySize": 1063990
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/detail_view_of_print_top_on_model.cfa827f8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1056302,
+        "initiatorType": "img",
+        "transferSize": 1056602,
+        "encodedBodySize": 1056302,
+        "decodedBodySize": 1056302
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/detail_view_of_female_model_under_mesh_garment.0a4e64c4.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1897328,
+        "initiatorType": "img",
+        "transferSize": 1897628,
+        "encodedBodySize": 1897328,
+        "decodedBodySize": 1897328
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/print_scarf_floating_in_the_wind.1b75fed0.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 728424,
+        "initiatorType": "img",
+        "transferSize": 728724,
+        "encodedBodySize": 728424,
+        "decodedBodySize": 728424
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_kneeing_above_camera.f9fdcf64.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1073778,
+        "initiatorType": "img",
+        "transferSize": 1074078,
+        "encodedBodySize": 1073778,
+        "decodedBodySize": 1073778
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_holds_hands_in_front_of_his_face.e4389315.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 721042,
+        "initiatorType": "img",
+        "transferSize": 721342,
+        "encodedBodySize": 721042,
+        "decodedBodySize": 721042
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/view_into_the_sky_with_sun_behind_clouds.81ef7312.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 503294,
+        "initiatorType": "img",
+        "transferSize": 503594,
+        "encodedBodySize": 503294,
+        "decodedBodySize": 503294
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/flanelle_magazine_logo.b3848fb8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 22326,
+        "initiatorType": "img",
+        "transferSize": 22626,
+        "encodedBodySize": 22326,
+        "decodedBodySize": 22326
+      },
+      {
+        "url": "http://127.0.0.1:3000/_next/static/media/male_model_laying_on_floor.4c03be9d.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 609002,
+        "initiatorType": "img",
+        "transferSize": 609302,
+        "encodedBodySize": 609002,
+        "decodedBodySize": 609002
+      }
+    ]
+  }
+]

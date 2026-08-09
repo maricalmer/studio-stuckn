@@ -1,0 +1,222 @@
+[
+  {
+    "name": "home",
+    "route": "/",
+    "images": [
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_silver_boots_detail.83eaf0f4.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1463548,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/male_model_sit_on_window.b25b2c39.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1644642,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/low_hands.1e9b5ee6.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1141108,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/coat_with_belt_detail_view_black_and_white.0b2a4ca3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 474570,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/marion.b6b155e8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 30890,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/profile.2524255a.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1199668,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      }
+    ]
+  },
+  {
+    "name": "digital",
+    "route": "/digital",
+    "images": [
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_red_profile.8327490f.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2313988,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_purple_detail.0c31b1de.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 2380822,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_rose_ear_cropped.4ac03e4b.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 950432,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      }
+    ]
+  },
+  {
+    "name": "physical",
+    "route": "/physical",
+    "images": [
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/male_model_sit_on_window.b25b2c39.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1644642,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/model_from_profile_view_with_hat_hiding_the_face.6386d3a3.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 840388,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/model_stands_infront_of_field.fbf082da.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1322468,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      }
+    ]
+  },
+  {
+    "name": "etherea-part-one",
+    "route": "/etherea-part-one",
+    "images": [
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_red_profile.8327490f.webp",
+        "status": 304,
+        "contentType": null,
+        "contentLength": null,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_red_front_zoom.629c0488.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 1500460,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/3d_elf_red_dress_detail.cd878ab8.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 3897316,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      }
+    ]
+  },
+  {
+    "name": "flanelle",
+    "route": "/flanelle",
+    "images": [
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/model_from_profile_view_with_hat_hiding_the_face.6386d3a3.webp",
+        "status": 304,
+        "contentType": null,
+        "contentLength": null,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/female_model_looking_downinto_camera.a48e5be7.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 546698,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/male_model_hold_glove_in_the_camera.1a1fd63b.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 531104,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      },
+      {
+        "url": "https://gleeful-dasik-21eb4f.netlify.app/_next/static/media/2_models_posing_togehter_sitting.d58049f5.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "contentLength": 851870,
+        "initiatorType": null,
+        "transferSize": null,
+        "encodedBodySize": null,
+        "decodedBodySize": null
+      }
+    ]
+  }
+]

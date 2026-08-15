@@ -16,8 +16,8 @@ export default function CarouselDescription({ title, subtitle, details, software
         );
       })}
       <div className="hidden md:flex w-full justify-center absolute bottom-1">
-        {previousProject && <Link href={`${previousProject}`} className="helvetica text-sm relative z-20 leading-4 md:mx-3 underline decoration-2">Previous</Link>}
-        {nextProject && <Link href={`${nextProject}`} className="helvetica text-sm relative z-20 leading-4 md:mx-3 underline decoration-2">Next</Link>}
+        {previousProject && <Link href={`/${previousProject}`} className="helvetica text-sm relative z-20 leading-4 md:mx-3 underline decoration-2">Previous</Link>}
+        {nextProject && <Link href={`/${nextProject}`} className="helvetica text-sm relative z-20 leading-4 md:mx-3 underline decoration-2">Next</Link>}
       </div>
       <div className="hidden md:block w-full h-full bg-white top-0 opacity-70 absolute z-10 px-3"></div>
     </div>

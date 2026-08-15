@@ -23,6 +23,10 @@ body {
   overscroll-behavior-y: none;
 }
 
+body:has(.about-page) {
+  background-color: #efebe6;
+}
+
 #homepage-background {
   background: linear-gradient(
     180deg,

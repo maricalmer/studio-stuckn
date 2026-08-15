@@ -1,6 +1,15 @@
-import { digitalProjects } from "./digital";
-import { firstPhysicalProjects } from "./physical-a";
-import { lastPhysicalProjects } from "./physical-b";
+import { alienAccessories } from "./alien-accessories";
+import { escapism } from "./escapism";
+import { ethereaPartOne } from "./etherea-part-one";
+import { ethereaPartThree } from "./etherea-part-three";
+import { ethereaPartTwo } from "./etherea-part-two";
+import { excessiveMinimal } from "./excessive-minimal";
+import { flanelle } from "./flanelle";
+import { inConstantFlux } from "./in-constant-flux";
+import { marieClaire } from "./marie-claire";
+import { page } from "./page";
+import { reboot } from "./reboot";
+import { seefashion } from "./seefashion";
 import {
   projectSlugs,
   type Project,
@@ -43,9 +52,18 @@ export const categoryProjectSlugs = {
 } as const satisfies Record<ProjectCategory, readonly ProjectSlug[]>;
 
 export const projects: readonly Project[] = [
-  ...digitalProjects,
-  ...firstPhysicalProjects,
-  ...lastPhysicalProjects,
+  ethereaPartOne,
+  ethereaPartTwo,
+  ethereaPartThree,
+  alienAccessories,
+  inConstantFlux,
+  flanelle,
+  marieClaire,
+  seefashion,
+  reboot,
+  excessiveMinimal,
+  page,
+  escapism,
 ];
 
 const projectsBySlug = Object.fromEntries(

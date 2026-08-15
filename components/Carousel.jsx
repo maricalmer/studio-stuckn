@@ -1,3 +1,5 @@
+"use client";
+
 import CarouselLink from '@/components/CarouselLink';
 import CarouselImage from '@/components/CarouselImage';
 import CarouselVideo from '@/components/CarouselVideo';

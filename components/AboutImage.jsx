@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import profilePic from '../public/img/about/elbow_on_chair.webp';
 
@@ -14,7 +17,23 @@ const handleImageSizing = (scrollValue, baseImgHeight) => {
   };
 };
 
-export default function AboutImage({scrollValue, baseImgHeight}) {
+export default function AboutImage() {
+  const [scrollValue, setScrollValue] = useState(0);
+  const [baseImgHeight, setBaseImgHeight] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollValue(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const image = document.querySelector(".about-image");
+    const imageHeight = parseInt(window.getComputedStyle(image).height);
+    setBaseImgHeight(imageHeight);
+  }, []);
+
   return (
     <Image
       src={profilePic}

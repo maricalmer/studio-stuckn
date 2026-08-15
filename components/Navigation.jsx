@@ -1,3 +1,5 @@
+"use client";
+
 import NavButton from "@/components/NavButton";
 import NavMenus from "@/components/NavMenus";
 import NavMenusMobile from "@/components/NavMenusMobile";

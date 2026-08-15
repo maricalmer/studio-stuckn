@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* here come the vars: */
   --nav-cross-color: transparent;
 }
 
@@ -15,49 +14,57 @@
   }
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   overscroll-behavior-y: none;
 }
+
 #homepage-background {
-  background: linear-gradient(180deg, rgba(46, 36, 28, 1) 0%, rgba(47, 38, 66, 1) 20%, rgba(46, 36, 28, 1) 40%, rgba(72, 70, 46, 1) 70%, rgba(106, 132, 70, 1) 85%);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 36, 28, 1) 0%,
+    rgba(47, 38, 66, 1) 20%,
+    rgba(46, 36, 28, 1) 40%,
+    rgba(72, 70, 46, 1) 70%,
+    rgba(106, 132, 70, 1) 85%
+  );
 }
+
 .quella {
   font-family: var(--quella);
 }
+
 .helvetica {
   font-family: var(--helvetica);
 }
+
 .text-customxxl {
   font-size: 250px;
 }
 
 .nav__cross::after {
   bottom: 28px;
-  left: 0px;
+  left: 0;
   width: 60px;
   height: 4px;
-  /* background-color: #232620; */
   background-color: var(--nav-cross-color);
-  /* background-color: transparent; */
   position: absolute;
-  transition: transform .3s;
+  transition: transform 0.3s;
   content: "";
 }
 
 .nav__cross::before {
   height: 4px;
   width: 60px;
-  /* background-color: #232620; */
   background-color: var(--nav-cross-color);
-  /* background-color: transparent; */
   position: absolute;
   top: 28px;
-  left: 0px;
-  transition: transform .3s;
+  left: 0;
+  transition: transform 0.3s;
   content: "";
 }
 
@@ -65,9 +72,11 @@ html, body {
   height: 100vh;
   transition-delay: 0s;
 }
-.navbar-active .navmenu__container, .navbar-active .navlist__container, .navbar-active .navmenu__images {
-  transform: translateY(0%);
 
+.navbar-active .navmenu__container,
+.navbar-active .navlist__container,
+.navbar-active .navmenu__images {
+  transform: translateY(0%);
 }
 
 .navbar-active button {
@@ -78,8 +87,8 @@ html, body {
 .navbar-active .navmenu__item,
 .navbar-active .navbrand {
   opacity: 1;
-  transition-delay: .4s;
-  transform: translateY(-0px)
+  transition-delay: 0.4s;
+  transform: translateY(0);
 }
 
 .navbar-active .nav__cross::after {
@@ -87,7 +96,7 @@ html, body {
   left: 7px;
   transform: rotate(-45deg);
   transform-origin: top left;
-  background-color: #A7BE81;
+  background-color: #a7be81;
 }
 
 .navbar-active .nav__cross::before {
@@ -95,55 +104,81 @@ html, body {
   top: 7px;
   transform: rotate(45deg);
   transform-origin: top left;
-  background-color: #A7BE81;
+  background-color: #a7be81;
 }
 
 .navbar__bg--digital {
-  background-color: #B1B8BF;
+  background-color: #b1b8bf;
 }
 
 .navbar__bg--digital .nav__cross::after,
 .navbar__bg--digital .nav__cross::before {
-  background-color: #B1B8BF;
+  background-color: #b1b8bf;
 }
 
 .navbar__bg--digital .navmenu__item,
 .navbar__bg--digital .navbrand,
 .navbar__bg--digital .navlist__item {
-  color: #0A063E;
+  color: #0a063e;
 }
 
 .navbar__bg--physical {
-  background-color: #A6A08F;
+  background-color: #a6a08f;
 }
 
 .navbar__bg--physical .nav__cross::after,
 .navbar__bg--physical .nav__cross::before {
-  background-color: #A6A08F;
+  background-color: #a6a08f;
 }
 
 .navbar__bg--physical .navmenu__item,
 .navbar__bg--physical .navbrand,
 .navbar__bg--physical .navlist__item {
-  color: #011E0F;
+  color: #011e0f;
 }
 
 .navbar__bg--about {
-  background-color: #EFEBE6;
+  background-color: #efebe6;
 }
 
 .navbar__bg--about .nav__cross::after,
 .navbar__bg--about .nav__cross::before {
-  background-color: #EFEBE6;
+  background-color: #efebe6;
 }
 
 .navbar__bg--about .navmenu__item,
 .navbar__bg--about .navbrand,
 .navbar__bg--about .navlist__item {
-  color: #482D65;
+  color: #482d65;
 }
 
-.navbar__bg--digital .navmenu__digital, .navbar__bg--physical .navmenu__physical, .navbar__bg--about .navmenu__about {
+.navbar__bg--digital .navmenu__digital,
+.navbar__bg--physical .navmenu__physical,
+.navbar__bg--about .navmenu__about {
   opacity: 1;
   transform: translateY(0);
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-item__link:hover {
+  opacity: 0.9;
+}
+
+.carousel-item__link:hover .carousel-item__title {
+  opacity: 1;
+}
+
+@media (min-width: 767px) {
+  .carousel-item {
+    width: auto;
+    height: 100%;
+  }
 }

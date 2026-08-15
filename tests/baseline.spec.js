@@ -275,6 +275,23 @@ test.describe("App Router contract", () => {
       waitUntil: "domcontentloaded",
     });
     expect(unknownResponse?.status()).toBe(404);
+
+    const sitemapResponse = await page.request.get("/sitemap.xml");
+    expect(sitemapResponse.status()).toBe(200);
+
+    const sitemap = await sitemapResponse.text();
+    const sitemapUrls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
+    const expectedUrls = ROUTES.map(
+      (route) => new URL(route, "https://www.ronjastucken.com").href,
+    );
+
+    expect(sitemapUrls).toHaveLength(16);
+    expect(sitemapUrls.toSorted()).toEqual(expectedUrls.toSorted());
+    expect(sitemap).not.toContain("www.studiostuckn.com");
+    expect(sitemap).not.toContain("<lastmod>");
+    expect(sitemap.match(/<priority>1<\/priority>/g)).toHaveLength(1);
+    expect(sitemap.match(/<priority>0.8<\/priority>/g)).toHaveLength(3);
+    expect(sitemap.match(/<priority>0.64<\/priority>/g)).toHaveLength(12);
   });
 });
 

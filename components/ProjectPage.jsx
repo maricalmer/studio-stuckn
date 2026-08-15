@@ -4,8 +4,6 @@ import PageContainer from "@/components/PageContainer";
 import StaticBrand from "@/components/StaticBrand";
 import { getAdjacentProjects, getProject } from "@/data/projects";
 
-import "@/public/stylesheets/projects.css";
-
 export default function ProjectPage({ slug }) {
   const project = getProject(slug);
   const { previousProject, nextProject } = getAdjacentProjects(slug);

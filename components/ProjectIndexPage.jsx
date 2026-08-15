@@ -4,8 +4,6 @@ import PageContainer from "@/components/PageContainer";
 import StaticBrand from "@/components/StaticBrand";
 import { getProjectsByCategory } from "@/data/projects";
 
-import "@/public/stylesheets/projects.css";
-
 export default function ProjectIndexPage({ category }) {
   const elements = getProjectsByCategory(category).map((project) => ({
     type: "link",

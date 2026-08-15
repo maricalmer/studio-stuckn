@@ -15,6 +15,10 @@ reports under `baseline/reports/`.
 Running `npm run baseline:test` without `BASE_URL` first creates and serves a
 local Next.js production build, then compares it with the committed reference.
 
+The suite also verifies the App Router contract: route metadata, client-side
+internal navigation without a document reload, and a 404 response for an
+unregistered project slug.
+
 Netlify's build command and npm version are committed in `netlify.toml`. This
 overrides any older `yarn build` command left in the Netlify project UI, while
 `.nvmrc` selects Node 24.18.0.

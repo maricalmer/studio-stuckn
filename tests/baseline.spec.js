@@ -242,6 +242,42 @@ test.describe("route baseline", () => {
   });
 });
 
+test.describe("App Router contract", () => {
+  test("serves metadata, navigates client-side, and rejects unknown projects", async ({
+    page,
+  }) => {
+    await page.goto("/", { waitUntil: "domcontentloaded" });
+    await expect(page).toHaveTitle("Studio.Stuckn, 3D artist based in Berlin");
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "https://www.ronjastucken.com",
+    );
+
+    await page.goto("/digital", { waitUntil: "domcontentloaded" });
+    await settlePage(page);
+    await expect(page).toHaveTitle("Digital | Studio.Stuckn");
+
+    const documentRequests = [];
+    page.on("request", (request) => {
+      if (request.resourceType() === "document") documentRequests.push(request.url());
+    });
+
+    await page.locator('a[href="/etherea-part-one"]').click();
+    await expect(page).toHaveURL(/\/etherea-part-one$/);
+    await expect(page).toHaveTitle("Etherea Part 1 | Studio.Stuckn");
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "https://www.ronjastucken.com/etherea-part-one",
+    );
+    expect(documentRequests, "internal navigation should not reload the document").toEqual([]);
+
+    const unknownResponse = await page.goto("/not-a-registered-project", {
+      waitUntil: "domcontentloaded",
+    });
+    expect(unknownResponse?.status()).toBe(404);
+  });
+});
+
 test.describe("visual baseline", () => {
   for (const [name, route] of SCREENSHOT_ROUTES) {
     test(`${name} matches its reference`, async ({ page }) => {

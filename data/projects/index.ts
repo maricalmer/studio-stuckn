@@ -74,6 +74,10 @@ export function getProject(slug: ProjectSlug): Project {
   return projectsBySlug[slug];
 }
 
+export function isProjectSlug(slug: string): slug is ProjectSlug {
+  return projectSlugs.includes(slug as ProjectSlug);
+}
+
 export function getAllProjectSlugs(): readonly ProjectSlug[] {
   return projectSlugs;
 }

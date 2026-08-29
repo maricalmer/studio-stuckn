@@ -3,6 +3,9 @@
   # File-based settings override the site's older `yarn build` UI setting.
   command = "npm run build"
   publish = ".next"
+  # The Sanity Studio is a separate application deployed through Sanity.
+  # Skip this frontend build when a commit changes only files under `studio/`.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)studio/**'"
 
 [build.environment]
   # `.nvmrc` selects Node 24.18.0; pin npm independently because Netlify's

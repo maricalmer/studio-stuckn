@@ -1,7 +1,7 @@
-# Studio.Stuckn Sanity Studio
+# Ronja.Stucken Sanity Studio
 
-This directory contains the standalone Sanity Studio for the Studio.Stuckn portfolio. It has its
-own npm dependencies and deploys through Sanity rather than Netlify.
+This directory contains the standalone Sanity Studio for the Ronja Stucken portfolio. It has its
+own npm dependencies and lockfile, and deploys through Sanity rather than Netlify.
 
 ## Local development
 
@@ -21,6 +21,16 @@ npm run dev
 The frontend runs at `http://localhost:3000` and the Studio at `http://localhost:3333`.
 `SANITY_STUDIO_PREVIEW_URL` can override the frontend shown by the Presentation Tool; see
 `.env.example`.
+
+## Deployment isolation
+
+- Run frontend commands from the repository root and Studio commands from this directory.
+- The root npm install does not install Studio dependencies; run `npm ci` here separately.
+- Local Studio variables belong in `studio/.env.local`, which is ignored by Git. Do not put secrets
+  in variables prefixed with `SANITY_STUDIO_`, because Studio code runs in the browser.
+- Netlify builds only the Next.js frontend and skips commits that change only `studio/`.
+- Deploy this Studio independently with `npm run deploy`. Its registered URL is
+  `https://ronjastucken.sanity.studio`.
 
 ## Automated validation
 

@@ -16,7 +16,7 @@ const eslintConfig = [
   {
     // These generated and dependency directories were ignored implicitly by
     // `next lint`; list them explicitly now that ESLint owns file discovery.
-    ignores: ["node_modules/**", ".next/**", "out/**", "build/**"],
+    ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "studio/**"],
   },
 ];
 

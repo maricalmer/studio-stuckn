@@ -1,3 +1,8 @@
+import {portableText} from './blocks/portable-text'
+import {aboutPage} from './documents/about-page'
+import {category} from './documents/category'
+import {project} from './documents/project'
+import {siteSettings} from './documents/site-settings'
 import {credit} from './objects/credit'
 import {fashionCreditEntry} from './objects/fashion-credit-entry'
 import {fashionCredits} from './objects/fashion-credits'
@@ -8,6 +13,11 @@ import {subtitle} from './objects/subtitle'
 import {youtubeEmbed} from './objects/youtube-embed'
 
 export const schemaTypes = [
+  portableText,
+  aboutPage,
+  category,
+  project,
+  siteSettings,
   credit,
   fashionCreditEntry,
   fashionCredits,

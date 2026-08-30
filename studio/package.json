@@ -11,6 +11,9 @@
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
     "lint": "eslint .",
+    "migration:dry-run": "sanity exec migration/import-existing-content.ts -- --dry-run",
+    "migration:import": "sanity exec migration/import-existing-content.ts --with-user-token -- --execute",
+    "migration:validate": "sanity exec migration/import-existing-content.ts --with-user-token -- --validate-live",
     "start": "sanity start",
     "typecheck": "tsc --noEmit",
     "validate:documents": "sanity documents validate --yes --level info",
@@ -20,6 +23,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/client": "8.4.0",
     "@sanity/icons": "^5.2.1",
     "@sanity/vision": "^6.11.0",
     "react": "^19.2.4",

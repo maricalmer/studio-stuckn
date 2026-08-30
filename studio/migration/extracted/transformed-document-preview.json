@@ -1,0 +1,2759 @@
+{
+  "projects": [
+    {
+      "_id": "project-etherea-part-one",
+      "_type": "project",
+      "title": "Etherea",
+      "slug": {
+        "_type": "slug",
+        "current": "etherea-part-one"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-digital"
+      },
+      "order": 0,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k7fa294069490143",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ka2610bfdfc767e5",
+              "marks": [],
+              "text": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "kb7dbc8fc58ce9da",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-17010e5c745473fccf0446467b68d5c0-1x1-webp"
+            }
+          },
+          "alt": "3d avatar lucy front face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kafb31c1b6026c2b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-37936da82094994108d8a90bd4291103-1x1-webp"
+            }
+          },
+          "alt": "3d avatar lucy side distance"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k7ea8f1bab5b9c0e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-609dfbca1b478a29d644d087c9bd193c-1x1-webp"
+            }
+          },
+          "alt": "3d avatar lucy face side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kf2a24df66acf820",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8f0340d7801cd04e92073deb4c04e094-1x1-webp"
+            }
+          },
+          "alt": "3d avatar lucy front distance"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kb8d2dbaa6dfe97a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-98978f24c33b009febd447b2277d04ed-1x1-webp"
+            }
+          },
+          "alt": "3d tree"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kede8110c1caffa5",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-f0f407d030bb6b1fba3ba4abc10f62d5-1x1-webp"
+            }
+          },
+          "alt": "3d avatar lucy front distance"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-609dfbca1b478a29d644d087c9bd193c-1x1-webp"
+          }
+        },
+        "alt": "3d avatar laying",
+        "title": "Etherea Part I"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Etherea Part 1 | Studio.Stuckn",
+        "metaDescription": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-609dfbca1b478a29d644d087c9bd193c-1x1-webp"
+          },
+          "alt": "3d avatar laying"
+        }
+      },
+      "subtitle": {
+        "_type": "subtitle",
+        "text": "Part 1",
+        "isCyrillic": false
+      },
+      "software": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop."
+    },
+    {
+      "_id": "project-etherea-part-two",
+      "_type": "project",
+      "title": "Etherea",
+      "slug": {
+        "_type": "slug",
+        "current": "etherea-part-two"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-digital"
+      },
+      "order": 1,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k95b7111da607a6a",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k5b849979dae9632",
+              "marks": [],
+              "text": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "kb1a56fa4382159e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-703800c84c62661bb5dac307965551b7-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion face side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k188052f676795d2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-987f3ccd62168ec92bc0d0cce96077f6-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion front body bottom"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kaeb364003139284",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-73c8b875d2b599bbab0753cd8852c36e-1x1-webp"
+            }
+          },
+          "alt": "3d tree"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k387005a0f47aff2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-6a3c5e2e95a857729dd0f3c1b45d274b-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion face side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kbea962ce0835126",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-b79d4d10d65547da236a3ad56f20bb19-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion side body"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k1d07f76ad7bd47a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4a050c60b17088d5025fe4a3dd77c242-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion front body top"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-21b0dc1839936ebc62b91872c42d31ff-1x1-webp"
+          }
+        },
+        "alt": "3d avatar earings",
+        "title": "Etherea Part II"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Etherea Part 2 | Studio.Stuckn",
+        "metaDescription": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-21b0dc1839936ebc62b91872c42d31ff-1x1-webp"
+          },
+          "alt": "3d avatar earings"
+        }
+      },
+      "subtitle": {
+        "_type": "subtitle",
+        "text": "Part 2",
+        "isCyrillic": false
+      },
+      "software": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop."
+    },
+    {
+      "_id": "project-etherea-part-three",
+      "_type": "project",
+      "title": "Etherea",
+      "slug": {
+        "_type": "slug",
+        "current": "etherea-part-three"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-digital"
+      },
+      "order": 2,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "kb588378c9c6dc41",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k61d64cbcb23eb19",
+              "marks": [],
+              "text": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "ke365981759684ee",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-69957a9b00a4b2089400e2e291102e2b-1x1-webp"
+            }
+          },
+          "alt": "3d boots"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k9441d945993b2cd",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-cc5e8561277f310d0874d41e2d991252-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion front face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k62b35fee2ebd989",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-0051f8d589e4c9b1bf425a14e040956e-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion bottom back"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k31f1366a3d10623",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-bf75c8017b13286ce969144f8417005b-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion profile face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k69e8fc175b00185",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-f3b784a6fc7234f523081ce1c4ea9afe-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion body side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k71a9cae25cda99d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-41f0b1206fb9c8cf1a03a5d0a7141469-1x1-webp"
+            }
+          },
+          "alt": "3d grass"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kc148d76d9b0ffda",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-c85025411d3fbcb6f301c908e739c699-1x1-webp"
+            }
+          },
+          "alt": "3d avatar marion body front"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-69957a9b00a4b2089400e2e291102e2b-1x1-webp"
+          }
+        },
+        "alt": "3d avatar boots",
+        "title": "Etherea Part III"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Etherea Part 3 | Studio.Stuckn",
+        "metaDescription": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-69957a9b00a4b2089400e2e291102e2b-1x1-webp"
+          },
+          "alt": "3d avatar boots"
+        }
+      },
+      "subtitle": {
+        "_type": "subtitle",
+        "text": "Part 3",
+        "isCyrillic": false
+      },
+      "software": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop."
+    },
+    {
+      "_id": "project-alien-accessories",
+      "_type": "project",
+      "title": "Alien Accessories",
+      "slug": {
+        "_type": "slug",
+        "current": "alien-accessories"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-digital"
+      },
+      "order": 3,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "kc9aba4c28c99dea",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k2fb25dd62905d3f",
+              "marks": [],
+              "text": "In this collection of 3D fashion sculptures, organic curves are combined with geometric precision, redefining the conventional perception of shapes. The deliberate choice of materials with vibrant color tones paired with deep black and shiny surfaces gives the digital sculptures a special fascination and brings them to life. Let yourself be inspired to rethink reality and appreciate the extraordinary."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "k4a328227736dcca",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-915e5b3e51b01bee14d7f300076393aa-1x1-webp"
+            }
+          },
+          "alt": "3d black boots profile"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k1061a657112af07",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d23b64db39230909acb9ad901bbbcc54-1x1-webp"
+            }
+          },
+          "alt": "3d black bag blue background"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k354f5d90e37d8ef",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-bcd8613e1a010c2392c708b05b8ffea6-1x1-webp"
+            }
+          },
+          "alt": "3d white bag white background"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kd8090aee9e08a6b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d4504e2630b1afca4acba90f34d484a1-1x1-webp"
+            }
+          },
+          "alt": "3d silver boots"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k410186267f77323",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-34f38feb51960536fba3772a7e37e56e-1x1-webp"
+            }
+          },
+          "alt": "3d silver leather boots close up"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k7ff4d29bbd81ec6",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-434889e7b506fe5f637810e25c29e0f8-1x1-webp"
+            }
+          },
+          "alt": "3d black bag top"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kbc920ab29f658af",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-76820bb687eba03be781a8feef1281ce-1x1-webp"
+            }
+          },
+          "alt": "3d black bag top green background"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k48462db3c171e54",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-fc5c9466e1653e5e686342c08c731da0-1x1-webp"
+            }
+          },
+          "alt": "3d black boots back"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "ka64d6d14ae8ab51",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-55fa069af42f1bb09257afc1b11528b1-1x1-webp"
+            }
+          },
+          "alt": "3d black bag profile"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kcd0a7d4efc80439",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4be97940e6a00a13b746d0f162c78bb5-1x1-webp"
+            }
+          },
+          "alt": "3d black shoes side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5ed894fb6c83646",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-7486c36ee4b26c5593fa4d9ff6fa8789-1x1-webp"
+            }
+          },
+          "alt": "3d white bag orange background"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5e52ffdbc297dc0",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d70b7a632df4f74353ab1a4c8b3ed22f-1x1-webp"
+            }
+          },
+          "alt": "3d silver boots front"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kb7622101b81a543",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-80e981690078ddbf786487a708f3e743-1x1-webp"
+            }
+          },
+          "alt": "3d green bag open"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kae70a4c114658de",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4f3c5ab75ab493806cea75c8a6be69ad-1x1-webp"
+            }
+          },
+          "alt": "3d black shoes orange top"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kb5d020983c1e157",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5d37fdab0f7b958b134f9b220b53dd56-1x1-webp"
+            }
+          },
+          "alt": "3d black shoes orange sole"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-76820bb687eba03be781a8feef1281ce-1x1-webp"
+          }
+        },
+        "alt": "3d alien bag with green background",
+        "title": "Alien Accessories"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Alien Accessories | Studio.Stuckn",
+        "metaDescription": "In this collection of 3D fashion sculptures, organic curves are combined with geometric precision, redefining the conventional perception of shapes. The deliberate choice of materials with vibrant color tones paired with deep black and shiny surfaces gives the digital sculptures a special fascination and brings them to life. Let yourself be inspired to rethink reality and appreciate the extraordinary.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-76820bb687eba03be781a8feef1281ce-1x1-webp"
+          },
+          "alt": "3d alien bag with green background"
+        }
+      },
+      "software": "Using ZBrush, Blender, CLO3D, Substance Painter, and Photoshop."
+    },
+    {
+      "_id": "project-in-constant-flux",
+      "_type": "project",
+      "title": "In Constant Flux",
+      "slug": {
+        "_type": "slug",
+        "current": "in-constant-flux"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 0,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "kff1424419039c00",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k098d9e088fd38e5",
+              "marks": [],
+              "text": "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "youtubeEmbed",
+          "_key": "kfd26949b5bd7f2c",
+          "url": "https://www.youtube-nocookie.com/embed/hxwX9xJGz_4?si=ZkVKlG47pFwtBvZL&rel=0",
+          "title": "In Constant Flux by Ronja Stucken"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kbacf98e9df5af01",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-33402dcfa4217085ad563d91de340ed9-1x1-webp"
+            }
+          },
+          "alt": "male model sits on couch next to flowers"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k2b72d8d1b2ed829",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8292f85804562d66358da17dc7339a64-1x1-webp"
+            }
+          },
+          "alt": "male model sits on window"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k90067cc95cad1d0",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d92ba6eb26efdec6d7f13d86db3fc5ec-1x1-webp"
+            }
+          },
+          "alt": "male model leans on window"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kfd48555a4fbd9d1",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8844be18d395a30b63b9e2347de07e03-1x1-webp"
+            }
+          },
+          "alt": "model with hands on chin looking up"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5f46503818a639c",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8d5b270f5a96e1e4c1bd8b2e00ff6efe-1x1-webp"
+            }
+          },
+          "alt": "model leaning against the window"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kcc45dd39dffbf23",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d21120dd7672dd1ee142963aeecb22bc-1x1-webp"
+            }
+          },
+          "alt": "model sitting on top of arm chair"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k94d7b86197db3e3",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-7f368c6a09b4796a680b36046c018519-1x1-webp"
+            }
+          },
+          "alt": "model sits on office chair"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kfdef77faeb3e4e5",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-1f8d7a48efdfa5680c1e55d6a7d1c047-1x1-webp"
+            }
+          },
+          "alt": "male model laying on chair"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-8292f85804562d66358da17dc7339a64-1x1-webp"
+          }
+        },
+        "alt": "male model sits on window",
+        "title": "In Constant Flux"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "In Constant Flux | Studio.Stuckn",
+        "metaDescription": "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-8292f85804562d66358da17dc7339a64-1x1-webp"
+          },
+          "alt": "male model sits on window"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "kef87650d33e8190",
+          "label": "All Fashion",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "k54a5a685c290080",
+          "label": "Styling",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "kbd60d5eb6750128",
+          "label": "Director",
+          "value": "Vigdís Erla Guttormsdóttir"
+        },
+        {
+          "_type": "credit",
+          "_key": "ked4020d355faa74",
+          "label": "Film & Edit",
+          "value": "Vigdís Erla Guttormsdóttir"
+        },
+        {
+          "_type": "credit",
+          "_key": "k77aa39778e97b76",
+          "label": "Analog Photo",
+          "value": "Ronja Stucken & Vigdís Erla Guttormsdóttir"
+        },
+        {
+          "_type": "credit",
+          "_key": "k0ff76e07fd428fe",
+          "label": "Idea",
+          "value": "Ronja Stucken"
+        },
+        {
+          "_type": "credit",
+          "_key": "k74c83ca811278a2",
+          "label": "Music",
+          "value": "Kerr Wilson"
+        },
+        {
+          "_type": "credit",
+          "_key": "k001b5050ec1aceb",
+          "label": "Model",
+          "value": "Julian Eide"
+        }
+      ]
+    },
+    {
+      "_id": "project-flanelle",
+      "_type": "project",
+      "title": "Flanelle Magazine",
+      "slug": {
+        "_type": "slug",
+        "current": "flanelle"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 1,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k52639eaf805ad60",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k3dd0ef421ee319e",
+              "marks": [],
+              "text": "Print Issue No. 19 - The Softness Edition"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "k2a66fb5fa21af9e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-e3ec0277d2452b08f3ea0d8b1d1d5817-1x1-webp"
+            }
+          },
+          "alt": "2 models posing together sitting"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k7b81dda27738d0b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5603951d20fd385cbf2a869ce20e594a-1x1-webp"
+            }
+          },
+          "alt": "male model holds glove in the camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k7ef5e705aaa5883",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5c98252a01bbbaeab80281997bf4539d-1x1-webp"
+            }
+          },
+          "alt": "female model looking down into camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k3d1ee236302329e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-798bf133b2b1d711a3dcaca9caa816d4-1x1-webp"
+            }
+          },
+          "alt": "man holding woman on shoulder"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k87f1245509267ca",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-0fba2ca690e95a15458f9260700f5f2d-1x1-webp"
+            }
+          },
+          "alt": "model from profile view with hat hiding the face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k6d33231d7a27247",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-997b2f48c97adb01486c6943d2614a10-1x1-webp"
+            }
+          },
+          "alt": "female model with sunglasses laying on the floor one leg angled"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k9a75779c0f5f500",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d141c03438319f08c0880b5f0773e792-1x1-webp"
+            }
+          },
+          "alt": "detail shot of print top laying on chair"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k9b1f4bf0ff8b5b4",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-6d0f55b02e56d2e3c2ea02afe85175cc-1x1-webp"
+            }
+          },
+          "alt": "model wearing a hat and a scarf"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k8c59f68937f0dd9",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-eea4d36a35db016e0a87b640fc186d99-1x1-webp"
+            }
+          },
+          "alt": "2 models laying on the floor looking up"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5f7a93c1401c323",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-95901706a4c75db9fa2c1912c76cb439-1x1-webp"
+            }
+          },
+          "alt": "detail view of print top on model"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k400137601dfb47a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-c62ea1dce6ae6c98b923ec0861e7e719-1x1-webp"
+            }
+          },
+          "alt": "detail view of female model under mesh garment"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k2a37cced1e8b9a0",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-e4853c42e6194d35d6ca5ec1fd11bd4e-1x1-webp"
+            }
+          },
+          "alt": "print scarf floating in the wind"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kbaa69b720b1bb6b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-14880deac1ce68d9271c90f3b1a809ef-1x1-webp"
+            }
+          },
+          "alt": "male model kneeing above camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k6125df79dcff17d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-c643e1c84b2851017b110cf35ec3f03c-1x1-webp"
+            }
+          },
+          "alt": "male model holds hands in front of his face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k1d29b90fe9a2e43",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2dbc0ffc905b1dc295e3376d42cd3d82-1x1-webp"
+            }
+          },
+          "alt": "view into the sky with sun behind clouds"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kcc15f6b76f17b2b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-6f10b73e309ba6bb88fa50a5cdbd5b39-1x1-webp"
+            }
+          },
+          "alt": "male model laying on floor"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-0fba2ca690e95a15458f9260700f5f2d-1x1-webp"
+          }
+        },
+        "alt": "model from profile view with hat hiding the face",
+        "title": "Flanelle Magazine"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Flanelle Magazine 'Sunday Off, It's Raining Today' | Studio.Stuckn",
+        "metaDescription": "Print Issue No. 19 - The Softness Edition",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-0fba2ca690e95a15458f9260700f5f2d-1x1-webp"
+          },
+          "alt": "model from profile view with hat hiding the face"
+        }
+      },
+      "subtitle": {
+        "_type": "subtitle",
+        "text": "'Sunday Off, It's Raining Today'",
+        "isCyrillic": false
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "k9faeb104b7d1b2b",
+          "label": "Photo",
+          "value": "Charlotte Hansel"
+        },
+        {
+          "_type": "credit",
+          "_key": "k55ced277cf9fe3f",
+          "label": "Styling",
+          "value": "Mercedes Quirante"
+        },
+        {
+          "_type": "credit",
+          "_key": "kb6115bcdfb85d63",
+          "label": "Makeup",
+          "value": "Claudia Fisher"
+        },
+        {
+          "_type": "credit",
+          "_key": "k0a38ca8a7b0752b",
+          "label": "Models (Izaio)",
+          "value": "Aura Ell & Lin Novak"
+        }
+      ],
+      "fashionCredits": {
+        "_type": "fashionCredits",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-90896171553b8f47fe6123858dbced59-1x1-webp"
+          }
+        },
+        "logoAlt": "Flanelle Magazine logo",
+        "entries": [
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k56316796b479a62",
+            "lookNumber": 1,
+            "details": "Aura - Hat & Shorts Taskin Goec, Top & Longsleeve Studio.Stuckn Lin - Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "ke4c1b1ef1f31e1c",
+            "lookNumber": 2,
+            "details": "Overall & Earrings Studio.Stuckn, Gloves Klara Pichler"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k9ccffa2cde6c817",
+            "lookNumber": 3,
+            "details": "Top Studio.Stuckn, Coat Elisabeth v.d. Thannen, Shirt Taskin Goec, Earrings Charlotte Hansel"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k1c891d6480c54f5",
+            "lookNumber": 4,
+            "details": "Coat Elisabeth v.d. Thannen, Overall & Earrings Studio.Stuckn, Gloves Klara Pichler"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k6429f6dd472682e",
+            "lookNumber": 5,
+            "details": "Glasses & Headscarf Studio.Stuckn, Anorak Dress Alexandru Plesco, Heels Taskin Goec, Tights Stylist's own"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k4ae1defd3997f0c",
+            "lookNumber": 6,
+            "details": "Print jersey & Trousers Studio.Stuckn"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "ke39a477371bfa62",
+            "lookNumber": 7,
+            "details": "Veil Klara Pichler"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k2a162bbd0c40956",
+            "lookNumber": 8,
+            "details": "Silkscarf Studio.Stuckn"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k550e326afa59953",
+            "lookNumber": 9,
+            "details": "Overall Studio.Stuckn"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "kee0b75d3907bb76",
+            "lookNumber": 10,
+            "details": "Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "kfd95bf6785768f2",
+            "lookNumber": 12,
+            "details": "Overall Studio.Stuckn, Gloves Klara Pichler, Earrings Charlotte Hansel, Shoes Fila"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "project-marie-claire",
+      "_type": "project",
+      "title": "Marie Claire Magazine",
+      "slug": {
+        "_type": "slug",
+        "current": "marie-claire"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 2,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "ked7923bc8cc77e6",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k1189a60bacb138d",
+              "marks": [],
+              "text": "Print Issue Marie Claire Ukraine, 09/2021"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "k405310f97339c27",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5760ef4a47155c147d9c5cd3d12ba215-1x1-webp"
+            }
+          },
+          "alt": "model stands in front of field"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kcaa8b085ddeeb11",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-980ed080e6be94610dbe36dc13672c0d-1x1-webp"
+            }
+          },
+          "alt": "2 hands holding flowers towards the sky"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "ke87f4d98e1ecdcc",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-24341f4df2f8782fc37213321053b6bc-1x1-webp"
+            }
+          },
+          "alt": "model in flower field"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k3311c2de9662489",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-1fdd04290e4b63fdceb72397493894da-1x1-webp"
+            }
+          },
+          "alt": "model photographed from bottom arms on her back"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k023c9c334ca9bd8",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-844f92cc25b96b2018872001c83b1276-1x1-webp"
+            }
+          },
+          "alt": "model holding scarf floating in the wind"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-5760ef4a47155c147d9c5cd3d12ba215-1x1-webp"
+          }
+        },
+        "alt": "model stands in front of field",
+        "title": "Marie Claire Magazine"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Marie Claire Magazine ВЗЯТИ ГОРУ | Studio.Stuckn",
+        "metaDescription": "Print Issue Marie Claire Ukraine, 09/2021",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-5760ef4a47155c147d9c5cd3d12ba215-1x1-webp"
+          },
+          "alt": "model stands in front of field"
+        }
+      },
+      "subtitle": {
+        "_type": "subtitle",
+        "text": "ВЗЯТИ ГОРУ",
+        "isCyrillic": true
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "k30d37bed9adfffe",
+          "label": "Photo",
+          "value": "Christiane Baumgart"
+        },
+        {
+          "_type": "credit",
+          "_key": "kb21f1e848dc6984",
+          "label": "Styling",
+          "value": "Chiara Bottin"
+        },
+        {
+          "_type": "credit",
+          "_key": "k7dc9fbbcfd2d8db",
+          "label": "Makeup",
+          "value": "Adina Hensel"
+        },
+        {
+          "_type": "credit",
+          "_key": "k083b5513e13303f",
+          "label": "Model (Spin)",
+          "value": "Irene Opoku"
+        },
+        {
+          "_type": "credit",
+          "_key": "k19c5cb389e5b38b",
+          "label": "Retouche",
+          "value": "Irene Velweiss"
+        }
+      ],
+      "fashionCredits": {
+        "_type": "fashionCredits",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-85be8028fcb424454455f049bf0df8a1-1x1-webp"
+          }
+        },
+        "logoAlt": "Marie Claire Magazine logo",
+        "entries": [
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k70b439dcfbc8a99",
+            "lookNumber": 1,
+            "details": "Shirt, Vest & Trousers Studio.Stuckn, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k3c75fb59ca05d8d",
+            "lookNumber": 2,
+            "details": "Shirt Studio.Stuckn"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k2846ed881a24be1",
+            "lookNumber": 3,
+            "details": "Coat Truongii, Bag Burberry, Top Alina Wotschel, Trousers Acne Studios, Earrings Stephanie Kahnau"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k56b610a42037896",
+            "lookNumber": 4,
+            "details": "Dress Karl Lagerfeld"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "kd15f2c2ce5a449b",
+            "lookNumber": 5,
+            "details": "Orange Blouse Soeur, Striped Blouse Sessùn, Scarf Hermés"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "project-seefashion",
+      "_type": "project",
+      "title": "See Fashion",
+      "slug": {
+        "_type": "slug",
+        "current": "seefashion"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 3,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k5614964bc963a02",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "kf427950e6ce28e8",
+              "marks": [],
+              "text": "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "youtubeEmbed",
+          "_key": "k91badbc6d8efc10",
+          "url": "https://www.youtube-nocookie.com/embed/PUjRE7VW98g?si=VES49p1BIMXK0i3F&rel=0",
+          "title": "SeeFashion Runway by Ronja Stucken"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kdace6a70f33ff55",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-676c2b9eb210bec760b984b8d1f0041e-1x1-webp"
+            }
+          },
+          "alt": "model bust shot looking into the camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k0cc3446f5957479",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-76483ac055d448159c7db8eab844e433-1x1-webp"
+            }
+          },
+          "alt": "diverse model indress"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kc9d4b91ac9780c9",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2c514a1e31f53f584bb4ff6e069ac39d-1x1-webp"
+            }
+          },
+          "alt": "diverse model looking to the side"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kff68a8ff390292e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-ed4d596f6899e032bda836a5f461f3d8-1x1-webp"
+            }
+          },
+          "alt": "3 models looking into the camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k925c8a831a991c2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-1b1b2c83f9533e8246b008d06269172d-1x1-webp"
+            }
+          },
+          "alt": "runway shot of model walking"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k88819955e189e1a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-7660449324f84ec24c075d4cf2e5eec6-1x1-webp"
+            }
+          },
+          "alt": "diverse model in dress and vest"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k46969ef317cf9c2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-870e8b7f285ca5fb87adb8333c9ed285-1x1-webp"
+            }
+          },
+          "alt": "runway shot of 2 models walking"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kd8a603a3e30feb6",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d336d69fcca07f78005ea19714325726-1x1-webp"
+            }
+          },
+          "alt": "detail shot of a green suit"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kc0185a012be9979",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d7881d7d86f771972f4fc57d01c2e5c1-1x1-webp"
+            }
+          },
+          "alt": "4 models full body shot"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k41438ca670c4391",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-543b9ebf787118b845e6034bb462aaea-1x1-webp"
+            }
+          },
+          "alt": "diverse model in draped top"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-d336d69fcca07f78005ea19714325726-1x1-webp"
+          }
+        },
+        "alt": "detail shot of a green suit",
+        "title": "Seefashion"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "See Fashion | Studio.Stuckn",
+        "metaDescription": "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-d336d69fcca07f78005ea19714325726-1x1-webp"
+          },
+          "alt": "detail shot of a green suit"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "kde07bc59b233957",
+          "label": "All Fashion",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "k66a2d3ce371ed05",
+          "label": "Styling",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "k2e4e3d0bbb24051",
+          "label": "Video",
+          "value": "Petandflo"
+        },
+        {
+          "_type": "credit",
+          "_key": "k08c1f94b2190b34",
+          "label": "Location",
+          "value": "Cinegate"
+        },
+        {
+          "_type": "credit",
+          "_key": "ka4b6348cdd985be",
+          "label": "Set photography",
+          "value": "Tiffany Chaves"
+        },
+        {
+          "_type": "credit",
+          "_key": "kff1878ef2b8d6e8",
+          "label": "Backstage photography",
+          "value": "Tabi Charaf"
+        },
+        {
+          "_type": "credit",
+          "_key": "kf6e6e80326bdf6e",
+          "label": "Hair & Makeup",
+          "value": "Mud Studio Berlin"
+        },
+        {
+          "_type": "credit",
+          "_key": "k3c8b5135d7829f2",
+          "label": "Models",
+          "value": "Viva Models"
+        },
+        {
+          "_type": "credit",
+          "_key": "k7144673f4cbf8bf",
+          "label": "In cooperation with",
+          "value": "Bluescope Berlin and Kathi Kaeppel"
+        },
+        {
+          "_type": "credit",
+          "_key": "k7faaa158d2b9482",
+          "label": "Runway soundtrack",
+          "value": "Cleon"
+        }
+      ]
+    },
+    {
+      "_id": "project-reboot",
+      "_type": "project",
+      "title": "Reboot",
+      "slug": {
+        "_type": "slug",
+        "current": "reboot"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 4,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "kff1daa12df1a71f",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k7f7732825e9c409",
+              "marks": [],
+              "text": "Just as a computer may crash due to overload or software glitches, humans may face personal crises or challenges that necessitate a restart or reevaluation of their lives. The act of rebooting in the human context implies a deliberate and conscious effort to initiate change, discard outdated patterns, and embrace a revitalized version of oneself."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "kf18e37840a6c8ef",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8527eed5f7a9df645bee025891e6700c-1x1-webp"
+            }
+          },
+          "alt": "female model hiding head in front of arms"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k587a49d44ab5b1a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-0411aa00b0b650e2f2d857ed53b12ff7-1x1-webp"
+            }
+          },
+          "alt": "male model looks into tilted camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "ke19795f7ce1ba0d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-dac5158cb7e777d8a60798ae2d619df7-1x1-webp"
+            }
+          },
+          "alt": "full body view of female model from the front"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k0bb167d26a18e9d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-110d6a6b030ca727a00752f059725aeb-1x1-webp"
+            }
+          },
+          "alt": "female and male face close up"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k9652b8d380de78b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-f9f4ef71607dd115336c0f05416a6722-1x1-webp"
+            }
+          },
+          "alt": "male model shown from the back in front of sun reflection"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kda85cbcafda5be0",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4aa0f19036873af4a70b83e262433de8-1x1-webp"
+            }
+          },
+          "alt": "female model bust shot"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "ka802ae2dae7aff2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2928dea6d90249c3702614e56a35e553-1x1-webp"
+            }
+          },
+          "alt": "male model in motion"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kedb5186539e5227",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-c1c576b85d520dc8371298cc8cf4a1fa-1x1-webp"
+            }
+          },
+          "alt": "male model full body half profile"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kfa105ef0b930612",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-12772b63e682413a3ac00b507817d76a-1x1-webp"
+            }
+          },
+          "alt": "male model bust shot"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kba5dd87a654a98b",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2e9cc68ecea35214ab5e08a583da09fa-1x1-webp"
+            }
+          },
+          "alt": "female model from half profile full body"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k8c223f2f5402ae2",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-197218d88c9e865a27cce8a6838f0a59-1x1-webp"
+            }
+          },
+          "alt": "2 models shown full body looking into camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k9908d871fda4339",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-a3bd4b6bee1546511186055824215b2c-1x1-webp"
+            }
+          },
+          "alt": "male model turning photographed from the back"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k32f3cf405b107d8",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d35e5b552064f9541d1f9eebe316b019-1x1-webp"
+            }
+          },
+          "alt": "detail view of trousers on male model"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k3dd0027a460cbf4",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-936008387e00a1f44ad76b51cf2cee4b-1x1-webp"
+            }
+          },
+          "alt": "full body view of female model from the back"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k4f2b42c7fcf9705",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-e91106e05d1b13d4b86b13287cd4f3b5-1x1-webp"
+            }
+          },
+          "alt": "male model full body view"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kb31e2cc7f34325a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-d35bea07de06510e177bb9a99f8d5c6b-1x1-webp"
+            }
+          },
+          "alt": "female model looks into tilted camera"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k93985095db87dbd",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-dfedeed5cfb9ae43d384320808671bf9-1x1-webp"
+            }
+          },
+          "alt": "female model photographed from the side profile"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-4aa0f19036873af4a70b83e262433de8-1x1-webp"
+          }
+        },
+        "alt": "female model bust shot",
+        "title": "Reboot"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Reboot | Studio.Stuckn",
+        "metaDescription": "Just as a computer may crash due to overload or software glitches, humans may face personal crises or challenges that necessitate a restart or reevaluation of their lives. The act of rebooting in the human context implies a deliberate and conscious effort to initiate change, discard outdated patterns, and embrace a revitalized version of oneself.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-4aa0f19036873af4a70b83e262433de8-1x1-webp"
+          },
+          "alt": "female model bust shot"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "k0c6bd56a06c8385",
+          "label": "All Fashion",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "k2c9ad1a7eea9a4d",
+          "label": "Styling",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "keb644fe7e084e58",
+          "label": "Photo",
+          "value": "Jaap Bräutigam"
+        },
+        {
+          "_type": "credit",
+          "_key": "kc7105d89e1b3e52",
+          "label": "Models",
+          "value": "Lea Rösch & Ringo Lukas"
+        },
+        {
+          "_type": "credit",
+          "_key": "k174fedbef8217c7",
+          "label": "Makeup",
+          "value": "Ekaterina Igonina"
+        }
+      ]
+    },
+    {
+      "_id": "project-excessive-minimal",
+      "_type": "project",
+      "title": "Excessive Minimal",
+      "slug": {
+        "_type": "slug",
+        "current": "excessive-minimal"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 5,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k0d22a395f16b5be",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k5b75e67b0bc8cd5",
+              "marks": [],
+              "text": "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "k9f94deffe8c1803",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-a8af6668bee228f8dd57caa48f9ea906-1x1-webp"
+            }
+          },
+          "alt": "coat with belt detail view black and white"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "keac926a871380f8",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-aadfc0016e35065ff66c96e0b3b42b47-1x1-webp"
+            }
+          },
+          "alt": "female model hiding her face with her arms"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k276924e2850b18f",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5136a995c1faf74e9f961fbe4da6adf7-1x1-webp"
+            }
+          },
+          "alt": "female model turning in motion black and white"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "ke8247227bb8ac40",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2cf4aa869a77fbba2280921240655ce3-1x1-webp"
+            }
+          },
+          "alt": "view on sun reflections on the floor and model making a big step"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kddb085be47114f5",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-dd65020c5780bf67d17843c843a26636-1x1-webp"
+            }
+          },
+          "alt": "female model standing with her hands in pockets"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kbf3b9e4ff4a230e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-44fed41152cfc6b48293d184acddd9e8-1x1-webp"
+            }
+          },
+          "alt": "abstract projection on female model on the floor"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k3a9ced8469370de",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-96e527fa5a76c3c6c119b58a634bad5a-1x1-webp"
+            }
+          },
+          "alt": "female model leaning on wood black and white"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kd822eb423270308",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-8c49f7abf905572cfd64c80b965e4120-1x1-webp"
+            }
+          },
+          "alt": "female model tilted camera with hand on hip"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kd8aa0168d017c25",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-287bbd09223e043f70e8cd9175b50bc0-1x1-webp"
+            }
+          },
+          "alt": "female model wrapped in scarf and coat black and white"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k1cb6dc3a8ce3e64",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-1ad5d44fa4f9f279f7e0ca52112660ee-1x1-webp"
+            }
+          },
+          "alt": "female model with arms above her head"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kabd3feb9743067d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-101f0f196bde172fdd3abf777b95f55d-1x1-webp"
+            }
+          },
+          "alt": "abstract projection on female model upper body"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-a8af6668bee228f8dd57caa48f9ea906-1x1-webp"
+          }
+        },
+        "alt": "coat with belt detail view black and white",
+        "title": "Excessive Minimal"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Excessive Minimal | Studio.Stuckn",
+        "metaDescription": "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-a8af6668bee228f8dd57caa48f9ea906-1x1-webp"
+          },
+          "alt": "coat with belt detail view black and white"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "k88e8582a99b2795",
+          "label": "All Fashion",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "kc7c8710467c4e85",
+          "label": "Styling",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "k931e71b698446fb",
+          "label": "Photo",
+          "value": "Ruben Jacob Fees"
+        },
+        {
+          "_type": "credit",
+          "_key": "k5ad04380753d4e7",
+          "label": "Model",
+          "value": "Stella Fath"
+        }
+      ]
+    },
+    {
+      "_id": "project-page",
+      "_type": "project",
+      "title": "Page Magazine",
+      "slug": {
+        "_type": "slug",
+        "current": "page"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 6,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k08886aa0eefe332",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k99f42457a760621",
+              "marks": [],
+              "text": "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "kfa8ff650a51874d",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-249b27d603e6b44e9c1940caebe0eecd-1x1-webp"
+            }
+          },
+          "alt": "female model standing on sand dune"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5e75572a8c884c0",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-606c917674487f80a6a2ed1c2da98120-1x1-webp"
+            }
+          },
+          "alt": "reflection of a female model from the bottom holding gemstone"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k91a70c393ee8277",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4fbae3a22e65a11dde0dd299065dfc24-1x1-webp"
+            }
+          },
+          "alt": "sand dune with round mirror"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k41f64d7198d9b70",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4404dd1096faaa362b1e5fcb9fa0cf69-1x1-webp"
+            }
+          },
+          "alt": "female model laying in sand"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k31c0997c5d8e6a6",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-41cd30e93bd6ef90d70802d8e584282c-1x1-webp"
+            }
+          },
+          "alt": "sand patterns"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k26432aa8c17f37a",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-5efc815a2421340bcb76f1e19f2903ef-1x1-webp"
+            }
+          },
+          "alt": "detail view of hand in the sand"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k20f0a76f17062b9",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-b54df093924e6254f6f6f9a3463be740-1x1-webp"
+            }
+          },
+          "alt": "female model standing in front of hill"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k2676ae4946199e1",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-1b1a1732454caaf78a75e8ab14420181-1x1-webp"
+            }
+          },
+          "alt": "female model with yellow glasses"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k5bb75eb90a6cc31",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-ac5d72ce03be9678f8a528d6c9aea7a2-1x1-webp"
+            }
+          },
+          "alt": "sand shapes top view"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kded262eaeea5c7f",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-908cd76b407bcbd901d786f387636615-1x1-webp"
+            }
+          },
+          "alt": "female model tilted view with smoke in front"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kfc8b539050aa568",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-4076d3ebd094cd54ac724523b204d88d-1x1-webp"
+            }
+          },
+          "alt": "stone dune with wires"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-606c917674487f80a6a2ed1c2da98120-1x1-webp"
+          }
+        },
+        "alt": "reflection of a female model from the bottom holding gemstone",
+        "title": "Page Magazine"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Page Magazine | Studio.Stuckn",
+        "metaDescription": "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-606c917674487f80a6a2ed1c2da98120-1x1-webp"
+          },
+          "alt": "reflection of a female model from the bottom holding gemstone"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "ke30319849eaa423",
+          "label": "Photo",
+          "value": "Chiara Bonetti"
+        },
+        {
+          "_type": "credit",
+          "_key": "k673d3dd330a0787",
+          "label": "Photo Assistant",
+          "value": "Pietro Groff"
+        },
+        {
+          "_type": "credit",
+          "_key": "k3447fbad38695ff",
+          "label": "Styling",
+          "value": "Halla Farhat"
+        },
+        {
+          "_type": "credit",
+          "_key": "kedc3404a92cb519",
+          "label": "Hair & Makeup",
+          "value": "Christin Sperlich"
+        },
+        {
+          "_type": "credit",
+          "_key": "kea53285afd3a177",
+          "label": "Set Design",
+          "value": "Sandro de Mauro"
+        },
+        {
+          "_type": "credit",
+          "_key": "k0c5c930127f56a1",
+          "label": "Model (M4)",
+          "value": "Verna Reini"
+        }
+      ],
+      "fashionCredits": {
+        "_type": "fashionCredits",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-efebaf7a5fc86207ed8ff662df7b4d58-1x1-webp"
+          }
+        },
+        "logoAlt": "Page Magazine logo",
+        "entries": [
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k4198a377f2d18fa",
+            "lookNumber": 1,
+            "details": "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k88871e918b83207",
+            "lookNumber": 2,
+            "details": "Earrings, Leather Trousers Studio.Stuckn, Top Kuntz"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "kbbc70db38b44741",
+            "lookNumber": 4,
+            "details": "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k4af99a6bafdbc62",
+            "lookNumber": 6,
+            "details": "Top Studio.Stuckn"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "k8f0a28ca82da05c",
+            "lookNumber": 7,
+            "details": "Leather Trousers Studio.Stuckn, Vest, Glasses Stylist's own"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "ke27d454c1d72901",
+            "lookNumber": 8,
+            "details": "Necklace & Earcuff NUW'D, Glasses Stylist's own"
+          },
+          {
+            "_type": "fashionCreditEntry",
+            "_key": "kbecfb117ebf18c5",
+            "lookNumber": 10,
+            "details": "Leather Trousers Studio.Stuckn"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "project-escapism",
+      "_type": "project",
+      "title": "Escapism",
+      "slug": {
+        "_type": "slug",
+        "current": "escapism"
+      },
+      "category": {
+        "_type": "reference",
+        "_ref": "category-physical"
+      },
+      "order": 7,
+      "description": [
+        {
+          "_type": "block",
+          "_key": "k5bea79e32717ed3",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "k76843fa97441b51",
+              "marks": [],
+              "text": "A departure from the norm into a realm of timeless elegance and modern practicality."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "_type": "galleryImage",
+          "_key": "k4acbe0b0d4e217e",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-06e13fd0d06a3f326b07ee7256c033ec-1x1-webp"
+            }
+          },
+          "alt": "detail view of a lasercutted garment"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "kf4f63747a291eda",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-2987006240255644b00fca8e7df1f939-1x1-webp"
+            }
+          },
+          "alt": "model full body view hand on face"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k4a229603170cadc",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-75550bf96b61e76699c72af1816e29ad-1x1-webp"
+            }
+          },
+          "alt": "female model in front of brown wall and light reflection"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k1216b07e8e4f740",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-993bc8ca78f8ec19b32fb5a9aea69513-1x1-webp"
+            }
+          },
+          "alt": "model in wide trousers taking big step"
+        },
+        {
+          "_type": "galleryImage",
+          "_key": "k6bc161207d0e206",
+          "image": {
+            "_type": "image",
+            "asset": {
+              "_type": "reference",
+              "_ref": "image-dry-run-80395b534a018fcb059b343900ba70cc-1x1-webp"
+            }
+          },
+          "alt": "model headshot from back view"
+        }
+      ],
+      "listing": {
+        "_type": "projectListing",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-993bc8ca78f8ec19b32fb5a9aea69513-1x1-webp"
+          }
+        },
+        "alt": "model in wide trousers taking big step",
+        "title": "Escapism"
+      },
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "Escapism | Studio.Stuckn",
+        "metaDescription": "A departure from the norm into a realm of timeless elegance and modern practicality.",
+        "socialImage": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-993bc8ca78f8ec19b32fb5a9aea69513-1x1-webp"
+          },
+          "alt": "model in wide trousers taking big step"
+        }
+      },
+      "credits": [
+        {
+          "_type": "credit",
+          "_key": "k6daba869b8cb919",
+          "label": "All Fashion",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "kbec4404800041fa",
+          "label": "Styling",
+          "value": "Studio.Stuckn"
+        },
+        {
+          "_type": "credit",
+          "_key": "ke7a5cc17c9d3404",
+          "label": "Photo",
+          "value": "Charlotte Hansel"
+        },
+        {
+          "_type": "credit",
+          "_key": "k0be2dd5c3ebc71f",
+          "label": "Assistant",
+          "value": "Max Zimmermann"
+        },
+        {
+          "_type": "credit",
+          "_key": "k070c576b7ac2d1d",
+          "label": "Models (TFM)",
+          "value": "Zihern & Luca"
+        },
+        {
+          "_type": "credit",
+          "_key": "k48160a37cc6f877",
+          "label": "Hair & makeup",
+          "value": "Vivi Totemist & Prinz Basil"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "_id": "category-digital",
+      "_type": "category",
+      "title": "Digital",
+      "slug": {
+        "_type": "slug",
+        "current": "digital"
+      },
+      "order": 0,
+      "representativeProject": {
+        "_type": "reference",
+        "_ref": "project-etherea-part-one"
+      },
+      "representativeImage": {
+        "_type": "image",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-dry-run-8e5965956718f0e3737ea8fce0d7d3f6-1x1-webp"
+        },
+        "alt": "3D avatar representing digital work"
+      }
+    },
+    {
+      "_id": "category-physical",
+      "_type": "category",
+      "title": "Physical",
+      "slug": {
+        "_type": "slug",
+        "current": "physical"
+      },
+      "order": 1,
+      "representativeProject": {
+        "_type": "reference",
+        "_ref": "project-in-constant-flux"
+      }
+    }
+  ],
+  "aboutPage": {
+    "_id": "aboutPage",
+    "_type": "aboutPage",
+    "heading": "Say Hello",
+    "content": [
+      {
+        "_type": "block",
+        "_key": "ke3c29fe7327a77a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kd18033597e46123",
+            "marks": [],
+            "text": "Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5b40338f3cdfd57",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k477de7a7483d6ab",
+            "marks": [],
+            "text": "Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making."
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "_type": "galleryImage",
+        "_key": "k0e4a9c22f0f895b",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-af79922c9b0663954465d1cc311ef639-1x1-webp"
+          }
+        },
+        "alt": "picture of ronja stuckn"
+      },
+      {
+        "_type": "galleryImage",
+        "_key": "k707f9862459331c",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-b755774d88b32fd688611d5e3ddab4ee-1x1-webp"
+          }
+        },
+        "alt": "Ronja Stucken with crossed arms"
+      },
+      {
+        "_type": "galleryImage",
+        "_key": "k2d34f9d678d5ee8",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_type": "reference",
+            "_ref": "image-dry-run-d418570003f0d33508977dad63cd85ac-1x1-webp"
+          }
+        },
+        "alt": "Ronja Stucken in profile"
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "About | Studio.Stuckn",
+      "metaDescription": "About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind working as Studio.Stuckn.",
+      "socialImage": {
+        "_type": "image",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-dry-run-af79922c9b0663954465d1cc311ef639-1x1-webp"
+        },
+        "alt": "picture of ronja stuckn"
+      }
+    }
+  },
+  "siteSettings": {
+    "_id": "siteSettings",
+    "_type": "siteSettings",
+    "siteTitle": "Studio.Stuckn, 3D artist based in Berlin",
+    "contactEmail": "info@mailgo.dev",
+    "instagramUrl": "https://www.instagram.com/studio.stuckn",
+    "linkedinUrl": "https://de.linkedin.com/in/ronja-stucken",
+    "defaultSeo": {
+      "_type": "seo",
+      "metaTitle": "Studio.Stuckn, 3D artist based in Berlin",
+      "metaDescription": "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.",
+      "socialImage": {
+        "_type": "image",
+        "asset": {
+          "_type": "reference",
+          "_ref": "image-dry-run-social-1x1-png"
+        },
+        "alt": "Studio.Stuckn portfolio preview"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-08-30T10:44:51.342Z",
+  "mode": "validate-live",
+  "target": {
+    "projectId": "35ex4ltc",
+    "dataset": "production"
+  },
+  "counts": {
+    "projects": 12,
+    "categories": 2,
+    "aboutPages": 1,
+    "siteSettings": 1,
+    "credits": 48,
+    "galleryImages": 117,
+    "youtubeEmbeds": 2,
+    "fashionCreditEntries": 23,
+    "localImageCandidates": 125,
+    "uniqueLocalImageContent": 125,
+    "remoteImages": 1,
+    "expectedDocuments": 16,
+    "expectedAssets": 126
+  },
+  "issues": {
+    "missingFiles": [],
+    "missingAltText": [],
+    "duplicateSlugs": [],
+    "duplicateCategoryOrders": [],
+    "duplicateProjectOrders": [],
+    "invalidGalleryReferences": [],
+    "invalidYoutubeUrls": [],
+    "unassociatedLocalImages": [],
+    "duplicateAssetContent": [],
+    "countMismatches": []
+  },
+  "status": "valid",
+  "live": {
+    "foundDocuments": 16,
+    "foundAssets": 126,
+    "missingDocumentIds": [],
+    "missingAssetIds": [],
+    "mismatchedDocumentIds": [],
+    "unresolvedReferencePaths": []
+  }
+}

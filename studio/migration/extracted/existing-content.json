@@ -1,0 +1,2003 @@
+{
+  "generatedFrom": {
+    "projects": "data/projects/*.ts",
+    "projectOrder": "data/projects/index.ts",
+    "about": "app/about/page.tsx and public/img/about",
+    "siteSettings": "app/layout.tsx and app/about/page.tsx",
+    "images": "public/img/**/*.webp"
+  },
+  "projects": [
+    {
+      "slug": "etherea-part-one",
+      "category": "digital",
+      "title": "Etherea",
+      "subtitle": {
+        "text": "Part 1",
+        "cyrillic": false
+      },
+      "description": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+      "softwares": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.",
+      "listing": {
+        "image": {
+          "path": "public/img/digital/3d_elf_red_profile.webp"
+        },
+        "alt": "3d avatar laying",
+        "title": "Etherea Part I"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp"
+          },
+          "alt": "3d avatar lucy front face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-one/3d_elf_red_dress_detail.webp"
+          },
+          "alt": "3d avatar lucy side distance"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/3d_elf_red_profile.webp"
+          },
+          "alt": "3d avatar lucy face side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-one/3d_elf_red_face_zoom.webp"
+          },
+          "alt": "3d avatar lucy front distance"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-one/3d_elf_red_tree.webp"
+          },
+          "alt": "3d tree"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-one/3d_elf_red_front.webp"
+          },
+          "alt": "3d avatar lucy front distance"
+        }
+      ]
+    },
+    {
+      "slug": "etherea-part-two",
+      "category": "digital",
+      "title": "Etherea",
+      "subtitle": {
+        "text": "Part 2",
+        "cyrillic": false
+      },
+      "description": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+      "softwares": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.",
+      "listing": {
+        "image": {
+          "path": "public/img/digital/3d_elf_rose_ear_cropped.webp"
+        },
+        "alt": "3d avatar earings",
+        "title": "Etherea Part II"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_ear.webp"
+          },
+          "alt": "3d avatar marion face side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_bottom.webp"
+          },
+          "alt": "3d avatar marion front body bottom"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_tree_detail.webp"
+          },
+          "alt": "3d tree"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_face.webp"
+          },
+          "alt": "3d avatar marion face side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_side.webp"
+          },
+          "alt": "3d avatar marion side body"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-two/3d_elf_rose_front.webp"
+          },
+          "alt": "3d avatar marion front body top"
+        }
+      ]
+    },
+    {
+      "slug": "etherea-part-three",
+      "category": "digital",
+      "title": "Etherea",
+      "subtitle": {
+        "text": "Part 3",
+        "cyrillic": false
+      },
+      "description": "Step into a world where elven creatures blossom in the embrace of a misty atmosphere. Every element, from the sculpted facial features and detailed knitwear collection to the unique jewelry and accessory sculptures, are creations that spring from the depths of the imagination.",
+      "softwares": "Using CLO3D, Blender, Substance Sampler, Painter, ZBrush, DAZ Studio and Photoshop.",
+      "listing": {
+        "image": {
+          "path": "public/img/digital/3d_elf_purple_detail.webp"
+        },
+        "alt": "3d avatar boots",
+        "title": "Etherea Part III"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/3d_elf_purple_detail.webp"
+          },
+          "alt": "3d boots"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_face.webp"
+          },
+          "alt": "3d avatar marion front face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_bottom.webp"
+          },
+          "alt": "3d avatar marion bottom back"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_profile.webp"
+          },
+          "alt": "3d avatar marion profile face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_side.webp"
+          },
+          "alt": "3d avatar marion body side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_grass_detail.webp"
+          },
+          "alt": "3d grass"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/etherea-part-three/3d_elf_purple_full_body.webp"
+          },
+          "alt": "3d avatar marion body front"
+        }
+      ]
+    },
+    {
+      "slug": "alien-accessories",
+      "category": "digital",
+      "title": "Alien Accessories",
+      "description": "In this collection of 3D fashion sculptures, organic curves are combined with geometric precision, redefining the conventional perception of shapes. The deliberate choice of materials with vibrant color tones paired with deep black and shiny surfaces gives the digital sculptures a special fascination and brings them to life. Let yourself be inspired to rethink reality and appreciate the extraordinary.",
+      "softwares": "Using ZBrush, Blender, CLO3D, Substance Painter, and Photoshop.",
+      "listing": {
+        "image": {
+          "path": "public/img/digital/3d_blue_bag_front.webp"
+        },
+        "alt": "3d alien bag with green background",
+        "title": "Alien Accessories"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_black_boots_profile.webp"
+          },
+          "alt": "3d black boots profile"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_green_bag_profile.webp"
+          },
+          "alt": "3d black bag blue background"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_white_bag_detail.webp"
+          },
+          "alt": "3d white bag white background"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_silver_boots_top.webp"
+          },
+          "alt": "3d silver boots"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_silver_boots_detail.webp"
+          },
+          "alt": "3d silver leather boots close up"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_green_bag_top.webp"
+          },
+          "alt": "3d black bag top"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/3d_blue_bag_front.webp"
+          },
+          "alt": "3d black bag top green background"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_black_boots_back.webp"
+          },
+          "alt": "3d black boots back"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_blue_bag_profile.webp"
+          },
+          "alt": "3d black bag profile"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_orange_sneaker_side.webp"
+          },
+          "alt": "3d black shoes side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_white_bag_front.webp"
+          },
+          "alt": "3d white bag orange background"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_silver_boots_front.webp"
+          },
+          "alt": "3d silver boots front"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_green_bag_side.webp"
+          },
+          "alt": "3d green bag open"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_orange_sneaker_top.webp"
+          },
+          "alt": "3d black shoes orange top"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/digital/alien-accessories/3d_orange_sneaker_detail.webp"
+          },
+          "alt": "3d black shoes orange sole"
+        }
+      ]
+    },
+    {
+      "slug": "in-constant-flux",
+      "category": "physical",
+      "title": "In Constant Flux",
+      "description": "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.",
+      "credits": [
+        [
+          "All Fashion",
+          "Studio.Stuckn"
+        ],
+        [
+          "Styling",
+          "Studio.Stuckn"
+        ],
+        [
+          "Director",
+          "Vigdís Erla Guttormsdóttir"
+        ],
+        [
+          "Film & Edit",
+          "Vigdís Erla Guttormsdóttir"
+        ],
+        [
+          "Analog Photo",
+          "Ronja Stucken & Vigdís Erla Guttormsdóttir"
+        ],
+        [
+          "Idea",
+          "Ronja Stucken"
+        ],
+        [
+          "Music",
+          "Kerr Wilson"
+        ],
+        [
+          "Model",
+          "Julian Eide"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/in-constant-flux/male_model_sit_on_window.webp"
+        },
+        "alt": "male model sits on window",
+        "title": "In Constant Flux"
+      },
+      "media": [
+        {
+          "type": "youtube",
+          "src": "https://www.youtube-nocookie.com/embed/hxwX9xJGz_4?si=ZkVKlG47pFwtBvZL&rel=0",
+          "title": "In Constant Flux by Ronja Stucken"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp"
+          },
+          "alt": "male model sits on couch next to flowers"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/male_model_sit_on_window.webp"
+          },
+          "alt": "male model sits on window"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/male_model_lean_on_window.webp"
+          },
+          "alt": "male model leans on window"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/model_with_hands_on_chin_looking_up.webp"
+          },
+          "alt": "model with hands on chin looking up"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/model_sitting_on_top_of_arm_chair.webp"
+          },
+          "alt": "model leaning against the window"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/model_leaning_against_the_window.webp"
+          },
+          "alt": "model sitting on top of arm chair"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/model_sits_on_office_chair.webp"
+          },
+          "alt": "model sits on office chair"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/in-constant-flux/male_model_laying_on_chair.webp"
+          },
+          "alt": "male model laying on chair"
+        }
+      ]
+    },
+    {
+      "slug": "flanelle",
+      "category": "physical",
+      "title": "Flanelle Magazine",
+      "subtitle": {
+        "text": "'Sunday Off, It's Raining Today'",
+        "cyrillic": false
+      },
+      "description": "Print Issue No. 19 - The Softness Edition",
+      "credits": [
+        [
+          "Photo",
+          "Charlotte Hansel"
+        ],
+        [
+          "Styling",
+          "Mercedes Quirante"
+        ],
+        [
+          "Makeup",
+          "Claudia Fisher"
+        ],
+        [
+          "Models (Izaio)",
+          "Aura Ell & Lin Novak"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/flanelle/model_from_profile_view_with_hat_hiding_the_face.webp"
+        },
+        "alt": "model from profile view with hat hiding the face",
+        "title": "Flanelle Magazine"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/2_models_posing_togehter_sitting.webp"
+          },
+          "alt": "2 models posing together sitting"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/male_model_hold_glove_in_the_camera.webp"
+          },
+          "alt": "male model holds glove in the camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/female_model_looking_downinto_camera.webp"
+          },
+          "alt": "female model looking down into camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/male_model_grabbing_female_model.webp"
+          },
+          "alt": "man holding woman on shoulder"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/model_from_profile_view_with_hat_hiding_the_face.webp"
+          },
+          "alt": "model from profile view with hat hiding the face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/female_model_with_sunglasses_laying_on_the_floor_one_leg_angled.webp"
+          },
+          "alt": "female model with sunglasses laying on the floor one leg angled"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/detail_shot_of_print_top_laying_on_chair.webp"
+          },
+          "alt": "detail shot of print top laying on chair"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/model_wearing_a_hat_and_a_scarf.webp"
+          },
+          "alt": "model wearing a hat and a scarf"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/2_models_laying_on_the_floor_looking_up.webp"
+          },
+          "alt": "2 models laying on the floor looking up"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/detail_view_of_print_top_on_model.webp"
+          },
+          "alt": "detail view of print top on model"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/detail_view_of_female_model_under_mesh_garment.webp"
+          },
+          "alt": "detail view of female model under mesh garment"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/print_scarf_floating_in_the_wind.webp"
+          },
+          "alt": "print scarf floating in the wind"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/male_model_kneeing_above_camera.webp"
+          },
+          "alt": "male model kneeing above camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/male_model_holds_hands_in_front_of_his_face.webp"
+          },
+          "alt": "male model holds hands in front of his face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/view_into_the_sky_with_sun_behind_clouds.webp"
+          },
+          "alt": "view into the sky with sun behind clouds"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/flanelle/male_model_laying_on_floor.webp"
+          },
+          "alt": "male model laying on floor"
+        }
+      ],
+      "fashionCredits": {
+        "logo": {
+          "path": "public/img/physical/flanelle/flanelle_magazine_logo.webp"
+        },
+        "alt": "Flanelle Magazine logo",
+        "creditsPieces": {
+          "1": "Aura - Hat & Shorts Taskin Goec, Top & Longsleeve Studio.Stuckn Lin - Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec",
+          "2": "Overall & Earrings Studio.Stuckn, Gloves Klara Pichler",
+          "3": "Top Studio.Stuckn, Coat Elisabeth v.d. Thannen, Shirt Taskin Goec, Earrings Charlotte Hansel",
+          "4": "Coat Elisabeth v.d. Thannen, Overall & Earrings Studio.Stuckn, Gloves Klara Pichler",
+          "5": "Glasses & Headscarf Studio.Stuckn, Anorak Dress Alexandru Plesco, Heels Taskin Goec, Tights Stylist's own",
+          "6": "Print jersey & Trousers Studio.Stuckn",
+          "7": "Veil Klara Pichler",
+          "8": "Silkscarf Studio.Stuckn",
+          "9": "Overall Studio.Stuckn",
+          "10": "Shirt Studio.Stuckn, Jacket Stylist's own, Vest Taskin Goec",
+          "12": "Overall Studio.Stuckn, Gloves Klara Pichler, Earrings Charlotte Hansel, Shoes Fila"
+        }
+      }
+    },
+    {
+      "slug": "marie-claire",
+      "category": "physical",
+      "title": "Marie Claire Magazine",
+      "subtitle": {
+        "text": "ВЗЯТИ ГОРУ",
+        "cyrillic": true
+      },
+      "description": "Print Issue Marie Claire Ukraine, 09/2021",
+      "credits": [
+        [
+          "Photo",
+          "Christiane Baumgart"
+        ],
+        [
+          "Styling",
+          "Chiara Bottin"
+        ],
+        [
+          "Makeup",
+          "Adina Hensel"
+        ],
+        [
+          "Model (Spin)",
+          "Irene Opoku"
+        ],
+        [
+          "Retouche",
+          "Irene Velweiss"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/marie-claire/model_stands_infront_of_field.webp"
+        },
+        "alt": "model stands in front of field",
+        "title": "Marie Claire Magazine"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/marie-claire/model_stands_infront_of_field.webp"
+          },
+          "alt": "model stands in front of field"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/marie-claire/2hands_holding_flowes_towards_the_sky.webp"
+          },
+          "alt": "2 hands holding flowers towards the sky"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/marie-claire/model_in_flower_field.webp"
+          },
+          "alt": "model in flower field"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/marie-claire/model_photographed_from_bottom_armes_on_her_back.webp"
+          },
+          "alt": "model photographed from bottom arms on her back"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/marie-claire/model_holding_scarf_floating_in_the_wind.webp"
+          },
+          "alt": "model holding scarf floating in the wind"
+        }
+      ],
+      "fashionCredits": {
+        "logo": {
+          "path": "public/img/physical/marie-claire/marie_claire_magazine_logo.webp"
+        },
+        "alt": "Marie Claire Magazine logo",
+        "creditsPieces": {
+          "1": "Shirt, Vest & Trousers Studio.Stuckn, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear",
+          "2": "Shirt Studio.Stuckn",
+          "3": "Coat Truongii, Bag Burberry, Top Alina Wotschel, Trousers Acne Studios, Earrings Stephanie Kahnau",
+          "4": "Dress Karl Lagerfeld",
+          "5": "Orange Blouse Soeur, Striped Blouse Sessùn, Scarf Hermés"
+        }
+      }
+    },
+    {
+      "slug": "seefashion",
+      "category": "physical",
+      "title": "See Fashion",
+      "description": "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream.",
+      "credits": [
+        [
+          "All Fashion",
+          "Studio.Stuckn"
+        ],
+        [
+          "Styling",
+          "Studio.Stuckn"
+        ],
+        [
+          "Video",
+          "Petandflo"
+        ],
+        [
+          "Location",
+          "Cinegate"
+        ],
+        [
+          "Set photography",
+          "Tiffany Chaves"
+        ],
+        [
+          "Backstage photography",
+          "Tabi Charaf"
+        ],
+        [
+          "Hair & Makeup",
+          "Mud Studio Berlin"
+        ],
+        [
+          "Models",
+          "Viva Models"
+        ],
+        [
+          "In cooperation with",
+          "Bluescope Berlin and Kathi Kaeppel"
+        ],
+        [
+          "Runway soundtrack",
+          "Cleon"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/seefashion/detail_shot_of_a_green_suit.webp"
+        },
+        "alt": "detail shot of a green suit",
+        "title": "Seefashion"
+      },
+      "media": [
+        {
+          "type": "youtube",
+          "src": "https://www.youtube-nocookie.com/embed/PUjRE7VW98g?si=VES49p1BIMXK0i3F&rel=0",
+          "title": "SeeFashion Runway by Ronja Stucken"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp"
+          },
+          "alt": "model bust shot looking into the camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/diverse_model_indress.webp"
+          },
+          "alt": "diverse model indress"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/diverse_model_looking_to_the_side.webp"
+          },
+          "alt": "diverse model looking to the side"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/3_model_looking_into_the_camera.webp"
+          },
+          "alt": "3 models looking into the camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/runway_shot_of_model_walking.webp"
+          },
+          "alt": "runway shot of model walking"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/diverse_model_in_dress_and_vest.webp"
+          },
+          "alt": "diverse model in dress and vest"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/runway_shot_of_2_models_walking.webp"
+          },
+          "alt": "runway shot of 2 models walking"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/detail_shot_of_a_green_suit.webp"
+          },
+          "alt": "detail shot of a green suit"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/4_model_full_body_shot.webp"
+          },
+          "alt": "4 models full body shot"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/seefashion/diverse_model_in_draped_top.webp"
+          },
+          "alt": "diverse model in draped top"
+        }
+      ]
+    },
+    {
+      "slug": "reboot",
+      "category": "physical",
+      "title": "Reboot",
+      "description": "Just as a computer may crash due to overload or software glitches, humans may face personal crises or challenges that necessitate a restart or reevaluation of their lives. The act of rebooting in the human context implies a deliberate and conscious effort to initiate change, discard outdated patterns, and embrace a revitalized version of oneself.",
+      "credits": [
+        [
+          "All Fashion",
+          "Studio.Stuckn"
+        ],
+        [
+          "Styling",
+          "Studio.Stuckn"
+        ],
+        [
+          "Photo",
+          "Jaap Bräutigam"
+        ],
+        [
+          "Models",
+          "Lea Rösch & Ringo Lukas"
+        ],
+        [
+          "Makeup",
+          "Ekaterina Igonina"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/reboot/female_model_bust_shot.webp"
+        },
+        "alt": "female model bust shot",
+        "title": "Reboot"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_model_hiding_head_in_front_of_arms.webp"
+          },
+          "alt": "female model hiding head in front of arms"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_looks_into_tilted_camera.webp"
+          },
+          "alt": "male model looks into tilted camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/full_body_view_of_female_model_from_the_front.webp"
+          },
+          "alt": "full body view of female model from the front"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_and_male_face_close_up.webp"
+          },
+          "alt": "female and male face close up"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_shown_from_the_back_infront_of_sunreflection.webp"
+          },
+          "alt": "male model shown from the back in front of sun reflection"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_model_bust_shot.webp"
+          },
+          "alt": "female model bust shot"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_in_motion.webp"
+          },
+          "alt": "male model in motion"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_full_body_half_profile.webp"
+          },
+          "alt": "male model full body half profile"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_bust_shot.webp"
+          },
+          "alt": "male model bust shot"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_model_from_half_profile_full_body.webp"
+          },
+          "alt": "female model from half profile full body"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/2_models_shown_full_body_looking_into_camera.webp"
+          },
+          "alt": "2 models shown full body looking into camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_turning_photographed_from_the_back.webp"
+          },
+          "alt": "male model turning photographed from the back"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/detail_view_of_trousrs_on_male_model.webp"
+          },
+          "alt": "detail view of trousers on male model"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/full_body_view_of_female_model_from_the_back.webp"
+          },
+          "alt": "full body view of female model from the back"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/male_model_full_body_view.webp"
+          },
+          "alt": "male model full body view"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_model_looks_into_tilted_camera.webp"
+          },
+          "alt": "female model looks into tilted camera"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/reboot/female_model_photographed_from_the_side_profile.webp"
+          },
+          "alt": "female model photographed from the side profile"
+        }
+      ]
+    },
+    {
+      "slug": "excessive-minimal",
+      "category": "physical",
+      "title": "Excessive Minimal",
+      "description": "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.",
+      "credits": [
+        [
+          "All Fashion",
+          "Studio.Stuckn"
+        ],
+        [
+          "Styling",
+          "Studio.Stuckn"
+        ],
+        [
+          "Photo",
+          "Ruben Jacob Fees"
+        ],
+        [
+          "Model",
+          "Stella Fath"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp"
+        },
+        "alt": "coat with belt detail view black and white",
+        "title": "Excessive Minimal"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp"
+          },
+          "alt": "coat with belt detail view black and white"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_hiding_her_face_with_her_arms.webp"
+          },
+          "alt": "female model hiding her face with her arms"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_turning_in_motion_black_and_white.webp"
+          },
+          "alt": "female model turning in motion black and white"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/view_on_sun_reflections_on_the_floor_and_model_making_a_big_step.webp"
+          },
+          "alt": "view on sun reflections on the floor and model making a big step"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_standing_with_her_hands_in_pockets.webp"
+          },
+          "alt": "female model standing with her hands in pockets"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/abstract_projection_on_female_model_on_the_floor.webp"
+          },
+          "alt": "abstract projection on female model on the floor"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_leaning_on_wood_black_and_white.webp"
+          },
+          "alt": "female model leaning on wood black and white"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_tilted_camera_with_hand_on_hip.webp"
+          },
+          "alt": "female model tilted camera with hand on hip"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_wrapped_in_scarf_and_coat_black_and_white.webp"
+          },
+          "alt": "female model wrapped in scarf and coat black and white"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/female_model_with_arms_above_her_head.webp"
+          },
+          "alt": "female model with arms above her head"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/excessive-minimal/abstract_projection_on_female_model_upper_body.webp"
+          },
+          "alt": "abstract projection on female model upper body"
+        }
+      ]
+    },
+    {
+      "slug": "page",
+      "category": "physical",
+      "title": "Page Magazine",
+      "description": "'Desert Gates: A Near Future Of Perpetual Drylands' Online Issue, 01/2021",
+      "credits": [
+        [
+          "Photo",
+          "Chiara Bonetti"
+        ],
+        [
+          "Photo Assistant",
+          "Pietro Groff"
+        ],
+        [
+          "Styling",
+          "Halla Farhat"
+        ],
+        [
+          "Hair & Makeup",
+          "Christin Sperlich"
+        ],
+        [
+          "Set Design",
+          "Sandro de Mauro"
+        ],
+        [
+          "Model (M4)",
+          "Verna Reini"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp"
+        },
+        "alt": "reflection of a female model from the bottom holding gemstone",
+        "title": "Page Magazine"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/female_model_standing_on_sand_dune.webp"
+          },
+          "alt": "female model standing on sand dune"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp"
+          },
+          "alt": "reflection of a female model from the bottom holding gemstone"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/sand_dune_with_round_mirror.webp"
+          },
+          "alt": "sand dune with round mirror"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/female_model_laying_in_sand.webp"
+          },
+          "alt": "female model laying in sand"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/sand_patterns.webp"
+          },
+          "alt": "sand patterns"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/detail_view_of_hand_in_the_sand.webp"
+          },
+          "alt": "detail view of hand in the sand"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/female_model_standing_in_front_of_hill.webp"
+          },
+          "alt": "female model standing in front of hill"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/female_model_with_yellow_glasses.webp"
+          },
+          "alt": "female model with yellow glasses"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/sand_shapes_top_view.webp"
+          },
+          "alt": "sand shapes top view"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/female_model_tilted_view_with_smoke_in_front.webp"
+          },
+          "alt": "female model tilted view with smoke in front"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/page/stone_dune_with_wires.webp"
+          },
+          "alt": "stone dune with wires"
+        }
+      ],
+      "fashionCredits": {
+        "logo": {
+          "path": "public/img/physical/page/page_magazine_logo.webp"
+        },
+        "alt": "Page Magazine logo",
+        "creditsPieces": {
+          "1": "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo",
+          "2": "Earrings, Leather Trousers Studio.Stuckn, Top Kuntz",
+          "4": "Longsleeve & Denim Trousers Studio.Stuckn, Boots Buffalo",
+          "6": "Top Studio.Stuckn",
+          "7": "Leather Trousers Studio.Stuckn, Vest, Glasses Stylist's own",
+          "8": "Necklace & Earcuff NUW'D, Glasses Stylist's own",
+          "10": "Leather Trousers Studio.Stuckn"
+        }
+      }
+    },
+    {
+      "slug": "escapism",
+      "category": "physical",
+      "title": "Escapism",
+      "description": "A departure from the norm into a realm of timeless elegance and modern practicality.",
+      "credits": [
+        [
+          "All Fashion",
+          "Studio.Stuckn"
+        ],
+        [
+          "Styling",
+          "Studio.Stuckn"
+        ],
+        [
+          "Photo",
+          "Charlotte Hansel"
+        ],
+        [
+          "Assistant",
+          "Max Zimmermann"
+        ],
+        [
+          "Models (TFM)",
+          "Zihern & Luca"
+        ],
+        [
+          "Hair & makeup",
+          "Vivi Totemist & Prinz Basil"
+        ]
+      ],
+      "listing": {
+        "image": {
+          "path": "public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp"
+        },
+        "alt": "model in wide trousers taking big step",
+        "title": "Escapism"
+      },
+      "media": [
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/escapism/detail_view_of_a_lasercutted_garment.webp"
+          },
+          "alt": "detail view of a lasercutted garment"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/escapism/model_full_body_view_hand_on_face.webp"
+          },
+          "alt": "model full body view hand on face"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/escapism/female_model_infront_of_brown_wall_and_light_reflection.webp"
+          },
+          "alt": "female model in front of brown wall and light reflection"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp"
+          },
+          "alt": "model in wide trousers taking big step"
+        },
+        {
+          "type": "image",
+          "image": {
+            "path": "public/img/physical/escapism/model_headshot_from_back_view.webp"
+          },
+          "alt": "model headshot from back view"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "slug": "digital",
+      "title": "Digital",
+      "order": 0,
+      "projectSlugs": [
+        "etherea-part-one",
+        "etherea-part-two",
+        "etherea-part-three",
+        "alien-accessories"
+      ],
+      "representativeImage": {
+        "image": {
+          "path": "public/img/digital/etherea-part-two/marion.webp"
+        },
+        "alt": "3D avatar representing digital work"
+      }
+    },
+    {
+      "slug": "physical",
+      "title": "Physical",
+      "order": 1,
+      "projectSlugs": [
+        "in-constant-flux",
+        "flanelle",
+        "marie-claire",
+        "seefashion",
+        "reboot",
+        "excessive-minimal",
+        "page",
+        "escapism"
+      ]
+    }
+  ],
+  "aboutPage": {
+    "heading": "Say Hello",
+    "paragraphs": [
+      "Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.",
+      "Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making."
+    ],
+    "images": [
+      {
+        "image": {
+          "path": "public/img/about/elbow_on_chair.webp"
+        },
+        "alt": "picture of ronja stuckn"
+      },
+      {
+        "image": {
+          "path": "public/img/about/low_hands.webp"
+        },
+        "alt": "Ronja Stucken with crossed arms"
+      },
+      {
+        "image": {
+          "path": "public/img/about/profile.webp"
+        },
+        "alt": "Ronja Stucken in profile"
+      }
+    ],
+    "seo": {
+      "metaTitle": "About | Studio.Stuckn",
+      "metaDescription": "About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind working as Studio.Stuckn."
+    }
+  },
+  "siteSettings": {
+    "siteTitle": "Studio.Stuckn, 3D artist based in Berlin",
+    "contactEmail": "info@mailgo.dev",
+    "instagramUrl": "https://www.instagram.com/studio.stuckn",
+    "linkedinUrl": "https://de.linkedin.com/in/ronja-stucken",
+    "defaultSeo": {
+      "metaTitle": "Studio.Stuckn, 3D artist based in Berlin",
+      "metaDescription": "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.",
+      "socialImageUrl": "https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png",
+      "socialImageAlt": "Studio.Stuckn portfolio preview"
+    }
+  },
+  "localImageCandidates": [
+    {
+      "path": "public/img/about/elbow_on_chair.webp",
+      "bytes": 1745514,
+      "sha256": "af79922c9b0663954465d1cc311ef63985bba16fa10d4cb069f255af181cb56c"
+    },
+    {
+      "path": "public/img/about/low_hands.webp",
+      "bytes": 1141108,
+      "sha256": "b755774d88b32fd688611d5e3ddab4ee4fb75cec3bbb985e7d3be1a9c27ad50e"
+    },
+    {
+      "path": "public/img/about/profile.webp",
+      "bytes": 1199668,
+      "sha256": "d418570003f0d33508977dad63cd85acb6e5d70b5d31a3848bb610700d74812f"
+    },
+    {
+      "path": "public/img/digital/3d_blue_bag_front.webp",
+      "bytes": 1735018,
+      "sha256": "76820bb687eba03be781a8feef1281ceb288b87fb09c5d3b11a9e192224ef20a"
+    },
+    {
+      "path": "public/img/digital/3d_elf_purple_detail.webp",
+      "bytes": 2380822,
+      "sha256": "69957a9b00a4b2089400e2e291102e2bb87657a827b828e0444712055aa2335a"
+    },
+    {
+      "path": "public/img/digital/3d_elf_red_profile.webp",
+      "bytes": 2313988,
+      "sha256": "609dfbca1b478a29d644d087c9bd193c4376705104bfd048e064c0b5e357526e"
+    },
+    {
+      "path": "public/img/digital/3d_elf_rose_ear_cropped.webp",
+      "bytes": 950432,
+      "sha256": "21b0dc1839936ebc62b91872c42d31ff4827c195d1a051f72ba1c83bfa6b51f7"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_black_boots_back.webp",
+      "bytes": 316954,
+      "sha256": "fc5c9466e1653e5e686342c08c731da0bca986d9f4af2ca5e354c18ada23cd5c"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_black_boots_profile.webp",
+      "bytes": 196238,
+      "sha256": "915e5b3e51b01bee14d7f300076393aa3bbd1a1be19a8389c9641301fe236801"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_blue_bag_profile.webp",
+      "bytes": 489384,
+      "sha256": "55fa069af42f1bb09257afc1b11528b123cc8ff3089420fa377ba31d5d79ab50"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_green_bag_profile.webp",
+      "bytes": 634644,
+      "sha256": "d23b64db39230909acb9ad901bbbcc54418b643ecfcc3d9450cabc89e38f2bd7"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_green_bag_side.webp",
+      "bytes": 330488,
+      "sha256": "80e981690078ddbf786487a708f3e7431fb988e8a3aa1fa736922cb01c42034a"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_green_bag_top.webp",
+      "bytes": 778670,
+      "sha256": "434889e7b506fe5f637810e25c29e0f8fd066472e390d718e34ba8d3c5c17834"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_orange_sneaker_detail.webp",
+      "bytes": 2104620,
+      "sha256": "5d37fdab0f7b958b134f9b220b53dd5624a811168a0affcb59beb9c251a953bc"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_orange_sneaker_side.webp",
+      "bytes": 1452602,
+      "sha256": "4be97940e6a00a13b746d0f162c78bb5b562204bb1e725e031019f4d8773d69b"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_orange_sneaker_top.webp",
+      "bytes": 440024,
+      "sha256": "4f3c5ab75ab493806cea75c8a6be69add491763a0be1f5cac13f35f373b8c2bc"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_silver_boots_detail.webp",
+      "bytes": 1463548,
+      "sha256": "34f38feb51960536fba3772a7e37e56e8efb5091c7074c0102e61df8a631f09a"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_silver_boots_front.webp",
+      "bytes": 464322,
+      "sha256": "d70b7a632df4f74353ab1a4c8b3ed22f252a7cb675f6c770ccdb7a651402227b"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_silver_boots_top.webp",
+      "bytes": 685046,
+      "sha256": "d4504e2630b1afca4acba90f34d484a10a6f0e3238d99be1cfbfbee7b6e26fab"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_white_bag_detail.webp",
+      "bytes": 900488,
+      "sha256": "bcd8613e1a010c2392c708b05b8ffea66de88b8f0982fcff5152b4fe47687e7b"
+    },
+    {
+      "path": "public/img/digital/alien-accessories/3d_white_bag_front.webp",
+      "bytes": 803856,
+      "sha256": "7486c36ee4b26c5593fa4d9ff6fa87891dfdfd6de7579827873fc192a4cbfd53"
+    },
+    {
+      "path": "public/img/digital/etherea-part-one/3d_elf_red_dress_detail.webp",
+      "bytes": 3897316,
+      "sha256": "37936da82094994108d8a90bd4291103dad08e28751bff80324ab39611698648"
+    },
+    {
+      "path": "public/img/digital/etherea-part-one/3d_elf_red_face_zoom.webp",
+      "bytes": 1031364,
+      "sha256": "8f0340d7801cd04e92073deb4c04e094855cfd9b506f768e32b6cb09337839fa"
+    },
+    {
+      "path": "public/img/digital/etherea-part-one/3d_elf_red_front.webp",
+      "bytes": 2818820,
+      "sha256": "f0f407d030bb6b1fba3ba4abc10f62d5b1f77e8788f9db667646d3e0d54ef0fc"
+    },
+    {
+      "path": "public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp",
+      "bytes": 1500460,
+      "sha256": "17010e5c745473fccf0446467b68d5c0a115cc51742806b5602bd8e0282b5800"
+    },
+    {
+      "path": "public/img/digital/etherea-part-one/3d_elf_red_tree.webp",
+      "bytes": 1437832,
+      "sha256": "98978f24c33b009febd447b2277d04edb91bf68a0e6e2b7cf0b76a9911551f6d"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_bottom.webp",
+      "bytes": 1024894,
+      "sha256": "0051f8d589e4c9b1bf425a14e040956e5dd93702bf45ceb068ecaed0d23b9405"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_face.webp",
+      "bytes": 2102672,
+      "sha256": "cc5e8561277f310d0874d41e2d99125230974216ce7cbe70c21db5f7c6992dd5"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_full_body.webp",
+      "bytes": 2300896,
+      "sha256": "c85025411d3fbcb6f301c908e739c699969d6bc6c5c7619a5624f3c4c2b4abca"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_grass_detail.webp",
+      "bytes": 1487028,
+      "sha256": "41f0b1206fb9c8cf1a03a5d0a7141469e198642dc3d794a71fd96606bde4f716"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_profile.webp",
+      "bytes": 3647374,
+      "sha256": "bf75c8017b13286ce969144f8417005ba34a887be377b7adff1eb4e0876f6cbd"
+    },
+    {
+      "path": "public/img/digital/etherea-part-three/3d_elf_purple_side.webp",
+      "bytes": 2270420,
+      "sha256": "f3b784a6fc7234f523081ce1c4ea9afede88f1b4dadc5335bad10648e9ed1d12"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_bottom.webp",
+      "bytes": 851126,
+      "sha256": "987f3ccd62168ec92bc0d0cce96077f62fc03a28067b83de91f864048fe82145"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_ear.webp",
+      "bytes": 1406960,
+      "sha256": "703800c84c62661bb5dac307965551b7daff70e07306e0d6759c16d5f840ee4f"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_face.webp",
+      "bytes": 1681512,
+      "sha256": "6a3c5e2e95a857729dd0f3c1b45d274bf6e88ecf59faa4e3ddccedf7206f644c"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_front.webp",
+      "bytes": 1859930,
+      "sha256": "4a050c60b17088d5025fe4a3dd77c2423f913f4072888167ab7af8254d14a722"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_side.webp",
+      "bytes": 1320706,
+      "sha256": "b79d4d10d65547da236a3ad56f20bb1993f567c966a46970ea9870d1a808ee95"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/3d_elf_rose_tree_detail.webp",
+      "bytes": 1593954,
+      "sha256": "73c8b875d2b599bbab0753cd8852c36eb32c54cddc03080272eb31d47f31ccd6"
+    },
+    {
+      "path": "public/img/digital/etherea-part-two/marion.webp",
+      "bytes": 30890,
+      "sha256": "8e5965956718f0e3737ea8fce0d7d3f640f03596845c7d6022092f60d8f9effe"
+    },
+    {
+      "path": "public/img/physical/escapism/detail_view_of_a_lasercutted_garment.webp",
+      "bytes": 618866,
+      "sha256": "06e13fd0d06a3f326b07ee7256c033ec0b5b01f44ab9dc11ef385a5138d98295"
+    },
+    {
+      "path": "public/img/physical/escapism/female_model_infront_of_brown_wall_and_light_reflection.webp",
+      "bytes": 818198,
+      "sha256": "75550bf96b61e76699c72af1816e29ad62cdca85290fc779bd7b34f286848387"
+    },
+    {
+      "path": "public/img/physical/escapism/model_full_body_view_hand_on_face.webp",
+      "bytes": 463644,
+      "sha256": "2987006240255644b00fca8e7df1f939ccd166893a8bfdfb478ce2ce968e8623"
+    },
+    {
+      "path": "public/img/physical/escapism/model_headshot_from_back_view.webp",
+      "bytes": 922020,
+      "sha256": "80395b534a018fcb059b343900ba70ccd8c79fc813e6794a8e435f4ffffd8695"
+    },
+    {
+      "path": "public/img/physical/escapism/model_in_wide_trousers_taking_big_step.webp",
+      "bytes": 674672,
+      "sha256": "993bc8ca78f8ec19b32fb5a9aea695131d756b37a3e841b7d8d0e17b5e0574f5"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/abstract_projection_on_female_model_on_the_floor.webp",
+      "bytes": 2622492,
+      "sha256": "44fed41152cfc6b48293d184acddd9e894e24650d73e69255c98c4a962f7441f"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/abstract_projection_on_female_model_upper_body.webp",
+      "bytes": 1218584,
+      "sha256": "101f0f196bde172fdd3abf777b95f55d1e183c558961d0c1554f256477b5a72a"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp",
+      "bytes": 474570,
+      "sha256": "a8af6668bee228f8dd57caa48f9ea906b5314e304f2a6057f1d57a4d2a542d9c"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_hiding_her_face_with_her_arms.webp",
+      "bytes": 725932,
+      "sha256": "aadfc0016e35065ff66c96e0b3b42b47834bbf4f5bf4bb0768aaeeac7ecc268e"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_leaning_on_wood_black_and_white.webp",
+      "bytes": 436832,
+      "sha256": "96e527fa5a76c3c6c119b58a634bad5a5534bd0548cb2e39d2876b42206c8dbc"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_standing_with_her_hands_in_pockets.webp",
+      "bytes": 763612,
+      "sha256": "dd65020c5780bf67d17843c843a26636a8cccef22710160b2e1b1903b4e807e8"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_tilted_camera_with_hand_on_hip.webp",
+      "bytes": 854170,
+      "sha256": "8c49f7abf905572cfd64c80b965e4120e9165544b990551ae3727153c34140a2"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_turning_in_motion_black_and_white.webp",
+      "bytes": 428902,
+      "sha256": "5136a995c1faf74e9f961fbe4da6adf794f57eafed9e1a9c0d57dcb2b85eefd9"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_with_arms_above_her_head.webp",
+      "bytes": 364118,
+      "sha256": "1ad5d44fa4f9f279f7e0ca52112660eecbc0af46c327f878e13cd3b629698031"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/female_model_wrapped_in_scarf_and_coat_black_and_white.webp",
+      "bytes": 449036,
+      "sha256": "287bbd09223e043f70e8cd9175b50bc0971106a22c6e9d066910264881971172"
+    },
+    {
+      "path": "public/img/physical/excessive-minimal/view_on_sun_reflections_on_the_floor_and_model_making_a_big_step.webp",
+      "bytes": 2098182,
+      "sha256": "2cf4aa869a77fbba2280921240655ce319ae4aba03be5b5c32277c0a20e6f8b1"
+    },
+    {
+      "path": "public/img/physical/flanelle/2_models_laying_on_the_floor_looking_up.webp",
+      "bytes": 1063990,
+      "sha256": "eea4d36a35db016e0a87b640fc186d997ae1f5d04678eb1d1d80b807a15ec79c"
+    },
+    {
+      "path": "public/img/physical/flanelle/2_models_posing_togehter_sitting.webp",
+      "bytes": 851870,
+      "sha256": "e3ec0277d2452b08f3ea0d8b1d1d58175030cc0a596d66682576bb059d4cc100"
+    },
+    {
+      "path": "public/img/physical/flanelle/detail_shot_of_print_top_laying_on_chair.webp",
+      "bytes": 994144,
+      "sha256": "d141c03438319f08c0880b5f0773e79219584b12c03fbb6ccce6fb710d1b8541"
+    },
+    {
+      "path": "public/img/physical/flanelle/detail_view_of_female_model_under_mesh_garment.webp",
+      "bytes": 1897328,
+      "sha256": "c62ea1dce6ae6c98b923ec0861e7e719e995872d9cb85eae2353f5bf0c74a8d6"
+    },
+    {
+      "path": "public/img/physical/flanelle/detail_view_of_print_top_on_model.webp",
+      "bytes": 1056302,
+      "sha256": "95901706a4c75db9fa2c1912c76cb43936b37b4eb53a098d3b56634c8ac6676a"
+    },
+    {
+      "path": "public/img/physical/flanelle/female_model_looking_downinto_camera.webp",
+      "bytes": 546698,
+      "sha256": "5c98252a01bbbaeab80281997bf4539d684b22602092f01b0eff083c95904b51"
+    },
+    {
+      "path": "public/img/physical/flanelle/female_model_with_sunglasses_laying_on_the_floor_one_leg_angled.webp",
+      "bytes": 678940,
+      "sha256": "997b2f48c97adb01486c6943d2614a1077eb806fd5d25516ab4b6c78181a6466"
+    },
+    {
+      "path": "public/img/physical/flanelle/flanelle_magazine_logo.webp",
+      "bytes": 22326,
+      "sha256": "90896171553b8f47fe6123858dbced59d4ed6643b79ee7380f8ec6781104cfe1"
+    },
+    {
+      "path": "public/img/physical/flanelle/male_model_grabbing_female_model.webp",
+      "bytes": 915598,
+      "sha256": "798bf133b2b1d711a3dcaca9caa816d44e2c6c4faea48c7947993bd693c88e02"
+    },
+    {
+      "path": "public/img/physical/flanelle/male_model_hold_glove_in_the_camera.webp",
+      "bytes": 531104,
+      "sha256": "5603951d20fd385cbf2a869ce20e594a26a6f8bb2350f135b2b4a4e8eed30087"
+    },
+    {
+      "path": "public/img/physical/flanelle/male_model_holds_hands_in_front_of_his_face.webp",
+      "bytes": 721042,
+      "sha256": "c643e1c84b2851017b110cf35ec3f03ce66bf0b981f59004da44c33b300f668c"
+    },
+    {
+      "path": "public/img/physical/flanelle/male_model_kneeing_above_camera.webp",
+      "bytes": 1073778,
+      "sha256": "14880deac1ce68d9271c90f3b1a809efea355583633064f4647ff0bf7ce927c6"
+    },
+    {
+      "path": "public/img/physical/flanelle/male_model_laying_on_floor.webp",
+      "bytes": 609002,
+      "sha256": "6f10b73e309ba6bb88fa50a5cdbd5b399b85c6d11fe8d59b11f4077fd564f49a"
+    },
+    {
+      "path": "public/img/physical/flanelle/model_from_profile_view_with_hat_hiding_the_face.webp",
+      "bytes": 840388,
+      "sha256": "0fba2ca690e95a15458f9260700f5f2d8b7c543feb81371134037fce51c0b4a1"
+    },
+    {
+      "path": "public/img/physical/flanelle/model_wearing_a_hat_and_a_scarf.webp",
+      "bytes": 647398,
+      "sha256": "6d0f55b02e56d2e3c2ea02afe85175cc37de6f78ea153fc8294f17424c2252e7"
+    },
+    {
+      "path": "public/img/physical/flanelle/print_scarf_floating_in_the_wind.webp",
+      "bytes": 728424,
+      "sha256": "e4853c42e6194d35d6ca5ec1fd11bd4e7f855f9fb3b304c24a3d9c82f685518a"
+    },
+    {
+      "path": "public/img/physical/flanelle/view_into_the_sky_with_sun_behind_clouds.webp",
+      "bytes": 503294,
+      "sha256": "2dbc0ffc905b1dc295e3376d42cd3d82bd64548d4d7b03bca134acd7f5550aae"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/male_model_laying_on_chair.webp",
+      "bytes": 2766674,
+      "sha256": "1f8d7a48efdfa5680c1e55d6a7d1c04794a02c25e25bf14a3efb9c58f6049e49"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/male_model_lean_on_window.webp",
+      "bytes": 1612390,
+      "sha256": "d92ba6eb26efdec6d7f13d86db3fc5ec1e067a419cb4ac64b1d487e61d151f8a"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/male_model_sit_on_window.webp",
+      "bytes": 1644642,
+      "sha256": "8292f85804562d66358da17dc7339a644a06f790bbd38900c06178fd50385d05"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/male_model_sits_on_couch_next_to_flowers.webp",
+      "bytes": 1415166,
+      "sha256": "33402dcfa4217085ad563d91de340ed96359b549ffffd7a48820fe01924e4fe0"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/model_leaning_against_the_window.webp",
+      "bytes": 2589680,
+      "sha256": "d21120dd7672dd1ee142963aeecb22bc3842cfe2a9b5a05da1a0d4a789730a18"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/model_sits_on_office_chair.webp",
+      "bytes": 1604328,
+      "sha256": "7f368c6a09b4796a680b36046c01851995c12ad1c03c2429ecd51516452aa687"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/model_sitting_on_top_of_arm_chair.webp",
+      "bytes": 1591596,
+      "sha256": "8d5b270f5a96e1e4c1bd8b2e00ff6efeebd10362b40c615829807c1b74dc82c8"
+    },
+    {
+      "path": "public/img/physical/in-constant-flux/model_with_hands_on_chin_looking_up.webp",
+      "bytes": 3596180,
+      "sha256": "8844be18d395a30b63b9e2347de07e0312ff6e314e2a8c79b4dbe3095126018f"
+    },
+    {
+      "path": "public/img/physical/marie-claire/2hands_holding_flowes_towards_the_sky.webp",
+      "bytes": 577836,
+      "sha256": "980ed080e6be94610dbe36dc13672c0d55faa25d583eed0d427b473a82dfd528"
+    },
+    {
+      "path": "public/img/physical/marie-claire/marie_claire_magazine_logo.webp",
+      "bytes": 17960,
+      "sha256": "85be8028fcb424454455f049bf0df8a1b4f0e7e47c547e3780580f6e6408caab"
+    },
+    {
+      "path": "public/img/physical/marie-claire/model_holding_scarf_floating_in_the_wind.webp",
+      "bytes": 787616,
+      "sha256": "844f92cc25b96b2018872001c83b1276977444ec20d655d2326334451c8f3b0e"
+    },
+    {
+      "path": "public/img/physical/marie-claire/model_in_flower_field.webp",
+      "bytes": 1124976,
+      "sha256": "24341f4df2f8782fc37213321053b6bcb008789673a7ac2eeca1d897b158ca0b"
+    },
+    {
+      "path": "public/img/physical/marie-claire/model_photographed_from_bottom_armes_on_her_back.webp",
+      "bytes": 507346,
+      "sha256": "1fdd04290e4b63fdceb72397493894da95cbca3a647aae59a7c15ff38f0d07be"
+    },
+    {
+      "path": "public/img/physical/marie-claire/model_stands_infront_of_field.webp",
+      "bytes": 1322468,
+      "sha256": "5760ef4a47155c147d9c5cd3d12ba215e6e82e304cc5f99fb89b088ada602d04"
+    },
+    {
+      "path": "public/img/physical/page/detail_view_of_hand_in_the_sand.webp",
+      "bytes": 1007580,
+      "sha256": "5efc815a2421340bcb76f1e19f2903ef77342b7b6f086f5201942e20a08828e8"
+    },
+    {
+      "path": "public/img/physical/page/female_model_laying_in_sand.webp",
+      "bytes": 1063448,
+      "sha256": "4404dd1096faaa362b1e5fcb9fa0cf69d6148fa7d4009ca52e2f6781924ba39a"
+    },
+    {
+      "path": "public/img/physical/page/female_model_standing_in_front_of_hill.webp",
+      "bytes": 1279376,
+      "sha256": "b54df093924e6254f6f6f9a3463be7409b4dc455e03e1a6e33d4d5cb4b73233e"
+    },
+    {
+      "path": "public/img/physical/page/female_model_standing_on_sand_dune.webp",
+      "bytes": 1242346,
+      "sha256": "249b27d603e6b44e9c1940caebe0eecdf5f114c7008ce4d695cca12a0346a6a8"
+    },
+    {
+      "path": "public/img/physical/page/female_model_tilted_view_with_smoke_in_front.webp",
+      "bytes": 582178,
+      "sha256": "908cd76b407bcbd901d786f3876366153adab06838abcfdaa156c08965bff70f"
+    },
+    {
+      "path": "public/img/physical/page/female_model_with_yellow_glasses.webp",
+      "bytes": 840362,
+      "sha256": "1b1a1732454caaf78a75e8ab14420181dfc08dd89d60b9d546e251120879b58c"
+    },
+    {
+      "path": "public/img/physical/page/page_magazine_logo.webp",
+      "bytes": 10120,
+      "sha256": "efebaf7a5fc86207ed8ff662df7b4d58908dba4ad858f074a56f51c28446cd6a"
+    },
+    {
+      "path": "public/img/physical/page/reflection_of_a_female_model_from_the_bottom_holding_gemstone.webp",
+      "bytes": 999768,
+      "sha256": "606c917674487f80a6a2ed1c2da98120777efcb0ce1f3b4db684cbaa2438705f"
+    },
+    {
+      "path": "public/img/physical/page/sand_dune_with_round_mirror.webp",
+      "bytes": 1010978,
+      "sha256": "4fbae3a22e65a11dde0dd299065dfc2403eaae3475d348ebe73fcfba6603e3da"
+    },
+    {
+      "path": "public/img/physical/page/sand_patterns.webp",
+      "bytes": 956586,
+      "sha256": "41cd30e93bd6ef90d70802d8e584282c4609284781418e712773c95b035cb41e"
+    },
+    {
+      "path": "public/img/physical/page/sand_shapes_top_view.webp",
+      "bytes": 1469336,
+      "sha256": "ac5d72ce03be9678f8a528d6c9aea7a20a9642e42c4135f91c59d305a0162f4c"
+    },
+    {
+      "path": "public/img/physical/page/stone_dune_with_wires.webp",
+      "bytes": 929688,
+      "sha256": "4076d3ebd094cd54ac724523b204d88debf8b3122f82daa12d7ae6306605921e"
+    },
+    {
+      "path": "public/img/physical/reboot/2_models_shown_full_body_looking_into_camera.webp",
+      "bytes": 560014,
+      "sha256": "197218d88c9e865a27cce8a6838f0a59986bf1cdfff02cd340d1ec8e17c91f1d"
+    },
+    {
+      "path": "public/img/physical/reboot/detail_view_of_trousrs_on_male_model.webp",
+      "bytes": 578514,
+      "sha256": "d35e5b552064f9541d1f9eebe316b0198ee1905391c83bac03ef023f9bbd300a"
+    },
+    {
+      "path": "public/img/physical/reboot/female_and_male_face_close_up.webp",
+      "bytes": 584916,
+      "sha256": "110d6a6b030ca727a00752f059725aebe0f404fad1401ab11816427dc3c9884a"
+    },
+    {
+      "path": "public/img/physical/reboot/female_model_bust_shot.webp",
+      "bytes": 681508,
+      "sha256": "4aa0f19036873af4a70b83e262433de825335c35978f266abf21af32c2dbe1ff"
+    },
+    {
+      "path": "public/img/physical/reboot/female_model_from_half_profile_full_body.webp",
+      "bytes": 568788,
+      "sha256": "2e9cc68ecea35214ab5e08a583da09fa0016f7b2670d96f062ea73fcfe1284b6"
+    },
+    {
+      "path": "public/img/physical/reboot/female_model_hiding_head_in_front_of_arms.webp",
+      "bytes": 597910,
+      "sha256": "8527eed5f7a9df645bee025891e6700c0c5ef0233f72da4e926a2ecd5a310276"
+    },
+    {
+      "path": "public/img/physical/reboot/female_model_looks_into_tilted_camera.webp",
+      "bytes": 793624,
+      "sha256": "d35bea07de06510e177bb9a99f8d5c6b38388a923d239ce1de50780958775717"
+    },
+    {
+      "path": "public/img/physical/reboot/female_model_photographed_from_the_side_profile.webp",
+      "bytes": 451222,
+      "sha256": "dfedeed5cfb9ae43d384320808671bf97362c8dcab15d31fbeaf085ffabffeca"
+    },
+    {
+      "path": "public/img/physical/reboot/full_body_view_of_female_model_from_the_back.webp",
+      "bytes": 542408,
+      "sha256": "936008387e00a1f44ad76b51cf2cee4be6682c9e14c93c572b2860a624e20af1"
+    },
+    {
+      "path": "public/img/physical/reboot/full_body_view_of_female_model_from_the_front.webp",
+      "bytes": 604300,
+      "sha256": "dac5158cb7e777d8a60798ae2d619df73e71145135948dbc575d0e9b4a74daa4"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_bust_shot.webp",
+      "bytes": 711212,
+      "sha256": "12772b63e682413a3ac00b507817d76a56d9fd65b84a42af6d230b127a403606"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_full_body_half_profile.webp",
+      "bytes": 597214,
+      "sha256": "c1c576b85d520dc8371298cc8cf4a1fa0f39a75e5deac7ccc26cdc954e695015"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_full_body_view.webp",
+      "bytes": 641392,
+      "sha256": "e91106e05d1b13d4b86b13287cd4f3b536ef700341c39cd1aea4668c6952ead1"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_in_motion.webp",
+      "bytes": 462236,
+      "sha256": "2928dea6d90249c3702614e56a35e5534017fec1be22494f621b14035203af63"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_looks_into_tilted_camera.webp",
+      "bytes": 637440,
+      "sha256": "0411aa00b0b650e2f2d857ed53b12ff76190235b90c588963672f589736556cd"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_shown_from_the_back_infront_of_sunreflection.webp",
+      "bytes": 674356,
+      "sha256": "f9f4ef71607dd115336c0f05416a6722527447ffc083c0ca5562cf773e6c9512"
+    },
+    {
+      "path": "public/img/physical/reboot/male_model_turning_photographed_from_the_back.webp",
+      "bytes": 450394,
+      "sha256": "a3bd4b6bee1546511186055824215b2c7c159476a911f8646548e3b2299a0ab4"
+    },
+    {
+      "path": "public/img/physical/seefashion/3_model_looking_into_the_camera.webp",
+      "bytes": 1278112,
+      "sha256": "ed4d596f6899e032bda836a5f461f3d8e7165d4d29255b85970ab072800d9217"
+    },
+    {
+      "path": "public/img/physical/seefashion/4_model_full_body_shot.webp",
+      "bytes": 778194,
+      "sha256": "d7881d7d86f771972f4fc57d01c2e5c1002c53dacc2b2af2c43255d493c09c23"
+    },
+    {
+      "path": "public/img/physical/seefashion/detail_shot_of_a_green_suit.webp",
+      "bytes": 653644,
+      "sha256": "d336d69fcca07f78005ea197143257269a22ce1d00f0c383625a2e3a8726aef7"
+    },
+    {
+      "path": "public/img/physical/seefashion/diverse_model_in_draped_top.webp",
+      "bytes": 873142,
+      "sha256": "543b9ebf787118b845e6034bb462aaea363a2b3f6cc264897f1665e337a9d1ab"
+    },
+    {
+      "path": "public/img/physical/seefashion/diverse_model_in_dress_and_vest.webp",
+      "bytes": 1474576,
+      "sha256": "7660449324f84ec24c075d4cf2e5eec6729486c4453114902f17503e3dd13b50"
+    },
+    {
+      "path": "public/img/physical/seefashion/diverse_model_indress.webp",
+      "bytes": 1375920,
+      "sha256": "76483ac055d448159c7db8eab844e43365cacfb3b8d14b42a4e5d99a15e27217"
+    },
+    {
+      "path": "public/img/physical/seefashion/diverse_model_looking_to_the_side.webp",
+      "bytes": 1376074,
+      "sha256": "2c514a1e31f53f584bb4ff6e069ac39ded7e3aae1a298e8bed55a7813fff7169"
+    },
+    {
+      "path": "public/img/physical/seefashion/model_bust_shot_looking_into_the_camera.webp",
+      "bytes": 1091456,
+      "sha256": "676c2b9eb210bec760b984b8d1f0041e066961dfb560b6b7cd3085d79ba90815"
+    },
+    {
+      "path": "public/img/physical/seefashion/runway_shot_of_2_models_walking.webp",
+      "bytes": 1173262,
+      "sha256": "870e8b7f285ca5fb87adb8333c9ed2859f069a6e4aad43b877c056bca51c5b5f"
+    },
+    {
+      "path": "public/img/physical/seefashion/runway_shot_of_model_walking.webp",
+      "bytes": 731878,
+      "sha256": "1b1b2c83f9533e8246b008d06269172db326acd15b0622f3224f7d4c060d356e"
+    }
+  ]
+}

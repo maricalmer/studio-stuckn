@@ -1,0 +1,47 @@
+{
+  "name": "studio",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "sanity build",
+    "check": "npm run typecheck && npm run lint && npm run build && npm run validate:schema",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "dev": "sanity dev",
+    "lint": "eslint .",
+    "migration:dry-run": "sanity exec migration/import-existing-content.ts -- --dry-run",
+    "migration:import": "sanity exec migration/import-existing-content.ts --with-user-token -- --execute",
+    "migration:validate": "sanity exec migration/import-existing-content.ts --with-user-token -- --validate-live",
+    "start": "sanity start",
+    "typecheck": "tsc --noEmit",
+    "validate:documents": "sanity documents validate --yes --level info",
+    "validate:schema": "sanity schemas validate"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/client": "8.4.0",
+    "@sanity/icons": "^5.2.1",
+    "@sanity/vision": "^6.11.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^6.11.0",
+    "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^7",
+    "@types/react": "^19.2.14",
+    "eslint": "^10.8.1",
+    "prettier": "^3.5",
+    "typescript": "^5.8"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  }
+}

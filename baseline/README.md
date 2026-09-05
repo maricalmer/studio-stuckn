@@ -40,10 +40,10 @@ Console errors and uncaught page errors are recorded in the route reports. They
 are not automatically treated as failures, which lets the baseline document
 pre-existing problems without expanding this migration step.
 
-## Known production drift
+## Historical production drift
 
-The production reference and a fresh local production build do not currently
-render identically. The route reports make the main cause explicit:
+Earlier production and local builds did not render identically. The historical
+route reports recorded these differences:
 
 - `https://www.ronjastucken.com` has no viewport meta tag and renders every
   mobile route with a 980px layout viewport.
@@ -53,8 +53,9 @@ render identically. The route reports make the main cause explicit:
   which indicates that the public deployment is not visually identical to a
   fresh build of the current `master` commit.
 
-Consequently, `npm run baseline:test` correctly fails visual comparisons when
-it is run locally, while route-status and image-report checks complete. Do not
-update the committed screenshots from the local build: production remains the
-reference URL. A Netlify Deploy Preview should be compared with these artifacts
-to decide whether the production drift is expected before promotion.
+On 2026-09-05, the pre-Next.js-16 checkpoint passed all 20 desktop/mobile tests,
+including all committed screenshot comparisons, on Next.js 15.5.23 and React
+19.2.8. Its reports use the `pre-next16` prefix. Historical drift should no longer
+be assumed to explain a new failure. Do not update the committed screenshots
+from a local build: production remains the reference URL. A Netlify Deploy
+Preview must still be compared before promotion.

@@ -1,18 +1,16 @@
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const currentDirectory = dirname(fileURLToPath(import.meta.url));
-
-// eslint-config-next 15 still publishes the legacy shareable-config format.
-// FlatCompat lets ESLint 9 consume the same core-web-vitals rules through its
-// explicit flat configuration system.
-const compatibility = new FlatCompat({
-  baseDirectory: currentDirectory,
-});
+import nextVitals from "eslint-config-next/core-web-vitals";
 
 const eslintConfig = [
-  ...compatibility.extends("next/core-web-vitals"),
+  ...nextVitals,
+  {
+    files: ["components/AboutImage.jsx", "components/HomeExperience.jsx"],
+    rules: {
+      // These existing effects initialize state from browser-only layout and
+      // matchMedia measurements after hydration. Preserve their baseline
+      // behavior during the framework checkpoint; keep the new rule elsewhere.
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
   {
     // These generated and dependency directories were ignored implicitly by
     // `next lint`; list them explicitly now that ESLint owns file discovery.

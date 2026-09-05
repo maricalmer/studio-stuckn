@@ -12,6 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
     "lint:fix": "eslint . --fix",
     "baseline:test": "playwright test",
     "baseline:production": "BASE_URL=https://www.ronjastucken.com BASELINE_LABEL=production playwright test --update-snapshots"
@@ -21,7 +22,8 @@
     "@react-three/fiber": "9.7.0",
     "autoprefixer": "10.4.15",
     "framer-motion": "11.18.2",
-    "next": "15.5.23",
+    "next": "16.2.12",
+    "next-sanity": "13.1.5",
     "postcss": "8.4.28",
     "react": "19.2.8",
     "react-dom": "19.2.8",
@@ -29,13 +31,17 @@
     "three": "0.159.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.6",
+    "@netlify/plugin-nextjs": "5.15.13",
     "@playwright/test": "^1.62.1",
     "@types/node": "24.13.3",
     "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.4",
+    "@types/react-dom": "19.2.7",
     "eslint": "9.39.4",
-    "eslint-config-next": "15.5.23",
+    "eslint-config-next": "16.2.12",
     "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7"
   }
 }

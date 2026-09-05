@@ -11,3 +11,8 @@
   # `.nvmrc` selects Node 24.18.0; pin npm independently because Netlify's
   # bundled npm version can change when its build image changes.
   NPM_VERSION = "11.16.0"
+
+[[plugins]]
+  # Exact version is pinned in package.json/package-lock.json for the migration
+  # checkpoint. Verify this version in the deploy log before promotion.
+  package = "@netlify/plugin-nextjs"

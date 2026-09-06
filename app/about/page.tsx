@@ -1,25 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 import AboutImage from "@/components/AboutImage";
 import Breadcrumb from "@/components/Breadcrumb";
 import PageContainer from "@/components/PageContainer";
 import StaticBrand from "@/components/StaticBrand";
 import AboutBody from "@/components/AboutBody";
-import { getLocalAbout, getLocalSettings } from "@/lib/content/local";
+import { getSanityAbout, getSanitySettings } from "@/lib/sanity/repository";
 
-const about = getLocalAbout();
-const settings = getLocalSettings();
+export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
-  title: about.seo.title,
-  description: about.seo.description,
-  alternates: {
-    canonical: "/about",
-  },
-};
+async function getAboutPageData() {
+  return Promise.all([getSanityAbout(), getSanitySettings()]);
+}
 
-export default function AboutPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  const [about, settings] = await getAboutPageData();
+  if (!about) notFound();
+  const title = about.seo.title ?? "About | Studio.Stuckn";
+  const socialImage =
+    about.seo.socialImage?.url ?? settings?.defaultSeo.socialImage?.url;
+  return {
+    title,
+    description: about.seo.description ?? settings?.defaultSeo.description,
+    alternates: { canonical: "/about" },
+    openGraph: {
+      type: "website",
+      url: "/about",
+      title,
+      ...(socialImage ? { images: [socialImage] } : {}),
+    },
+  };
+}
+
+export default async function AboutPage() {
+  const [about, settings] = await getAboutPageData();
+  if (!about) notFound();
   return (
     <PageContainer backgroundColor="about-page bg-[#EFEBE6]">
       <Breadcrumb
@@ -34,13 +51,13 @@ export default function AboutPage() {
         <ul className="my-6">
           <li>
             <Link
-              href={`mailto:${settings.contactEmail}`}
+              href={`mailto:${settings?.contactEmail ?? ""}`}
               className="text-xl md:text-3xl 2xl:text-4xl min-[1950px]:text-5xl underline"
             >
               Email
             </Link>
           </li>
-          {settings.socialLinks.map((link) => (
+          {settings?.socialLinks.map((link) => (
             <li
               key={link.key}
               className={link.key === "instagram" ? "my-2" : undefined}

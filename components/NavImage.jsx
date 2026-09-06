@@ -6,6 +6,8 @@ export default function NavImage({src, alt, extraStyling}) {
       <Image
         src={src}
         alt={alt}
+        loading="lazy"
+        fetchPriority="low"
         style={{
           width: '100%',
           height: 'auto',

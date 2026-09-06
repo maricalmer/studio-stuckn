@@ -9,12 +9,12 @@ step 6. Tests are exit gates throughout, not a final phase after deployment.
 - Frontend upgraded from Next.js 15.5.23 to 16.2.12; React/React DOM 19.2.8,
   npm 11.16.0 and Node 24.18.0 retained. next-sanity 13.1.5 is installed;
   typed frontend Sanity clients, queries and adapters are implemented in step 6A.
-- App Router and the shared project slug route already exist. Frontend reads
-  remain local; `dynamicParams = false` currently prevents new post-build slugs.
+- App Router and the shared project slug route already exist. The 6B route
+  cutover now reads published Sanity data and permits on-demand project slugs.
 - Studio and import reports exist. Treat the populated production dataset as
   potentially edited: another `createOrReplace` import can overwrite edits.
-- An App Router sitemap exists; it needs a Sanity data source, not replacement
-  with a second sitemap implementation. An explicit custom 404 is still needed.
+- The App Router sitemap now reads published Sanity projects, and the custom
+  404 is implemented in `app/not-found.tsx`.
 - The pre-upgrade run passed all committed screenshots. Earlier documented
   production drift is historical; preserve references and compare fresh evidence.
 - Existing visual tests mask the GLB canvas. The requested model compatibility
@@ -54,27 +54,26 @@ validation results and remaining deployment/dependency gates.
   images so changing presentation can be an explicit later design decision.
 
 Completed locally on 2026-09-06. See [step 6A evidence](baseline/step6a-checkpoint.md)
-and the [data boundary guide](lib/content/README.md). Routes still use local data;
-the Sanity reader is ready for the step 6B migration. No dataset writes or
+and the [data boundary guide](lib/content/README.md). No dataset writes or
 deployments were performed.
 
 ## 6B Images and route migration — critical additions 3 and 4
 
-- [ ] Implement `CmsImage` with explicit Sanity `<img>`/`srcset` candidates,
+- [x] Implement `CmsImage` with explicit Sanity `<img>`/`srcset` candidates,
   intrinsic dimensions and layout-specific `sizes`. Generate transforms using
   the Sanity image builder so crop/hotspot are respected; use `auto=format&q=80`.
-- [ ] Ensure all CMS candidates use `cdn.sanity.io`, bypass `/_next/image` and
+- [x] Ensure all CMS candidates use `cdn.sanity.io`, bypass `/_next/image` and
   legacy Sharp/IPX, and avoid sources larger than the original asset.
-- [ ] Give each image-led route one appropriate LCP preload; lazy-load the
+- [x] Give each image-led route one appropriate LCP preload; lazy-load the
   remaining images. Do not force an image preload onto a route without an image LCP.
-- [ ] Switch one route family at a time: categories, projects, About, then global
+- [x] Switch one route family at a time: categories, projects, About, then global
   settings/metadata. Keep components dependent on view models.
-- [ ] Allow on-demand project rendering and return the custom 404 for missing,
+- [x] Allow on-demand project rendering and return the custom 404 for missing,
   unpublished or deleted content. Keep all existing public URLs.
-- [ ] Preserve published slugs for the initial cutover. Before enabling renames,
-  implement durable redirect history with collision/loop/reserved-route checks;
-  invalidating the old URL alone is not a redirect policy.
-- [ ] Generate sitemap entries from published CMS documents and clean metadata
+- [x] Preserve published slugs for the initial cutover; slug renames remain
+  disabled until durable redirect history with collision/loop/reserved-route
+  checks is implemented.
+- [x] Generate sitemap entries from published CMS documents and clean metadata
   queries (`stega: false`), including canonical URLs and social images.
 
 ## 6C Draft preview — critical additions 5 and 8

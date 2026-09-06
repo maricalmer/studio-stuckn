@@ -83,16 +83,20 @@ authenticated, server-mediated refresh mechanism for drafts; do not configure
 a browser read token. A direct browser live subscription would require changing
 that policy explicitly.
 
-- [ ] Add Draft Mode enable/disable handlers, validate the Presentation preview
+- [x] Add Draft Mode enable/disable handlers, validate the Presentation preview
   secret, sanitize redirect destinations and clear the draft cookie on disable.
-- [ ] Add Visual Editing overlays/click-to-edit and draft-only live refresh.
+- [x] Add Visual Editing overlays/click-to-edit and draft-only live refresh.
   Published visitors must not run live subscriptions or draft refresh requests.
-- [ ] Configure Presentation `previewMode.enable` and `previewMode.disable`.
-- [ ] Restrict iframe `frame-ancestors` to the deployed Studio and explicit
+- [x] Configure Presentation `previewMode.enable` and `previewMode.disable`.
+- [x] Restrict iframe `frame-ancestors` to the deployed Studio and explicit
   development origin. Configure Presentation trust and Sanity API CORS separately.
-- [ ] Use an explicit stable preview origin; avoid broad deployment wildcards.
+- [x] Use an explicit stable preview origin; avoid broad deployment wildcards.
 - [ ] Verify token absence from published and authenticated draft browser bundles,
   responses and network requests under the server-only policy.
+
+Implemented locally on 2026-09-06. See [step 6C evidence](baseline/step6c-checkpoint.md).
+The final token-isolation item still needs a real authenticated Presentation session on a
+preview/production-equivalent deployment; local published-bundle and HTTP checks are recorded.
 
 ## 6D Published cache and webhook — critical addition 6
 

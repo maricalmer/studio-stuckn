@@ -49,6 +49,11 @@ export const SITE_SETTINGS_QUERY = defineQuery(`
     _id, siteTitle, contactEmail, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
   }
 `);
+export const DRAFT_REVISION_QUERY = defineQuery(`
+  *[_type in ["project", "category", "aboutPage", "siteSettings"]] | order(_id asc) {
+    _id, _updatedAt, _rev
+  }
+`);
 export const PROJECT_SEO_QUERY = defineQuery(`
   *[_type == "project" && slug.current == $slug][0] {
     title, "slug": slug.current, subtitle {text},

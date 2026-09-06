@@ -12,7 +12,7 @@ const staticRoutes = [
 ] as const;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const { projects } = await getSanityCatalog();
+  const { projects } = await getSanityCatalog({ draft: false, stega: false });
   const staticEntries = staticRoutes.map(({ path, priority }) => ({
     url: new URL(path, siteUrl).toString(),
     priority,

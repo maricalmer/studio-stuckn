@@ -75,12 +75,16 @@ export function mapImage(
 export function mapRichText(blocks: TextResult): RichText {
   return (blocks ?? []).map((block) => ({
     key: block._key,
-    style:
-      block.style === "h2" || block.style === "h3" ? block.style : "normal",
-    list:
-      block.listItem === "bullet" || block.listItem === "number"
-        ? block.listItem
-        : undefined,
+    style: (() => {
+      const style = stegaClean(block.style);
+      return style === "h2" || style === "h3" ? style : "normal";
+    })(),
+    list: (() => {
+      const listItem = stegaClean(block.listItem);
+      return listItem === "bullet" || listItem === "number"
+        ? listItem
+        : undefined;
+    })(),
     level: block.level ?? 1,
     spans: (block.children ?? []).map((span) => {
       const link = block.markDefs?.find((mark) =>

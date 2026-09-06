@@ -5,6 +5,7 @@ import {
   getMetadataClient,
   getPublishedClient,
 } from "../lib/sanity/client";
+import { sanitizePreviewRedirect } from "../lib/sanity/draft";
 import { getReadToken, getWebhookSecret } from "../lib/sanity/secrets";
 
 test("only draft clients receive a read token; metadata stega is always disabled", () => {
@@ -37,4 +38,16 @@ test("only draft clients receive a read token; metadata stega is always disabled
     assert.ok(!error.message.includes("invalid secret"));
     return true;
   });
+});
+
+test("preview redirects stay same-origin and discard preview parameters", () => {
+  assert.equal(
+    sanitizePreviewRedirect(
+      "/digital?sanity-preview-secret=leak&sanity-preview-perspective=drafts&tab=1#gallery",
+    ),
+    "/digital?tab=1#gallery",
+  );
+  assert.equal(sanitizePreviewRedirect("https://evil.example/steal"), "/");
+  assert.equal(sanitizePreviewRedirect("//evil.example/steal"), "/");
+  assert.equal(sanitizePreviewRedirect("/\\\\evil.example"), "/");
 });

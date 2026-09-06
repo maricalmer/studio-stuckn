@@ -1,8 +1,8 @@
-# Frontend data boundary (step 6A)
+# Frontend data boundary (steps 6A–6B)
 
-Routes read `local.ts` and pass view models to components. The Sanity reader in
-`../sanity/repository.ts` is available for step 6B but is not called by routes.
-No importer or dataset mutation is part of this layer.
+Published routes read `../sanity/repository.ts` and pass view models to
+components. `local.ts` remains a reference adapter for migration tests and
+rollback comparison. No importer or dataset mutation is part of this layer.
 
 ```
 local project/site data → local adapter ──┐
@@ -12,9 +12,9 @@ GROQ queries → generated types → mapper ─┘
 
 `types.ts` owns the component contracts. They use ordinary string slugs, keyed
 rich-text blocks, credits and media. Image models preserve intrinsic dimensions
-and local blur data or Sanity asset ID/crop/hotspot/LQIP. The `source` field will
-let `CmsImage` select the CDN path in step 6B. Existing image components still
-serve local assets during this step.
+and local blur data or Sanity asset ID/crop/hotspot/LQIP. `CmsImage` turns the
+Sanity models into explicit CDN `srcset` candidates and leaves local application
+assets on their existing path.
 
 Both adapters order projects within their category, derive previous/next links
 without wrapping or crossing categories, and link fashion credits to the keyed
@@ -38,17 +38,17 @@ canonical origin, social title branding and verification remain code-managed.
 
 ## Environment and client boundaries
 
-Copy `.env.example` to `.env.local` when using the Sanity reader. Public project,
-dataset and Studio URL values validate when a client is constructed, so a local
-build works without credentials. Published clients are token-free; draft clients
-read a Viewer token through a `server-only` module. Webhook secrets validate
-separately on access. Validation errors name variables without revealing values.
+Copy `.env.example` to `.env.local` when running the CMS-backed routes. Public
+project, dataset and Studio URL values validate when a client or image builder
+is constructed. Published clients are token-free; draft clients read a Viewer
+token through a `server-only` module. Webhook secrets validate separately on
+access. Validation errors name variables without revealing values.
 The draft-client factory is internal infrastructure, not an authorization check;
 6C must authenticate Draft Mode before using it.
 
-Metadata clients and the SEO fetch helper disable stega. The preparatory reader
-bypasses the API CDN and Next fetch cache. Published caching/webhook tags and
-authenticated draft refresh must be implemented in 6C/6D before CMS cutover.
+Metadata clients and the SEO fetch helper disable stega. Published route reads
+bypass the API CDN and Next fetch cache until the cache/webhook work in 6D.
+Authenticated draft refresh remains a 6C concern.
 
 ## Generate and verify types
 

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { FashionCreditsViewModel } from "@/lib/content/types";
+import CmsImage from "@/components/CmsImage";
 
 export default function CarouselFashionCredits({
   fashionCredits,
@@ -9,10 +9,11 @@ export default function CarouselFashionCredits({
   return (
     <div className="relative mt-20 md:mt-0 md:min-w-[400px] h-fit md:h-[60vh] md:ml-4">
       <div className="md:absolute bottom-0 pb-10 md:pb-0">
-        <Image
-          src={fashionCredits.logo}
+        <CmsImage
+          image={fashionCredits.logo}
           alt={fashionCredits.alt}
           className="carousel-item"
+          sizes="120px"
           style={{
             width: "30%",
             height: "auto",

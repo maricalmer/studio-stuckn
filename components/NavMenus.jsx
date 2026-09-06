@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import avatar1Pic from '../public/img/digital/etherea-part-one/3d_elf_red_front_zoom.webp';
-import heelsPic from '../public/img/digital/alien-accessories/3d_silver_boots_detail.webp';
-import avatar2Pic from '../public/img/digital/etherea-part-two/marion.webp';
-import couplePic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp';
-import coatPic from '../public/img/physical/excessive-minimal/coat_with_belt_detail_view_black_and_white.webp';
-import windowPic from '../public/img/physical/in-constant-flux/male_model_sit_on_window.webp';
-import elbowOnChairPic from '../public/img/about/elbow_on_chair.webp';
-import profilePic from '../public/img/about/profile.webp';
-import lowHandsPic from '../public/img/about/low_hands.webp';
+import avatar1Pic from '../public/img/nav/digital-avatar.webp';
+import heelsPic from '../public/img/nav/digital-boots.webp';
+import avatar2Pic from '../public/img/nav/digital-avatar-earrings.webp';
+import couplePic from '../public/img/nav/physical-couple.webp';
+import coatPic from '../public/img/nav/physical-coat.webp';
+import windowPic from '../public/img/nav/physical-window.webp';
+import elbowOnChairPic from '../public/img/nav/about-elbow.webp';
+import profilePic from '../public/img/nav/about-profile.webp';
+import lowHandsPic from '../public/img/nav/about-hands.webp';
 import NavImage from '@/components/NavImage';
 
 const elements = [
@@ -22,7 +22,7 @@ const elements = [
   { src: lowHandsPic, alt: 'ronja seats with low hands', extraStyling: "navmenu__about max-w-[21%] ml-[75%] bottom-[60px] delay-500"}
 ];
 
-export default function NavMenus() {
+export default function NavMenus({ isOpen }) {
   const handleHover = (e) => {
     const navbar = e.currentTarget.parentNode.parentNode;
     const className = e.currentTarget.textContent.toLowerCase();
@@ -42,13 +42,18 @@ export default function NavMenus() {
           <Link href="/about">About</Link>
         </li>
       </ul>
-      <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
-        {
-          elements.map((element, index) => {
-            return (<NavImage src={element.src} alt={element.alt} extraStyling={element.extraStyling} key={index}/>)
-          })
-        }
-      </div>
+      {isOpen && (
+        <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
+          {elements.map((element, index) => (
+            <NavImage
+              src={element.src}
+              alt={element.alt}
+              extraStyling={element.extraStyling}
+              key={index}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 };

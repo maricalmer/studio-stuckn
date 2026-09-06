@@ -3,36 +3,36 @@ import type { ReactNode } from "react";
 
 import { fontVariables } from "./fonts";
 import "./globals.css";
-import { getLocalSettings } from "@/lib/content/local";
+import { getSanitySettings } from "@/lib/sanity/repository";
 
-const settings = getLocalSettings();
-const description = settings.defaultSeo.description;
-const socialImage = settings.defaultSeo.socialImage!.url;
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSanitySettings();
+  const title =
+    settings?.defaultSeo.title ?? settings?.siteTitle ?? "Studio.Stuckn";
+  const description = settings?.defaultSeo.description;
+  const socialImage = settings?.defaultSeo.socialImage?.url;
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.ronjastucken.com"),
-  title: settings.siteTitle,
-  description,
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    url: "/",
-    title: "Studio.Stuckn",
+  return {
+    metadataBase: new URL("https://www.ronjastucken.com"),
+    title,
     description,
-    images: [socialImage],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Studio.Stuckn",
-    description,
-    images: [socialImage],
-  },
-  verification: {
-    google: "KSG4ALn4wQN7SBpS0FrUDlyIa7-nYg3vfHvPGznHx2k",
-  },
-};
+    alternates: { canonical: "/" },
+    openGraph: {
+      type: "website",
+      url: "/",
+      title,
+      description,
+      ...(socialImage ? { images: [socialImage] } : {}),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(socialImage ? { images: [socialImage] } : {}),
+    },
+    verification: { google: "KSG4ALn4wQN7SBpS0FrUDlyIa7-nYg3vfHvPGznHx2k" },
+  };
+}
 
 export default function RootLayout({
   children,

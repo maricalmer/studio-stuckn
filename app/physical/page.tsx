@@ -1,17 +1,41 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 import ProjectIndexPage from "@/components/ProjectIndexPage";
-import { getLocalCategory } from "@/lib/content/local";
+import { getSanityCatalog, getSanitySettings } from "@/lib/sanity/repository";
 
-export const metadata: Metadata = {
-  title: "Physical | Studio.Stuckn",
-  description:
-    "Physical fashion projects, editorials, and collections by Studio.Stuckn.",
-  alternates: {
-    canonical: "/physical",
-  },
-};
+export const dynamic = "force-dynamic";
 
-export default function PhysicalPage() {
-  return <ProjectIndexPage category={getLocalCategory("physical")!} />;
+async function getCategory() {
+  const { categories } = await getSanityCatalog();
+  return categories.find((category) => category.slug === "physical");
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const [category, settings] = await Promise.all([
+    getCategory(),
+    getSanitySettings(),
+  ]);
+  if (!category) notFound();
+  const title = `${category.title} | Studio.Stuckn`;
+  const socialImage = category.image?.image.src;
+  return {
+    title,
+    description:
+      settings?.defaultSeo.description ??
+      "Physical fashion projects, editorials, and collections by Studio.Stuckn.",
+    alternates: { canonical: "/physical" },
+    openGraph: {
+      type: "website",
+      url: "/physical",
+      title,
+      ...(socialImage ? { images: [socialImage] } : {}),
+    },
+  };
+}
+
+export default async function PhysicalPage() {
+  const category = await getCategory();
+  if (!category) notFound();
+  return <ProjectIndexPage category={category} />;
 }

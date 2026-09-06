@@ -1,16 +1,14 @@
-import Image from 'next/image';
+import CmsImage from '@/components/CmsImage';
 
 export default function CarouselImage({ src, alt, index }) {
   return (
     <div className="my-10 w-full md:my-0 md:w-auto md:min-w-fit md:h-full">
-      <Image
-        src={src}
+      <CmsImage
+        image={src}
         alt={alt}
         className='carousel-item'
-        placeholder="blur"
         sizes="(max-width: 767px) 100vw, 33vw"
-        quality={100}
-        priority={ index < 3 }
+        priority={index === 0}
       />
     </div>
   );

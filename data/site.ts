@@ -1,4 +1,4 @@
-// Local content stays authoritative until route migration in step 6B.
+// Kept as a migration reference and rollback comparison after the 6B route cutover.
 export const aboutContent = {
   heading: "Say Hello",
   paragraphs: [

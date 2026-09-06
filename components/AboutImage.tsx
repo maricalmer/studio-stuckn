@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import type { ImageViewModel } from "@/lib/content/types";
+import CmsImage from "@/components/CmsImage";
 
 const handleImageSizing = (
   scrollValue: number,
@@ -46,13 +46,12 @@ export default function AboutImage({
   }, []);
 
   return (
-    <Image
+    <CmsImage
       ref={imageRef}
-      src={image}
+      image={image}
       alt={alt}
       className="about-image object-cover h-[180px] md:h-[40vh] min-h-[100px] w-auto sticky top-[8rem] mt-12"
-      sizes="33vw"
-      quality={100}
+      sizes="(max-width: 767px) 180px, 33vw"
       priority={true}
       style={{
         width: "auto",

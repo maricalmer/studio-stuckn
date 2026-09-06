@@ -2,46 +2,46 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import ProjectPage from "@/components/ProjectPage";
-import { getLocalProject, getLocalProjects } from "@/lib/content/local";
-import type { ProjectViewModel } from "@/lib/content/types";
+import {
+  getSanityCatalog,
+  getSanityProjectMetadata,
+} from "@/lib/sanity/repository";
 
 interface ProjectRouteProps {
   params: Promise<{ slug: string }>;
 }
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return getLocalProjects().map(({ slug }) => ({ slug }));
-}
-
-function metadataTitle(project: ProjectViewModel) {
-  return project.subtitle
-    ? `${project.title} ${project.subtitle.text} | Studio.Stuckn`
-    : `${project.title} | Studio.Stuckn`;
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params,
 }: ProjectRouteProps): Promise<Metadata> {
   const { slug } = await params;
 
-  const project = getLocalProject(slug);
-  if (!project) notFound();
-  const description = project.description;
+  const metadata = await getSanityProjectMetadata(slug);
+  if (!metadata?.slug) notFound();
+  const projectTitle = metadata.title ?? "Untitled project";
+  const title = metadata.subtitle?.text
+    ? `${projectTitle} ${metadata.subtitle.text} | Studio.Stuckn`
+    : `${projectTitle} | Studio.Stuckn`;
+  const description = metadata.seo?.metaDescription ?? metadata.description;
+  const socialImage =
+    metadata.seo?.socialImage?.asset?.url ??
+    metadata.listing?.image?.asset?.url;
 
   return {
-    title: metadataTitle(project),
+    title,
     description,
     alternates: {
-      canonical: `/${project.slug}`,
+      canonical: `/${metadata.slug}`,
     },
     openGraph: {
       type: "website",
-      url: `/${project.slug}`,
-      title: metadataTitle(project),
+      url: `/${metadata.slug}`,
+      title,
       description,
-      images: [project.listing.image.src],
+      ...(socialImage ? { images: [socialImage] } : {}),
     },
   };
 }
@@ -49,7 +49,8 @@ export async function generateMetadata({
 export default async function ProjectRoute({ params }: ProjectRouteProps) {
   const { slug } = await params;
 
-  const project = getLocalProject(slug);
+  const { projects } = await getSanityCatalog();
+  const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
   return <ProjectPage project={project} />;
 }

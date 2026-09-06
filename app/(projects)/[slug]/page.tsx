@@ -2,12 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import ProjectPage from "@/components/ProjectPage";
-import {
-  getAllProjectSlugs,
-  getProject,
-  isProjectSlug,
-  type Project,
-} from "@/data/projects";
+import { getLocalProject, getLocalProjects } from "@/lib/content/local";
+import type { ProjectViewModel } from "@/lib/content/types";
 
 interface ProjectRouteProps {
   params: Promise<{ slug: string }>;
@@ -16,28 +12,23 @@ interface ProjectRouteProps {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getAllProjectSlugs().map((slug) => ({ slug }));
+  return getLocalProjects().map(({ slug }) => ({ slug }));
 }
 
-function metadataTitle(project: Project) {
+function metadataTitle(project: ProjectViewModel) {
   return project.subtitle
     ? `${project.title} ${project.subtitle.text} | Studio.Stuckn`
     : `${project.title} | Studio.Stuckn`;
 }
 
-function metadataDescription(project: Project) {
-  return typeof project.description === "string"
-    ? project.description
-    : project.description.join(" ");
-}
-
-export async function generateMetadata({ params }: ProjectRouteProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProjectRouteProps): Promise<Metadata> {
   const { slug } = await params;
 
-  if (!isProjectSlug(slug)) notFound();
-
-  const project = getProject(slug);
-  const description = metadataDescription(project);
+  const project = getLocalProject(slug);
+  if (!project) notFound();
+  const description = project.description;
 
   return {
     title: metadataTitle(project),
@@ -58,7 +49,7 @@ export async function generateMetadata({ params }: ProjectRouteProps): Promise<M
 export default async function ProjectRoute({ params }: ProjectRouteProps) {
   const { slug } = await params;
 
-  if (!isProjectSlug(slug)) notFound();
-
-  return <ProjectPage slug={slug} />;
+  const project = getLocalProject(slug);
+  if (!project) notFound();
+  return <ProjectPage project={project} />;
 }

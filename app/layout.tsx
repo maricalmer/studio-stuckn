@@ -3,15 +3,15 @@ import type { ReactNode } from "react";
 
 import { fontVariables } from "./fonts";
 import "./globals.css";
+import { getLocalSettings } from "@/lib/content/local";
 
-const description =
-  "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.";
-const socialImage =
-  "https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png";
+const settings = getLocalSettings();
+const description = settings.defaultSeo.description;
+const socialImage = settings.defaultSeo.socialImage!.url;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ronjastucken.com"),
-  title: "Studio.Stuckn, 3D artist based in Berlin",
+  title: settings.siteTitle,
   description,
   alternates: {
     canonical: "/",
@@ -34,7 +34,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className={fontVariables}>
       <body>{children}</body>

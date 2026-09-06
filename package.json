@@ -13,11 +13,15 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
+    "sanity:typegen": "npm run typegen --prefix studio",
+    "sanity:typegen:check": "node scripts/check-sanity-types.mts",
+    "test:content": "tsx --test checks/content.test.ts && node --conditions=react-server --import tsx --test checks/server.test.ts",
     "lint:fix": "eslint . --fix",
     "baseline:test": "playwright test",
     "baseline:production": "BASE_URL=https://www.ronjastucken.com BASELINE_LABEL=production playwright test --update-snapshots"
   },
   "dependencies": {
+    "@portabletext/react": "6.2.0",
     "@react-three/drei": "10.7.8",
     "@react-three/fiber": "9.7.0",
     "autoprefixer": "10.4.15",
@@ -27,6 +31,7 @@
     "postcss": "8.4.28",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "server-only": "0.0.1",
     "tailwindcss": "3.3.3",
     "three": "0.159.0"
   },
@@ -38,6 +43,8 @@
     "@types/react-dom": "19.2.7",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.12",
+    "groq-js": "2.0.0",
+    "tsx": "4.23.13",
     "typescript": "5.9.3"
   },
   "overrides": {

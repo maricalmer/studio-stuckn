@@ -1,6 +1,13 @@
 import {defineCliConfig} from 'sanity/cli'
 
 export default defineCliConfig({
+  typegen: {
+    enabled: true,
+    path: '../lib/sanity/queries.ts',
+    schema: './schema.json',
+    generates: '../lib/sanity/types.generated.ts',
+    overloadClientMethods: true,
+  },
   api: {
     projectId: '35ex4ltc',
     dataset: 'production'

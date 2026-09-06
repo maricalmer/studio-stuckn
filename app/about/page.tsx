@@ -11,12 +11,15 @@ import { getSanityAbout, getSanitySettings } from "@/lib/sanity/repository";
 
 export const dynamic = "force-dynamic";
 
-async function getAboutPageData() {
-  return Promise.all([getSanityAbout(), getSanitySettings()]);
+async function getAboutPageData(stega = true) {
+  return Promise.all([
+    getSanityAbout({ stega }),
+    getSanitySettings({ stega }),
+  ]);
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const [about, settings] = await getAboutPageData();
+  const [about, settings] = await getAboutPageData(false);
   if (!about) notFound();
   const title = about.seo.title ?? "About | Studio.Stuckn";
   const socialImage =

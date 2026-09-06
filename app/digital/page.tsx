@@ -6,15 +6,15 @@ import { getSanityCatalog, getSanitySettings } from "@/lib/sanity/repository";
 
 export const dynamic = "force-dynamic";
 
-async function getCategory() {
-  const { categories } = await getSanityCatalog();
+async function getCategory(stega = true) {
+  const { categories } = await getSanityCatalog({ stega });
   return categories.find((category) => category.slug === "digital");
 }
 
 export async function generateMetadata(): Promise<Metadata> {
   const [category, settings] = await Promise.all([
-    getCategory(),
-    getSanitySettings(),
+    getCategory(false),
+    getSanitySettings({ stega: false }),
   ]);
   if (!category) notFound();
   const title = `${category.title} | Studio.Stuckn`;

@@ -59,3 +59,19 @@ Before deploying a schema change, confirm in the local Studio that:
   About Page to `/about`.
 
 Use unpublished drafts for manual validation and discard them when the checks are complete.
+
+## Preview security
+
+Presentation trust and Sanity API CORS are separate controls. The frontend and Studio use an
+explicit preview-origin allowlist (`http://localhost:3000` and
+`https://www.ronjastucken.com`); deployment-preview wildcards are intentionally not allowed.
+
+In Sanity Manage, configure API CORS Origins separately with credentials enabled for the exact
+frontend origins that make authenticated server reads or local Studio requests:
+
+- `http://localhost:3000`
+- `https://www.ronjastucken.com`
+
+The frontend keeps `SANITY_API_READ_TOKEN` server-only. Draft Mode is enabled by the Presentation
+preview secret and draft changes are checked through the same-origin refresh endpoint; no browser
+read token or direct browser draft subscription is configured.

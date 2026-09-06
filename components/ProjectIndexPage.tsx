@@ -2,22 +2,28 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Carousel from "@/components/Carousel";
 import PageContainer from "@/components/PageContainer";
 import StaticBrand from "@/components/StaticBrand";
-import { getProjectsByCategory } from "@/data/projects";
+import type { CategoryViewModel } from "@/lib/content/types";
 
-export default function ProjectIndexPage({ category }) {
-  const elements = getProjectsByCategory(category).map((project) => ({
-    type: "link",
+export default function ProjectIndexPage({
+  category,
+}: {
+  category: CategoryViewModel;
+}) {
+  const elements = category.projects.map((project) => ({
+    type: "link" as const,
+    key: project.id,
     src: project.listing.image,
     alt: project.listing.alt,
     title: project.listing.title,
     href: `/${project.slug}`,
   }));
-  const activeItem = category === "digital" ? "Digital" : "Physical";
+  const activeItem = category.title;
 
   return (
-    <PageContainer>
+    <PageContainer backgroundColor={undefined}>
       <Breadcrumb
-        textColor={category === "digital" ? "text-black" : undefined}
+        bgColor={undefined}
+        textColor={category.slug === "digital" ? "text-black" : undefined}
         activeItem={activeItem}
       />
       <Carousel elements={elements} />

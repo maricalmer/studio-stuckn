@@ -1,5 +1,8 @@
 ### [ronjastucken.com](https://www.ronjastucken.com/), a portfolio website to showcase fashion projects
 
+For the current Sanity work, see the [implementation plan](IMPLEMENTATION_PLAN.md),
+[data boundary guide](lib/content/README.md), and [step 6A validation](baseline/step6a-checkpoint.md).
+
 ## Static website
 
 Website developed with Javascript, React, Next.js, CSS and Tailwind. Assets are bundled with Webpack. Application is run on Netlify.

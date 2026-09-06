@@ -8,7 +8,7 @@ step 6. Tests are exit gates throughout, not a final phase after deployment.
 
 - Frontend upgraded from Next.js 15.5.23 to 16.2.12; React/React DOM 19.2.8,
   npm 11.16.0 and Node 24.18.0 retained. next-sanity 13.1.5 is installed;
-  frontend Sanity client/query modules are not yet implemented.
+  typed frontend Sanity clients, queries and adapters are implemented in step 6A.
 - App Router and the shared project slug route already exist. Frontend reads
   remain local; `dynamicParams = false` currently prevents new post-build slugs.
 - Studio and import reports exist. Treat the populated production dataset as
@@ -40,18 +40,23 @@ validation results and remaining deployment/dependency gates.
 
 ## 6A Data boundary — critical addition 2 and TypeGen additions
 
-- [ ] Add public project/dataset/Studio URL environment validation, server-only
+- [x] Add public project/dataset/Studio URL environment validation, server-only
   read-token/webhook-secret validation, and a root `.env.example`.
-- [ ] Add typed clients and explicit GROQ projections. Configure Studio TypeGen
+- [x] Add typed clients and explicit GROQ projections. Configure Studio TypeGen
   to scan frontend queries, emit frontend types, and fail CI on stale output.
-- [ ] Introduce `GROQ result → mapper → view model → component` and a local
+- [x] Introduce `GROQ result → mapper → view model → component` and a local
   adapter first. Include projects, categories/order, About and site settings
   (email, social links, default SEO and social image).
-- [ ] Map `software` to the component contract, Portable Text, stable `_key`
+- [x] Map `software` to the component contract, Portable Text, stable `_key`
   values, image dimensions/crop/hotspot/LQIP, fashion-credit gallery positions,
   and previous/next links derived from category/project ordering.
-- [ ] Preserve the single visible About image initially; retain all three CMS
+- [x] Preserve the single visible About image initially; retain all three CMS
   images so changing presentation can be an explicit later design decision.
+
+Completed locally on 2026-09-06. See [step 6A evidence](baseline/step6a-checkpoint.md)
+and the [data boundary guide](lib/content/README.md). Routes still use local data;
+the Sanity reader is ready for the step 6B migration. No dataset writes or
+deployments were performed.
 
 ## 6B Images and route migration — critical additions 3 and 4
 

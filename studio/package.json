@@ -16,6 +16,7 @@
     "migration:validate": "sanity exec migration/import-existing-content.ts --with-user-token -- --validate-live",
     "start": "sanity start",
     "typecheck": "tsc --noEmit",
+    "typegen": "sanity schemas extract --path schema.json --force && sanity typegen generate",
     "validate:documents": "sanity documents validate --yes --level info",
     "validate:schema": "sanity schemas validate"
   },

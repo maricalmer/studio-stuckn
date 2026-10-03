@@ -316,6 +316,62 @@ test.describe("visual baseline", () => {
 });
 
 test.describe("image transfer baseline", () => {
+  test("uses Sanity CDN images with bounded responsive candidates", async ({ page }) => {
+    for (const [, route] of IMAGE_AUDIT_ROUTES) {
+      await page.goto(route, { waitUntil: "domcontentloaded" });
+      await settlePage(page, { loadAllImages: true });
+
+      const audit = await page.evaluate(() => ({
+        images: [...document.images].map((image) => ({
+          src: image.currentSrc || image.src,
+          srcset: image.getAttribute("srcset"),
+          sizes: image.getAttribute("sizes"),
+          loading: image.getAttribute("loading"),
+          fetchPriority: image.getAttribute("fetchpriority"),
+          width: image.naturalWidth,
+        })),
+        preloads: [...document.querySelectorAll('link[rel="preload"][as="image"]')].map(
+          (link) => ({
+            href: link.getAttribute("href"),
+            imageSrcset: link.getAttribute("imagesrcset"),
+          }),
+        ),
+      }));
+
+      const cmsImages = audit.images.filter(
+        (image) => image.src.includes("cdn.sanity.io"),
+      );
+      expect(cmsImages.length, `${route} should render CMS images`).toBeGreaterThan(0);
+
+      for (const image of cmsImages) {
+        expect(image.src).toMatch(/^https:\/\/cdn\.sanity\.io\//);
+        expect(image.src).not.toContain("/_next/image");
+        expect(image.srcset, `${route} CMS image should have srcset`).toBeTruthy();
+        expect(image.sizes, `${route} CMS image should have sizes`).toBeTruthy();
+
+        const candidates = image.srcset
+          .split(",")
+          .map((candidate) => candidate.trim().split(/\s+/))
+          .map(([url, width]) => ({ url, width: Number.parseInt(width, 10) }));
+        expect(candidates.length).toBeGreaterThan(1);
+        expect(candidates.every(({ url }) => url.startsWith("https://cdn.sanity.io/"))).toBe(true);
+        expect(candidates.every(({ width }) => Number.isFinite(width) && width > 0)).toBe(true);
+        expect(candidates.map(({ width }) => width)).toEqual(
+          [...candidates.map(({ width }) => width)].sort((a, b) => a - b),
+        );
+        expect(candidates[candidates.length - 1].width).toBeLessThanOrEqual(
+          image.width,
+        );
+      }
+
+      expect(audit.preloads.length, `${route} should have at most one image LCP preload`).toBeLessThanOrEqual(1);
+      for (const preload of audit.preloads) {
+        expect(preload.href || preload.imageSrcset).toBeTruthy();
+        expect(preload.href || preload.imageSrcset).toContain("cdn.sanity.io");
+      }
+    }
+  });
+
   test("records representative image resources", async ({ page }, testInfo) => {
     const results = [];
 
@@ -359,5 +415,35 @@ test.describe("image transfer baseline", () => {
     }
 
     await writeReport("images", testInfo.project.name, results);
+  });
+});
+
+test.describe("preview and SEO security contract", () => {
+  test("published pages do not expose draft credentials or stega metadata", async ({
+    page,
+    request,
+  }) => {
+    const token = process.env.SANITY_API_READ_TOKEN;
+    const observedUrls = [];
+    page.on("request", (request) => observedUrls.push(request.url()));
+
+    const response = await page.goto("/", { waitUntil: "networkidle" });
+    const html = await response.text();
+    const metadata = await page.evaluate(() => ({
+      title: document.title,
+      description: document.querySelector('meta[name="description"]')?.content,
+      canonical: document.querySelector('link[rel="canonical"]')?.href,
+    }));
+
+    expect(metadata.title).toBeTruthy();
+    expect(metadata.description).toBeTruthy();
+    expect(metadata.canonical).toBe("https://www.ronjastucken.com/");
+    expect(html).not.toContain("sanity-preview-secret");
+    expect(html).not.toContain("SANITY_API_READ_TOKEN");
+    if (token) expect(html).not.toContain(token);
+    expect(observedUrls.some((url) => url.includes(token || "__no_token__"))).toBe(false);
+
+    const refresh = await request.get("/api/draft-mode/refresh");
+    expect(refresh.status()).toBe(403);
   });
 });

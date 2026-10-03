@@ -3,6 +3,12 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { draftMode } from "next/headers";
 
+import {
+  draftQueryOptions,
+  publishedQueryOptions,
+  projectSlugTag,
+  sanityCacheTags,
+} from "./cache";
 import { getDraftClient, getMetadataClient, getPublishedClient } from "./client";
 import {
   ABOUT_QUERY,
@@ -30,43 +36,87 @@ async function getContentClient(options: RepositoryOptions = {}) {
   };
 }
 
+function queryOptions(isDraft: boolean, tags: readonly string[]) {
+  return isDraft ? draftQueryOptions() : publishedQueryOptions(tags);
+}
+
 export async function getSanityPortfolio(options: RepositoryOptions = {}) {
-  const { client } = await getContentClient(options);
+  const { client, isDraft } = await getContentClient(options);
   const [projects, categories, about, settings] = await Promise.all([
-    client.fetch(PROJECTS_QUERY, {}, { cache: "no-store" }),
-    client.fetch(CATEGORIES_QUERY, {}, { cache: "no-store" }),
-    client.fetch(ABOUT_QUERY, {}, { cache: "no-store" }),
-    client.fetch(SITE_SETTINGS_QUERY, {}, { cache: "no-store" }),
+    client.fetch(
+      PROJECTS_QUERY,
+      {},
+      queryOptions(isDraft, [
+        sanityCacheTags.projects,
+        sanityCacheTags.navigation,
+        sanityCacheTags.sitemap,
+      ]),
+    ),
+    client.fetch(
+      CATEGORIES_QUERY,
+      {},
+      queryOptions(isDraft, [
+        sanityCacheTags.categories,
+        sanityCacheTags.navigation,
+        sanityCacheTags.sitemap,
+      ]),
+    ),
+    client.fetch(
+      ABOUT_QUERY,
+      {},
+      queryOptions(isDraft, [sanityCacheTags.about, sanityCacheTags.metadata]),
+    ),
+    client.fetch(
+      SITE_SETTINGS_QUERY,
+      {},
+      queryOptions(isDraft, [sanityCacheTags.settings, sanityCacheTags.metadata]),
+    ),
   ]);
   return mapPortfolio(projects, categories, about, settings);
 }
 
 export async function getSanityCatalog(options: RepositoryOptions = {}) {
-  const { client } = await getContentClient(options);
+  const { client, isDraft } = await getContentClient(options);
   const [projects, categories] = await Promise.all([
-    client.fetch(PROJECTS_QUERY, {}, { cache: "no-store" }),
-    client.fetch(CATEGORIES_QUERY, {}, { cache: "no-store" }),
+    client.fetch(
+      PROJECTS_QUERY,
+      {},
+      queryOptions(isDraft, [
+        sanityCacheTags.projects,
+        sanityCacheTags.navigation,
+        sanityCacheTags.sitemap,
+      ]),
+    ),
+    client.fetch(
+      CATEGORIES_QUERY,
+      {},
+      queryOptions(isDraft, [
+        sanityCacheTags.categories,
+        sanityCacheTags.navigation,
+        sanityCacheTags.sitemap,
+      ]),
+    ),
   ]);
   const portfolio = mapPortfolio(projects, categories, null, null);
   return { projects: portfolio.projects, categories: portfolio.categories };
 }
 
 export async function getSanityAbout(options: RepositoryOptions = {}) {
-  const { client } = await getContentClient(options);
+  const { client, isDraft } = await getContentClient(options);
   const about = await client.fetch(
     ABOUT_QUERY,
     {},
-    { cache: "no-store" },
+    queryOptions(isDraft, [sanityCacheTags.about, sanityCacheTags.metadata]),
   );
   return mapAbout(about);
 }
 
 export async function getSanitySettings(options: RepositoryOptions = {}) {
-  const { client } = await getContentClient(options);
+  const { client, isDraft } = await getContentClient(options);
   const settings = await client.fetch(
     SITE_SETTINGS_QUERY,
     {},
-    { cache: "no-store" },
+    queryOptions(isDraft, [sanityCacheTags.settings, sanityCacheTags.metadata]),
   );
   return mapSettings(settings);
 }
@@ -76,7 +126,15 @@ export async function getSanityProjectMetadata(slug: string) {
   return getMetadataClient(isDraft).fetch(
     PROJECT_SEO_QUERY,
     { slug },
-    { cache: "no-store", stega: false },
+    {
+      ...queryOptions(isDraft, [
+        sanityCacheTags.projects,
+        sanityCacheTags.metadata,
+        sanityCacheTags.sitemap,
+        projectSlugTag(slug),
+      ]),
+      stega: false,
+    },
   );
 }
 

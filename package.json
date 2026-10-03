@@ -15,7 +15,7 @@
     "typecheck": "next typegen && tsc --noEmit",
     "sanity:typegen": "npm run typegen --prefix studio",
     "sanity:typegen:check": "node scripts/check-sanity-types.mts",
-    "test:content": "tsx --test checks/content.test.ts && node --conditions=react-server --import tsx --test checks/server.test.ts",
+    "test:content": "node --import tsx --test checks/content.test.ts && node --conditions=react-server --import tsx --test checks/server.test.ts checks/revalidation.test.ts",
     "lint:fix": "eslint . --fix",
     "baseline:test": "playwright test",
     "baseline:production": "BASE_URL=https://www.ronjastucken.com BASELINE_LABEL=production playwright test --update-snapshots"

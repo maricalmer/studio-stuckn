@@ -18,16 +18,37 @@ backup location before that temporary directory is cleaned up.
 
 ## Local-versus-live comparison status
 
-The existing read-only validator was run with `npm run migration:validate`. It
-did not contact the dataset because local source validation failed:
+The migration candidate set now explicitly excludes the nine legacy navigation
+thumbnails under `public/img/nav`; they remain local application assets. The
+read-only `npm run migration:validate` comparison passed on 2026-10-04:
 
-- local image candidates: 134; previous recorded expectation: 125;
-- nine unassociated navigation images were reported under `public/img/nav/`;
-- no missing files, missing alt text, duplicate slugs/orders, invalid gallery
-  references, or invalid YouTube URLs were reported.
+- local source validation is clean with 125 candidates and 126 expected assets;
+- live contains all 16 expected documents and 126 expected assets;
+- no missing documents/assets, semantic document mismatches, or unresolved
+  references were found;
+- no draft documents or draft-vs-published changes were found.
 
-No `migration:import` or other dataset write was run. The previous live report
-remains historical evidence only; it must not be treated as the final diff.
+The validator now records field-level document diffs and draft state in the live
+report. No `migration:import` or other dataset write was run.
+
+## SEO warning acceptance
+
+`npm run validate:documents` completed with zero errors and eight warning
+markers across seven unique projects. The extra marker is the draft of
+`project-etherea-part-three`; no draft content changes were found by the
+local-versus-live comparison.
+
+The warnings are accepted for the initial cutover because they reflect the
+existing editorial descriptions and title, and changing them would alter
+published copy without an editorial decision:
+
+- descriptions: Etherea Part One (277 characters), Etherea Part Two (277),
+  Etherea Part Three (277), Alien Accessories (404), In Constant Flux (169),
+  and Reboot (348), against the 160-character advisory limit;
+- title: Flanelle (66 characters), against the 60-character advisory limit.
+
+The schema warnings remain intentionally enabled so future editorial changes
+surface the same review prompt.
 
 ## Import guard
 

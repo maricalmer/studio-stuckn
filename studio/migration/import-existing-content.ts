@@ -227,7 +227,7 @@ async function replaceDocuments(
 function stripSystemFields(document: SanityDocument | SanityDocumentInput) {
   const result: Record<string, unknown> = {}
   for (const [field, value] of Object.entries(document)) {
-    if (['_createdAt', '_updatedAt', '_rev', '_originalId'].includes(field)) continue
+    if (['_id', '_createdAt', '_updatedAt', '_rev', '_originalId', '_system'].includes(field)) continue
     result[field] = value
   }
   return result
@@ -242,6 +242,39 @@ function canonicalJson(value: unknown): string {
       .join(',')}}`
   }
   return JSON.stringify(value)
+}
+
+function differingPaths(left: unknown, right: unknown, currentPath = ''): string[] {
+  if (canonicalJson(left) === canonicalJson(right)) return []
+
+  if (Array.isArray(left) && Array.isArray(right)) {
+    const paths: string[] = []
+    const length = Math.max(left.length, right.length)
+    for (let index = 0; index < length; index += 1) {
+      paths.push(...differingPaths(left[index], right[index], `${currentPath}[${index}]`))
+    }
+    return paths
+  }
+
+  if (
+    left &&
+    right &&
+    typeof left === 'object' &&
+    typeof right === 'object' &&
+    !Array.isArray(left) &&
+    !Array.isArray(right)
+  ) {
+    const keys = new Set([...Object.keys(left), ...Object.keys(right)])
+    return [...keys].flatMap((key) =>
+      differingPaths(
+        (left as Record<string, unknown>)[key],
+        (right as Record<string, unknown>)[key],
+        currentPath ? `${currentPath}.${key}` : key,
+      ),
+    )
+  }
+
+  return [currentPath || '$']
 }
 
 function collectReferences(
@@ -277,18 +310,29 @@ async function validateLive(
     expected.siteSettings,
   ]
   const documentIds = migrationDocumentIds(source)
-  const actualDocuments = await client.fetch<SanityDocument[]>(`*[_id in $ids]`, {ids: documentIds})
-  const actualById = new Map(actualDocuments.map((document) => [document._id, document]))
+  const draftIds = documentIds.map((id) => `drafts.${id}`)
+  const actualDocuments = await client.fetch<SanityDocument[]>(`*[_id in $ids]`, {
+    ids: [...documentIds, ...draftIds],
+  })
+  const publishedDocuments = actualDocuments.filter((document) => !document._id.startsWith('drafts.'))
+  const draftDocuments = actualDocuments.filter((document) => document._id.startsWith('drafts.'))
+  const actualById = new Map(publishedDocuments.map((document) => [document._id, document]))
   const missingDocumentIds = documentIds.filter((id) => !actualById.has(id))
-  const mismatchedDocumentIds = expectedDocuments
-    .filter((document) => {
-      const actual = actualById.get(document._id)
-      return (
-        !actual ||
-        canonicalJson(stripSystemFields(actual)) !== canonicalJson(stripSystemFields(document))
-      )
+  const documentDiffs = expectedDocuments.flatMap((document) => {
+    const actual = actualById.get(document._id)
+    if (!actual) return []
+    const paths = differingPaths(stripSystemFields(document), stripSystemFields(actual))
+    return paths.length ? [{id: document._id, paths}] : []
+  })
+  const mismatchedDocumentIds = documentDiffs.map(({id}) => id)
+  const publishedById = new Map(publishedDocuments.map((document) => [document._id, document]))
+  const draftChangedDocumentIds = draftDocuments
+    .filter((draft) => {
+      const publishedId = draft._id.replace(/^drafts\./, '')
+      const published = publishedById.get(publishedId)
+      return published && canonicalJson(stripSystemFields(draft)) !== canonicalJson(stripSystemFields(published))
     })
-    .map((document) => document._id)
+    .map((draft) => draft._id.replace(/^drafts\./, ''))
 
   const expectedAssetIds = [...new Set([...assets.local.values(), assets.socialImage])]
   const foundAssetIds = await client.fetch<string[]>(
@@ -299,19 +343,22 @@ async function validateLive(
   const missingAssetIds = expectedAssetIds.filter((id) => !foundAssetSet.has(id))
 
   const references: Array<{path: string; id: string}> = []
-  actualDocuments.forEach((document) => collectReferences(document, document._id, references))
+  publishedDocuments.forEach((document) => collectReferences(document, document._id, references))
   const validReferenceIds = new Set([...actualById.keys(), ...foundAssetIds])
   const unresolvedReferencePaths = references
     .filter((item) => !validReferenceIds.has(item.id))
     .map((item) => `${item.path} -> ${item.id}`)
 
   return {
-    foundDocuments: actualDocuments.length,
+    foundDocuments: publishedDocuments.length,
     foundAssets: foundAssetIds.length,
     missingDocumentIds,
     missingAssetIds,
     mismatchedDocumentIds,
+    documentDiffs,
     unresolvedReferencePaths,
+    draftDocumentIds: draftDocuments.map((document) => document._id).sort(),
+    draftChangedDocumentIds,
   }
 }
 
@@ -352,7 +399,10 @@ async function main() {
       missingDocumentIds: [],
       missingAssetIds: resolved.missingSourceIds,
       mismatchedDocumentIds: [],
+      documentDiffs: [],
       unresolvedReferencePaths: [],
+      draftDocumentIds: [],
+      draftChangedDocumentIds: [],
     }
     await writeJson(path.join(reportDirectory, `existing-content-${mode}.json`), report)
     throw new Error('Live validation is missing imported assets. Run migration:import first.')
@@ -373,7 +423,8 @@ async function main() {
     report.live.missingDocumentIds.length ||
     report.live.missingAssetIds.length ||
     report.live.mismatchedDocumentIds.length ||
-    report.live.unresolvedReferencePaths.length
+    report.live.unresolvedReferencePaths.length ||
+    report.live.draftChangedDocumentIds.length
   ) {
     report.status = 'invalid'
   }

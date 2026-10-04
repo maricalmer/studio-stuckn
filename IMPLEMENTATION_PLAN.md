@@ -159,15 +159,15 @@ for the evidence. The deployed lifecycle rerun also passed after the CDN-bypass 
 
 ## 7A Cutover preparation — critical addition 7
 
-- [ ] Export a dataset backup and verify it can be inspected/restored; record
+- [x] Export a dataset backup and verify it can be inspected/restored; record
   its location outside public assets and version control.
 - [ ] Declare source-of-truth transition time and freeze both local and Studio
   edits during the final comparison.
-- [ ] Generate a final local-versus-live diff, including drafts. Do not rerun
+- [x] Generate a final local-versus-live diff, including drafts. Do not rerun
   `migration:import` automatically. Preserve editorial changes; perform another
   replacement only when the reviewed diff establishes that it is required.
-- [ ] Guard or retire the importer when Sanity becomes authoritative.
-- [ ] Resolve the seven recorded SEO warnings or record specific acceptance.
+- [x] Guard or retire the importer when Sanity becomes authoritative.
+- [x] Resolve the seven recorded SEO warnings or record specific acceptance.
 - [ ] Deploy Studio and configure exact local/preview/production origins and
   project, dataset, restricted Viewer token, Studio URL and webhook secret.
 - [ ] Run the full exit gate against a production-equivalent Netlify preview;

@@ -133,7 +133,10 @@ export interface MigrationReport {
     missingDocumentIds: string[]
     missingAssetIds: string[]
     mismatchedDocumentIds: string[]
+    documentDiffs: Array<{id: string; paths: string[]}>
     unresolvedReferencePaths: string[]
+    draftDocumentIds: string[]
+    draftChangedDocumentIds: string[]
   }
 }
 

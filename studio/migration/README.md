@@ -10,9 +10,10 @@ does not change the frontend or remove local images.
 - `data/projects/index.ts` supplies category and project display order.
 - `app/about/page.tsx`, `app/layout.tsx`, and the three `public/img/about` images supply the About and
   site-settings singletons.
-- All 125 WebP files under `public/img` are image candidates. The historical `marion.webp`
-  navigation image represents the Digital category; reused listing/navigation paths map to one
-  Sanity asset reference.
+- The 125 WebP files used by migrated content under `public/img` are image candidates. Legacy
+  navigation thumbnails under `public/img/nav` remain local and are not uploaded as orphan
+  Sanity assets. The historical `marion.webp` navigation image represents the Digital category;
+  reused listing/navigation paths map to one Sanity asset reference.
 - The existing Cloudinary social image is uploaded separately for default SEO.
 
 Document IDs are deterministic (`project-{slug}`, `category-{slug}`, `aboutPage`, and

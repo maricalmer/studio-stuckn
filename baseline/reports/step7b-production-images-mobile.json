@@ -1,0 +1,22 @@
+[
+  {
+    "name": "digital",
+    "route": "/digital",
+    "images": []
+  },
+  {
+    "name": "physical",
+    "route": "/physical",
+    "images": []
+  },
+  {
+    "name": "etherea-part-one",
+    "route": "/etherea-part-one",
+    "images": []
+  },
+  {
+    "name": "flanelle",
+    "route": "/flanelle",
+    "images": []
+  }
+]

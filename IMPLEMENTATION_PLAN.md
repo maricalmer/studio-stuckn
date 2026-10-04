@@ -161,16 +161,16 @@ for the evidence. The deployed lifecycle rerun also passed after the CDN-bypass 
 
 - [x] Export a dataset backup and verify it can be inspected/restored; record
   its location outside public assets and version control.
-- [ ] Declare source-of-truth transition time and freeze both local and Studio
+- [x] Declare source-of-truth transition time and freeze both local and Studio
   edits during the final comparison.
 - [x] Generate a final local-versus-live diff, including drafts. Do not rerun
   `migration:import` automatically. Preserve editorial changes; perform another
   replacement only when the reviewed diff establishes that it is required.
 - [x] Guard or retire the importer when Sanity becomes authoritative.
 - [x] Resolve the seven recorded SEO warnings or record specific acceptance.
-- [ ] Deploy Studio and configure exact local/preview/production origins and
+- [x] Deploy Studio and configure exact local/preview/production origins and
   project, dataset, restricted Viewer token, Studio URL and webhook secret.
-- [ ] Run the full exit gate against a production-equivalent Netlify preview;
+- [x] Run the full exit gate against a production-equivalent Netlify preview;
   record deploy ID, tested runtime version, webhook configuration and rollback ID.
 
 ## 7B Promotion and observation

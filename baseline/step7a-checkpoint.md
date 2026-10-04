@@ -50,6 +50,74 @@ published copy without an editorial decision:
 The schema warnings remain intentionally enabled so future editorial changes
 surface the same review prompt.
 
+## Deployment readiness audit
+
+The repository configuration was audited on 2026-10-04 at commit
+`8ce8114` on branch `feat/cutover`:
+
+- production frontend origin: `https://www.ronjastucken.com`;
+- deployed Studio origin: `https://ronjastucken.sanity.studio`;
+- local frontend/Studio origins: `http://localhost:3000` and
+  `http://localhost:3333`;
+- Presentation trust and frontend `frame-ancestors` use explicit origin
+  allowlists; no deployment wildcard is configured;
+- Netlify uses Node `24.18.0`, npm `11.16.0`, and the pinned Next adapter
+  `5.15.13`.
+
+Local production checks passed with network access:
+
+- `npm run check` in `studio/` — typecheck, lint, Studio build, and schema
+  validation; zero schema errors or warnings;
+- `npm run build` at the repository root — Next.js 16.2.12 production build.
+
+At the time of this audit, the final freeze, Studio deployment, exact
+production/preview environment values, restricted Viewer/webhook credentials,
+and production-equivalent preview exit gate were still pending. The completed
+items are recorded below.
+
+## Freeze and Studio deployment
+
+The source-of-truth freeze was declared at `2026-10-04T16:07:41Z`. From that
+time, no local content edits or Studio dataset edits should be made until the
+production-equivalent preview comparison is complete.
+
+The validated Studio was deployed successfully at:
+
+`https://ronjastucken.sanity.studio/`
+
+The Sanity API CORS list was inspected after deployment and contains exactly:
+
+- `http://localhost:3333`
+- `http://localhost:3000`
+- `https://www.ronjastucken.com`
+
+No wildcard origin was added. The deployed Studio returned its expected HTTP
+redirect and the current production frontend returned HTTP 200 in read-only
+smoke checks.
+
+## Netlify preview exit gate
+
+Netlify authentication was completed and the checkout was linked to the
+existing site `gleeful-dasik-21eb4f` for `https://www.ronjastucken.com`.
+Required production variable names were verified without printing values:
+project ID, dataset, Studio URL, restricted Viewer token, revalidation secret,
+and npm version. The existing production revalidation webhook remains the
+`POST /api/revalidate` endpoint; no webhook or dataset content was changed.
+
+The frozen checkout was deployed as a draft preview:
+
+- deploy ID: `6ac27aa64e7ec928ab75cb0d`;
+- preview URL: `https://6ac27aa64e7ec928ab75cb0d--gleeful-dasik-21eb4f.netlify.app`;
+- Netlify runtime: Node `24.x`;
+- Next adapter: `@netlify/plugin-nextjs@5.15.13`;
+- rollback reference: prior production deploy
+  `6ac277b95518270008d0ca27`.
+
+The complete 24-test Playwright exit gate passed against the preview on desktop
+and mobile, including routes, metadata/navigation, visual baselines, Sanity CDN
+image transfer checks, and published credential/Stega isolation. Reports are
+stored under `baseline/reports/step7a-preview-*.json`.
+
 ## Import guard
 
 `migration:import` now fails unless `MIGRATION_ALLOW_REPLACE=1` is explicitly

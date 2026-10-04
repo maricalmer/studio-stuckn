@@ -37,8 +37,16 @@ npm run validate:documents
 - `migration/reports/existing-content-dry-run.json`
 
 `migration:import` uses the authenticated Sanity CLI user, uploads missing assets, and applies
-`createOrReplace` in reference-safe order. Run it a second time to prove idempotency: the second
-report should show zero uploaded assets, all assets reused, and the same 16 document IDs.
+`createOrReplace` in reference-safe order. Replacement is deliberately guarded during cutover;
+only run it after reviewing the final local-versus-live diff and explicitly setting
+`MIGRATION_ALLOW_REPLACE=1`:
+
+```bash
+MIGRATION_ALLOW_REPLACE=1 npm run migration:import
+```
+
+Run it a second time only when the reviewed diff establishes that replacement is required. The
+second report should show zero uploaded assets, all assets reused, and the same 16 document IDs.
 
 ## Cutover boundary
 

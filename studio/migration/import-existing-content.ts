@@ -2,7 +2,7 @@ import {createHash} from 'node:crypto'
 import {createReadStream} from 'node:fs'
 import {mkdir, writeFile} from 'node:fs/promises'
 import path from 'node:path'
-import type {SanityClient, SanityDocument} from '@sanity/client'
+import type {SanityDocument} from '@sanity/client'
 import {getCliClient} from 'sanity/cli'
 import {extractSourceContent} from './extract'
 import {
@@ -32,11 +32,20 @@ const repoRoot = path.resolve(studioRoot, '..')
 const migrationRoot = path.join(studioRoot, 'migration')
 const extractedDirectory = path.join(migrationRoot, 'extracted')
 const reportDirectory = path.join(migrationRoot, 'reports')
+type SanityCliClient = ReturnType<typeof getCliClient>
 
 function requestedMode(): MigrationReport['mode'] {
   if (process.argv.includes('--execute')) return 'execute'
   if (process.argv.includes('--validate-live')) return 'validate-live'
   return 'dry-run'
+}
+
+function assertReplacementIsExplicit(mode: MigrationReport['mode']) {
+  if (mode === 'execute' && process.env.MIGRATION_ALLOW_REPLACE !== '1') {
+    throw new Error(
+      'Replacement import is guarded. Set MIGRATION_ALLOW_REPLACE=1 only after reviewing the final local-versus-live diff.',
+    )
+  }
 }
 
 async function writeJson(filePath: string, value: unknown) {
@@ -82,7 +91,7 @@ interface ExistingAsset {
   source?: {id?: string; name?: string}
 }
 
-async function existingAssets(client: SanityClient) {
+async function existingAssets(client: SanityCliClient) {
   const records = await client.fetch<ExistingAsset[]>(
     `*[_type == "sanity.imageAsset" && source.name in $sourceNames]{_id, source}`,
     {sourceNames: [LOCAL_ASSET_SOURCE, REMOTE_ASSET_SOURCE]},
@@ -110,7 +119,7 @@ async function remoteSocialImage(source: SourceContent) {
 }
 
 async function resolveAssets(
-  client: SanityClient,
+  client: SanityCliClient,
   source: SourceContent,
   allowUpload: boolean,
 ): Promise<{
@@ -189,7 +198,7 @@ async function resolveAssets(
 }
 
 async function replaceDocuments(
-  client: SanityClient,
+  client: SanityCliClient,
   documents: ReturnType<typeof transformDocuments>,
 ) {
   const baseCategories = documents.categories.map((category) => {
@@ -256,7 +265,7 @@ function collectReferences(
 }
 
 async function validateLive(
-  client: SanityClient,
+  client: SanityCliClient,
   source: SourceContent,
   assets: AssetReferenceMap,
   expected: ReturnType<typeof transformDocuments>,
@@ -308,6 +317,7 @@ async function validateLive(
 
 async function main() {
   const mode = requestedMode()
+  assertReplacementIsExplicit(mode)
   const source = await extractSourceContent(repoRoot)
   const {issues, valid} = await validateSource(repoRoot, source)
   const report = createReport(source, issues, mode)

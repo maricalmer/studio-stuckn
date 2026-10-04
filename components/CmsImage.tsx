@@ -61,6 +61,11 @@ const CmsImage = forwardRef<HTMLImageElement, CmsImageProps>(
         fetchPriority={priority ? "high" : "auto"}
         decoding="async"
         style={{
+          // Responsive candidates round their pixel height (for example an
+          // 865x1120 source becomes 480x622). Keep layout tied to the
+          // canonical dimensions so candidate selection cannot introduce
+          // cumulative sub-pixel drift in long galleries.
+          aspectRatio: `${dimensions.width} / ${dimensions.height}`,
           ...(image.blurDataURL
             ? {
                 backgroundImage: `url(${JSON.stringify(image.blurDataURL)})`,

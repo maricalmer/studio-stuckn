@@ -57,6 +57,16 @@ const reportLabel = (process.env.BASELINE_LABEL || "local").replace(
 );
 const reportDirectory = path.join(process.cwd(), "baseline", "reports");
 
+// A srcset URL may contain commas (Sanity crop parameters use
+// `rect=left,top,width,height`), so splitting the attribute on every comma
+// creates invalid candidates. Match each URL together with its width
+// descriptor instead.
+function parseWidthCandidates(srcset) {
+  return [...srcset.matchAll(/(\S+)\s+(\d+)w(?:,\s*|$)/g)].map(
+    ([, url, width]) => ({ url, width: Number.parseInt(width, 10) }),
+  );
+}
+
 // Reports are intentionally plain JSON so they can be committed, diffed, and
 // inspected without Playwright-specific tooling.
 async function writeReport(name, projectName, data) {
@@ -297,18 +307,35 @@ test.describe("App Router contract", () => {
 test.describe("visual baseline", () => {
   for (const [name, route] of SCREENSHOT_ROUTES) {
     test(`${name} matches its reference`, async ({ page }) => {
+      // Netlify injects a deploy-preview drawer from this origin. Block the
+      // third-party UI before navigation so it cannot race the screenshot.
+      await page.route("https://app.netlify.com/cdp**", (route) =>
+        route.abort(),
+      );
       await page.goto(route, { waitUntil: "domcontentloaded" });
       await settlePage(page, { loadAllImages: true });
       await stabilizeScreenshot(page);
 
-      // Third-party YouTube iframe rendering changes independently of this app,
-      // so mask it. A small pixel tolerance absorbs browser rasterization noise
-      // while still catching meaningful layout, typography, and content shifts.
+      // Third-party YouTube rendering changes independently of this app, so
+      // mask only those embeds. Netlify injects its own deploy-preview iframe;
+      // hide that host UI rather than letting it contaminate the site snapshot.
+      // A small pixel tolerance absorbs browser rasterization noise while still
+      // catching meaningful layout, typography, and content shifts.
       await expect(page).toHaveScreenshot(`${name}.png`, {
         animations: "disabled",
         fullPage: true,
         maxDiffPixelRatio: 0.01,
-        mask: [page.locator("iframe")],
+        mask: [
+          page.locator(
+            'iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]',
+          ),
+        ],
+        style: `
+          [data-netlify-deploy-id],
+          iframe[title="Netlify Drawer"] {
+            display: none !important;
+          }
+        `,
       });
     });
   }
@@ -347,10 +374,7 @@ test.describe("image transfer baseline", () => {
         expect(image.srcset, `${route} CMS image should have srcset`).toBeTruthy();
         expect(image.sizes, `${route} CMS image should have sizes`).toBeTruthy();
 
-        const candidates = image.srcset
-          .split(",")
-          .map((candidate) => candidate.trim().split(/\s+/))
-          .map(([url, width]) => ({ url, width: Number.parseInt(width, 10) }));
+        const candidates = parseWidthCandidates(image.srcset);
         expect(candidates.length).toBeGreaterThan(1);
         expect(candidates.every(({ url }) => url.startsWith("https://cdn.sanity.io/"))).toBe(true);
         expect(candidates.every(({ width }) => Number.isFinite(width) && width > 0)).toBe(true);

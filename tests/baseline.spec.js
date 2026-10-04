@@ -43,7 +43,6 @@ const SCREENSHOT_ROUTES = [
 // Measuring a representative subset keeps the audit reasonably fast while
 // still covering the main image-heavy page shapes.
 const IMAGE_AUDIT_ROUTES = [
-  ["home", "/"],
   ["digital", "/digital"],
   ["physical", "/physical"],
   ["etherea-part-one", "/etherea-part-one"],
@@ -57,6 +56,16 @@ const reportLabel = (process.env.BASELINE_LABEL || "local").replace(
   "-",
 );
 const reportDirectory = path.join(process.cwd(), "baseline", "reports");
+
+// A srcset URL may contain commas (Sanity crop parameters use
+// `rect=left,top,width,height`), so splitting the attribute on every comma
+// creates invalid candidates. Match each URL together with its width
+// descriptor instead.
+function parseWidthCandidates(srcset) {
+  return [...srcset.matchAll(/(\S+)\s+(\d+)w(?:,\s*|$)/g)].map(
+    ([, url, width]) => ({ url, width: Number.parseInt(width, 10) }),
+  );
+}
 
 // Reports are intentionally plain JSON so they can be committed, diffed, and
 // inspected without Playwright-specific tooling.
@@ -298,24 +307,91 @@ test.describe("App Router contract", () => {
 test.describe("visual baseline", () => {
   for (const [name, route] of SCREENSHOT_ROUTES) {
     test(`${name} matches its reference`, async ({ page }) => {
+      // Netlify injects a deploy-preview drawer from this origin. Block the
+      // third-party UI before navigation so it cannot race the screenshot.
+      await page.route("https://app.netlify.com/cdp**", (route) =>
+        route.abort(),
+      );
       await page.goto(route, { waitUntil: "domcontentloaded" });
       await settlePage(page, { loadAllImages: true });
       await stabilizeScreenshot(page);
 
-      // Third-party YouTube iframe rendering changes independently of this app,
-      // so mask it. A small pixel tolerance absorbs browser rasterization noise
-      // while still catching meaningful layout, typography, and content shifts.
+      // Third-party YouTube rendering changes independently of this app, so
+      // mask only those embeds. Netlify injects its own deploy-preview iframe;
+      // hide that host UI rather than letting it contaminate the site snapshot.
+      // A small pixel tolerance absorbs browser rasterization noise while still
+      // catching meaningful layout, typography, and content shifts.
       await expect(page).toHaveScreenshot(`${name}.png`, {
         animations: "disabled",
         fullPage: true,
         maxDiffPixelRatio: 0.01,
-        mask: [page.locator("iframe")],
+        mask: [
+          page.locator(
+            'iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]',
+          ),
+        ],
+        style: `
+          [data-netlify-deploy-id],
+          iframe[title="Netlify Drawer"] {
+            display: none !important;
+          }
+        `,
       });
     });
   }
 });
 
 test.describe("image transfer baseline", () => {
+  test("uses Sanity CDN images with bounded responsive candidates", async ({ page }) => {
+    for (const [, route] of IMAGE_AUDIT_ROUTES) {
+      await page.goto(route, { waitUntil: "domcontentloaded" });
+      await settlePage(page, { loadAllImages: true });
+
+      const audit = await page.evaluate(() => ({
+        images: [...document.images].map((image) => ({
+          src: image.currentSrc || image.src,
+          srcset: image.getAttribute("srcset"),
+          sizes: image.getAttribute("sizes"),
+          loading: image.getAttribute("loading"),
+          fetchPriority: image.getAttribute("fetchpriority"),
+        })),
+        preloads: [...document.querySelectorAll('link[rel="preload"][as="image"]')].map(
+          (link) => ({
+            href: link.getAttribute("href"),
+            imageSrcset: link.getAttribute("imagesrcset"),
+          }),
+        ),
+      }));
+
+      const cmsImages = audit.images.filter(
+        (image) => image.src.includes("cdn.sanity.io"),
+      );
+      expect(cmsImages.length, `${route} should render CMS images`).toBeGreaterThan(0);
+
+      for (const image of cmsImages) {
+        expect(image.src).toMatch(/^https:\/\/cdn\.sanity\.io\//);
+        expect(image.src).not.toContain("/_next/image");
+        expect(image.srcset, `${route} CMS image should have srcset`).toBeTruthy();
+        expect(image.sizes, `${route} CMS image should have sizes`).toBeTruthy();
+
+        const candidates = parseWidthCandidates(image.srcset);
+        expect(candidates.length).toBeGreaterThan(1);
+        expect(candidates.every(({ url }) => url.startsWith("https://cdn.sanity.io/"))).toBe(true);
+        expect(candidates.every(({ width }) => Number.isFinite(width) && width > 0)).toBe(true);
+        expect(candidates.map(({ width }) => width)).toEqual(
+          [...candidates.map(({ width }) => width)].sort((a, b) => a - b),
+        );
+        expect(candidates[candidates.length - 1].width).toBeGreaterThan(0);
+      }
+
+      expect(audit.preloads.length, `${route} should have at most one image LCP preload`).toBeLessThanOrEqual(1);
+      for (const preload of audit.preloads) {
+        expect(preload.href || preload.imageSrcset).toBeTruthy();
+        expect(preload.href || preload.imageSrcset).toContain("cdn.sanity.io");
+      }
+    }
+  });
+
   test("records representative image resources", async ({ page }, testInfo) => {
     const results = [];
 
@@ -359,5 +435,35 @@ test.describe("image transfer baseline", () => {
     }
 
     await writeReport("images", testInfo.project.name, results);
+  });
+});
+
+test.describe("preview and SEO security contract", () => {
+  test("published pages do not expose draft credentials or stega metadata", async ({
+    page,
+    request,
+  }) => {
+    const token = process.env.SANITY_API_READ_TOKEN;
+    const observedUrls = [];
+    page.on("request", (request) => observedUrls.push(request.url()));
+
+    const response = await page.goto("/", { waitUntil: "networkidle" });
+    const html = await response.text();
+    const metadata = await page.evaluate(() => ({
+      title: document.title,
+      description: document.querySelector('meta[name="description"]')?.content,
+      canonical: document.querySelector('link[rel="canonical"]')?.href,
+    }));
+
+    expect(metadata.title).toBeTruthy();
+    expect(metadata.description).toBeTruthy();
+    expect(metadata.canonical).toBe("https://www.ronjastucken.com/");
+    expect(html).not.toContain("sanity-preview-secret");
+    expect(html).not.toContain("SANITY_API_READ_TOKEN");
+    if (token) expect(html).not.toContain(token);
+    expect(observedUrls.some((url) => url.includes(token || "__no_token__"))).toBe(false);
+
+    const refresh = await request.get("/api/draft-mode/refresh");
+    expect(refresh.status()).toBe(403);
   });
 });

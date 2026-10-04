@@ -75,3 +75,20 @@ frontend origins that make authenticated server reads or local Studio requests:
 The frontend keeps `SANITY_API_READ_TOKEN` server-only. Draft Mode is enabled by the Presentation
 preview secret and draft changes are checked through the same-origin refresh endpoint; no browser
 read token or direct browser draft subscription is configured.
+
+## Published cache webhook
+
+Configure a Sanity GROQ-powered webhook for published `create`, `update`, and `delete` events:
+
+- URL: `https://www.ronjastucken.com/api/revalidate`
+- Method: `POST`
+- Filter and projection: copy `revalidationWebhookFilter` and
+  `revalidationWebhookProjection` from `../lib/sanity/webhook.ts`
+- API version: `2026-08-01`
+- Visibility: after query visibility where available
+- Secret: the same value as the frontend `SANITY_REVALIDATE_SECRET`
+
+The projection retains both `before()` and `after()` route/dependency states. Keep draft and
+version events disabled. The endpoint accepts only signed payloads, validates the project, dataset,
+document type, operation, and state transition, and treats retries as idempotent. Asset events use
+the conservative shared cache tag because webhook projections cannot reverse-query all asset owners.

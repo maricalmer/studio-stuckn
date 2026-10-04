@@ -1,7 +1,7 @@
 ### [ronjastucken.com](https://www.ronjastucken.com/), a portfolio website to showcase fashion projects
 
 For the current Sanity work, see the [implementation plan](IMPLEMENTATION_PLAN.md),
-[data boundary guide](lib/content/README.md), and [step 6A validation](baseline/step6a-checkpoint.md).
+[data boundary guide](lib/content/README.md), and [step 6D validation](baseline/step6d-checkpoint.md).
 
 ## Static website
 

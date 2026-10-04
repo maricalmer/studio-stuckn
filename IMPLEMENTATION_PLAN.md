@@ -113,11 +113,17 @@ consistency, and provide structured logs without secrets.
 | Slug rename, unpublish or delete | Old/new project paths, listings/navigation, sitemap; preserve redirect history if enabled |
 | Referenced asset or SEO | All owning routes and their metadata |
 
-- [ ] Specify webhook projection with before/after dependencies so deletes and
+- [x] Specify webhook projection with before/after dependencies so deletes and
   moved documents still identify affected routes; use conservative shared tags
   where reverse dependencies cannot be determined reliably.
-- [ ] Test malformed payloads, missing secrets, bad signatures, replay/retry
+- [x] Test malformed payloads, missing secrets, bad signatures, replay/retry
   behavior, new publication, rename policy, unpublish and delete.
+
+Implemented locally on 2026-09-06. Published Sanity reads now use the Sanity API CDN and tagged
+Next.js Data Cache entries with a one-hour safety TTL. The signed `POST /api/revalidate` handler
+validates project/dataset, operation/state transitions, and document types; it invalidates tags and
+concrete old/new routes, with a shared all-content fallback for asset ownership. See the [6D
+checkpoint](baseline/step6d-checkpoint.md) and [data boundary guide](lib/content/README.md).
 
 ## 6 exit gate
 

@@ -69,4 +69,12 @@ export default defineConfig({
         ? previousActions.filter((action) => action.action !== 'duplicate')
         : previousActions,
   },
+
+  releases: {
+    enabled: false,
+  },
+
+  scheduledDrafts: {
+    enabled: false,
+  },
 })

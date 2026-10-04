@@ -12,7 +12,10 @@ export function getPublishedClient() {
     projectId,
     dataset,
     apiVersion,
-    useCdn: false,
+    // Published reads are also backed by the Next.js Data Cache. The Sanity
+    // API CDN keeps those cache misses fast, while the webhook handles
+    // on-demand invalidation after publication.
+    useCdn: true,
     perspective: "published",
     stega: { enabled: false, studioUrl },
   });

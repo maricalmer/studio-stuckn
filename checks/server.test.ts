@@ -18,6 +18,7 @@ test("only draft clients receive a read token; metadata stega is always disabled
   const draft = getDraftClient().config();
   assert.equal(published.token, undefined);
   assert.equal(published.perspective, "published");
+  assert.equal(published.useCdn, true);
   assert.equal(published.stega.enabled, false);
   assert.equal(draft.token, "test-viewer-token");
   assert.equal(draft.perspective, "drafts");

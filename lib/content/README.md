@@ -1,4 +1,4 @@
-# Frontend data boundary (steps 6A–6B)
+# Frontend data boundary (steps 6A–6D)
 
 Published routes read `../sanity/repository.ts` and pass view models to
 components. `local.ts` remains a reference adapter for migration tests and
@@ -40,15 +40,38 @@ canonical origin, social title branding and verification remain code-managed.
 
 Copy `.env.example` to `.env.local` when running the CMS-backed routes. Public
 project, dataset and Studio URL values validate when a client or image builder
-is constructed. Published clients are token-free; draft clients read a Viewer
-token through a `server-only` module. Webhook secrets validate separately on
-access. Validation errors name variables without revealing values.
+is constructed. Published clients are token-free and use the Sanity API CDN;
+draft clients read a Viewer token through a `server-only` module. Webhook
+secrets validate separately on access. Validation errors name variables without
+revealing values.
 The draft-client factory is internal infrastructure, not an authorization check;
 6C must authenticate Draft Mode before using it.
 
-Metadata clients and the SEO fetch helper disable stega. Published route reads
-bypass the API CDN and Next fetch cache until the cache/webhook work in 6D.
+Metadata clients and the SEO fetch helper disable stega. Published query reads
+use the Next.js Data Cache with shared and resource-specific tags from
+`lib/sanity/cache.ts`; draft reads remain `no-store`. The signed Sanity webhook
+at `/api/revalidate` invalidates tags and concrete old/new routes after a
+published change. Asset events use the shared all-content tag because a
+webhook projection cannot reverse-query asset owners.
 Authenticated draft refresh remains a 6C concern.
+
+## Published cache and webhook configuration
+
+Create one Sanity GROQ-powered webhook for published `create`, `update`, and
+`delete` events:
+
+- URL: `https://www.ronjastucken.com/api/revalidate`
+- Method: `POST`
+- Filter: `revalidationWebhookFilter` from `lib/sanity/webhook.ts`
+- Projection: `revalidationWebhookProjection` from `lib/sanity/webhook.ts`
+- API version: `2026-08-01`
+- Visibility: after query visibility where available
+- Secret: the value configured as `SANITY_REVALIDATE_SECRET`
+
+The projection includes `before()` and `after()` route/dependency data. Keep
+draft and version events disabled. A repeated signed delivery is safe: tag and
+path invalidation is idempotent, so Sanity retries do not require a transaction
+store.
 
 ## Generate and verify types
 

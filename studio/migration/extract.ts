@@ -174,6 +174,10 @@ async function walk(directory: string): Promise<string[]> {
 async function localImageCandidates(repoRoot: string): Promise<LocalImageCandidate[]> {
   const files = (await walk(path.join(repoRoot, 'public/img')))
     .filter((filePath) => filePath.toLowerCase().endsWith('.webp'))
+    // Navigation thumbnails belong to the legacy local navigation and are not
+    // referenced by the Sanity documents. Keep them in the repository, but do
+    // not treat them as migration candidates or upload them as orphan assets.
+    .filter((filePath) => !filePath.split(path.sep).includes('nav'))
     .sort()
 
   return Promise.all(

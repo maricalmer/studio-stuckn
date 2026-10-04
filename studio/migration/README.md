@@ -10,9 +10,10 @@ does not change the frontend or remove local images.
 - `data/projects/index.ts` supplies category and project display order.
 - `app/about/page.tsx`, `app/layout.tsx`, and the three `public/img/about` images supply the About and
   site-settings singletons.
-- All 125 WebP files under `public/img` are image candidates. The historical `marion.webp`
-  navigation image represents the Digital category; reused listing/navigation paths map to one
-  Sanity asset reference.
+- The 125 WebP files used by migrated content under `public/img` are image candidates. Legacy
+  navigation thumbnails under `public/img/nav` remain local and are not uploaded as orphan
+  Sanity assets. The historical `marion.webp` navigation image represents the Digital category;
+  reused listing/navigation paths map to one Sanity asset reference.
 - The existing Cloudinary social image is uploaded separately for default SEO.
 
 Document IDs are deterministic (`project-{slug}`, `category-{slug}`, `aboutPage`, and
@@ -37,8 +38,16 @@ npm run validate:documents
 - `migration/reports/existing-content-dry-run.json`
 
 `migration:import` uses the authenticated Sanity CLI user, uploads missing assets, and applies
-`createOrReplace` in reference-safe order. Run it a second time to prove idempotency: the second
-report should show zero uploaded assets, all assets reused, and the same 16 document IDs.
+`createOrReplace` in reference-safe order. Replacement is deliberately guarded during cutover;
+only run it after reviewing the final local-versus-live diff and explicitly setting
+`MIGRATION_ALLOW_REPLACE=1`:
+
+```bash
+MIGRATION_ALLOW_REPLACE=1 npm run migration:import
+```
+
+Run it a second time only when the reviewed diff establishes that replacement is required. The
+second report should show zero uploaded assets, all assets reused, and the same 16 document IDs.
 
 ## Cutover boundary
 

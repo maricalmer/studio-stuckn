@@ -8,7 +8,7 @@ import {
 import { sanitizePreviewRedirect } from "../lib/sanity/draft";
 import { getReadToken, getWebhookSecret } from "../lib/sanity/secrets";
 
-test("only draft clients receive a read token; metadata stega is always disabled", () => {
+test("clients bypass the API CDN, only drafts receive a token, and metadata stega is disabled", () => {
   process.env.NEXT_PUBLIC_SANITY_PROJECT_ID = "35ex4ltc";
   process.env.NEXT_PUBLIC_SANITY_DATASET = "production";
   process.env.NEXT_PUBLIC_SANITY_STUDIO_URL = "https://example.sanity.studio";
@@ -18,7 +18,7 @@ test("only draft clients receive a read token; metadata stega is always disabled
   const draft = getDraftClient().config();
   assert.equal(published.token, undefined);
   assert.equal(published.perspective, "published");
-  assert.equal(published.useCdn, true);
+  assert.equal(published.useCdn, false);
   assert.equal(published.stega.enabled, false);
   assert.equal(draft.token, "test-viewer-token");
   assert.equal(draft.perspective, "drafts");

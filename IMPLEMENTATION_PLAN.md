@@ -26,7 +26,7 @@ step 6. Tests are exit gates throughout, not a final phase after deployment.
   Next.js 16.2.12, React/React DOM 19.2.8, and next-sanity 13.1.5 (or record
   an exact compatible replacement if necessary). Pin matching ESLint config.
 - [x] Pin Netlify runtime 5.15.13 in the root package/lockfile and Netlify config.
-- [ ] Validate actual runtime behavior in a Netlify preview, not just a local build.
+- [x] Validate actual runtime behavior in a Netlify preview, not just a local build.
 - [x] Capture pre-upgrade install, lint, production build and full browser baseline.
 - [x] Run the official Next.js upgrade codemod, review its changes, and keep
   frontend data local during this checkpoint.
@@ -91,12 +91,12 @@ that policy explicitly.
 - [x] Restrict iframe `frame-ancestors` to the deployed Studio and explicit
   development origin. Configure Presentation trust and Sanity API CORS separately.
 - [x] Use an explicit stable preview origin; avoid broad deployment wildcards.
-- [ ] Verify token absence from published and authenticated draft browser bundles,
+- [x] Verify token absence from published and authenticated draft browser bundles,
   responses and network requests under the server-only policy.
 
-Implemented locally on 2026-09-06. See [step 6C evidence](baseline/step6c-checkpoint.md).
-The final token-isolation item still needs a real authenticated Presentation session on a
-preview/production-equivalent deployment; local published-bundle and HTTP checks are recorded.
+Implemented locally on 2026-09-06 and verified against the authenticated Netlify Presentation
+session on 2026-10-04. See [step 6C evidence](baseline/step6c-checkpoint.md) and the
+[Step 6 exit-gate checkpoint](baseline/step6-checkpoint.md).
 
 ## 6D Published cache and webhook — critical addition 6
 
@@ -119,26 +119,43 @@ consistency, and provide structured logs without secrets.
 - [x] Test malformed payloads, missing secrets, bad signatures, replay/retry
   behavior, new publication, rename policy, unpublish and delete.
 
-Implemented locally on 2026-09-06. Published Sanity reads now use the Sanity API CDN and tagged
-Next.js Data Cache entries with a one-hour safety TTL. The signed `POST /api/revalidate` handler
+Implemented locally on 2026-09-06. Published Sanity reads use the live Content Lake API with tagged
+Next.js Data Cache entries and a one-hour safety TTL; bypassing the Sanity API CDN prevents a
+webhook-triggered regeneration from repopulating Next's cache with stale content. The signed
+`POST /api/revalidate` handler
 validates project/dataset, operation/state transitions, and document types; it invalidates tags and
 concrete old/new routes, with a shared all-content fallback for asset ownership. See the [6D
 checkpoint](baseline/step6d-checkpoint.md) and [data boundary guide](lib/content/README.md).
 
 ## 6 exit gate
 
-- [ ] Clean install, lint, type generation freshness, typecheck, production build.
-- [ ] All 16 existing URLs return 200; unknown projects render a custom 404.
-- [ ] Compare homepage, category, About, image-only, credited and video project
-  screenshots on desktop/mobile; exercise navigation, carousel controls, About
-  scrolling, fonts and the GLB model.
-- [ ] Assert CMS host/srcset/widths/sizes, preload count, lazy loading, mobile
+- [x] Clean install, lint, type generation freshness, typecheck, production build.
+- [x] All 16 existing URLs return 200; unknown projects render a custom 404.
+- [x] Compare homepage, category, About, image-only, credited and video project
+  screenshots on desktop/mobile; verify navigation and font loading.
+- [x] Verify carousel controls, About scrolling and the masked GLB model in the
+  deployed browser.
+- [x] Assert CMS host/srcset/widths/sizes, preload count, lazy loading, mobile
   transfer sizes and absence of CMS optimizer requests/Sharp/IPX errors.
-- [ ] Compare imported counts, slugs, gallery order, alt text, credits,
+- [x] Compare imported counts, slugs, gallery order, alt text, credits,
   categories and previous/next links with the source baseline.
-- [ ] Verify authorized/unauthorized Draft Mode, overlays, live edits, publish
-  invalidation and the full new-project lifecycle after the original build.
-- [ ] Verify titles/descriptions/canonicals/OG/sitemap and token isolation.
+- [x] Verify unauthorized Draft Mode boundaries and signed webhook delivery.
+- [x] Verify authenticated Draft Mode cookies, Visual Editing overlays/click-to-edit,
+  and an unpublished live edit after the original build.
+- [x] Redeploy the published-client CDN bypass and rerun the full create, publish,
+  listing, delete and listing-removal lifecycle. The post-fix run confirmed the deleted
+  route returned 404 and the project was removed from its category listing after signed
+  webhook revalidation.
+- [x] Verify titles/descriptions/canonicals/OG/sitemap and published-page token
+  isolation; authenticated draft HTML was also free of configured secrets.
+- [x] Record the authenticated preview's frontend-bundle and network-header token
+  isolation check.
+
+Deployed validation on 2026-10-04 used Netlify deploy
+`6ac23aa8e03dca000813c064` at commit
+`ad5ce2fd76830873119a47a0d11e5ee060a37fbe`; all 24 desktop/mobile Playwright
+checks passed. See the [Step 6 exit-gate checkpoint](baseline/step6-checkpoint.md)
+for the evidence. The deployed lifecycle rerun also passed after the CDN-bypass fix.
 
 ## 7A Cutover preparation — critical addition 7
 

@@ -43,7 +43,7 @@ export default defineConfig({
     structureTool({structure}),
     presentationTool({
       previewUrl: {
-        origin: previewOrigin,
+        initial: previewOrigin,
         previewMode: {
           enable: '/api/draft-mode/enable',
           disable: '/api/draft-mode/disable',

@@ -6,7 +6,7 @@ import {presentationResolve} from './presentation'
 import {schemaTypes} from './schemaTypes'
 import {singletonSchemaTypes, structure} from './structure'
 
-const previewOrigins = ['http://localhost:3000', 'https://www.ronjastucken.com'] as const
+const previewOrigins = ['http://localhost:3000', 'https://www.ronjastucken.com', 'https://deploy-preview-16--gleeful-dasik-21eb4f.netlify.app'] as const
 const configuredPreviewUrl =
   process.env.SANITY_STUDIO_PREVIEW_URL ||
   (process.env.NODE_ENV === 'production'
@@ -68,5 +68,13 @@ export default defineConfig({
       singletonSchemaTypes.has(context.schemaType)
         ? previousActions.filter((action) => action.action !== 'duplicate')
         : previousActions,
+  },
+  
+  releases: {
+    enabled: false,
+  },
+
+  scheduledDrafts: {
+    enabled: false,
   },
 })

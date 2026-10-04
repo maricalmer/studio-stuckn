@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHmac } from "node:crypto";
 import test from "node:test";
+import { evaluate, parse } from "groq-js";
 import { NextRequest } from "next/server";
 
 import { POST } from "../app/api/revalidate/route";
@@ -21,6 +22,7 @@ import {
   validateRevalidationPayload,
 } from "../lib/sanity/revalidation";
 import {
+  revalidationAssetIdsProjection,
   revalidationWebhookFilter,
   revalidationWebhookProjection,
 } from "../lib/sanity/webhook";
@@ -61,6 +63,41 @@ test("webhook projection retains delta states and route dependencies", () => {
     assert.match(revalidationWebhookProjection, new RegExp(field.replace("()", "\\(\\)")));
   }
   assert.match(revalidationWebhookProjection, /category->slug\.current/);
+});
+
+test("webhook asset projection produces one flat string array", async () => {
+  const query = parse(/* groq */ `
+    *[_type == "project"]{
+      "assetIds": ${revalidationAssetIdsProjection}
+    }
+  `);
+  const result = await evaluate(query, {
+    dataset: [
+      {
+        _type: "project",
+        listing: { image: { asset: { _ref: "image-listing" } } },
+        gallery: [
+          { image: { asset: { _ref: "image-gallery-one" } } },
+          { _type: "youtubeEmbed" },
+          { image: { asset: { _ref: "image-gallery-two" } } },
+        ],
+        seo: { socialImage: { asset: { _ref: "image-seo" } } },
+      },
+      { _type: "project" },
+    ],
+  });
+
+  assert.deepEqual(await result.get(), [
+    {
+      assetIds: [
+        "image-listing",
+        "image-gallery-one",
+        "image-gallery-two",
+        "image-seo",
+      ],
+    },
+    { assetIds: [] },
+  ]);
 });
 
 test("published query options are cached and draft options are not", () => {

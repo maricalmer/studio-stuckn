@@ -2,11 +2,10 @@
 
 ## Exit decision
 
-**Status: browser interactions, authenticated Presentation and token isolation passed. The exit
-gate remains open pending one deployed lifecycle rerun after the cache fix described below.**
+**Status: Passed. Browser interactions, authenticated Presentation, token isolation, and the
+deployed create/publish/delete lifecycle all passed.**
 
-Step 7A should begin only after the published-client cache fix is deployed and the create/publish/
-delete lifecycle passes end to end.
+Step 7A may begin.
 
 ## Deployment under test
 
@@ -147,6 +146,13 @@ returned HTTP 200 (approximately six seconds each), proving signed webhook accep
 delivery also provided the old slug and category required by the invalidation plan. The temporary
 preview webhook was removed after diagnosis; the production revalidation webhook remains in place.
 
+The post-fix deployed lifecycle was rerun on 2026-10-04 with disposable slug
+`step-6-cache-check`. The project route returned 200 after publication and the project appeared in
+the `/physical` listing. After deletion, the Sanity query returned `null`, the signed preview
+webhook returned 200 with `{"revalidated":true,"tags":9,"paths":3}`, the project route returned
+404, and the project was absent from `/physical`. The temporary preview webhook was then removed;
+the production webhook remains in place.
+
 ## Token isolation
 
 Published-page automation passed on desktop and mobile:
@@ -177,7 +183,6 @@ reproducible on the exact deployed commit.
 
 ## Closure rule
 
-Step 6 is complete when the CDN-bypass change is present in a Netlify preview and the automated
-disposable lifecycle confirms route/listing creation and removal after signed webhook delivery.
-Then update the exit decision to **Passed**, commit this checkpoint, and proceed to Step 7A's
-dataset backup and local-versus-live content diff.
+Step 6 is complete. The CDN-bypass change was deployed and the disposable lifecycle confirmed
+route/listing creation and removal after signed webhook delivery. Proceed to Step 7A's dataset
+backup and local-versus-live content diff.

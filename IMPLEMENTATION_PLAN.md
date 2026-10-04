@@ -142,9 +142,10 @@ checkpoint](baseline/step6d-checkpoint.md) and [data boundary guide](lib/content
 - [x] Verify unauthorized Draft Mode boundaries and signed webhook delivery.
 - [x] Verify authenticated Draft Mode cookies, Visual Editing overlays/click-to-edit,
   and an unpublished live edit after the original build.
-- [ ] Redeploy the published-client CDN bypass and rerun the full create, publish,
-  listing, delete and listing-removal lifecycle. The 2026-10-04 run exposed stale
-  post-delete content even though Sanity delivered the signed delete webhook with 200.
+- [x] Redeploy the published-client CDN bypass and rerun the full create, publish,
+  listing, delete and listing-removal lifecycle. The post-fix run confirmed the deleted
+  route returned 404 and the project was removed from its category listing after signed
+  webhook revalidation.
 - [x] Verify titles/descriptions/canonicals/OG/sitemap and published-page token
   isolation; authenticated draft HTML was also free of configured secrets.
 - [x] Record the authenticated preview's frontend-bundle and network-header token
@@ -154,8 +155,7 @@ Deployed validation on 2026-10-04 used Netlify deploy
 `6ac23aa8e03dca000813c064` at commit
 `ad5ce2fd76830873119a47a0d11e5ee060a37fbe`; all 24 desktop/mobile Playwright
 checks passed. See the [Step 6 exit-gate checkpoint](baseline/step6-checkpoint.md)
-for the evidence. Step 6 remains open only for a deployed rerun of the lifecycle
-after the CDN-bypass fix.
+for the evidence. The deployed lifecycle rerun also passed after the CDN-bypass fix.
 
 ## 7A Cutover preparation — critical addition 7
 

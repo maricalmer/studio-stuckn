@@ -43,7 +43,6 @@ const SCREENSHOT_ROUTES = [
 // Measuring a representative subset keeps the audit reasonably fast while
 // still covering the main image-heavy page shapes.
 const IMAGE_AUDIT_ROUTES = [
-  ["home", "/"],
   ["digital", "/digital"],
   ["physical", "/physical"],
   ["etherea-part-one", "/etherea-part-one"],

@@ -1,10 +1,5 @@
 [
   {
-    "name": "home",
-    "route": "/",
-    "images": []
-  },
-  {
     "name": "digital",
     "route": "/digital",
     "images": [

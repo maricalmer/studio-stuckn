@@ -26,6 +26,14 @@ export const aboutPageSource: Omit<SourceContent['aboutPage'], 'images'> & {
   },
 }
 
+export const homePageSource: SourceContent['homePage'] = {
+  paragraphs: [
+    'The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.',
+    'The conventional boundaries of traditional design concepts are being challenged in the ever-expanding digital fashion world.',
+    'Ronja Stucken embraces the limitless possibilities of digital design and enters an inspiring cosmos where creativity is defined by passion, technology and curiosity.',
+  ],
+}
+
 export const siteSettingsSource: SourceContent['siteSettings'] = {
   siteTitle: 'Studio.Stuckn, 3D artist based in Berlin',
   contactEmail: 'info@mailgo.dev',

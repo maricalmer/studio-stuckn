@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T16:04:26.101Z",
+  "generatedAt": "2026-10-10T16:21:24.302Z",
   "mode": "validate-live",
   "target": {
     "projectId": "35ex4ltc",
@@ -9,6 +9,7 @@
     "projects": 12,
     "categories": 2,
     "aboutPages": 1,
+    "homePages": 1,
     "siteSettings": 1,
     "credits": 48,
     "galleryImages": 117,
@@ -17,7 +18,7 @@
     "localImageCandidates": 125,
     "uniqueLocalImageContent": 125,
     "remoteImages": 1,
-    "expectedDocuments": 16,
+    "expectedDocuments": 17,
     "expectedAssets": 126
   },
   "issues": {
@@ -34,7 +35,7 @@
   },
   "status": "valid",
   "live": {
-    "foundDocuments": 16,
+    "foundDocuments": 17,
     "foundAssets": 126,
     "missingDocumentIds": [],
     "missingAssetIds": [],

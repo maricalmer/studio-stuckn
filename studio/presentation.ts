@@ -6,6 +6,10 @@ import {
 
 const mainDocuments = defineDocuments([
   {
+    route: '/',
+    type: 'homePage',
+  },
+  {
     route: '/about',
     type: 'aboutPage',
   },
@@ -79,6 +83,10 @@ const locations: NonNullable<PresentationPluginOptions['resolve']>['locations'] 
         },
       ],
     }),
+  }),
+  homePage: defineLocations({
+    message: 'Homepage content is shown on the homepage.',
+    resolve: () => ({locations: [{title: 'Homepage', href: '/'}]}),
   }),
   siteSettings: defineLocations({
     message: 'Site settings are used across the entire website.',

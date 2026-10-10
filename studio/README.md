@@ -84,7 +84,7 @@ Configure a Sanity GROQ-powered webhook for published `create`, `update`, and `d
 - Method: `POST`
 - Filter and projection: copy `revalidationWebhookFilter` and
   `revalidationWebhookProjection` from `../lib/sanity/webhook.ts`
-- API version: `2026-08-01`
+- API version: leave the webhook default `v2021-03-25` (this supports the filter and projection)
 - Visibility: after query visibility where available
 - Secret: the same value as the frontend `SANITY_REVALIDATE_SECRET`
 

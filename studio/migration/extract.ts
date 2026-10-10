@@ -2,7 +2,12 @@ import {createHash} from 'node:crypto'
 import {promises as fs} from 'node:fs'
 import path from 'node:path'
 import ts from 'typescript'
-import {aboutPageSource, categoryRepresentativeImages, siteSettingsSource} from './source'
+import {
+  aboutPageSource,
+  categoryRepresentativeImages,
+  homePageSource,
+  siteSettingsSource,
+} from './source'
 import type {
   LocalImageCandidate,
   ProjectCategory,
@@ -236,6 +241,7 @@ export async function extractSourceContent(repoRoot: string): Promise<SourceCont
         alt,
       })),
     },
+    homePage: homePageSource,
     siteSettings: siteSettingsSource,
     localImageCandidates: candidates,
   }

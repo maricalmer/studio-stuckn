@@ -9,14 +9,15 @@ does not change the frontend or remove local images.
   fashion credits, and YouTube embeds.
 - `data/projects/index.ts` supplies category and project display order.
 - `app/about/page.tsx`, `app/layout.tsx`, and the three `public/img/about` images supply the About and
-  site-settings singletons.
+  site-settings singletons. Homepage copy is defined in `migration/source.ts` and imported as the
+  `homePage` singleton.
 - The 125 WebP files used by migrated content under `public/img` are image candidates. Legacy
   navigation thumbnails under `public/img/nav` remain local and are not uploaded as orphan
   Sanity assets. The historical `marion.webp` navigation image represents the Digital category;
   reused listing/navigation paths map to one Sanity asset reference.
 - The existing Cloudinary social image is uploaded separately for default SEO.
 
-Document IDs are deterministic (`project-{slug}`, `category-{slug}`, `aboutPage`, and
+Document IDs are deterministic (`project-{slug}`, `category-{slug}`, `aboutPage`, `homePage`, and
 `siteSettings`). Array keys derive from stable source content. Assets are keyed by SHA-256 in their
 Sanity `source` metadata, allowing reruns to reuse uploads.
 
@@ -47,7 +48,7 @@ MIGRATION_ALLOW_REPLACE=1 npm run migration:import
 ```
 
 Run it a second time only when the reviewed diff establishes that replacement is required. The
-second report should show zero uploaded assets, all assets reused, and the same 16 document IDs.
+second report should show zero uploaded assets, all assets reused, and the same 17 document IDs.
 
 ## Cutover boundary
 

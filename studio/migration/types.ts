@@ -67,6 +67,9 @@ export interface SourceContent {
       metaDescription: string
     }
   }
+  homePage: {
+    paragraphs: string[]
+  }
   siteSettings: {
     siteTitle: string
     contactEmail: string
@@ -109,6 +112,7 @@ export interface MigrationReport {
     projects: number
     categories: number
     aboutPages: number
+    homePages: number
     siteSettings: number
     credits: number
     galleryImages: number

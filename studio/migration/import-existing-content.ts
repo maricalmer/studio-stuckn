@@ -210,7 +210,7 @@ async function replaceDocuments(
     baseCategories,
     documents.projects,
     documents.categories,
-    [documents.aboutPage, documents.siteSettings],
+    [documents.aboutPage, documents.homePage, documents.siteSettings],
   ]
 
   for (const group of groups) {
@@ -221,7 +221,7 @@ async function replaceDocuments(
     await transaction.commit({visibility: 'sync'})
   }
 
-  return documents.projects.length + documents.categories.length + 2
+  return documents.projects.length + documents.categories.length + 3
 }
 
 function stripSystemFields(document: SanityDocument | SanityDocumentInput) {
@@ -307,6 +307,7 @@ async function validateLive(
     ...expected.categories,
     ...expected.projects,
     expected.aboutPage,
+    expected.homePage,
     expected.siteSettings,
   ]
   const documentIds = migrationDocumentIds(source)

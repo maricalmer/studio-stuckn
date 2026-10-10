@@ -217,7 +217,13 @@ export function transformDocuments(source: SourceContent, assets: AssetReference
     },
   }
 
-  return {projects, categories, aboutPage, siteSettings}
+  const homePage: SanityDocumentInput = {
+    _id: 'homePage',
+    _type: 'homePage',
+    content: portableText(source.homePage.paragraphs, 'home:content'),
+  }
+
+  return {projects, categories, aboutPage, homePage, siteSettings}
 }
 
 function allAssociatedImages(source: SourceContent) {
@@ -421,6 +427,7 @@ export function createReport(
       projects: source.projects.length,
       categories: source.categories.length,
       aboutPages: 1,
+      homePages: 1,
       siteSettings: 1,
       credits,
       galleryImages,
@@ -429,7 +436,7 @@ export function createReport(
       localImageCandidates: source.localImageCandidates.length,
       uniqueLocalImageContent,
       remoteImages: 1,
-      expectedDocuments: source.projects.length + source.categories.length + 2,
+      expectedDocuments: source.projects.length + source.categories.length + 3,
       expectedAssets: uniqueLocalImageContent + 1,
     },
     issues,
@@ -453,5 +460,6 @@ export const migrationDocumentIds = (source: SourceContent) => [
   ...source.categories.map((category) => categoryId(category.slug)),
   ...source.projects.map((project) => projectId(project.slug)),
   'aboutPage',
+  'homePage',
   'siteSettings',
 ]

@@ -1,6 +1,7 @@
 import {portableText} from './blocks/portable-text'
 import {aboutPage} from './documents/about-page'
 import {category} from './documents/category'
+import {homePage} from './documents/home-page'
 import {project} from './documents/project'
 import {siteSettings} from './documents/site-settings'
 import {credit} from './objects/credit'
@@ -16,6 +17,7 @@ export const schemaTypes = [
   portableText,
   aboutPage,
   category,
+  homePage,
   project,
   siteSettings,
   credit,

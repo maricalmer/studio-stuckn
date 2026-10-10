@@ -44,13 +44,18 @@ export const ABOUT_QUERY = defineQuery(`
     seo {${seoFields}}
   }
 `);
+export const HOME_QUERY = defineQuery(`
+  *[_type == "homePage" && _id == "homePage"][0] {
+    _id, content[]{${textFields}}
+  }
+`);
 export const SITE_SETTINGS_QUERY = defineQuery(`
   *[_type == "siteSettings" && _id == "siteSettings"][0] {
     _id, siteTitle, contactEmail, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
   }
 `);
 export const DRAFT_REVISION_QUERY = defineQuery(`
-  *[_type in ["project", "category", "aboutPage", "siteSettings"]] | order(_id asc) {
+  *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {
     _id, _updatedAt, _rev
   }
 `);

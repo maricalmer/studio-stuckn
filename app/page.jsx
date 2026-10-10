@@ -19,10 +19,7 @@ export default async function Home() {
   })) ?? fallbackHome.paragraphs;
 
   return (
-    <HomeExperience>
-      <h1 className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica pt-96 md:pt-0 mb-10 mx-14 mix-blend-difference">
-        {heading}
-      </h1>
+    <HomeExperience brandTitle={heading}>
       {paragraphs.map(({key, text}) => (
         <p key={key} className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica mt-28 mb-10 mx-14 mix-blend-difference">
           {text}

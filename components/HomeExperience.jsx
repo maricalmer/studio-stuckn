@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import ScrollArrow from "@/components/ScrollArrow";
 import StaticBrand from "@/components/StaticBrand";
 
-export default function HomeExperience({ children }) {
+export default function HomeExperience({ children, brandTitle }) {
   const [, setScrollValue] = useState(0);
   const { scrollYProgress, scrollY } = useScroll();
   const [isBigScreen, setIsBigScreen] = useState(false);
@@ -77,8 +77,8 @@ export default function HomeExperience({ children }) {
             <rect width="60" height="28" fill="#A1BF79" />
           </svg>
           <ScrollArrow scrollY={scrollY.current} scrollYProgress={scrollYProgress.current} />
-          <Brand scrollY={scrollY.current} />
-          <StaticBrand extraStyling="md:hidden opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]" />
+          <Brand scrollY={scrollY.current} title={brandTitle} />
+          <StaticBrand title={brandTitle} extraStyling="md:hidden opacity-1 mix-blend-difference border-[#a1bf79] translate-x-[-70px] translate-y-[70px] rotate-[-90deg]" />
           {children}
         </div>
       </main>

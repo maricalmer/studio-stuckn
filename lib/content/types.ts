@@ -79,6 +79,10 @@ export interface AboutViewModel {
   images: { key: string; image: ImageViewModel; alt: string }[];
   seo: SeoViewModel;
 }
+export interface HomeViewModel {
+  heading: string;
+  body: RichText;
+}
 export interface SiteSettingsViewModel {
   siteTitle: string;
   contactEmail: string;

@@ -14,11 +14,12 @@ import {
   ABOUT_QUERY,
   CATEGORIES_QUERY,
   DRAFT_REVISION_QUERY,
+  HOME_QUERY,
   PROJECTS_QUERY,
   PROJECT_SEO_QUERY,
   SITE_SETTINGS_QUERY,
 } from "./queries";
-import { mapAbout, mapPortfolio, mapSettings } from "./mappers";
+import { mapAbout, mapHome, mapPortfolio, mapSettings } from "./mappers";
 
 export interface RepositoryOptions {
   /** Force published reads for routes such as the sitemap. */
@@ -109,6 +110,16 @@ export async function getSanityAbout(options: RepositoryOptions = {}) {
     queryOptions(isDraft, [sanityCacheTags.about, sanityCacheTags.metadata]),
   );
   return mapAbout(about);
+}
+
+export async function getSanityHome(options: RepositoryOptions = {}) {
+  const {client, isDraft} = await getContentClient(options);
+  const home = await client.fetch(
+    HOME_QUERY,
+    {},
+    queryOptions(isDraft, [sanityCacheTags.home]),
+  );
+  return mapHome(home);
 }
 
 export async function getSanitySettings(options: RepositoryOptions = {}) {

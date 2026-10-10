@@ -2738,6 +2738,7 @@
   "homePage": {
     "_id": "homePage",
     "_type": "homePage",
+    "heading": "Ronja Stucken",
     "content": [
       {
         "_type": "block",

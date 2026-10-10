@@ -68,6 +68,7 @@ export interface SourceContent {
     }
   }
   homePage: {
+    heading: string
     paragraphs: string[]
   }
   siteSettings: {

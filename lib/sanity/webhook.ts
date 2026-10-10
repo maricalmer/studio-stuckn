@@ -6,7 +6,7 @@
  * route so the receiver can invalidate both sides of the change.
  */
 export const revalidationWebhookFilter =
-  '_type in ["project", "category", "aboutPage", "siteSettings", "sanity.imageAsset"]';
+  '_type in ["project", "category", "aboutPage", "homePage", "siteSettings", "sanity.imageAsset"]';
 
 export const revalidationAssetIdsProjection = /* groq */ `array::compact(
   [listing.image.asset._ref] +

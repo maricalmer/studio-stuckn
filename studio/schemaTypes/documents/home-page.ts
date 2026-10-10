@@ -8,6 +8,12 @@ export const homePage = defineType({
   icon: HomeIcon,
   fields: [
     defineField({
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+      validation: (rule) => rule.required().min(1),
+    }),
+    defineField({
       name: 'content',
       title: 'Homepage text',
       type: 'array',
@@ -24,10 +30,10 @@ export const homePage = defineType({
     }),
   ],
   preview: {
-    select: {content: 'content'},
-    prepare({content}) {
+    select: {heading: 'heading', content: 'content'},
+    prepare({heading, content}) {
       return {
-        title: 'Homepage',
+        title: heading || 'Homepage',
         subtitle: content?.[0]?.children?.[0]?.text || 'No homepage text yet',
       }
     },

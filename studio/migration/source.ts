@@ -27,6 +27,7 @@ export const aboutPageSource: Omit<SourceContent['aboutPage'], 'images'> & {
 }
 
 export const homePageSource: SourceContent['homePage'] = {
+  heading: 'Ronja Stucken',
   paragraphs: [
     'The boundaries of reality are no longer limited to the tangible and the visible; instead, the tangible and the virtual merge seamlessly, creating an entirely new landscape.',
     'The conventional boundaries of traditional design concepts are being challenged in the ever-expanding digital fashion world.',

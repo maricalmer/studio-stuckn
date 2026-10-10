@@ -220,6 +220,7 @@ export function transformDocuments(source: SourceContent, assets: AssetReference
   const homePage: SanityDocumentInput = {
     _id: 'homePage',
     _type: 'homePage',
+    heading: source.homePage.heading,
     content: portableText(source.homePage.paragraphs, 'home:content'),
   }
 

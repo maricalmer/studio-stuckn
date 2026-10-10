@@ -2,12 +2,14 @@ import { stegaClean } from "next-sanity";
 import type {
   ABOUT_QUERY_RESULT,
   CATEGORIES_QUERY_RESULT,
+  HOME_QUERY_RESULT,
   PROJECTS_QUERY_RESULT,
   SITE_SETTINGS_QUERY_RESULT,
 } from "./types.generated";
 import type {
   AboutViewModel,
   CategoryViewModel,
+  HomeViewModel,
   ImageViewModel,
   MediaViewModel,
   ProjectViewModel,
@@ -288,6 +290,11 @@ export function mapAbout(about: ABOUT_QUERY_RESULT): AboutViewModel | null {
         }),
         seo: mapSeo(about.seo),
       }
+    : null;
+}
+export function mapHome(home: HOME_QUERY_RESULT): HomeViewModel | null {
+  return home
+    ? {heading: stegaClean(home.heading ?? ''), body: mapRichText(home.content)}
     : null;
 }
 export function mapSettings(

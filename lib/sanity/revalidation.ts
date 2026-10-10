@@ -10,6 +10,7 @@ export const revalidationDocumentTypes = [
   "project",
   "category",
   "aboutPage",
+  "homePage",
   "siteSettings",
   "sanity.imageAsset",
 ] as const;
@@ -269,6 +270,10 @@ export function planRevalidation(payload: RevalidationPayload): RevalidationPlan
       addTag(plan, sanityCacheTags.about);
       addTag(plan, sanityCacheTags.metadata);
       addPath(plan, "/about");
+      break;
+    case "homePage":
+      addTag(plan, sanityCacheTags.home);
+      addPath(plan, "/");
       break;
     case "siteSettings":
       addTag(plan, sanityCacheTags.settings);

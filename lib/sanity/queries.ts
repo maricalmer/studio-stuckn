@@ -46,7 +46,7 @@ export const ABOUT_QUERY = defineQuery(`
 `);
 export const HOME_QUERY = defineQuery(`
   *[_type == "homePage" && _id == "homePage"][0] {
-    _id, content[]{${textFields}}
+    _id, heading, content[]{${textFields}}
   }
 `);
 export const SITE_SETTINGS_QUERY = defineQuery(`

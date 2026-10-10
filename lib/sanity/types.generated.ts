@@ -116,6 +116,28 @@ export type SiteSettings = {
   defaultSeo?: Seo;
 };
 
+export type HomePage = {
+  _id: string;
+  _type: "homePage";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  content?: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal";
+    listItem?: never;
+    markDefs?: null;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
+};
+
 export type ProjectReference = {
   _ref: string;
   _type: "reference";
@@ -346,6 +368,7 @@ export type AllSanitySchemaTypes =
   | FashionCreditEntry
   | Credit
   | SiteSettings
+  | HomePage
   | ProjectReference
   | Category
   | SanityImageCrop
@@ -879,6 +902,27 @@ export type ABOUT_QUERY_RESULT = {
 } | null;
 
 // Source: ../lib/sanity/queries.ts
+// Variable: HOME_QUERY
+// Query: *[_type == "homePage" && _id == "homePage"][0] {    _id, content[]{  _key, _type, style, listItem, level,  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}}  }
+export type HOME_QUERY_RESULT = {
+  _id: "homePage";
+  content: Array<{
+    _key: string;
+    _type: "block";
+    style: "normal" | null;
+    listItem: null;
+    level: number | null;
+    children: Array<{
+      _key: string;
+      _type: "span";
+      text: string | null;
+      marks: Array<string> | null;
+    }> | null;
+    markDefs: null;
+  }> | null;
+} | null;
+
+// Source: ../lib/sanity/queries.ts
 // Variable: SITE_SETTINGS_QUERY
 // Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, contactEmail, instagramUrl, linkedinUrl, defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
 export type SITE_SETTINGS_QUERY_RESULT = {
@@ -922,7 +966,7 @@ export type SITE_SETTINGS_QUERY_RESULT = {
 
 // Source: ../lib/sanity/queries.ts
 // Variable: DRAFT_REVISION_QUERY
-// Query: *[_type in ["project", "category", "aboutPage", "siteSettings"]] | order(_id asc) {    _id, _updatedAt, _rev  }
+// Query: *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {    _id, _updatedAt, _rev  }
 export type DRAFT_REVISION_QUERY_RESULT = Array<{
   _id: string;
   _updatedAt: string;
@@ -1008,8 +1052,9 @@ declare global {
     '\n  *[_type == "project" && slug.current == $slug][0] {\n  _id, title, "slug": slug.current, order,\n  category->{_id, title, "slug": slug.current, order},\n  subtitle {text, isCyrillic}, description[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}, software,\n  credits[]{_key, label, value, url},\n  gallery[]{_key, _type,\n    _type == "galleryImage" => {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n    _type == "youtubeEmbed" => {url, title}\n  },\n  listing {title, alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n  fashionCredits {logoAlt, logo {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}, entries[]{_key, lookNumber, details}},\n  seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n}\n': PROJECT_QUERY_RESULT;
     '\n  *[_type == "category"] | order(order asc, _id asc) {\n    _id, title, "slug": slug.current, order,\n    representativeImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    representativeProject->{_id, listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}}\n  }\n': CATEGORIES_QUERY_RESULT;
     '\n  *[_type == "aboutPage" && _id == "aboutPage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}, images[]{_key, alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n    seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': ABOUT_QUERY_RESULT;
+    '\n  *[_type == "homePage" && _id == "homePage"][0] {\n    _id, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}\n  }\n': HOME_QUERY_RESULT;
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, contactEmail, instagramUrl, linkedinUrl, defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
-    '\n  *[_type in ["project", "category", "aboutPage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
+    '\n  *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
     '\n  *[_type == "project" && slug.current == $slug][0] {\n    title, "slug": slug.current, subtitle {text},\n    "description": pt::text(description), seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n},\n    listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}\n  }\n': PROJECT_SEO_QUERY_RESULT;
   }
 }

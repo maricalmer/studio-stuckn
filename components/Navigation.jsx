@@ -48,7 +48,11 @@ export default function Navigation({ isBigScreen, categories = [], settings }) {
       />
       {isBigScreen && <NavList settings={settings} />}
       {isBigScreen ? <NavMenus isOpen={isMenuOpen} categories={categories} /> : <NavMenusMobile categories={categories} />}
-      <StaticBrand title={settings?.siteTitle} extraStyling="opacity-0 md:translate-y-[200px] border-black"/>
+      <StaticBrand
+        title={isBigScreen ? settings?.siteTitle : "Demo Reel"}
+        href={!isBigScreen ? "/demo-reel" : undefined}
+        extraStyling="opacity-0 md:translate-y-[200px] border-black"
+      />
     </nav>
   );
 };

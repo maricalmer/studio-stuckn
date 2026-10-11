@@ -10,7 +10,11 @@ export default function NavList({ settings }) {
   const emailIsInSocialLinks = socialLinks.some((link) => link.href.startsWith("mailto:"));
   return (
     <ul className="navlist__container translate-y-[-150%] flex items-baseline helvetica place-content-between w-[80%] pt-8 pl-14 leading-none transition-[transform] delay-300">
-      <li className="navlist__item opacity-0 transition-[opacity] duration-1000 ease">{settings?.siteTitle || "Ronja Stucken"}</li>
+      <li className="navlist__item opacity-0 transition-[opacity] duration-1000 ease">
+        <Link href="/demo-reel" className="cursor-pointer hover:text-[#C9D1D2]">
+          Demo Reel
+        </Link>
+      </li>
       {socialLinks.map((link, index) => (
         <li key={link.key} className={index === 0 ? "my-2" : undefined}><a href={link.href} target={link.href.startsWith("mailto:") ? undefined : "_blank"} rel="noreferrer" className="navlist__item cursor-pointer hover:text-[#C9D1D2] opacity-0 transition-[opacity] duration-200 ease">{link.label}</a></li>
       ))}

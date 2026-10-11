@@ -30,6 +30,11 @@ export const siteContent = {
       label: "Instagram",
       href: "https://www.instagram.com/studio.stuckn",
     },
+    {
+      key: "kb14af85030d9214",
+      label: "Email",
+      href: "mailto:info@mailgo.dev",
+    },
   ],
   defaultSeo: {
     title: "Studio.Stuckn, 3D artist based in Berlin",

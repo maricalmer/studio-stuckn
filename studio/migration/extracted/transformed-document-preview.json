@@ -2807,6 +2807,12 @@
         "_key": "k65dd05d23ac4297",
         "label": "Instagram",
         "url": "https://www.instagram.com/studio.stuckn"
+      },
+      {
+        "_type": "socialLink",
+        "_key": "kb14af85030d9214",
+        "label": "Email",
+        "url": "info@mailgo.dev"
       }
     ],
     "defaultSeo": {

@@ -40,6 +40,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function AboutPage() {
   const [about, settings] = await getAboutPageData();
   if (!about) notFound();
+  const emailIsInSocialLinks = settings?.socialLinks.some((link) =>
+    link.href.startsWith("mailto:"),
+  );
   return (
     <PageContainer backgroundColor="about-page bg-[#EFEBE6]">
       <Breadcrumb
@@ -52,14 +55,16 @@ export default async function AboutPage() {
           {about.heading}
         </h1>
         <ul className="my-6">
-          <li>
-            <Link
-              href={`mailto:${settings?.contactEmail ?? ""}`}
-              className="text-xl md:text-3xl 2xl:text-4xl min-[1950px]:text-5xl underline"
-            >
-              Email
-            </Link>
-          </li>
+          {!emailIsInSocialLinks && (
+            <li>
+              <Link
+                href={`mailto:${settings?.contactEmail ?? ""}`}
+                className="text-xl md:text-3xl 2xl:text-4xl min-[1950px]:text-5xl underline"
+              >
+                Email
+              </Link>
+            </li>
+          )}
           {settings?.socialLinks.map((link) => (
             <li
               key={link.key}
@@ -67,7 +72,7 @@ export default async function AboutPage() {
             >
               <a
                 href={link.href}
-                target="_blank"
+                target={link.href.startsWith("mailto:") ? undefined : "_blank"}
                 className="text-xl md:text-3xl 2xl:text-4xl min-[1950px]:text-5xl underline"
               >
                 {link.label}

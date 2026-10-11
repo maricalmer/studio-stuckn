@@ -19,6 +19,14 @@ import type {
 } from "../content/types";
 import { orderPortfolio, plainText, safeHref } from "../content/shared";
 
+function socialHref(value: string | null | undefined) {
+  const cleaned = stegaClean(value ?? "").trim();
+  const href = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleaned)
+    ? `mailto:${cleaned}`
+    : cleaned;
+  return safeHref(href);
+}
+
 type ProjectResult = PROJECTS_QUERY_RESULT[number];
 type ImageResult = NonNullable<NonNullable<ProjectResult["listing"]>["image"]>;
 type TextResult = ProjectResult["description"];
@@ -306,7 +314,7 @@ export function mapSettings(
         contactEmail: stegaClean(settings.contactEmail ?? ""),
         socialLinks: settings.socialLinks?.length
           ? settings.socialLinks.flatMap((item) => {
-              const href = safeHref(stegaClean(item.url));
+              const href = socialHref(item.url);
               return href
                 ? [{key: item._key, label: stegaClean(item.label ?? ""), href}]
                 : [];
@@ -319,8 +327,9 @@ export function mapSettings(
                 url: "https://www.artstation.com/ronja_stucken",
               },
               {key: "instagram", label: "Instagram", url: settings.instagramUrl},
+              {key: "email", label: "Email", url: settings.contactEmail},
             ].flatMap((item) => {
-              const href = safeHref(stegaClean(item.url));
+              const href = socialHref(item.url);
               return href ? [{key: item.key, label: item.label, href}] : [];
             }),
         defaultSeo: mapSeo(settings.defaultSeo),

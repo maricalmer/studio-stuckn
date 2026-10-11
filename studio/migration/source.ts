@@ -42,6 +42,7 @@ export const siteSettingsSource: SourceContent['siteSettings'] = {
     {label: 'LinkedIn', url: 'https://de.linkedin.com/in/ronja-stucken'},
     {label: 'Artstation', url: 'https://www.artstation.com/ronja_stucken'},
     {label: 'Instagram', url: 'https://www.instagram.com/studio.stuckn'},
+    {label: 'Email', url: 'info@mailgo.dev'},
   ],
   defaultSeo: {
     metaTitle: 'Studio.Stuckn, 3D artist based in Berlin',

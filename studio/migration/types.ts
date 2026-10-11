@@ -74,8 +74,7 @@ export interface SourceContent {
   siteSettings: {
     siteTitle: string
     contactEmail: string
-    instagramUrl: string
-    linkedinUrl: string
+    socialLinks: readonly {label: string; url: string}[]
     defaultSeo: {
       metaTitle: string
       metaDescription: string

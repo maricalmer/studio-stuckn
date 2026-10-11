@@ -16,14 +16,19 @@ export const siteContent = {
   contactEmail: "info@mailgo.dev",
   socialLinks: [
     {
-      key: "instagram",
-      label: "Instagram",
-      href: "https://www.instagram.com/studio.stuckn",
-    },
-    {
-      key: "linkedin",
+      key: "k76647176d104417",
       label: "LinkedIn",
       href: "https://de.linkedin.com/in/ronja-stucken",
+    },
+    {
+      key: "kf4c9121163530ec",
+      label: "Artstation",
+      href: "https://www.artstation.com/ronja_stucken",
+    },
+    {
+      key: "k65dd05d23ac4297",
+      label: "Instagram",
+      href: "https://www.instagram.com/studio.stuckn",
     },
   ],
   defaultSeo: {

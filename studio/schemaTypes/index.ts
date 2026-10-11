@@ -10,6 +10,7 @@ import {fashionCredits} from './objects/fashion-credits'
 import {galleryImage} from './objects/gallery-image'
 import {projectListing} from './objects/project-listing'
 import {seo} from './objects/seo'
+import {socialLink} from './objects/social-link'
 import {subtitle} from './objects/subtitle'
 import {youtubeEmbed} from './objects/youtube-embed'
 
@@ -26,6 +27,7 @@ export const schemaTypes = [
   galleryImage,
   projectListing,
   seo,
+  socialLink,
   subtitle,
   youtubeEmbed,
 ]

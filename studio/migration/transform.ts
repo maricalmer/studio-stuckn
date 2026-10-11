@@ -203,8 +203,12 @@ export function transformDocuments(source: SourceContent, assets: AssetReference
     _type: 'siteSettings',
     siteTitle: source.siteSettings.siteTitle,
     contactEmail: source.siteSettings.contactEmail,
-    instagramUrl: source.siteSettings.instagramUrl,
-    linkedinUrl: source.siteSettings.linkedinUrl,
+    socialLinks: source.siteSettings.socialLinks.map((link, index) => ({
+      _type: 'socialLink',
+      _key: key(`site-settings:social-link:${index}:${link.url}`),
+      label: link.label,
+      url: link.url,
+    })),
     defaultSeo: {
       _type: 'seo',
       metaTitle: source.siteSettings.defaultSeo.metaTitle,

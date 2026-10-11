@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 export default function NavList({ settings }) {
   const socialLinks = settings?.socialLinks ?? [
-    { key: "instagram", label: "Instagram", href: "https://www.instagram.com/studio.stuckn" },
-    { key: "linkedin", label: "LinkedIn", href: "https://de.linkedin.com/in/ronja-stucken" },
+    {key: "linkedin", label: "LinkedIn", href: "https://de.linkedin.com/in/ronja-stucken"},
+    {key: "artstation", label: "Artstation", href: "https://www.artstation.com/ronja_stucken"},
+    {key: "instagram", label: "Instagram", href: "https://www.instagram.com/studio.stuckn"},
   ];
   return (
     <ul className="navlist__container translate-y-[-150%] flex items-baseline helvetica place-content-between w-[80%] pt-8 pl-14 leading-none transition-[transform] delay-300">

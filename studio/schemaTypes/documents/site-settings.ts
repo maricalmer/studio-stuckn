@@ -1,5 +1,5 @@
 import {CogIcon} from '@sanity/icons/Cog'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
 export const siteSettings = defineType({
   name: 'siteSettings',
@@ -27,18 +27,13 @@ export const siteSettings = defineType({
       validation: (rule) => rule.required().email(),
     }),
     defineField({
-      name: 'instagramUrl',
-      title: 'Instagram URL',
-      type: 'url',
+      name: 'socialLinks',
+      title: 'Social links',
+      type: 'array',
       group: 'contact',
-      validation: (rule) => rule.uri({scheme: ['https']}),
-    }),
-    defineField({
-      name: 'linkedinUrl',
-      title: 'LinkedIn URL',
-      type: 'url',
-      group: 'contact',
-      validation: (rule) => rule.uri({scheme: ['https']}),
+      of: [defineArrayMember({type: 'socialLink'})],
+      description: 'Add links and drag them into the order used by the site.',
+      validation: (rule) => rule.required().min(1),
     }),
     defineField({
       name: 'defaultSeo',

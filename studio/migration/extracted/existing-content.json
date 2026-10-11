@@ -1372,8 +1372,20 @@
   "siteSettings": {
     "siteTitle": "Studio.Stuckn, 3D artist based in Berlin",
     "contactEmail": "info@mailgo.dev",
-    "instagramUrl": "https://www.instagram.com/studio.stuckn",
-    "linkedinUrl": "https://de.linkedin.com/in/ronja-stucken",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://de.linkedin.com/in/ronja-stucken"
+      },
+      {
+        "label": "Artstation",
+        "url": "https://www.artstation.com/ronja_stucken"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/studio.stuckn"
+      }
+    ],
     "defaultSeo": {
       "metaTitle": "Studio.Stuckn, 3D artist based in Berlin",
       "metaDescription": "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.",

@@ -51,7 +51,7 @@ export const HOME_QUERY = defineQuery(`
 `);
 export const SITE_SETTINGS_QUERY = defineQuery(`
   *[_type == "siteSettings" && _id == "siteSettings"][0] {
-    _id, siteTitle, contactEmail, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
+    _id, siteTitle, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
   }
 `);
 export const DRAFT_REVISION_QUERY = defineQuery(`

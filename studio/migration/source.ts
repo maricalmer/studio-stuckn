@@ -38,8 +38,11 @@ export const homePageSource: SourceContent['homePage'] = {
 export const siteSettingsSource: SourceContent['siteSettings'] = {
   siteTitle: 'Studio.Stuckn, 3D artist based in Berlin',
   contactEmail: 'info@mailgo.dev',
-  instagramUrl: 'https://www.instagram.com/studio.stuckn',
-  linkedinUrl: 'https://de.linkedin.com/in/ronja-stucken',
+  socialLinks: [
+    {label: 'LinkedIn', url: 'https://de.linkedin.com/in/ronja-stucken'},
+    {label: 'Artstation', url: 'https://www.artstation.com/ronja_stucken'},
+    {label: 'Instagram', url: 'https://www.instagram.com/studio.stuckn'},
+  ],
   defaultSeo: {
     metaTitle: 'Studio.Stuckn, 3D artist based in Berlin',
     metaDescription:

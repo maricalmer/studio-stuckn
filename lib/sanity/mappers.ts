@@ -304,13 +304,25 @@ export function mapSettings(
     ? {
         siteTitle: settings.siteTitle ?? "",
         contactEmail: stegaClean(settings.contactEmail ?? ""),
-        socialLinks: [
-          { key: "instagram", label: "Instagram", url: settings.instagramUrl },
-          { key: "linkedin", label: "LinkedIn", url: settings.linkedinUrl },
-        ].flatMap((item) => {
-          const href = safeHref(stegaClean(item.url));
-          return href ? [{ key: item.key, label: item.label, href }] : [];
-        }),
+        socialLinks: settings.socialLinks?.length
+          ? settings.socialLinks.flatMap((item) => {
+              const href = safeHref(stegaClean(item.url));
+              return href
+                ? [{key: item._key, label: stegaClean(item.label ?? ""), href}]
+                : [];
+            })
+          : [
+              {key: "linkedin", label: "LinkedIn", url: settings.linkedinUrl},
+              {
+                key: "artstation",
+                label: "Artstation",
+                url: "https://www.artstation.com/ronja_stucken",
+              },
+              {key: "instagram", label: "Instagram", url: settings.instagramUrl},
+            ].flatMap((item) => {
+              const href = safeHref(stegaClean(item.url));
+              return href ? [{key: item.key, label: item.label, href}] : [];
+            }),
         defaultSeo: mapSeo(settings.defaultSeo),
       }
     : null;

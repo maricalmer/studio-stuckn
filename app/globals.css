@@ -86,7 +86,7 @@ body:has(.about-page) {
 }
 
 .navbar-active button {
-  background-color: black;
+  background-color: var(--navbar-open-text, #b4b4b4);
 }
 
 .navbar-active .navlist__item,
@@ -102,7 +102,7 @@ body:has(.about-page) {
   left: 7px;
   transform: rotate(-45deg);
   transform-origin: top left;
-  background-color: var(--navbar-open-text, #b4b4b4);
+  background-color: transparent;
 }
 
 .navbar-active .nav__cross::before {
@@ -110,7 +110,7 @@ body:has(.about-page) {
   top: 7px;
   transform: rotate(45deg);
   transform-origin: top left;
-  background-color: var(--navbar-open-text, #b4b4b4);
+  background-color: transparent;
 }
 
 .navbar__bg--digital {
@@ -169,6 +169,10 @@ body:has(.about-page) {
 .navbar-active .navmenu__item,
 .navbar-active .navbrand {
   color: var(--navbar-open-text, #b4b4b4);
+}
+
+.navbar-active .navbrand {
+  border-color: var(--navbar-open-text, #b4b4b4);
 }
 
 .carousel::-webkit-scrollbar {

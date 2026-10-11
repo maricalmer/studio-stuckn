@@ -181,6 +181,12 @@ export function transformDocuments(source: SourceContent, assets: AssetReference
     _type: 'aboutPage',
     heading: source.aboutPage.heading,
     content: portableText(source.aboutPage.paragraphs, 'about:content'),
+    socialLinks: source.aboutPage.socialLinks.map((link, index) => ({
+      _type: 'socialLink',
+      _key: key(`about:social-link:${index}:${link.url}`),
+      label: link.label,
+      url: link.url,
+    })),
     images: source.aboutPage.images.map(({image, alt}, index) => ({
       _type: 'galleryImage',
       _key: key(`about:image:${index}:${image.path}`),

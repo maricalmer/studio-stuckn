@@ -73,10 +73,16 @@ export interface CategoryViewModel {
   image?: { image: ImageViewModel; alt: string };
   projects: ProjectViewModel[];
 }
+export interface SocialLinkViewModel {
+  key: string;
+  label: string;
+  href: string;
+}
 export interface AboutViewModel {
   heading: string;
   body: RichText;
   images: { key: string; image: ImageViewModel; alt: string }[];
+  socialLinks: SocialLinkViewModel[];
   seo: SeoViewModel;
 }
 export interface HomeViewModel {
@@ -107,7 +113,7 @@ export interface SiteSettingsViewModel {
   navbarAboutBackgroundColor: string;
   navbarAboutTextColor: string;
   contactEmail: string;
-  socialLinks: { key: string; label: string; href: string }[];
+  socialLinks: SocialLinkViewModel[];
   defaultSeo: SeoViewModel;
 }
 export interface PortfolioViewModel {

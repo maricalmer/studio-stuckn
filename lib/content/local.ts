@@ -107,6 +107,7 @@ export function getLocalProjects() {
 export function getLocalAbout(): AboutViewModel {
   return {
     ...aboutContent,
+    socialLinks: siteContent.socialLinks,
     body: textBlocks(aboutContent.paragraphs),
     images: [
       {

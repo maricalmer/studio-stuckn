@@ -41,6 +41,7 @@ export const CATEGORIES_QUERY = defineQuery(`
 export const ABOUT_QUERY = defineQuery(`
   *[_type == "aboutPage" && _id == "aboutPage"][0] {
     _id, heading, content[]{${textFields}}, images[]{_key, alt, image {${imageFields}}},
+    socialLinks[]{_key, label, url},
     seo {${seoFields}}
   }
 `);

@@ -2683,6 +2683,32 @@
         ]
       }
     ],
+    "socialLinks": [
+      {
+        "_type": "socialLink",
+        "_key": "k2c038988e362f71",
+        "label": "LinkedIn",
+        "url": "https://de.linkedin.com/in/ronja-stucken"
+      },
+      {
+        "_type": "socialLink",
+        "_key": "k1f16eaf5f5ab4ba",
+        "label": "Artstation",
+        "url": "https://www.artstation.com/ronja_stucken"
+      },
+      {
+        "_type": "socialLink",
+        "_key": "kff2cb2f5a64cc51",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/studio.stuckn"
+      },
+      {
+        "_type": "socialLink",
+        "_key": "k8c320dc0faf67fc",
+        "label": "Email",
+        "url": "info@mailgo.dev"
+      }
+    ],
     "images": [
       {
         "_type": "galleryImage",

@@ -156,6 +156,15 @@ test("About retains all three images and local contact/SEO content matches the i
   const result = await portfolio();
   assert.equal(result.about?.images.length, 3);
   assert.equal(result.about?.images[0].alt, "picture of ronja stuckn");
+  assert.deepEqual(
+    result.about?.socialLinks.map((link) => [link.label, link.href]),
+    source.aboutPage.socialLinks.map((link: {label: string; url: string}) => [
+      link.label,
+      link.url.includes("@") && !link.url.includes("://")
+        ? `mailto:${link.url}`
+        : link.url,
+    ]),
+  );
   assert.deepEqual(aboutContent.paragraphs, source.aboutPage.paragraphs);
   assert.equal(result.settings?.contactEmail, siteContent.contactEmail);
   assert.deepEqual(result.settings?.socialLinks, siteContent.socialLinks);

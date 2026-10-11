@@ -61,6 +61,7 @@ export interface SourceContent {
   aboutPage: {
     heading: string
     paragraphs: string[]
+    socialLinks: readonly {label: string; url: string}[]
     images: Array<{image: SourceImage; alt: string}>
     seo: {
       metaTitle: string

@@ -14,6 +14,12 @@ export const aboutPageSource: Omit<SourceContent['aboutPage'], 'images'> & {
     'Ronja Stucken is a Berlin-based 3D artist, fashion designer, and creative mind showcasing her work.',
     'Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.',
   ],
+  socialLinks: [
+    {label: 'LinkedIn', url: 'https://de.linkedin.com/in/ronja-stucken'},
+    {label: 'Artstation', url: 'https://www.artstation.com/ronja_stucken'},
+    {label: 'Instagram', url: 'https://www.instagram.com/studio.stuckn'},
+    {label: 'Email', url: 'info@mailgo.dev'},
+  ],
   images: [
     {path: 'public/img/about/elbow_on_chair.webp', alt: 'picture of ronja stuckn'},
     {path: 'public/img/about/low_hands.webp', alt: 'Ronja Stucken with crossed arms'},

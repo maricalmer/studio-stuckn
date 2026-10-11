@@ -20,6 +20,14 @@ export const aboutPage = defineType({
       validation: (rule) => rule.required().min(1),
     }),
     defineField({
+      name: 'socialLinks',
+      title: 'Social links',
+      type: 'array',
+      description: 'Optional links shown on the About page. Drag them into the order used on the site.',
+      of: [defineArrayMember({type: 'socialLink'})],
+      validation: (rule) => rule.max(20),
+    }),
+    defineField({
       name: 'images',
       title: 'Images',
       type: 'array',

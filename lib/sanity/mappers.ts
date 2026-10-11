@@ -17,6 +17,7 @@ import type {
   ProjectViewModel,
   RichText,
   SeoViewModel,
+  SocialLinkViewModel,
   SiteSettingsViewModel,
 } from "../content/types";
 import { orderPortfolio, plainText, safeHref } from "../content/shared";
@@ -37,6 +38,26 @@ function hexColor(value: string | null | undefined, fallback: string) {
 type ProjectResult = PROJECTS_QUERY_RESULT[number];
 type ImageResult = NonNullable<NonNullable<ProjectResult["listing"]>["image"]>;
 type TextResult = ProjectResult["description"];
+
+function mapSocialLinks(
+  links:
+    | readonly {
+        _key: string;
+        label: string | null;
+        url: string | null;
+      }[]
+    | null
+    | undefined,
+): SocialLinkViewModel[] {
+  return (
+    links?.flatMap((item) => {
+      const href = socialHref(item.url);
+      return href
+        ? [{key: item._key, label: stegaClean(item.label ?? ""), href}]
+        : [];
+    }) ?? []
+  );
+}
 
 export function mapImage(
   image: ImageResult | null | undefined,
@@ -322,6 +343,7 @@ export function mapAbout(about: ABOUT_QUERY_RESULT): AboutViewModel | null {
           const image = mapImage(item.image);
           return image ? [{ key: item._key, image, alt: item.alt ?? "" }] : [];
         }),
+        socialLinks: mapSocialLinks(about.socialLinks),
         seo: mapSeo(about.seo),
       }
     : null;
@@ -384,12 +406,7 @@ export function mapSettings(
         navbarAboutTextColor: hexColor(settings.navbarAboutTextColor, "#482d65"),
         contactEmail: stegaClean(settings.contactEmail ?? ""),
         socialLinks: settings.socialLinks?.length
-          ? settings.socialLinks.flatMap((item) => {
-              const href = socialHref(item.url);
-              return href
-                ? [{key: item._key, label: stegaClean(item.label ?? ""), href}]
-                : [];
-            })
+          ? mapSocialLinks(settings.socialLinks)
           : [
               {key: "linkedin", label: "LinkedIn", url: settings.linkedinUrl},
               {

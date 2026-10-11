@@ -40,7 +40,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function AboutPage() {
   const [about, settings] = await getAboutPageData();
   if (!about) notFound();
-  const emailIsInSocialLinks = settings?.socialLinks.some((link) =>
+  const socialLinks = about.socialLinks.length
+    ? about.socialLinks
+    : settings?.socialLinks ?? [];
+  const emailIsInSocialLinks = socialLinks.some((link) =>
     link.href.startsWith("mailto:"),
   );
   return (
@@ -65,7 +68,7 @@ export default async function AboutPage() {
               </Link>
             </li>
           )}
-          {settings?.socialLinks.map((link) => (
+          {socialLinks.map((link) => (
             <li
               key={link.key}
               className={link.key === "instagram" ? "my-2" : undefined}

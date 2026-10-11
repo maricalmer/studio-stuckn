@@ -15,6 +15,7 @@ export const sanityCacheTags = {
   categories: "sanity:categories",
   navigation: "sanity:navigation",
   about: "sanity:about",
+  demoReel: "sanity:demo-reel",
   home: "sanity:home",
   settings: "sanity:settings",
   metadata: "sanity:metadata",

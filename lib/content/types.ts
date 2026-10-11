@@ -83,6 +83,9 @@ export interface HomeViewModel {
   heading: string;
   body: RichText;
 }
+export interface DemoReelViewModel {
+  vimeoUrl: string;
+}
 export interface SiteSettingsViewModel {
   siteTitle: string;
   contactEmail: string;

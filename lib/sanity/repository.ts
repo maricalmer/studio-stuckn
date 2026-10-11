@@ -13,13 +13,14 @@ import { getDraftClient, getMetadataClient, getPublishedClient } from "./client"
 import {
   ABOUT_QUERY,
   CATEGORIES_QUERY,
+  DEMO_REEL_QUERY,
   DRAFT_REVISION_QUERY,
   HOME_QUERY,
   PROJECTS_QUERY,
   PROJECT_SEO_QUERY,
   SITE_SETTINGS_QUERY,
 } from "./queries";
-import { mapAbout, mapHome, mapPortfolio, mapSettings } from "./mappers";
+import { mapAbout, mapDemoReel, mapHome, mapPortfolio, mapSettings } from "./mappers";
 
 export interface RepositoryOptions {
   /** Force published reads for routes such as the sitemap. */
@@ -120,6 +121,16 @@ export async function getSanityHome(options: RepositoryOptions = {}) {
     queryOptions(isDraft, [sanityCacheTags.home]),
   );
   return mapHome(home);
+}
+
+export async function getSanityDemoReel(options: RepositoryOptions = {}) {
+  const {client, isDraft} = await getContentClient(options);
+  const demoReel = await client.fetch(
+    DEMO_REEL_QUERY,
+    {},
+    queryOptions(isDraft, [sanityCacheTags.demoReel, sanityCacheTags.metadata]),
+  );
+  return mapDemoReel(demoReel);
 }
 
 export async function getSanitySettings(options: RepositoryOptions = {}) {

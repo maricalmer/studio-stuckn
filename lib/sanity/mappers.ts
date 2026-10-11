@@ -2,6 +2,7 @@ import { stegaClean } from "next-sanity";
 import type {
   ABOUT_QUERY_RESULT,
   CATEGORIES_QUERY_RESULT,
+  DEMO_REEL_QUERY_RESULT,
   HOME_QUERY_RESULT,
   PROJECTS_QUERY_RESULT,
   SITE_SETTINGS_QUERY_RESULT,
@@ -9,6 +10,7 @@ import type {
 import type {
   AboutViewModel,
   CategoryViewModel,
+  DemoReelViewModel,
   HomeViewModel,
   ImageViewModel,
   MediaViewModel,
@@ -304,6 +306,33 @@ export function mapHome(home: HOME_QUERY_RESULT): HomeViewModel | null {
   return home
     ? {heading: stegaClean(home.heading ?? ''), body: mapRichText(home.content)}
     : null;
+}
+
+export function vimeoEmbed(value: string | null | undefined) {
+  if (!value) return undefined;
+  try {
+    const url = new URL(stegaClean(value));
+    if (url.protocol !== "https:" || url.username || url.password || url.port)
+      return undefined;
+    const host = url.hostname.replace(/^www\./, "");
+    const parts = url.pathname.split("/").filter(Boolean);
+    const id = host === "player.vimeo.com" && parts[0] === "video"
+      ? parts[1]
+      : host === "vimeo.com"
+        ? parts[0]
+        : undefined;
+    if (!id || !/^\d+$/.test(id)) return undefined;
+    return `https://player.vimeo.com/video/${id}`;
+  } catch {
+    return undefined;
+  }
+}
+
+export function mapDemoReel(
+  demoReel: DEMO_REEL_QUERY_RESULT,
+): DemoReelViewModel | null {
+  const vimeoUrl = vimeoEmbed(demoReel?.vimeoUrl);
+  return vimeoUrl ? {vimeoUrl} : null;
 }
 export function mapSettings(
   settings: SITE_SETTINGS_QUERY_RESULT,

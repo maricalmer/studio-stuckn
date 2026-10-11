@@ -9,6 +9,7 @@ import type {StructureBuilder, StructureResolver} from 'sanity/structure'
 
 export const singletonDocumentIds = {
   aboutPage: 'aboutPage',
+  demoReelPage: 'demoReelPage',
   homePage: 'homePage',
   siteSettings: 'siteSettings',
 } as const
@@ -98,6 +99,17 @@ export const structure: StructureResolver = (S) =>
             .schemaType('aboutPage')
             .documentId(singletonDocumentIds.aboutPage)
             .title('About page'),
+        ),
+      S.listItem()
+        .id('demo-reel-page')
+        .title('Demo Reel page')
+        .icon(DesktopIcon)
+        .child(
+          S.document()
+            .id(singletonDocumentIds.demoReelPage)
+            .schemaType('demoReelPage')
+            .documentId(singletonDocumentIds.demoReelPage)
+            .title('Demo Reel page'),
         ),
       S.listItem()
         .id('site-settings')

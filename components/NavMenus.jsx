@@ -41,6 +41,11 @@ function menuElements(category) {
 
 export default function NavMenus({ isOpen, categories = [] }) {
   const menuCategories = categories.filter((category) => localElements[category.slug]);
+  const menuItems = menuCategories.flatMap((category) =>
+    category.slug === "physical"
+      ? [{id: "demo-reel", slug: "demo-reel", title: "Demo Reel"}, category]
+      : [category],
+  );
   const handleHover = (e) => {
     const navbar = e.currentTarget.parentNode.parentNode;
     const className = e.currentTarget.dataset.slug;
@@ -50,9 +55,9 @@ export default function NavMenus({ isOpen, categories = [] }) {
   return (
     <>
       <ul className="navmenu__container translate-y-[-150%] pl-[65%] pt-[120px] helvetica text-4xl transition-[transform] delay-300">
-        {menuCategories.map((category) => (
-          <li key={category.id} data-slug={category.slug} onMouseOver={handleHover} onMouseOut={handleHover} className="w-fit navmenu__item mb-1 cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2]">
-            <Link href={`/${category.slug}`}>{category.title}</Link>
+        {menuItems.map((item) => (
+          <li key={item.id} data-slug={item.slug} onMouseOver={handleHover} onMouseOut={handleHover} className="w-fit navmenu__item mb-1 cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2]">
+            <Link href={`/${item.slug}`}>{item.title}</Link>
           </li>
         ))}
         <li data-slug="about" onMouseOver={handleHover} onMouseOut={handleHover} className="w-fit navmenu__item cursor-pointer opacity-0 transition-[opacity] duration-200 ease-in hover:text-[#C9D1D2] ">

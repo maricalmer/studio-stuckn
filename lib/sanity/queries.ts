@@ -49,13 +49,18 @@ export const HOME_QUERY = defineQuery(`
     _id, heading, content[]{${textFields}}
   }
 `);
+export const DEMO_REEL_QUERY = defineQuery(`
+  *[_type == "demoReelPage" && _id == "demoReelPage"][0] {
+    _id, vimeoUrl
+  }
+`);
 export const SITE_SETTINGS_QUERY = defineQuery(`
   *[_type == "siteSettings" && _id == "siteSettings"][0] {
     _id, siteTitle, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
   }
 `);
 export const DRAFT_REVISION_QUERY = defineQuery(`
-  *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {
+  *[_type in ["project", "category", "aboutPage", "demoReelPage", "homePage", "siteSettings"]] | order(_id asc) {
     _id, _updatedAt, _rev
   }
 `);

@@ -7,6 +7,7 @@ const siteUrl = "https://www.ronjastucken.com";
 const staticRoutes = [
   { path: "/", priority: 1 },
   { path: "/digital", priority: 0.8 },
+  { path: "/demo-reel", priority: 0.8 },
   { path: "/physical", priority: 0.8 },
   { path: "/about", priority: 0.8 },
 ] as const;

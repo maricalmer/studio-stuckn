@@ -122,6 +122,8 @@ export type SiteSettings = {
       _key: string;
     } & SocialLink
   >;
+  instagramUrl?: string;
+  linkedinUrl?: string;
   defaultSeo?: Seo;
 };
 
@@ -146,6 +148,15 @@ export type HomePage = {
     _type: "block";
     _key: string;
   }>;
+};
+
+export type DemoReelPage = {
+  _id: string;
+  _type: "demoReelPage";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  vimeoUrl?: string;
 };
 
 export type ProjectReference = {
@@ -380,6 +391,7 @@ export type AllSanitySchemaTypes =
   | Credit
   | SiteSettings
   | HomePage
+  | DemoReelPage
   | ProjectReference
   | Category
   | SanityImageCrop
@@ -935,6 +947,14 @@ export type HOME_QUERY_RESULT = {
 } | null;
 
 // Source: ../lib/sanity/queries.ts
+// Variable: DEMO_REEL_QUERY
+// Query: *[_type == "demoReelPage" && _id == "demoReelPage"][0] {    _id, vimeoUrl  }
+export type DEMO_REEL_QUERY_RESULT = {
+  _id: "demoReelPage";
+  vimeoUrl: string | null;
+} | null;
+
+// Source: ../lib/sanity/queries.ts
 // Variable: SITE_SETTINGS_QUERY
 // Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
 export type SITE_SETTINGS_QUERY_RESULT = {
@@ -946,8 +966,8 @@ export type SITE_SETTINGS_QUERY_RESULT = {
     label: string | null;
     url: string | null;
   }> | null;
-  instagramUrl: null;
-  linkedinUrl: null;
+  instagramUrl: string | null;
+  linkedinUrl: string | null;
   defaultSeo: {
     metaTitle: string | null;
     metaDescription: string | null;
@@ -983,7 +1003,7 @@ export type SITE_SETTINGS_QUERY_RESULT = {
 
 // Source: ../lib/sanity/queries.ts
 // Variable: DRAFT_REVISION_QUERY
-// Query: *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {    _id, _updatedAt, _rev  }
+// Query: *[_type in ["project", "category", "aboutPage", "demoReelPage", "homePage", "siteSettings"]] | order(_id asc) {    _id, _updatedAt, _rev  }
 export type DRAFT_REVISION_QUERY_RESULT = Array<{
   _id: string;
   _updatedAt: string;
@@ -1070,8 +1090,9 @@ declare global {
     '\n  *[_type == "category"] | order(order asc, _id asc) {\n    _id, title, "slug": slug.current, order,\n    representativeImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    representativeProject->{_id, listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}}\n  }\n': CATEGORIES_QUERY_RESULT;
     '\n  *[_type == "aboutPage" && _id == "aboutPage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}, images[]{_key, alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n    seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': ABOUT_QUERY_RESULT;
     '\n  *[_type == "homePage" && _id == "homePage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}\n  }\n': HOME_QUERY_RESULT;
+    '\n  *[_type == "demoReelPage" && _id == "demoReelPage"][0] {\n    _id, vimeoUrl\n  }\n': DEMO_REEL_QUERY_RESULT;
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
-    '\n  *[_type in ["project", "category", "aboutPage", "homePage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
+    '\n  *[_type in ["project", "category", "aboutPage", "demoReelPage", "homePage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
     '\n  *[_type == "project" && slug.current == $slug][0] {\n    title, "slug": slug.current, subtitle {text},\n    "description": pt::text(description), seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n},\n    listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}\n  }\n': PROJECT_SEO_QUERY_RESULT;
   }
 }

@@ -35,6 +35,22 @@ export const siteSettings = defineType({
       description: 'Add links and drag them into the order used by the site.',
       validation: (rule) => rule.required().min(1),
     }),
+    // Kept hidden so older imported Site Settings documents do not show
+    // unknown-field warnings while they are transitioned to socialLinks.
+    defineField({
+      name: 'instagramUrl',
+      title: 'Legacy Instagram URL',
+      type: 'url',
+      hidden: true,
+      readOnly: true,
+    }),
+    defineField({
+      name: 'linkedinUrl',
+      title: 'Legacy LinkedIn URL',
+      type: 'url',
+      hidden: true,
+      readOnly: true,
+    }),
     defineField({
       name: 'defaultSeo',
       title: 'Default SEO',

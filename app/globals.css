@@ -74,6 +74,8 @@ body:has(.about-page) {
 
 .navbar-active {
   height: 100vh;
+  background-color: var(--navbar-open-background, #261b26);
+  color: var(--navbar-open-text, #b4b4b4);
   transition-delay: 0s;
 }
 
@@ -100,7 +102,7 @@ body:has(.about-page) {
   left: 7px;
   transform: rotate(-45deg);
   transform-origin: top left;
-  background-color: #a7be81;
+  background-color: var(--navbar-open-text, #b4b4b4);
 }
 
 .navbar-active .nav__cross::before {
@@ -108,7 +110,7 @@ body:has(.about-page) {
   top: 7px;
   transform: rotate(45deg);
   transform-origin: top left;
-  background-color: #a7be81;
+  background-color: var(--navbar-open-text, #b4b4b4);
 }
 
 .navbar__bg--digital {
@@ -161,6 +163,12 @@ body:has(.about-page) {
 .navbar__bg--about .navmenu__about {
   opacity: 1;
   transform: translateY(0);
+}
+
+.navbar-active .navlist__item,
+.navbar-active .navmenu__item,
+.navbar-active .navbrand {
+  color: var(--navbar-open-text, #b4b4b4);
 }
 
 .carousel::-webkit-scrollbar {

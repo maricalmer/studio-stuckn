@@ -29,6 +29,11 @@ function socialHref(value: string | null | undefined) {
   return safeHref(href);
 }
 
+function hexColor(value: string | null | undefined, fallback: string) {
+  const cleaned = stegaClean(value ?? "").trim();
+  return /^#[0-9a-fA-F]{6}$/.test(cleaned) ? cleaned : fallback;
+}
+
 type ProjectResult = PROJECTS_QUERY_RESULT[number];
 type ImageResult = NonNullable<NonNullable<ProjectResult["listing"]>["image"]>;
 type TextResult = ProjectResult["description"];
@@ -338,8 +343,10 @@ export function mapSettings(
   settings: SITE_SETTINGS_QUERY_RESULT,
 ): SiteSettingsViewModel | null {
   return settings
-    ? {
+      ? {
         siteTitle: settings.siteTitle ?? "",
+        navbarOpenBackgroundColor: hexColor(settings.navbarOpenBackgroundColor, "#261b26"),
+        navbarOpenTextColor: hexColor(settings.navbarOpenTextColor, "#b4b4b4"),
         contactEmail: stegaClean(settings.contactEmail ?? ""),
         socialLinks: settings.socialLinks?.length
           ? settings.socialLinks.flatMap((item) => {

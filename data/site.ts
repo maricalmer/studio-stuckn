@@ -13,6 +13,8 @@ export const aboutContent = {
 };
 export const siteContent = {
   siteTitle: "Studio.Stuckn, 3D artist based in Berlin",
+  navbarOpenBackgroundColor: "#261b26",
+  navbarOpenTextColor: "#b4b4b4",
   contactEmail: "info@mailgo.dev",
   socialLinks: [
     {

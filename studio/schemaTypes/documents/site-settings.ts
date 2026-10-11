@@ -20,6 +20,34 @@ export const siteSettings = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'navbarOpenBackgroundColor',
+      title: 'Navbar open background color',
+      type: 'string',
+      group: 'general',
+      initialValue: '#261b26',
+      description: 'Six-digit hex color used when the navbar menu is open.',
+      validation: (rule) =>
+        rule.required().custom((value) =>
+          typeof value === 'string' && /^#[0-9a-fA-F]{6}$/.test(value.trim())
+            ? true
+            : 'Use a six-digit hex color, for example #261b26.',
+        ),
+    }),
+    defineField({
+      name: 'navbarOpenTextColor',
+      title: 'Navbar open text color',
+      type: 'string',
+      group: 'general',
+      initialValue: '#b4b4b4',
+      description: 'Six-digit hex color used for text when the navbar menu is open.',
+      validation: (rule) =>
+        rule.required().custom((value) =>
+          typeof value === 'string' && /^#[0-9a-fA-F]{6}$/.test(value.trim())
+            ? true
+            : 'Use a six-digit hex color, for example #b4b4b4.',
+        ),
+    }),
+    defineField({
       name: 'contactEmail',
       title: 'Contact email',
       type: 'string',

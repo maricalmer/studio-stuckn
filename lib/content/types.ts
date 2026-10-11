@@ -88,6 +88,8 @@ export interface DemoReelViewModel {
 }
 export interface SiteSettingsViewModel {
   siteTitle: string;
+  navbarOpenBackgroundColor: string;
+  navbarOpenTextColor: string;
   contactEmail: string;
   socialLinks: { key: string; label: string; href: string }[];
   defaultSeo: SeoViewModel;

@@ -73,6 +73,8 @@ export interface SourceContent {
   }
   siteSettings: {
     siteTitle: string
+    navbarOpenBackgroundColor: string
+    navbarOpenTextColor: string
     contactEmail: string
     socialLinks: readonly {label: string; url: string}[]
     defaultSeo: {

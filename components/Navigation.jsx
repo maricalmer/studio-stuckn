@@ -27,7 +27,13 @@ export default function Navigation({ isBigScreen, categories = [], settings }) {
   }, [isMenuOpen]);
 
   return (
-    <nav className={`fixed z-50 h-0 w-full top-0 left-0 bg-[#A7BE81] transition-[height] duration-500 delay-500 ease-[cubic-bezier(0.165,0.84,0.44,1)]${isMenuOpen ? " navbar-active" : ""}`}>
+    <nav
+      className={`fixed z-50 h-0 w-full top-0 left-0 bg-[#A7BE81] transition-[height] duration-500 delay-500 ease-[cubic-bezier(0.165,0.84,0.44,1)]${isMenuOpen ? " navbar-active" : ""}`}
+      style={{
+        "--navbar-open-background": settings?.navbarOpenBackgroundColor || "#261b26",
+        "--navbar-open-text": settings?.navbarOpenTextColor || "#b4b4b4",
+      }}
+    >
       <NavButton
         isOpen={isMenuOpen}
         onClick={() => setIsMenuOpen((open) => !open)}

@@ -37,6 +37,8 @@ export const homePageSource: SourceContent['homePage'] = {
 
 export const siteSettingsSource: SourceContent['siteSettings'] = {
   siteTitle: 'Studio.Stuckn, 3D artist based in Berlin',
+  navbarOpenBackgroundColor: '#261b26',
+  navbarOpenTextColor: '#b4b4b4',
   contactEmail: 'info@mailgo.dev',
   socialLinks: [
     {label: 'LinkedIn', url: 'https://de.linkedin.com/in/ronja-stucken'},

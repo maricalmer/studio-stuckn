@@ -202,6 +202,8 @@ export function transformDocuments(source: SourceContent, assets: AssetReference
     _id: 'siteSettings',
     _type: 'siteSettings',
     siteTitle: source.siteSettings.siteTitle,
+    navbarOpenBackgroundColor: source.siteSettings.navbarOpenBackgroundColor,
+    navbarOpenTextColor: source.siteSettings.navbarOpenTextColor,
     contactEmail: source.siteSettings.contactEmail,
     socialLinks: source.siteSettings.socialLinks.map((link, index) => ({
       _type: 'socialLink',

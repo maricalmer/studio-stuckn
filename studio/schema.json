@@ -551,6 +551,20 @@
         },
         "optional": true
       },
+      "navbarOpenBackgroundColor": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "navbarOpenTextColor": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
       "contactEmail": {
         "type": "objectAttribute",
         "value": {

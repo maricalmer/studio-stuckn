@@ -347,6 +347,14 @@ export function mapSettings(
         siteTitle: settings.siteTitle ?? "",
         navbarOpenBackgroundColor: hexColor(settings.navbarOpenBackgroundColor, "#261b26"),
         navbarOpenTextColor: hexColor(settings.navbarOpenTextColor, "#b4b4b4"),
+        navbarDigitalBackgroundColor: hexColor(settings.navbarDigitalBackgroundColor, "#131313"),
+        navbarDigitalTextColor: hexColor(settings.navbarDigitalTextColor, "#0a063e"),
+        navbarDemoReelBackgroundColor: hexColor(settings.navbarDemoReelBackgroundColor, "#261b26"),
+        navbarDemoReelTextColor: hexColor(settings.navbarDemoReelTextColor, "#b4b4b4"),
+        navbarPhysicalBackgroundColor: hexColor(settings.navbarPhysicalBackgroundColor, "#a6a08f"),
+        navbarPhysicalTextColor: hexColor(settings.navbarPhysicalTextColor, "#011e0f"),
+        navbarAboutBackgroundColor: hexColor(settings.navbarAboutBackgroundColor, "#efebe6"),
+        navbarAboutTextColor: hexColor(settings.navbarAboutTextColor, "#482d65"),
         contactEmail: stegaClean(settings.contactEmail ?? ""),
         socialLinks: settings.socialLinks?.length
           ? settings.socialLinks.flatMap((item) => {

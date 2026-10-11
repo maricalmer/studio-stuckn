@@ -1,6 +1,22 @@
 import {CogIcon} from '@sanity/icons/Cog'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
+const navbarColor = (name: string, title: string, initialValue: string) =>
+  defineField({
+    name,
+    title,
+    type: 'string',
+    group: 'general',
+    initialValue,
+    description: 'Six-digit hex color used by this navbar menu state.',
+    validation: (rule) =>
+      rule.required().custom((value) =>
+        typeof value === 'string' && /^#[0-9a-fA-F]{6}$/.test(value.trim())
+          ? true
+          : 'Use a six-digit hex color, for example #131313.',
+      ),
+  })
+
 export const siteSettings = defineType({
   name: 'siteSettings',
   title: 'Site settings',
@@ -19,6 +35,14 @@ export const siteSettings = defineType({
       group: 'general',
       validation: (rule) => rule.required(),
     }),
+    navbarColor('navbarDigitalBackgroundColor', 'Digital menu background color', '#131313'),
+    navbarColor('navbarDigitalTextColor', 'Digital menu text color', '#0a063e'),
+    navbarColor('navbarDemoReelBackgroundColor', 'Demo Reel menu background color', '#261b26'),
+    navbarColor('navbarDemoReelTextColor', 'Demo Reel menu text color', '#b4b4b4'),
+    navbarColor('navbarPhysicalBackgroundColor', 'Physical menu background color', '#a6a08f'),
+    navbarColor('navbarPhysicalTextColor', 'Physical menu text color', '#011e0f'),
+    navbarColor('navbarAboutBackgroundColor', 'About menu background color', '#efebe6'),
+    navbarColor('navbarAboutTextColor', 'About menu text color', '#482d65'),
     defineField({
       name: 'navbarOpenBackgroundColor',
       title: 'Navbar open background color',

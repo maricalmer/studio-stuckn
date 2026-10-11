@@ -32,6 +32,14 @@ export default function Navigation({ isBigScreen, categories = [], settings }) {
       style={{
         "--navbar-open-background": settings?.navbarOpenBackgroundColor || "#261b26",
         "--navbar-open-text": settings?.navbarOpenTextColor || "#b4b4b4",
+        "--navbar-digital-background": settings?.navbarDigitalBackgroundColor || "#131313",
+        "--navbar-digital-text": settings?.navbarDigitalTextColor || "#0a063e",
+        "--navbar-demo-reel-background": settings?.navbarDemoReelBackgroundColor || "#261b26",
+        "--navbar-demo-reel-text": settings?.navbarDemoReelTextColor || "#b4b4b4",
+        "--navbar-physical-background": settings?.navbarPhysicalBackgroundColor || "#a6a08f",
+        "--navbar-physical-text": settings?.navbarPhysicalTextColor || "#011e0f",
+        "--navbar-about-background": settings?.navbarAboutBackgroundColor || "#efebe6",
+        "--navbar-about-text": settings?.navbarAboutTextColor || "#482d65",
       }}
     >
       <NavButton

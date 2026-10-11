@@ -116,6 +116,14 @@ export type SiteSettings = {
   _updatedAt: string;
   _rev: string;
   siteTitle?: string;
+  navbarDigitalBackgroundColor?: string;
+  navbarDigitalTextColor?: string;
+  navbarDemoReelBackgroundColor?: string;
+  navbarDemoReelTextColor?: string;
+  navbarPhysicalBackgroundColor?: string;
+  navbarPhysicalTextColor?: string;
+  navbarAboutBackgroundColor?: string;
+  navbarAboutTextColor?: string;
   navbarOpenBackgroundColor?: string;
   navbarOpenTextColor?: string;
   contactEmail?: string;
@@ -958,12 +966,20 @@ export type DEMO_REEL_QUERY_RESULT = {
 
 // Source: ../lib/sanity/queries.ts
 // Variable: SITE_SETTINGS_QUERY
-// Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
+// Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,    navbarDigitalBackgroundColor, navbarDigitalTextColor,    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,    navbarAboutBackgroundColor, navbarAboutTextColor,    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,    defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
 export type SITE_SETTINGS_QUERY_RESULT = {
   _id: "siteSettings";
   siteTitle: string | null;
   navbarOpenBackgroundColor: string | null;
   navbarOpenTextColor: string | null;
+  navbarDigitalBackgroundColor: string | null;
+  navbarDigitalTextColor: string | null;
+  navbarDemoReelBackgroundColor: string | null;
+  navbarDemoReelTextColor: string | null;
+  navbarPhysicalBackgroundColor: string | null;
+  navbarPhysicalTextColor: string | null;
+  navbarAboutBackgroundColor: string | null;
+  navbarAboutTextColor: string | null;
   contactEmail: string | null;
   socialLinks: Array<{
     _key: string;
@@ -1095,7 +1111,7 @@ declare global {
     '\n  *[_type == "aboutPage" && _id == "aboutPage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}, images[]{_key, alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n    seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': ABOUT_QUERY_RESULT;
     '\n  *[_type == "homePage" && _id == "homePage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}\n  }\n': HOME_QUERY_RESULT;
     '\n  *[_type == "demoReelPage" && _id == "demoReelPage"][0] {\n    _id, vimeoUrl\n  }\n': DEMO_REEL_QUERY_RESULT;
-    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
+    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,\n    navbarDigitalBackgroundColor, navbarDigitalTextColor,\n    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,\n    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,\n    navbarAboutBackgroundColor, navbarAboutTextColor,\n    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,\n    defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
     '\n  *[_type in ["project", "category", "aboutPage", "demoReelPage", "homePage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
     '\n  *[_type == "project" && slug.current == $slug][0] {\n    title, "slug": slug.current, subtitle {text},\n    "description": pt::text(description), seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n},\n    listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}\n  }\n': PROJECT_SEO_QUERY_RESULT;
   }

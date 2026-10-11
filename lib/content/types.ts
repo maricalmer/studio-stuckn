@@ -90,6 +90,14 @@ export interface SiteSettingsViewModel {
   siteTitle: string;
   navbarOpenBackgroundColor: string;
   navbarOpenTextColor: string;
+  navbarDigitalBackgroundColor: string;
+  navbarDigitalTextColor: string;
+  navbarDemoReelBackgroundColor: string;
+  navbarDemoReelTextColor: string;
+  navbarPhysicalBackgroundColor: string;
+  navbarPhysicalTextColor: string;
+  navbarAboutBackgroundColor: string;
+  navbarAboutTextColor: string;
   contactEmail: string;
   socialLinks: { key: string; label: string; href: string }[];
   defaultSeo: SeoViewModel;

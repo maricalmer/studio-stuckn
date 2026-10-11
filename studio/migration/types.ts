@@ -75,6 +75,14 @@ export interface SourceContent {
     siteTitle: string
     navbarOpenBackgroundColor: string
     navbarOpenTextColor: string
+    navbarDigitalBackgroundColor: string
+    navbarDigitalTextColor: string
+    navbarDemoReelBackgroundColor: string
+    navbarDemoReelTextColor: string
+    navbarPhysicalBackgroundColor: string
+    navbarPhysicalTextColor: string
+    navbarAboutBackgroundColor: string
+    navbarAboutTextColor: string
     contactEmail: string
     socialLinks: readonly {label: string; url: string}[]
     defaultSeo: {

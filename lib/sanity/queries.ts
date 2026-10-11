@@ -56,7 +56,13 @@ export const DEMO_REEL_QUERY = defineQuery(`
 `);
 export const SITE_SETTINGS_QUERY = defineQuery(`
   *[_type == "siteSettings" && _id == "siteSettings"][0] {
-    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor, contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl, defaultSeo {${seoFields}}
+    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,
+    navbarDigitalBackgroundColor, navbarDigitalTextColor,
+    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,
+    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,
+    navbarAboutBackgroundColor, navbarAboutTextColor,
+    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,
+    defaultSeo {${seoFields}}
   }
 `);
 export const DRAFT_REVISION_QUERY = defineQuery(`

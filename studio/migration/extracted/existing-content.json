@@ -1373,6 +1373,14 @@
     "siteTitle": "Studio.Stuckn, 3D artist based in Berlin",
     "navbarOpenBackgroundColor": "#261b26",
     "navbarOpenTextColor": "#b4b4b4",
+    "navbarDigitalBackgroundColor": "#131313",
+    "navbarDigitalTextColor": "#0a063e",
+    "navbarDemoReelBackgroundColor": "#261b26",
+    "navbarDemoReelTextColor": "#b4b4b4",
+    "navbarPhysicalBackgroundColor": "#a6a08f",
+    "navbarPhysicalTextColor": "#011e0f",
+    "navbarAboutBackgroundColor": "#efebe6",
+    "navbarAboutTextColor": "#482d65",
     "contactEmail": "info@mailgo.dev",
     "socialLinks": [
       {

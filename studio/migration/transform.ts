@@ -102,8 +102,8 @@ function projectDocument(
     seo: {
       _type: 'seo',
       metaTitle: project.subtitle
-        ? `${project.title} ${project.subtitle.text} | Studio.Stuckn`
-        : `${project.title} | Studio.Stuckn`,
+        ? `${project.title} ${project.subtitle.text} | Ronja Stucken`
+        : `${project.title} | Ronja Stucken`,
       metaDescription: description,
       socialImage: sanityImageWithAlt(project.listing.image, project.listing.alt, assets),
     },

@@ -173,7 +173,7 @@ async function resolveAssets(
     const uploadedAsset = await client.assets.upload('image', remote.buffer, {
       filename: path.basename(new URL(remote.url).pathname) || 'meta_img.png',
       contentType: remote.contentType,
-      title: 'Studio.Stuckn default social image',
+      title: 'Ronja Stucken default social image',
       source: {id: remoteSourceId, name: REMOTE_ASSET_SOURCE, url: remote.url},
     })
     socialImage = uploadedAsset._id

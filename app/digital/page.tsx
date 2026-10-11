@@ -17,13 +17,13 @@ export async function generateMetadata(): Promise<Metadata> {
     getSanitySettings({ stega: false }),
   ]);
   if (!category) notFound();
-  const title = `${category.title} | Studio.Stuckn`;
+  const title = `${category.title} | Ronja Stucken`;
   const socialImage = category.image?.image.src;
   return {
     title,
     description:
       settings?.defaultSeo.description ??
-      "Digital fashion, avatars, accessories, and 3D work by Studio.Stuckn.",
+      "Digital fashion, avatars, accessories, and 3D work by Ronja Stucken.",
     alternates: { canonical: "/digital" },
     openGraph: {
       type: "website",

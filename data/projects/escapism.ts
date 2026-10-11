@@ -12,8 +12,8 @@ export const escapism = {
   title: "Escapism",
   description: "A departure from the norm into a realm of timeless elegance and modern practicality.",
   credits: [
-    ["All Fashion", "Studio.Stuckn"],
-    ["Styling", "Studio.Stuckn"],
+    ["All Fashion", "Ronja Stucken"],
+    ["Styling", "Ronja Stucken"],
     ["Photo", "Charlotte Hansel"],
     ["Assistant", "Max Zimmermann"],
     ["Models (TFM)", "Zihern & Luca"],

@@ -19,8 +19,8 @@ export const excessiveMinimal = {
   description:
     "Harmony in versatility: elegance from the contrasts of dynamism and calm, the complexity of modesty.",
   credits: [
-    ["All Fashion", "Studio.Stuckn"],
-    ["Styling", "Studio.Stuckn"],
+    ["All Fashion", "Ronja Stucken"],
+    ["Styling", "Ronja Stucken"],
     ["Photo", "Ruben Jacob Fees"],
     ["Model", "Stella Fath"],
   ],

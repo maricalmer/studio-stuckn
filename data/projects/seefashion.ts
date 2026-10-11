@@ -18,8 +18,8 @@ export const seefashion = {
   description:
     "Hybrid Runway show in 21 - openair showcased at 'Haus der Statistik', Alexanderplatz, Berlin and online as livestream.",
   credits: [
-    ["All Fashion", "Studio.Stuckn"],
-    ["Styling", "Studio.Stuckn"],
+    ["All Fashion", "Ronja Stucken"],
+    ["Styling", "Ronja Stucken"],
     ["Video", "Petandflo"],
     ["Location", "Cinegate"],
     ["Set photography", "Tiffany Chaves"],

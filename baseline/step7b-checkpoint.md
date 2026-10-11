@@ -30,14 +30,14 @@ The failed production-context smoke run is preserved in
 The direct Netlify preview origin served the expected Next.js app:
 
 - HTTP 200;
-- title `Studio.Stuckn, 3D artist based in Berlin`;
+- title `Ronja Stucken, 3D artist based in Berlin`;
 - no legacy frameset;
 - Sanity CDN images present.
 
 The custom domain `https://www.ronjastucken.com` instead served a Cloudflare
 response containing the legacy `<frameset>` page:
 
-- title `Studio.Stuckn`;
+- title `Ronja Stucken`;
 - no canonical metadata;
 - no Sanity CDN images;
 - `/api/revalidate` was also handled by the legacy frameset path.
@@ -66,7 +66,7 @@ record the timestamp and result in this checkpoint.
 
 ```bash
 curl -fsSL https://www.ronjastucken.com \
-  | grep -q '<title>Studio.Stuckn, 3D artist based in Berlin</>' \
+  | grep -q '<title>Ronja Stucken, 3D artist based in Berlin</>' \
   && echo "title: OK" \
   || echo "title: FAIL"
 

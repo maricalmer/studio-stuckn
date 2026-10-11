@@ -21,7 +21,7 @@ async function getAboutPageData(stega = true) {
 export async function generateMetadata(): Promise<Metadata> {
   const [about, settings] = await getAboutPageData(false);
   if (!about) notFound();
-  const title = about.seo.title ?? "About | Studio.Stuckn";
+  const title = about.seo.title ?? "About | Ronja Stucken";
   const socialImage =
     about.seo.socialImage?.url ?? settings?.defaultSeo.socialImage?.url;
   return {

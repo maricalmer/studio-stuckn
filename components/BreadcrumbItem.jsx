@@ -1,7 +1,9 @@
 import Link from 'next/link';
 
 const formatUrl = (string) => {
-  return string === "Home" ? "" : string.toLowerCase();
+  if (string === "Home") return "";
+  if (string === "Demo Reel") return "demo-reel";
+  return string.toLowerCase();
 };
 
 export default function BreadcrumbItem({activeItem, itemName}) {

@@ -32,8 +32,8 @@ export const marieClaire = {
     logo: marieLogo,
     alt: "Marie Claire Magazine logo",
     creditsPieces: {
-      1: "Shirt, Vest & Trousers Studio.Stuckn, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear",
-      2: "Shirt Studio.Stuckn",
+      1: "Shirt, Vest & Trousers Ronja Stucken, Tie & Belt Gucci, Shoes Prada, Glasses Neubau Eyewear",
+      2: "Shirt Ronja Stucken",
       3: "Coat Truongii, Bag Burberry, Top Alina Wotschel, Trousers Acne Studios, Earrings Stephanie Kahnau",
       4: "Dress Karl Lagerfeld",
       5: "Orange Blouse Soeur, Striped Blouse Sessùn, Scarf Hermés",

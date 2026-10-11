@@ -16,8 +16,8 @@ export const inConstantFlux = {
   description:
     "A short fashion film project depicting a gender non- conforming odyssey in which the collection blurs clothing norms and gendered dress in the age of pandemic isolation.",
   credits: [
-    ["All Fashion", "Studio.Stuckn"],
-    ["Styling", "Studio.Stuckn"],
+    ["All Fashion", "Ronja Stucken"],
+    ["Styling", "Ronja Stucken"],
     ["Director", "Vigdís Erla Guttormsdóttir"],
     ["Film & Edit", "Vigdís Erla Guttormsdóttir"],
     ["Analog Photo", "Ronja Stucken & Vigdís Erla Guttormsdóttir"],

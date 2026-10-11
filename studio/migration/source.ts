@@ -11,7 +11,7 @@ export const aboutPageSource: Omit<SourceContent['aboutPage'], 'images'> & {
 } = {
   heading: 'Say Hello',
   paragraphs: [
-    'Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.',
+    'Ronja Stucken is a Berlin-based 3D artist, fashion designer, and creative mind showcasing her work.',
     'Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.',
   ],
   images: [
@@ -20,9 +20,9 @@ export const aboutPageSource: Omit<SourceContent['aboutPage'], 'images'> & {
     {path: 'public/img/about/profile.webp', alt: 'Ronja Stucken in profile'},
   ],
   seo: {
-    metaTitle: 'About | Studio.Stuckn',
+    metaTitle: 'About | Ronja Stucken',
     metaDescription:
-      'About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind working as Studio.Stuckn.',
+      'About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind.',
   },
 }
 
@@ -36,7 +36,7 @@ export const homePageSource: SourceContent['homePage'] = {
 }
 
 export const siteSettingsSource: SourceContent['siteSettings'] = {
-  siteTitle: 'Studio.Stuckn, 3D artist based in Berlin',
+  siteTitle: 'Ronja Stucken, 3D artist based in Berlin',
   navbarOpenBackgroundColor: '#261b26',
   navbarOpenTextColor: '#b4b4b4',
   navbarDigitalBackgroundColor: '#131313',
@@ -55,12 +55,12 @@ export const siteSettingsSource: SourceContent['siteSettings'] = {
     {label: 'Email', url: 'info@mailgo.dev'},
   ],
   defaultSeo: {
-    metaTitle: 'Studio.Stuckn, 3D artist based in Berlin',
+    metaTitle: 'Ronja Stucken, 3D artist based in Berlin',
     metaDescription:
       "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.",
     socialImageUrl:
       'https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png',
-    socialImageAlt: 'Studio.Stuckn portfolio preview',
+    socialImageAlt: 'Ronja Stucken portfolio preview',
   },
 }
 

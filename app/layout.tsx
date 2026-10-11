@@ -10,7 +10,7 @@ import { getSanitySettings } from "@/lib/sanity/repository";
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSanitySettings({ stega: false });
   const title =
-    settings?.defaultSeo.title ?? settings?.siteTitle ?? "Studio.Stuckn";
+    settings?.defaultSeo.title ?? settings?.siteTitle ?? "Ronja Stucken";
   const description = settings?.defaultSeo.description;
   const socialImage = settings?.defaultSeo.socialImage?.url;
 

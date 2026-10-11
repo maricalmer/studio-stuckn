@@ -2,17 +2,17 @@
 export const aboutContent = {
   heading: "Say Hello",
   paragraphs: [
-    "Ronja Stucken, a Berlin-based 3D Artist, fashion designer and creative mind, showcases her works under the synonym Studio.Stuckn.",
+    "Ronja Stucken is a Berlin-based 3D artist, fashion designer, and creative mind showcasing her work.",
     "Services include comprehensive 3D design solutions for fashion, accessories, avatars, product visualization, animations, scene building, lighting and digital photoshoots, alongside expertise in physical fashion design and pattern making.",
   ],
   seo: {
-    title: "About | Studio.Stuckn",
+    title: "About | Ronja Stucken",
     description:
-      "About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind working as Studio.Stuckn.",
+      "About Ronja Stucken, a Berlin-based 3D artist, fashion designer, and creative mind.",
   },
 };
 export const siteContent = {
-  siteTitle: "Studio.Stuckn, 3D artist based in Berlin",
+  siteTitle: "Ronja Stucken, 3D artist based in Berlin",
   navbarOpenBackgroundColor: "#261b26",
   navbarOpenTextColor: "#b4b4b4",
   navbarDigitalBackgroundColor: "#131313",
@@ -47,12 +47,12 @@ export const siteContent = {
     },
   ],
   defaultSeo: {
-    title: "Studio.Stuckn, 3D artist based in Berlin",
+    title: "Ronja Stucken, 3D artist based in Berlin",
     description:
       "Discover 3D artist Ronja Stucken's portfolio, featuring expertise in digital fashion design, avatars, scene building, and physical fashion design.",
     socialImage: {
       url: "https://res.cloudinary.com/dq41jyzzc/image/upload/v1705505443/meta_img.png",
-      alt: "Studio.Stuckn portfolio preview",
+      alt: "Ronja Stucken portfolio preview",
     },
   },
 };

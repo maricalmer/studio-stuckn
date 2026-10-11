@@ -256,7 +256,7 @@ test.describe("App Router contract", () => {
     page,
   }) => {
     await page.goto("/", { waitUntil: "domcontentloaded" });
-    await expect(page).toHaveTitle("Studio.Stuckn, 3D artist based in Berlin");
+    await expect(page).toHaveTitle("Ronja Stucken, 3D artist based in Berlin");
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
       "https://www.ronjastucken.com",
@@ -264,7 +264,7 @@ test.describe("App Router contract", () => {
 
     await page.goto("/digital", { waitUntil: "domcontentloaded" });
     await settlePage(page);
-    await expect(page).toHaveTitle("Digital | Studio.Stuckn");
+    await expect(page).toHaveTitle("Digital | Ronja Stucken");
 
     const documentRequests = [];
     page.on("request", (request) => {
@@ -273,7 +273,7 @@ test.describe("App Router contract", () => {
 
     await page.locator('a[href="/etherea-part-one"]').click();
     await expect(page).toHaveURL(/\/etherea-part-one$/);
-    await expect(page).toHaveTitle("Etherea Part 1 | Studio.Stuckn");
+    await expect(page).toHaveTitle("Etherea Part 1 | Ronja Stucken");
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
       "https://www.ronjastucken.com/etherea-part-one",

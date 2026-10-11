@@ -23,8 +23,8 @@ export async function generateMetadata({
   if (!metadata?.slug) notFound();
   const projectTitle = metadata.title ?? "Untitled project";
   const title = metadata.subtitle?.text
-    ? `${projectTitle} ${metadata.subtitle.text} | Studio.Stuckn`
-    : `${projectTitle} | Studio.Stuckn`;
+    ? `${projectTitle} ${metadata.subtitle.text} | Ronja Stucken`
+    : `${projectTitle} | Ronja Stucken`;
   const description = metadata.seo?.metaDescription ?? metadata.description;
   const socialImage =
     metadata.seo?.socialImage?.asset?.url ??

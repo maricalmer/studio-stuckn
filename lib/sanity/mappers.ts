@@ -89,6 +89,25 @@ export function mapImage(
   };
 }
 
+function mapNavbarImage(
+  image:
+    | (Parameters<typeof mapImage>[0] & {alt?: string | null})
+    | null
+    | undefined,
+) {
+  const mapped = mapImage(image);
+  return mapped ? {image: mapped, alt: image?.alt ?? ""} : undefined;
+}
+
+function mapNavbarImages(
+  images:
+    | Array<Parameters<typeof mapNavbarImage>[0]>
+    | null
+    | undefined,
+) {
+  return (images ?? []).slice(0, 3).map((image) => mapNavbarImage(image));
+}
+
 export function mapRichText(blocks: TextResult): RichText {
   return (blocks ?? []).map((block) => ({
     key: block._key,
@@ -345,6 +364,14 @@ export function mapSettings(
   return settings
       ? {
         siteTitle: settings.siteTitle ?? "",
+        navbarDigitalImages: mapNavbarImages(settings.navbarDigitalImages),
+        navbarDemoReelImages: mapNavbarImages(settings.navbarDemoReelImages),
+        navbarPhysicalImages: mapNavbarImages(settings.navbarPhysicalImages),
+        navbarAboutImages: mapNavbarImages(settings.navbarAboutImages),
+        navbarDigitalImage: mapNavbarImage(settings.navbarDigitalImage),
+        navbarDemoReelImage: mapNavbarImage(settings.navbarDemoReelImage),
+        navbarPhysicalImage: mapNavbarImage(settings.navbarPhysicalImage),
+        navbarAboutImage: mapNavbarImage(settings.navbarAboutImage),
         navbarOpenBackgroundColor: hexColor(settings.navbarOpenBackgroundColor, "#261b26"),
         navbarOpenTextColor: hexColor(settings.navbarOpenTextColor, "#b4b4b4"),
         navbarDigitalBackgroundColor: hexColor(settings.navbarDigitalBackgroundColor, "#131313"),

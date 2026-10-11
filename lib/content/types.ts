@@ -88,6 +88,14 @@ export interface DemoReelViewModel {
 }
 export interface SiteSettingsViewModel {
   siteTitle: string;
+  navbarDigitalImages?: Array<{ image: ImageViewModel; alt: string } | undefined>;
+  navbarDemoReelImages?: Array<{ image: ImageViewModel; alt: string } | undefined>;
+  navbarPhysicalImages?: Array<{ image: ImageViewModel; alt: string } | undefined>;
+  navbarAboutImages?: Array<{ image: ImageViewModel; alt: string } | undefined>;
+  navbarDigitalImage?: { image: ImageViewModel; alt: string };
+  navbarDemoReelImage?: { image: ImageViewModel; alt: string };
+  navbarPhysicalImage?: { image: ImageViewModel; alt: string };
+  navbarAboutImage?: { image: ImageViewModel; alt: string };
   navbarOpenBackgroundColor: string;
   navbarOpenTextColor: string;
   navbarDigitalBackgroundColor: string;

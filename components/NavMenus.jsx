@@ -2,7 +2,7 @@ import Link from 'next/link';
 import avatar1Pic from '../public/img/nav/digital-avatar.webp';
 import heelsPic from '../public/img/nav/digital-boots.webp';
 import avatar2Pic from '../public/img/nav/digital-avatar-earrings.webp';
-import couplePic from '../public/img/nav/physical-couple.webp';
+import physicalFirstPic from '../public/img/physical/flanelle/2_models_posing_togehter_sitting.webp';
 import coatPic from '../public/img/nav/physical-coat.webp';
 import windowPic from '../public/img/nav/physical-window.webp';
 import elbowOnChairPic from '../public/img/nav/about-elbow.webp';
@@ -17,7 +17,7 @@ const localElements = {
     { src: avatar2Pic, alt: '3d avatar wearing earings', extraStyling: "max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
   ],
   physical: [
-    { src: couplePic, alt: 'front picture of couple', extraStyling: "max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
+    { src: physicalFirstPic, alt: '2 models posing together sitting', extraStyling: "max-w-[28%] ml-[8%] bottom-[210px] delay-200"},
     { src: coatPic, alt: 'white coat', extraStyling: "max-w-[21%] ml-[42%] bottom-[15px] delay-300"},
     { src: windowPic, alt: 'front picture of model seating at the window', extraStyling: "max-w-[21%] ml-[75%] bottom-[60px] delay-500"},
   ],
@@ -28,18 +28,74 @@ const localElements = {
   ],
 };
 
-function menuElements(category) {
+function menuElements(category, settings) {
   const local = localElements[category.slug] ?? [];
-  const cmsImage = category.image?.image;
+  const navbarImages = {
+    digital: settings?.navbarDigitalImages,
+    physical: settings?.navbarPhysicalImages,
+  }[category.slug] ?? [];
+  const legacyNavbarImage = {
+    digital: settings?.navbarDigitalImage,
+    physical: settings?.navbarPhysicalImage,
+  }[category.slug];
   return local.map((element, index) => ({
     ...element,
-    src: index === 0 && cmsImage?.src ? cmsImage : element.src,
-    alt: index === 0 && category.image?.alt ? category.image.alt : element.alt,
+    src: navbarImages[index]?.image?.src
+      ? navbarImages[index].image
+      : index === 0 && legacyNavbarImage?.image?.src
+        ? legacyNavbarImage.image
+        : element.src,
+    alt: navbarImages[index]?.alt
+      ? navbarImages[index].alt
+      : index === 0 && legacyNavbarImage?.alt
+        ? legacyNavbarImage.alt
+        : element.alt,
     extraStyling: `navmenu__${category.slug} ${element.extraStyling}`,
   }));
 }
 
-export default function NavMenus({ isOpen, categories = [] }) {
+function aboutMenuElements(settings) {
+  const navbarImages = settings?.navbarAboutImages ?? [];
+  const legacyNavbarImage = settings?.navbarAboutImage;
+  return localElements.about.map((element, index) => ({
+    ...element,
+    src: navbarImages[index]?.image?.src
+      ? navbarImages[index].image
+      : index === 0 && legacyNavbarImage?.image?.src
+        ? legacyNavbarImage.image
+        : element.src,
+    alt: navbarImages[index]?.alt
+      ? navbarImages[index].alt
+      : index === 0 && legacyNavbarImage?.alt
+        ? legacyNavbarImage.alt
+        : element.alt,
+    extraStyling: `navmenu__about ${element.extraStyling}`,
+  }));
+}
+
+function optionalMenuElements(slug, navbarImages, legacyNavbarImage) {
+  const configuredImages = navbarImages?.length
+    ? navbarImages
+    : legacyNavbarImage
+      ? [legacyNavbarImage]
+      : [];
+  const positions = [
+    "max-w-[28%] ml-[8%] bottom-[210px] delay-200",
+    "max-w-[21%] ml-[42%] bottom-[15px] delay-300",
+    "max-w-[21%] ml-[75%] bottom-[60px] delay-500",
+  ];
+  return configuredImages.slice(0, 3).flatMap((navbarImage, index) =>
+    navbarImage?.image?.src
+      ? [{
+          src: navbarImage.image,
+          alt: navbarImage.alt || `${slug} menu image ${index + 1}`,
+          extraStyling: `navmenu__${slug} ${positions[index]}`,
+        }]
+      : [],
+  );
+}
+
+export default function NavMenus({ isOpen, categories = [], settings }) {
   const menuCategories = categories.filter((category) => localElements[category.slug]);
   const menuItems = menuCategories.flatMap((category) =>
     category.slug === "physical"
@@ -66,10 +122,14 @@ export default function NavMenus({ isOpen, categories = [] }) {
       </ul>
       {isOpen && (
         <div className="navmenu__images h-full w-full absolute top-0 left-0 flex absolute z-[-1]">
-          {menuCategories.flatMap(menuElements).concat(localElements.about.map((element) => ({
-            ...element,
-            extraStyling: `navmenu__about ${element.extraStyling}`,
-          }))).map((element, index) => (
+          {menuCategories.flatMap((category) => menuElements(category, settings))
+            .concat(optionalMenuElements(
+              "demo-reel",
+              settings?.navbarDemoReelImages,
+              settings?.navbarDemoReelImage,
+            ))
+            .concat(aboutMenuElements(settings))
+            .map((element, index) => (
             <NavImage {...element} key={`${element.extraStyling}-${index}`} />
           ))}
         </div>

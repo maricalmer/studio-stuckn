@@ -17,6 +17,48 @@ const navbarColor = (name: string, title: string, initialValue: string) =>
       ),
   })
 
+const navbarImage = (name: string, title: string) =>
+  defineField({
+    name,
+    title,
+    type: 'array',
+    group: 'general',
+    description: 'Optional ordered images shown while hovering this menu item (up to three).',
+    of: [
+      defineArrayMember({
+        type: 'image',
+        options: {hotspot: true},
+        fields: [
+          defineField({
+            name: 'alt',
+            title: 'Alternative text',
+            type: 'string',
+            validation: (rule) => rule.required().min(1),
+          }),
+        ],
+      }),
+    ],
+    validation: (rule) => rule.max(3),
+  })
+
+const legacyNavbarImage = (name: string, title: string) =>
+  defineField({
+    name,
+    title,
+    type: 'image',
+    hidden: true,
+    readOnly: true,
+    options: {hotspot: true},
+    fields: [
+      defineField({
+        name: 'alt',
+        title: 'Alternative text',
+        type: 'string',
+        validation: (rule) => rule.required().min(1),
+      }),
+    ],
+  })
+
 export const siteSettings = defineType({
   name: 'siteSettings',
   title: 'Site settings',
@@ -35,6 +77,14 @@ export const siteSettings = defineType({
       group: 'general',
       validation: (rule) => rule.required(),
     }),
+    navbarImage('navbarDigitalImages', 'Digital menu images'),
+    navbarImage('navbarDemoReelImages', 'Demo Reel menu images'),
+    navbarImage('navbarPhysicalImages', 'Physical menu images'),
+    navbarImage('navbarAboutImages', 'About menu images'),
+    legacyNavbarImage('navbarDigitalImage', 'Legacy Digital menu image'),
+    legacyNavbarImage('navbarDemoReelImage', 'Legacy Demo Reel menu image'),
+    legacyNavbarImage('navbarPhysicalImage', 'Legacy Physical menu image'),
+    legacyNavbarImage('navbarAboutImage', 'Legacy About menu image'),
     navbarColor('navbarDigitalBackgroundColor', 'Digital menu background color', '#131313'),
     navbarColor('navbarDigitalTextColor', 'Digital menu text color', '#0a063e'),
     navbarColor('navbarDemoReelBackgroundColor', 'Demo Reel menu background color', '#261b26'),

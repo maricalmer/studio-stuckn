@@ -57,6 +57,14 @@ export const DEMO_REEL_QUERY = defineQuery(`
 export const SITE_SETTINGS_QUERY = defineQuery(`
   *[_type == "siteSettings" && _id == "siteSettings"][0] {
     _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,
+    navbarDigitalImages[]{alt, ${imageFields}},
+    navbarDemoReelImages[]{alt, ${imageFields}},
+    navbarPhysicalImages[]{alt, ${imageFields}},
+    navbarAboutImages[]{alt, ${imageFields}},
+    navbarDigitalImage {alt, ${imageFields}},
+    navbarDemoReelImage {alt, ${imageFields}},
+    navbarPhysicalImage {alt, ${imageFields}},
+    navbarAboutImage {alt, ${imageFields}},
     navbarDigitalBackgroundColor, navbarDigitalTextColor,
     navbarDemoReelBackgroundColor, navbarDemoReelTextColor,
     navbarPhysicalBackgroundColor, navbarPhysicalTextColor,

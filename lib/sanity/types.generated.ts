@@ -116,6 +116,74 @@ export type SiteSettings = {
   _updatedAt: string;
   _rev: string;
   siteTitle?: string;
+  navbarDigitalImages?: Array<{
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+    _key: string;
+  }>;
+  navbarDemoReelImages?: Array<{
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+    _key: string;
+  }>;
+  navbarPhysicalImages?: Array<{
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+    _key: string;
+  }>;
+  navbarAboutImages?: Array<{
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+    _key: string;
+  }>;
+  navbarDigitalImage?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+  navbarDemoReelImage?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+  navbarPhysicalImage?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+  navbarAboutImage?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
   navbarDigitalBackgroundColor?: string;
   navbarDigitalTextColor?: string;
   navbarDemoReelBackgroundColor?: string;
@@ -135,6 +203,22 @@ export type SiteSettings = {
   instagramUrl?: string;
   linkedinUrl?: string;
   defaultSeo?: Seo;
+};
+
+export type SanityImageCrop = {
+  _type: "sanity.imageCrop";
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
+};
+
+export type SanityImageHotspot = {
+  _type: "sanity.imageHotspot";
+  x?: number;
+  y?: number;
+  height?: number;
+  width?: number;
 };
 
 export type HomePage = {
@@ -194,22 +278,6 @@ export type Category = {
     alt?: string;
     _type: "image";
   };
-};
-
-export type SanityImageCrop = {
-  _type: "sanity.imageCrop";
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
-};
-
-export type SanityImageHotspot = {
-  _type: "sanity.imageHotspot";
-  x?: number;
-  y?: number;
-  height?: number;
-  width?: number;
 };
 
 export type CategoryReference = {
@@ -400,12 +468,12 @@ export type AllSanitySchemaTypes =
   | FashionCreditEntry
   | Credit
   | SiteSettings
+  | SanityImageCrop
+  | SanityImageHotspot
   | HomePage
   | DemoReelPage
   | ProjectReference
   | Category
-  | SanityImageCrop
-  | SanityImageHotspot
   | CategoryReference
   | Project
   | PortableText
@@ -966,12 +1034,228 @@ export type DEMO_REEL_QUERY_RESULT = {
 
 // Source: ../lib/sanity/queries.ts
 // Variable: SITE_SETTINGS_QUERY
-// Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,    navbarDigitalBackgroundColor, navbarDigitalTextColor,    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,    navbarAboutBackgroundColor, navbarAboutTextColor,    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,    defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
+// Query: *[_type == "siteSettings" && _id == "siteSettings"][0] {    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,    navbarDigitalImages[]{alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarDemoReelImages[]{alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarPhysicalImages[]{alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarAboutImages[]{alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarDigitalImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarDemoReelImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarPhysicalImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarAboutImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}},    navbarDigitalBackgroundColor, navbarDigitalTextColor,    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,    navbarAboutBackgroundColor, navbarAboutTextColor,    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,    defaultSeo {  metaTitle, metaDescription, socialImage {alt,   crop {top, bottom, left, right}, hotspot {x, y, width, height},  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}}}  }
 export type SITE_SETTINGS_QUERY_RESULT = {
   _id: "siteSettings";
   siteTitle: string | null;
   navbarOpenBackgroundColor: string | null;
   navbarOpenTextColor: string | null;
+  navbarDigitalImages: Array<{
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+  navbarDemoReelImages: Array<{
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+  navbarPhysicalImages: Array<{
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+  navbarAboutImages: Array<{
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+  navbarDigitalImage: {
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  } | null;
+  navbarDemoReelImage: {
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  } | null;
+  navbarPhysicalImage: {
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  } | null;
+  navbarAboutImage: {
+    alt: string | null;
+    crop: {
+      top: number | null;
+      bottom: number | null;
+      left: number | null;
+      right: number | null;
+    } | null;
+    hotspot: {
+      x: number | null;
+      y: number | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+    asset: {
+      _id: string;
+      url: string | null;
+      metadata: {
+        lqip: string | null;
+        dimensions: {
+          width: number | null;
+          height: number | null;
+          aspectRatio: number | null;
+        } | null;
+      } | null;
+    } | null;
+  } | null;
   navbarDigitalBackgroundColor: string | null;
   navbarDigitalTextColor: string | null;
   navbarDemoReelBackgroundColor: string | null;
@@ -1111,7 +1395,7 @@ declare global {
     '\n  *[_type == "aboutPage" && _id == "aboutPage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}, images[]{_key, alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}},\n    seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': ABOUT_QUERY_RESULT;
     '\n  *[_type == "homePage" && _id == "homePage"][0] {\n    _id, heading, content[]{\n  _key, _type, style, listItem, level,\n  children[]{_key, _type, text, marks}, markDefs[]{_key, _type, href}\n}\n  }\n': HOME_QUERY_RESULT;
     '\n  *[_type == "demoReelPage" && _id == "demoReelPage"][0] {\n    _id, vimeoUrl\n  }\n': DEMO_REEL_QUERY_RESULT;
-    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,\n    navbarDigitalBackgroundColor, navbarDigitalTextColor,\n    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,\n    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,\n    navbarAboutBackgroundColor, navbarAboutTextColor,\n    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,\n    defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
+    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    _id, siteTitle, navbarOpenBackgroundColor, navbarOpenTextColor,\n    navbarDigitalImages[]{alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarDemoReelImages[]{alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarPhysicalImages[]{alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarAboutImages[]{alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarDigitalImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarDemoReelImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarPhysicalImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarAboutImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n},\n    navbarDigitalBackgroundColor, navbarDigitalTextColor,\n    navbarDemoReelBackgroundColor, navbarDemoReelTextColor,\n    navbarPhysicalBackgroundColor, navbarPhysicalTextColor,\n    navbarAboutBackgroundColor, navbarAboutTextColor,\n    contactEmail, socialLinks[]{_key, label, url}, instagramUrl, linkedinUrl,\n    defaultSeo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n}\n  }\n': SITE_SETTINGS_QUERY_RESULT;
     '\n  *[_type in ["project", "category", "aboutPage", "demoReelPage", "homePage", "siteSettings"]] | order(_id asc) {\n    _id, _updatedAt, _rev\n  }\n': DRAFT_REVISION_QUERY_RESULT;
     '\n  *[_type == "project" && slug.current == $slug][0] {\n    title, "slug": slug.current, subtitle {text},\n    "description": pt::text(description), seo {\n  metaTitle, metaDescription, socialImage {alt, \n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}\n},\n    listing {alt, image {\n  crop {top, bottom, left, right}, hotspot {x, y, width, height},\n  asset->{_id, url, metadata {lqip, dimensions {width, height, aspectRatio}}}\n}}\n  }\n': PROJECT_SEO_QUERY_RESULT;
   }

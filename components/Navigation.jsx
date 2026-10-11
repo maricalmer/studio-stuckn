@@ -47,7 +47,7 @@ export default function Navigation({ isBigScreen, categories = [], settings }) {
         onClick={() => setIsMenuOpen((open) => !open)}
       />
       {isBigScreen && <NavList settings={settings} />}
-      {isBigScreen ? <NavMenus isOpen={isMenuOpen} categories={categories} /> : <NavMenusMobile categories={categories} />}
+      {isBigScreen ? <NavMenus isOpen={isMenuOpen} categories={categories} settings={settings} /> : <NavMenusMobile categories={categories} />}
       <StaticBrand
         title={isBigScreen ? settings?.siteTitle : "Demo Reel"}
         href={!isBigScreen ? "/demo-reel" : undefined}

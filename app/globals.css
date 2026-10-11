@@ -196,10 +196,18 @@ body:has(.about-page) {
   color: var(--navbar-digital-text, #0a063e);
 }
 
+.navbar-active.navbar__bg--digital .navbrand {
+  border-color: var(--navbar-digital-text, #0a063e);
+}
+
 .navbar-active.navbar__bg--demo-reel .navmenu__item,
 .navbar-active.navbar__bg--demo-reel .navbrand,
 .navbar-active.navbar__bg--demo-reel .navlist__item {
   color: var(--navbar-demo-reel-text, #b4b4b4);
+}
+
+.navbar-active.navbar__bg--demo-reel .navbrand {
+  border-color: var(--navbar-demo-reel-text, #b4b4b4);
 }
 
 .navbar-active.navbar__bg--physical .navmenu__item,
@@ -208,10 +216,18 @@ body:has(.about-page) {
   color: var(--navbar-physical-text, #011e0f);
 }
 
+.navbar-active.navbar__bg--physical .navbrand {
+  border-color: var(--navbar-physical-text, #011e0f);
+}
+
 .navbar-active.navbar__bg--about .navmenu__item,
 .navbar-active.navbar__bg--about .navbrand,
 .navbar-active.navbar__bg--about .navlist__item {
   color: var(--navbar-about-text, #482d65);
+}
+
+.navbar-active.navbar__bg--about .navbrand {
+  border-color: var(--navbar-about-text, #482d65);
 }
 
 .carousel::-webkit-scrollbar {

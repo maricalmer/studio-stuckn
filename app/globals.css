@@ -102,7 +102,7 @@ body:has(.about-page) {
   left: 7px;
   transform: rotate(-45deg);
   transform-origin: top left;
-  background-color: transparent;
+  background-color: var(--navbar-open-background, #261b26);
 }
 
 .navbar-active .nav__cross::before {
@@ -110,7 +110,7 @@ body:has(.about-page) {
   top: 7px;
   transform: rotate(45deg);
   transform-origin: top left;
-  background-color: transparent;
+  background-color: var(--navbar-open-background, #261b26);
 }
 
 .navbar__bg--digital {

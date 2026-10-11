@@ -8,7 +8,7 @@ import NavMenusMobile from "@/components/NavMenusMobile";
 import NavList from "@/components/NavList";
 import StaticBrand from "@/components/StaticBrand";
 
-export default function Navigation(props) {
+export default function Navigation({ isBigScreen, categories = [], settings }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -32,9 +32,9 @@ export default function Navigation(props) {
         isOpen={isMenuOpen}
         onClick={() => setIsMenuOpen((open) => !open)}
       />
-      {props.isBigScreen && <NavList />}
-      {props.isBigScreen ? <NavMenus isOpen={isMenuOpen} /> : <NavMenusMobile />}
-      <StaticBrand extraStyling="opacity-0 md:translate-y-[200px] border-black"/>
+      {isBigScreen && <NavList settings={settings} />}
+      {isBigScreen ? <NavMenus isOpen={isMenuOpen} categories={categories} /> : <NavMenusMobile categories={categories} />}
+      <StaticBrand title={settings?.siteTitle} extraStyling="opacity-0 md:translate-y-[200px] border-black"/>
     </nav>
   );
 };

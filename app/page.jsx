@@ -1,5 +1,5 @@
 import HomeExperience from "@/components/HomeExperience";
-import { getSanityHome } from "@/lib/sanity/repository";
+import { getSanityCatalog, getSanityHome, getSanitySettings } from "@/lib/sanity/repository";
 
 const fallbackHome = {
   heading: "Ronja Stucken",
@@ -11,7 +11,17 @@ const fallbackHome = {
 };
 
 export default async function Home() {
-  const home = await getSanityHome();
+  const [home, catalog, settings] = await Promise.all([
+    getSanityHome(),
+    getSanityCatalog(),
+    getSanitySettings(),
+  ]);
+  const categories = catalog.categories.length > 0
+    ? catalog.categories
+    : [
+        { id: "fallback-digital", slug: "digital", title: "Digital", order: 0 },
+        { id: "fallback-physical", slug: "physical", title: "Physical", order: 1 },
+      ];
   const heading = home?.heading || fallbackHome.heading;
   const paragraphs = home?.body.map((block) => ({
     key: block.key,
@@ -19,7 +29,7 @@ export default async function Home() {
   })) ?? fallbackHome.paragraphs;
 
   return (
-    <HomeExperience brandTitle={heading}>
+    <HomeExperience brandTitle={heading} categories={categories} settings={settings}>
       {paragraphs.map(({key, text}) => (
         <p key={key} className="text-paragraph w-8/12 md:w-5/12 text-[2rem] helvetica mt-28 mb-10 mx-14 mix-blend-difference">
           {text}

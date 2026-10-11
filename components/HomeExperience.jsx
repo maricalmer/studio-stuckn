@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import ScrollArrow from "@/components/ScrollArrow";
 import StaticBrand from "@/components/StaticBrand";
 
-export default function HomeExperience({ children, brandTitle }) {
+export default function HomeExperience({ children, brandTitle, categories, settings }) {
   const [, setScrollValue] = useState(0);
   const { scrollYProgress, scrollY } = useScroll();
   const [isBigScreen, setIsBigScreen] = useState(false);
@@ -39,7 +39,7 @@ export default function HomeExperience({ children, brandTitle }) {
 
   return (
     <>
-      <Navigation isBigScreen={isBigScreen} />
+      <Navigation isBigScreen={isBigScreen} categories={categories} settings={settings} />
       <main className="relative">
         <canvas
           id="homepage-background"

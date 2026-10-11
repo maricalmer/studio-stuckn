@@ -196,6 +196,10 @@ body:has(.about-page) {
   color: var(--navbar-digital-text, #0a063e);
 }
 
+.navbar-active.navbar__bg--digital button {
+  background-color: var(--navbar-digital-text, #0a063e);
+}
+
 .navbar-active.navbar__bg--digital .navbrand {
   border-color: var(--navbar-digital-text, #0a063e);
 }
@@ -204,6 +208,10 @@ body:has(.about-page) {
 .navbar-active.navbar__bg--demo-reel .navbrand,
 .navbar-active.navbar__bg--demo-reel .navlist__item {
   color: var(--navbar-demo-reel-text, #b4b4b4);
+}
+
+.navbar-active.navbar__bg--demo-reel button {
+  background-color: var(--navbar-demo-reel-text, #b4b4b4);
 }
 
 .navbar-active.navbar__bg--demo-reel .navbrand {
@@ -216,6 +224,10 @@ body:has(.about-page) {
   color: var(--navbar-physical-text, #011e0f);
 }
 
+.navbar-active.navbar__bg--physical button {
+  background-color: var(--navbar-physical-text, #011e0f);
+}
+
 .navbar-active.navbar__bg--physical .navbrand {
   border-color: var(--navbar-physical-text, #011e0f);
 }
@@ -224,6 +236,10 @@ body:has(.about-page) {
 .navbar-active.navbar__bg--about .navbrand,
 .navbar-active.navbar__bg--about .navlist__item {
   color: var(--navbar-about-text, #482d65);
+}
+
+.navbar-active.navbar__bg--about button {
+  background-color: var(--navbar-about-text, #482d65);
 }
 
 .navbar-active.navbar__bg--about .navbrand {
